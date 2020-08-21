@@ -41,7 +41,7 @@
                                             <div class="col-md-2 col-sm-4 col-xs-12">
                                                 <div class="item product-01">
                                                     <div class="block-img"><img src="assets/images/product/product-01.jpg" alt="">
-                                                        <div class="group-btn"><a href="#" class="swin-btn btn-link"><i class="icons fa fa-link"></i></a><a href="#" class="swin-btn btn-add-to-card"><i class="fa fa-shopping-basket"></i></a></div>
+                                                        <div class="group-btn"><a href="{{route('menu_detail')}}" class="swin-btn btn-link"><i class="icons fa fa-link"></i></a><a href="#" class="swin-btn btn-add-to-card"><i class="fa fa-shopping-basket"></i></a></div>
                                                     </div>
                                                     <h5 class="title">Frish Cheese Chip</h5><span class="price woocommerce-Price-amount amount"><span class="price-symbol">$</span>25.0</span>
                                                 </div>

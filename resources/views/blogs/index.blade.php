@@ -12,7 +12,7 @@
             </div>
         </div>
         <div class="page-content-wrapper">
-            <section class="padding-top-100 padding-bottom-100">
+            <section class="padding-top-100 padding-bottom-100">f
                 <div class="container">
                     <div class="row">
                         <div class="page-main col-md-8">
@@ -38,9 +38,9 @@
                                                             <p></p>
                                                         </div>
                                                     </div>
-                                                    <h3 class="blog-title"><a href="#" class="swin-transition">How To Cook The Spicy Chinese Noodle For Cold Weather</a></h3>
+                                                    <h3 class="blog-title"><a href="{{route('blog_single')}}" class="swin-transition">How To Cook The Spicy Chinese Noodle For Cold Weather</a></h3>
                                                     <p class="blog-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Utom enimtu ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.</p>
-                                                    <div class="blog-readmore"><a href="#" class="swin-transition">Read More <i class="fa fa-angle-double-right"></i></a></div>
+                                                    <div class="blog-readmore"><a href="{{route('blog_single')}}" class="swin-transition">Read More <i class="fa fa-angle-double-right"></i></a></div>
                                                 </div>
                                             </div>
                                         </div>

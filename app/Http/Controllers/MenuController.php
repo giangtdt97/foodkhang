@@ -10,4 +10,8 @@ class MenuController extends Controller
     {
         return view('menu');
     }
+    public function show()
+    {
+       return view('menu_detail');
+    }
 }
