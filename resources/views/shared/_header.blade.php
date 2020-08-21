@@ -39,7 +39,7 @@
                         </li>
                         <li class="nav-item {{ (request()->is('about')) ? 'active' : '' }}" ><a href="{{route('about')}}">About</a></li>
                         <li class="nav-item {{ (request()->is('reservation')) ? 'active' : '' }}" ><a href="{{route('reservation')}}">Reservation</a></li>
-                        <li ><a href="menu-grid-2.html">Menu</a>
+                        <li class="nav-item {{ (request()->is('menu')) ? 'active' : '' }}"><a href="{{route('menu')}}">Menu</a>
                         </li>
                         <li class="nav-item {{ (request()->is('blog')) ? 'active' : '' }}"><a href="{{route('blog')}}">Blog</a>
                         <li class="nav-item {{ (request()->is('contact')) ? 'active' : '' }}"><a href="{{route('contact')}}">Contact</a></li>

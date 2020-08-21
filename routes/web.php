@@ -22,6 +22,7 @@ Route::get('about','AboutController@index')->name('about');
 Route::get('reservation','ReservationController@index')->name('reservation');
 Route::get('contact','ContactController@index')->name('contact');
 Route::get('blog','BlogController@index')->name('blog');
+Route::get('menu','MenuController@index')->name('menu');
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });
