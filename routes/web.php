@@ -22,8 +22,7 @@ Route::get('about','AboutController@index')->name('about');
 Route::get('reservation','ReservationController@index')->name('reservation');
 Route::get('contact','ContactController@index')->name('contact');
 Route::get('blog','BlogController@index')->name('blog');
-Route::get('blog/{slug}','BlogController@show', function ($slug){
-    return 'Blog '.$slug;} )->name('blog.detail');
+Route::get('blog/{slug}','BlogController@show')->name('blog.detail');
 Route::get('menu','MenuController@index')->name('menu');
 Route::get('menu_detail','MenuController@show')->name('menu.detail');
 Route::group(['prefix' => 'admin'], function () {

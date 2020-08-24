@@ -41,7 +41,7 @@
                                                     </div>
                                                     <h3 class="blog-title"><a href="{{route('blog.detail',$blog->slug)}}" class="swin-transition">{{$blog->title}}</a></h3>
                                                     <p class="blog-description">{{$blog->excerpt}}</p>
-                                                    <div class="blog-readmore"><a href="{{route('blog.detail',$blog->id)}}" class="swin-transition">Read More <i class="fa fa-angle-double-right"></i></a></div>
+                                                    <div class="blog-readmore"><a href="{{route('blog.detail',$blog->slug)}}" class="swin-transition">Read More <i class="fa fa-angle-double-right"></i></a></div>
                                                 </div>
                                             </div>
                                         </div>

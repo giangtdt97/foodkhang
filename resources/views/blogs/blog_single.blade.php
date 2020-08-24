@@ -39,10 +39,10 @@
                                                                 <p></p>
                                                             </div>
                                                         </div>
-                                                        <h3 class="blog-title"><a href="#" class="swin-transition">{{$blog->excerpt}}</a></h3>
+                                                        <h3 class="blog-title"><a href="#" class="swin-transition">{{$blog->title}}</a></h3>
                                                     </div>
                                                     <div class="blog-content-inner">
-                                                        <p></p>
+                                                        <p>{{$blog->excerpt}}</p>
                                                         <blockquote>
                                                             <p>The role of a good cook ware in the preparation of a sumptuous meal cannot be overempha.</p>
                                                             <footer>KELLY DOE
