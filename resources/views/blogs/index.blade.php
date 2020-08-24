@@ -17,7 +17,7 @@
                     <div class="row">
                         <div class="page-main col-md-8">
                             <div class="blog-wrapper swin-sc-blog-list">
-                                @foreach($blogs as $blog)
+                                @foreach($blogs ?? '' as $blog)
                                 <div class="swin-sc-blog-slider style-02">
                                     <div class="main-slider">
                                         <div class="slides">

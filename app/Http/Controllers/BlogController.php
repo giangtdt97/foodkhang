@@ -13,12 +13,8 @@ class BlogController extends Controller
         return view('blogs.index',
               ['blogs'=>$blogs]);
     }
-    public function show($blog)
+    public function show(Blog $id)
     {
-        $blogs = Blog::find($blog);
-        return view(
-            'blogs.blog_single',
-            ['blog' => $blogs]
-        );
+        return view('blogs.blog_single')->with (['blog' => Blog::find($id)]);
     }
 }
