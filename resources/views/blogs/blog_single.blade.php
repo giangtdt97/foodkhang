@@ -21,7 +21,7 @@
                                     <div class="main-slider">
                                         <div class="slides">
                                             <div class="blog-item">
-                                                <div class="blog-featured-img"><img src="assets/images/blog/blog-05.jpg" alt="fooday" class="img img-responsive"></div>
+                                                <div class="blog-featured-img"><img src="{{asset('images/blog/blog-05.jpg')}}" alt="fooday" class="img img-responsive"></div>
                                                 <div class="blog-content">
                                                     <div class="blog-meta-info">
                                                         <div class="blog-date"><span class="day">12</span><span class="month">Jun</span></div>
@@ -42,11 +42,11 @@
                                                         <h3 class="blog-title"><a href="#" class="swin-transition">How To Cook The Spicy Chinese Noodle</a></h3>
                                                     </div>
                                                     <div class="blog-content-inner">
-                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi utm aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse utinti cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpato qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit.</p>
-                                                        <p>Threm ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labo et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi utoi aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.</p>
+                                                        <p></p>
+
                                                         <blockquote>
                                                             <p>The role of a good cook ware in the preparation of a sumptuous meal cannot be overempha.</p>
-                                                            <footer>Kelly Doe
+                                                            <footer>
                                                                 <cite title="Source Title">/ Food Blogger</cite>
                                                             </footer>
                                                         </blockquote>
@@ -54,13 +54,13 @@
                                                         <p>Laboris nisi utm aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptat velit esse utinti cillum dolore eu fugiat nulla pariatur.</p>
                                                         <div class="row">
                                                             <div class="col-sm-4 col-xs-12">
-                                                                <p><img src="assets/images/blog/blog-single-01.jpg" alt="fooday" class="img img-responsive center-block"></p>
+                                                                <p><img src="{{asset('images/blog/blog-single-01.jpg')}}" alt="fooday" class="img img-responsive center-block"></p>
                                                             </div>
                                                             <div class="col-sm-4 col-xs-12">
-                                                                <p><img src="assets/images/blog/blog-single-02.jpg" alt="fooday" class="img img-responsive center-block"></p>
+                                                                <p><img src="{{asset('images/blog/blog-single-02.jpg')}}" alt="fooday" class="img img-responsive center-block"></p>
                                                             </div>
                                                             <div class="col-sm-4 col-xs-12">
-                                                                <p><img src="assets/images/blog/blog-single-03.jpg" alt="fooday" class="img img-responsive center-block"></p>
+                                                                <p><img src="{{asset('images/blog/blog-single-03.jpg')}}" alt="fooday" class="img img-responsive center-block"></p>
                                                             </div>
                                                         </div>
                                                         <p>Picasio ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi utm aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse utin.</p>
@@ -74,7 +74,7 @@
                                                                 <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
                                                             </ul>
                                                         </div>
-                                                        <div class="blog-tags"><strong>Tags:</strong><a href="#">Fooday Menu</a>, <a href="#">Delicious Meal</a></div>
+
                                                     </div>
                                                 </div>
                                             </div>
@@ -87,7 +87,7 @@
                                 </div>
                                 <div class="blog-author-area">
                                     <div class="media">
-                                        <div class="author-image media-left"><a href="#"><img src="assets/images/blog/blog-author.jpg" alt="fooday" class="media-object"></a></div>
+                                        <div class="author-image media-left"><a href="#"><img src="{{asset('images/blog/blog-author.jpg')}}" alt="fooday" class="media-object"></a></div>
                                         <div class="media-body">
                                             <p class="author-name media-heading">KELLY DOE</p>
                                             <p>Picasio ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mini.</p>
@@ -107,7 +107,7 @@
                                     <div class="comment-area">
                                         <div class="comment-list media-list list-unstyledl">
                                             <div class="comment-item media">
-                                                <div class="author-comment-image media-left"><a href="#"><img src="assets/images/blog/blog-comment-avatar01.jpg" alt="fooday" class="media-object"></a></div>
+                                                <div class="author-comment-image media-left"><a href="#"><img src="{{asset('images/blog/blog-comment-avatar01.jpg')}}" alt="fooday" class="media-object"></a></div>
                                                 <div class="media-body">
                                                     <p class="author-comment-name media-heading">Andy Doe</p>
                                                     <p>Picasio ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mini.</p>
@@ -116,7 +116,7 @@
                                                         <li class="comment-reply"><a href="#"><i class="fa fa-mail-reply"></i>Reply</a></li>
                                                     </ul>
                                                     <div class="comment-item media">
-                                                        <div class="author-comment-image media-left"><a href="#"><img src="assets/images/blog/blog-comment-avatar02.jpg" alt="fooday" class="media-object"></a></div>
+                                                        <div class="author-comment-image media-left"><a href="#"><img src="{{asset('images/blog/blog-comment-avatar02.jpg')}}" alt="fooday" class="media-object"></a></div>
                                                         <div class="media-body">
                                                             <p class="author-comment-name media-heading">Mary Louis</p>
                                                             <p>Picasio ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mini.</p>
@@ -129,7 +129,7 @@
                                                 </div>
                                             </div>
                                             <div class="comment-item media">
-                                                <div class="author-comment-image media-left"><a href="#"><img src="assets/images/blog/blog-comment-avatar03.jpg" alt="fooday" class="media-object"></a></div>
+                                                <div class="author-comment-image media-left"><a href="#"><img src="{{asset('images/blog/blog-comment-avatar03.jpg')}}" alt="fooday" class="media-object"></a></div>
                                                 <div class="media-body">
                                                     <p class="author-comment-name media-heading">Kelvin Tang</p>
                                                     <p>Picasio ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mini.</p>
@@ -169,5 +169,10 @@
                                 </div>
                             </div>
                         </div>
-    @include('shared._blog_sidebar')
+                        @include('shared._blog_sidebar')
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 @endsection

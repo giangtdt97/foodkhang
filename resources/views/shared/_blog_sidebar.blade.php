@@ -49,7 +49,7 @@
         </div>
     </div>
     <!-- tag-->
-    <div class="swin-widget widget-tag">
+    <!--<div class="swin-widget widget-tag">
         <div class="title-widget">TAG</div>
         <div class="widget-body widget-content clearfix">
             <ul class="list-unstyled list-inline">
@@ -63,7 +63,7 @@
                 <li><a href="http://localhost/floury/tag/wordpress-tv/" class="tag">nutrition</a></li>
             </ul>
         </div>
-    </div>
+    </div>-->
     <!-- gallery-->
     <div class="swin-widget widget-gallery carousel">
         <div class="title-widget">Gallery</div>
@@ -78,6 +78,3 @@
         </div>
     </div>
 </div>
-</div>
-</div>
-</section>
