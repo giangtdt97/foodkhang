@@ -15,6 +15,6 @@ class BlogController extends Controller
     }
     public function show(Blog $id)
     {
-        return view('blogs.blog_single')->with (['blog' => Blog::find($id)]);
+        return view('blogs.blog_single')->with (['blog'=>$id]);
     }
 }
