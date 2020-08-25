@@ -1152,17 +1152,17 @@ header.header-fixed {
       transition: all 0.4s ease; }
       .product-single .product-summary .product-meta-info .meta-info-text a:hover {
         text-decoration: underline; }
-  .product-single .product-summary .product-quanlity {
+  .product-single .product-summary .product-quantity {
     margin-bottom: 45px; }
-    .product-single .product-summary .product-quanlity .input-group {
+    .product-single .product-summary .product-quantity .input-group {
       width: 165px;
       margin-right: 55px;
       position: relative;
       float: left; }
-      .product-single .product-summary .product-quanlity .input-group .form-control {
+      .product-single .product-summary .product-quantity .input-group .form-control {
         height: 45px;
         text-align: center; }
-      .product-single .product-summary .product-quanlity .input-group .quanlity-plus, .product-single .product-summary .product-quanlity .input-group .quanlity-minus {
+      .product-single .product-summary .product-quantity .input-group .quantity-plus, .product-single .product-summary .product-quantity .input-group .quantity-minus {
         position: absolute;
         line-height: 16px;
         right: -30px;
@@ -1170,12 +1170,12 @@ header.header-fixed {
         height: 18px;
         background-color: #ededed;
         text-align: center; }
-        .product-single .product-summary .product-quanlity .input-group .quanlity-plus i, .product-single .product-summary .product-quanlity .input-group .quanlity-minus i {
+        .product-single .product-summary .product-quantity .input-group .quantity-plus i, .product-single .product-summary .product-quantity .input-group .quantity-minus i {
           color: #616f7d;
           font-size: 9px; }
-      .product-single .product-summary .product-quanlity .input-group .quanlity-plus {
+      .product-single .product-summary .product-quantity .input-group .quantity-plus {
         top: 0; }
-      .product-single .product-summary .product-quanlity .input-group .quanlity-minus {
+      .product-single .product-summary .product-quantity .input-group .quantity-minus {
         bottom: 0; }
   .product-single .product-summary .product-share {
     border-top: 1px solid #e6e6e6;

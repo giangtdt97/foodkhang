@@ -212,40 +212,6 @@
         </div>
     </div>
 </div>
-<div id="live-setting" class="hidden-sm hidden-xs"><a id="open-popup"><i class="fa fa-paint-brush"></i></a>
-    <form id="popup">
-        <h5 class="live-title">Site Color</h5>
-        <div class="popup-inner">
-            <div class="box-setting">
-                <div class="pattern-color">
-                    <p>Pattern Color Variable:</p>
-                    <p class="text-small">( You can change any color as you want in source code. )</p>
-                    <div class="color-setting">
-                        <ul class="list-unstyled">
-                            <li class="colordefault"><span>Default</span><a></a></li>
-                            <li class="color01"><span>Pizza + Bread</span><a></a></li>
-                            <li class="color02"><span>Wine</span><a></a></li>
-                            <li class="color03"><span>Coffee</span><a></a></li>
-                            <li class="color04"><span>Vegetable</span><a></a></li>
-                            <li class="color05"><span>Cream</span><a></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <h5 class="live-title">Layout Options</h5>
-        <div class="popup-inner">
-            <div class="layout-setting"><a class="wide"> <span>Wide</span></a><a class="boxed"> <span>Boxed</span></a></div>
-        </div>
-        <div class="boxed-setting">
-            <h5 class="live-title">Boxed layout images</h5>
-            <div class="popup-inner">
-                <div class="layout-boxed-bg"><a data-img="assets/images/layout-option/bg-01.jpg" class="bx-layout-img"><img src="{{asset('images/layout-option/bg-01.jpg')}}" class="img img-responsive"></a><a data-img="{{asset('images/layout-option/bg-02.jpg')}}" class="bx-layout-img"><img src="{{asset('images/layout-option/bg-02.jpg')}}" class="img img-responsive"></a><a data-img="assets/images/layout-option/bg-03.jpg" class="bx-layout-img"><img src="{{asset('images/layout-option/bg-03.jpg')}}" class="img img-responsive"></a></div>
-            </div>
-        </div>
-    </form>
-</div>
-
 <!-- jQuery-->
 <script src="{{asset('vendors/jquery-1.10.2.min.js')}}"></script>
 <!-- Bootstrap JavaScript-->

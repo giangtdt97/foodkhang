@@ -13,8 +13,13 @@ class BlogController extends Controller
         return view('blogs.index',
               ['blogs'=>$blogs]);
     }
-    public function show(Blog $id)
+    public function show($slug)
     {
-        return view('blogs.blog_single')->with (['blog'=>$id]);
+        $blog = Blog::where('slug', $slug)->first();
+       // dd($blog);
+        return view(
+            'blogs.blog_single',
+            ['blog' => $blog]
+        );
     }
 }

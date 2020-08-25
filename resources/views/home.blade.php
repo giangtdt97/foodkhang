@@ -9,8 +9,8 @@
                         <div class="slide-content slide-layout-02">
                             <div class="container">
                                 <div class="slide-content-inner"><img src="{{asset('images/slider/slider2-icon.png')}}" data-ani-in="fadeInUp" data-ani-out="fadeOutDown" data-ani-delay="500" alt="fooday" class="slide-icon img img-responsive animated">
-                                    <h3 data-ani-in="fadeInUp" data-ani-out="fadeOutDown" data-ani-delay="1000" class="slide-title animated">FOODAY RESTAURANT</h3>
-                                    <p data-ani-in="fadeInUp" data-ani-out="fadeOutDown" data-ani-delay="1500" class="slide-sub-title animated"><span class="line-before"></span><span class="line-after"></span><span class="text"><span>Tasty</span><span>Delicious</span><span>Savoury</span></span></p>
+                                    <h3 data-ani-in="fadeInUp" data-ani-out="fadeOutDown" data-ani-delay="1000" class="slide-title animated">XÔI KHANG</h3>
+                                    <p data-ani-in="fadeInUp" data-ani-out="fadeOutDown" data-ani-delay="1500" class="slide-sub-title animated"><span class="line-before"></span><span class="line-after"></span><span class="text"><span>NGON TRUYỀN THỐNG - GIỮ TINH HOA </span></span></p>
                                 </div>
                             </div>
                         </div>
@@ -24,11 +24,11 @@
                             <div class="col-md-6 colsm-12"><img src="{{asset('images/pages/home1-about.jpg')}}" alt="" class="img img-responsive wow zoomIn"></div>
                             <div class="col-md-6 col-sm-12">
                                 <div class="swin-sc swin-sc-title style-4 margin-bottom-20 margin-top-50">
-                                    <p class="top-title"><span>Discover</span></p>
-                                    <h3 class="title">Our Story</h3>
+                                    <p class="top-title"><span>Giới Thiệu</span></p>
+                                    <h3 class="title">Sứ Mệnh</h3>
                                 </div>
-                                <p class="des font-bold text-center">WE HAVE THE GLORY BEGINING IN RESTAURANT BUSINESS</p>
-                                <p class="des margin-bottom-20 text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis ullam laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                <p class="des font-bold text-center">Niềm Đam Mê Bắt Đầu Từ Tinh Hoa Ẩm Thực Việt</p>
+                                <p class="des margin-bottom-20 text-center">Phần Giới Thiệu Chung.</p>
                                 <div class="swin-btn-wrap center"><a href="#" class="swin-btn center form-submit btn-transparent"> <span>	About Us</span></a></div>
                             </div>
                         </div>

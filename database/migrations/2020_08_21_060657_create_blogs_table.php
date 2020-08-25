@@ -19,12 +19,12 @@ class CreateBlogsTable extends Migration
             $table->string('title');
             $table->string('seo_title');
             $table->text('excerpt');
-            $table->text('body');
+            $table->longText('body');
             $table->string('image');
             $table->string('slug');
             $table->text('meta_description');
             $table->text('mete_keyword');
-            $table->boolean('status');
+            $table->enum('status',['PUBLISHED','PENDING','DRAFT']);
             $table->tinyInteger('featured');
             $table->timestamps();
         });

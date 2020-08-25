@@ -5,10 +5,10 @@
             <div class="topbar-left">
                 <div class="topbar-content">
                     <div class="item">
-                        <div class="wg-contact"><i class="fa fa-map-marker"></i><span>157 White Oak Drive Kansas City</span></div>
+                        <div class="wg-contact"><i class="fa fa-map-marker"></i><span>86A Đường 30/4 ,phường Phú Hoà,Thủ Dầu Một,Bình DƯƠng </span></div>
                     </div>
                     <div class="item">
-                        <div class="wg-contact"><i class="fa fa-phone"></i><span>012 987 650</span></div>
+                        <div class="wg-contact"><i class="fa fa-phone"></i><span>093 615 6349</span></div>
                     </div>
                 </div>
             </div>
