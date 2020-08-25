@@ -68,14 +68,7 @@
                                         <div class="meta-info-text"><a href="javascript:void(0)">Shrimp</a>,<a href="javascript:void(0)">Vegetables</a></div>
                                     </div>
                                 </div>
-                                <div class="product-quantity">
-                                    <form action="#">
-                                        <div class="input-group">
-                                            <input type="text" name="quantity" placeholder="" value="1" class="form-control"><a href="javascript:void(0)" class="quantity-plus"><i class="fa fa-plus"></i></a><a href="javascript:void(0)" class="quantity-minus"><i class="fa fa-minus"></i></a>
-                                        </div>
-                                        <div class="add-to-cart"><a href="javascript:void(0)" class="swin-btn"> <span>Add To Cart</span></a></div>
-                                    </form>
-                                </div>
+
                                 <div class="product-share"><span class="caption">Share</span>
                                     <ul class="socials list-unstyled list-inline">
                                         <li><a href="javascript:void(0)"><i class="fa fa-facebook"></i></a></li>
