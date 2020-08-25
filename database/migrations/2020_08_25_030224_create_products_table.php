@@ -19,7 +19,7 @@ class CreateProductsTable extends Migration
             $table->integer('price');
             $table->text('short_description');
             $table->text('description');
-            $table->string('image');
+            $table->string('image')->nullable();
             $table->string('slug');
             $table->enum('status',['Hết Món','Còn Món']);
             $table->timestamps();

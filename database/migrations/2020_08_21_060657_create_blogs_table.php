@@ -17,13 +17,13 @@ class CreateBlogsTable extends Migration
             $table->increments('id');
             $table->Integer('author_id');
             $table->string('title');
-            $table->string('seo_title');
+            $table->string('seo_title')->nullable();
             $table->text('excerpt');
             $table->longText('body');
-            $table->string('image');
+            $table->string('image')->nullable();
             $table->string('slug');
-            $table->text('meta_description');
-            $table->text('mete_keyword');
+            $table->text('meta_description')->nullable();
+            $table->text('mete_keyword')->nullable();
             $table->enum('status',['PUBLISHED','PENDING','DRAFT']);
             $table->tinyInteger('featured');
             $table->timestamps();
