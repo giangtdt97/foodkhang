@@ -22,7 +22,7 @@
                                     <div class="main-slider">
                                         <div class="slides">
                                             <div class="blog-item swin-transition">
-                                                <div class="blog-featured-img"><img src="{{asset('images/blog/blog-slider-1.jpg')}}" alt="fooday" class="img img-responsive"></div>
+                                                <div class="blog-featured-img"><img src="{{Voyager::image( $blog->image )}}" alt="fooday" class="img img-responsive"></div>
                                                 <div class="blog-content">
                                                     <div class="blog-date"><span class="day">12</span><span class="month">Jun</span></div>
                                                     <div class="blog-info clearfix">

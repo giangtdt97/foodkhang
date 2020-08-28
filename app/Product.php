@@ -10,6 +10,10 @@ class Product extends Model
     {
         return $this->belongsToMany(Category::class);
     }
+    public function categoryid()
+    {
+        return $this->belongsToMany(Category::class);
+    }
     public function presentPrice()
     {
         return money_format('$%i', $this->price / 100);

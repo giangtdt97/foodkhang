@@ -15,8 +15,10 @@ class CreateCategoryProduct extends Migration
     {
         Schema::create('category_product', function (Blueprint $table) {
             $table->id();
-            $table->integer('product_id')->unsigned();
-            $table->integer('category_id')->unsigned();
+            $table->integer('product_id')->unsigned()->nullable();
+
+            $table->integer('category_id')->unsigned()->nullable();
+
             $table->timestamps();
         });
     }

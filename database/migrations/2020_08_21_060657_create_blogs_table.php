@@ -15,7 +15,7 @@ class CreateBlogsTable extends Migration
     {
         Schema::create('blogs', function (Blueprint $table) {
             $table->increments('id');
-            $table->Integer('author_id');
+            $table->Integer('author_id')->nullable();
             $table->string('title');
             $table->string('seo_title')->nullable();
             $table->text('excerpt');
@@ -24,8 +24,8 @@ class CreateBlogsTable extends Migration
             $table->string('slug');
             $table->text('meta_description')->nullable();
             $table->text('mete_keyword')->nullable();
-            $table->enum('status',['PUBLISHED','PENDING','DRAFT']);
-            $table->tinyInteger('featured');
+            $table->enum('status',['PUBLISHED','PENDING','DRAFT'])->default('PUBLISHED');
+            $table->boolean('featured')->default(false);
             $table->timestamps();
         });
     }
