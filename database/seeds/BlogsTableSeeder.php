@@ -11,18 +11,16 @@ class BlogsTableSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('blogs')->insert([
-            'author_id'=>'1',
-            'title'=>'How To Cook The Spicy Chinese Noodle For Cold Weather',
-            'seo_title'=>'How To Cook The Spicy Chinese Noodle For Cold Weather',
-            'excerpt'=>'How To Cook The Spicy Chinese Noodle For Cold Weather',
-            'body'=>'How To Cook The Spicy Chinese Noodle For Cold Weather',
-            'image'=>'How To Cook The Spicy Chinese Noodle For Cold Weather',
-            'slug'=>'How To Cook The Spicy Chinese Noodle For Cold Weather',
-            'meta_description'=>'How To Cook The Spicy Chinese Noodle For Cold Weather',
-            'mete_keyword'=>'How To Cook The Spicy Chinese Noodle For Cold Weather',
-            'status'=>'1',
-            'featured'=>'1'
-        ]);
+        $faker = Faker\Factory::create();
+        for ($i = 0; $i < 5; $i++) {
+            DB::table('blogs')->insert([
+                'title' => $faker->title(),
+                'excerpt' => $faker->text(),
+                'body' => $faker->text(),
+                'image' => $faker->image(),
+                'slug' => $faker->text(),
+                'featured' => $faker->boolean(),
+            ]);
+        }
     }
 }

@@ -3,6 +3,7 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use TCG\Voyager\Traits\Resizable;
 
 class Product extends Model
 {
@@ -32,4 +33,5 @@ class Product extends Model
 
         return array_merge($array, $extraFields);
     }
+    use Resizable;
 }

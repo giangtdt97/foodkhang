@@ -137,7 +137,7 @@
                         <div class="panel-body">
                             @php
                                 $dataTypeRows = $dataType->{($edit ? 'editRows' : 'addRows' )};
-                                $exclude = ['title', 'body', 'excerpt', 'slug', 'status','author_id', 'featured', 'image', 'meta_description', 'mete_keywords', 'seo_title'];
+                                $exclude = ['title', 'body', 'excerpt', 'slug', 'status','author_id', 'featured', 'image', 'meta_description', 'meta_keywords', 'seo_title'];
                             @endphp
 
                             @foreach($dataTypeRows as $row)
@@ -225,7 +225,7 @@
                                 <textarea class="form-control" name="meta_description">{{ $dataTypeContent->meta_description ?? '' }}</textarea>
                             </div>
                             <div class="form-group">
-                                <label for="meta_keywords">Mete Keyword</label>
+                                <label for="meta_keywords">Meta Keyword</label>
                                 <textarea class="form-control" name="meta_keywords">{{ $dataTypeContent->meta_keywords ?? '' }}</textarea>
                             </div>
                             <div class="form-group">

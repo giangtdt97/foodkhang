@@ -48,10 +48,12 @@
                                     </div>
                                 </div>
                                 @endforeach
+                                    {{ $blogs->links()}}
                             </div>
                         </div>
                        @include('shared._blog_sidebar')
                     </div>
+
                 </div>
             </section>
         </div>

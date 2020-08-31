@@ -21,7 +21,7 @@
                                     <div class="main-slider">
                                         <div class="slides">
                                             <div class="blog-item">
-                                                <div class="blog-featured-img"><img src="{{asset('images/blog/blog-05.jpg')}}" alt="fooday" class="img img-responsive"></div>
+                                                <div class="blog-featured-img"><img src="{{Voyager::image( $blog->image )}}" alt="fooday" class="img img-responsive"></div>
                                                 <div class="blog-content">
                                                     <div class="blog-meta-info">
                                                         <div class="blog-date"><span class="day">12</span><span class="month">Jun</span></div>
@@ -49,20 +49,7 @@
                                                                 <cite title="Source Title">/ Food Blogger</cite>
                                                             </footer>
                                                         </blockquote>
-                                                        <p>Rorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi utm aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse utinti cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
-                                                        <p>Laboris nisi utm aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptat velit esse utinti cillum dolore eu fugiat nulla pariatur.</p>
-                                                        <div class="row">
-                                                            <div class="col-sm-4 col-xs-12">
-                                                                <p><img src="{{asset('images/blog/blog-single-01.jpg')}}" alt="fooday" class="img img-responsive center-block"></p>
-                                                            </div>
-                                                            <div class="col-sm-4 col-xs-12">
-                                                                <p><img src="{{asset('images/blog/blog-single-02.jpg')}}" alt="fooday" class="img img-responsive center-block"></p>
-                                                            </div>
-                                                            <div class="col-sm-4 col-xs-12">
-                                                                <p><img src="{{asset('images/blog/blog-single-03.jpg')}}" alt="fooday" class="img img-responsive center-block"></p>
-                                                            </div>
-                                                        </div>
-                                                        <p>Picasio ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi utm aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse utin.</p>
+                                                    {!! $blog->body !!}
                                                     </div>
                                                     <div class="blog-footer clearfix">
                                                         <div class="blog-share">

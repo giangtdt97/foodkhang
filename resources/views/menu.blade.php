@@ -40,6 +40,7 @@
 
                                         <div class="row">
                                             @foreach($products as $product)
+
                                             <div class="col-md-2 col-sm-4 col-xs-12">
                                                 <div class="item product-01">
                                                     <div class="block-img"><img src="{{asset('images/product/product-01.jpg')}}" alt="">

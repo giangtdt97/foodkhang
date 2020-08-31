@@ -18,24 +18,25 @@
                         <div class="col-md-6">
                             <div class="product-image">
                                 <div class="product-featured-image">
+
                                     <div class="main-slider">
                                         <div class="slides">
-                                            <div class="featured-image-item"><img src="{{asset('images/product/product-full-02.jpg')}}" alt="fooday" class="img img-responsive"></div>
-                                            <div class="featured-image-item"><img src="{{asset('images/product/product-full-03.jpg')}}" alt="fooday" class="img img-responsive"></div>
-                                            <div class="featured-image-item"><img src="{{asset('images/product/product-full-04.jpg')}}" alt="fooday" class="img img-responsive"></div>
-                                            <div class="featured-image-item"><img src="{{asset('images/product/product-full-03.jpg')}}" alt="fooday" class="img img-responsive"></div>
-                                            <div class="featured-image-item"><img src="{{asset('images/product/product-full-02.jpg')}}" alt="fooday" class="img img-responsive"></div>
+                                            @php $images = json_decode($product->images);@endphp
+                                            @foreach($images as $multimage)
+                                            <div class="featured-image-item"><img src="{{ Voyager::image($product->getThumbnail($multimage, 'small')) }}" alt="fooday" class="img img-responsive"></div>
+                                            @endforeach
                                         </div>
                                     </div>
-                                    <div data-width="150" class="nav-slider">
-                                        <ul class="slides list-inline">
-                                            <li class="swin-transition thumbnail-image-item"><a href="javascript:void(0)" class="testimonial-nav-item"><img src="{{asset('images/product/product-full-02.jpg')}}" alt="fooday" class="img img-responsive swin-transition"></a></li>
-                                            <li class="swin-transition thumbnail-image-item"><a href="javascript:void(0)" class="testimonial-nav-item"><img src="{{asset('images/product/product-full-03.jpg')}}" alt="fooday" class="img img-responsive swin-transition"></a></li>
-                                            <li class="swin-transition thumbnail-image-item"><a href="javascript:void(0)" class="testimonial-nav-item"><img src="{{asset('images/product/product-full-04.jpg')}}" alt="fooday" class="img img-responsive swin-transition"></a></li>
-                                            <li class="swin-transition thumbnail-image-item"><a href="javascript:void(0)" class="testimonial-nav-item"><img src="{{asset('images/product/product-full-03.jpg')}}" alt="fooday" class="img img-responsive swin-transition"></a></li>
-                                            <li class="swin-transition thumbnail-image-item"><a href="javascript:void(0)" class="testimonial-nav-item"><img src="{{asset('images/product/product-full-02.jpg')}}" alt="fooday" class="img img-responsive swin-transition"></a></li>
 
+                                    <div data-width="150" class="nav-slider">
+
+                                        <ul class="slides list-inline">
+                                            @php $images = json_decode($product->images);@endphp
+                                            @foreach($images as $multimage)
+                                            <li class="swin-transition thumbnail-image-item"><a href="javascript:void(0)" class="testimonial-nav-item"><img src="{{ Voyager::image($product->getThumbnail($multimage, 'small')) }}" alt="fooday" class="img img-responsive swin-transition"></a></li>
+                                            @endforeach
                                         </ul>
+
                                     </div>
                                 </div>
                             </div>
@@ -90,8 +91,7 @@
                                 <!-- Tab panes-->
                                 <div class="tab-content">
                                     <div id="product-desc-tab" role="tabpanel" class="tab-pane active">
-                                        <p>Turnip greens yarrow ricebean rutabaga endive cauliflower sea lettuce kohlrabi amaranth water spinach avocado daikon napa cabbage asparagus winter purslane kale. Celery potato scallion desert raisin horseradish spinach carrot soko. Lotus root water spinach fennel kombu maize bamboo shoot green bean swiss chard seakale pumpkin onion chickpea gram corn pea. Brussels sprout coriander water chestnut gourd swiss chard wakame kohlrabi beetroot. </p>
-                                        <p>Turnip greens yarrow ricebean rutabaga endive cauliflower sea lettuce kohlrabi amaranth water spinach avocado daikon napa cabbage asparagus winter purslane kale. Celery potato scallion desert raisin horseradish spinach carrot soko. Lotus root water spinach fennel kombu maize bamboo shoot green bean.</p>
+                                        {!! $product->description !!}
                                     </div>
                                 </div>
                             </div>

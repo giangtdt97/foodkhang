@@ -2,6 +2,7 @@
 
 namespace App;
 
+use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 
 class Blog extends Model
@@ -19,4 +20,11 @@ class Blog extends Model
         'status',
         'featured'
     ];
+
+    const PUBLISHED = 'PUBLISHED';
+
+    public function scopePublished(Builder $query)
+    {
+        return $query->where('status', '=', static::PUBLISHED);
+    }
 }

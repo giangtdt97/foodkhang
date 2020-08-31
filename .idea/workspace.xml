@@ -24,12 +24,7 @@
       <change afterPath="$PROJECT_DIR$/../PhpProject/.idea/vcs.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../TestBlade/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Product.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_08_21_060657_create_blogs_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_08_21_060657_create_blogs_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_08_25_030224_create_products_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_08_25_082543_create_category_product.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_08_25_082543_create_category_product.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/blogs/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/blogs/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/menu.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/menu.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2016_02_15_204651_create_categories_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2016_02_15_204651_create_categories_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../PhpProject/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../PhpProject/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../larastart" beforeDir="false" afterPath="$PROJECT_DIR$/../larastart" afterDir="false" />
     </list>
@@ -177,20 +172,20 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ecomerce_voyager" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\xampp\htdocs\FoodKhang\app" />
+      <recent name="D:\xampp\htdocs\FoodKhang\app\Model" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\xampp\htdocs\FoodKhang\resources\views\vendor\voyager\products" />
       <recent name="D:\xampp\htdocs\FoodKhang\resources\views\vendor\voyager\blogs" />
       <recent name="D:\xampp\htdocs\FoodKhang\resources\views\vendor\voyager" />
       <recent name="D:\xampp\htdocs\FoodKhang\public" />
       <recent name="D:\xampp\htdocs\FoodKhang" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\xampp\htdocs\FoodKhang\app" />
-      <recent name="D:\xampp\htdocs\FoodKhang\app\Model" />
     </key>
   </component>
   <component name="RunManager">
@@ -212,7 +207,9 @@
       <workItem from="1598241160968" duration="10677000" />
       <workItem from="1598321322853" duration="23985000" />
       <workItem from="1598494297472" duration="27569000" />
-      <workItem from="1598592095161" duration="1486000" />
+      <workItem from="1598592095161" duration="3155000" />
+      <workItem from="1598709983713" duration="4116000" />
+      <workItem from="1598840632359" duration="14886000" />
     </task>
     <servers />
   </component>
@@ -236,14 +233,14 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="574" y="101" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.864@0.0.1536.864" timestamp="1598328251069" />
-    <state x="499" y="187" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1598342707461">
+    <state x="499" y="187" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1598855283515">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="499" y="187" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.864@0.0.1536.864" timestamp="1598342707461" />
-    <state x="549" y="187" key="FileChooserDialogImpl" timestamp="1598505591818">
+    <state x="499" y="187" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.864@0.0.1536.864" timestamp="1598855283515" />
+    <state x="549" y="187" key="FileChooserDialogImpl" timestamp="1598855039258">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="549" y="187" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1598505591818" />
+    <state x="549" y="187" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1598855039258" />
     <state x="604" y="356" key="NewPhpFileDialog" timestamp="1598501562944">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -256,5 +253,16 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="0" y="0" width="579" height="888" key="find.popup/0.0.1536.864@0.0.1536.864" timestamp="1598517656712" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/resources/views/menu.blade.php</url>
+          <line>30</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

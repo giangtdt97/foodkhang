@@ -9,8 +9,8 @@ class BlogController extends Controller
 {
     public function index()
     {
-        $blogs = Blog::paginate(10);
-        return view('blogs.index',
+    $blogs = Blog::published()->paginate(5);
+    return view('blogs.index',
               ['blogs'=>$blogs]);
     }
     public function show($slug)

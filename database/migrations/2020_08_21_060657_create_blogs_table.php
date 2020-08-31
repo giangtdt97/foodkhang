@@ -23,7 +23,7 @@ class CreateBlogsTable extends Migration
             $table->string('image')->nullable();
             $table->string('slug');
             $table->text('meta_description')->nullable();
-            $table->text('mete_keyword')->nullable();
+            $table->text('meta_keyword')->nullable();
             $table->enum('status',['PUBLISHED','PENDING','DRAFT'])->default('PUBLISHED');
             $table->boolean('featured')->default(false);
             $table->timestamps();
