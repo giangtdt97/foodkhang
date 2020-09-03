@@ -17,20 +17,20 @@
                     <div class="swin-sc swin-sc-product products-01 style-03 woocommerce">
                        <div class="row">
                             <div class="col-md-12">
-                                <!--<div data-slide-toshow="3" class="cat-wrapper-02 cat-images main-slider">
+                                <div data-slide-toshow="4" class="cat-wrapper-02 cat-images main-slider">
                                     <div class="item">
-                                        <div class="cat-image"><img src="assets/images/product/pd-cat-breakfast.png" alt="" class="img img-responsive"></div>
+                                        <div class="cat-image"><img src="{{ asset ('images/product/pd-cat-breakfast.png')}}" alt="" class="img img-responsive"></div>
                                     </div>
                                     <div class="item">
-                                        <div class="cat-image"><img src="assets/images/product/pd-cat-lunch.png" alt="" class="img img-responsive"></div>
+                                        <div class="cat-image"><img src="{{asset('images/product/pd-cat-lunch.png')}}" alt="" class="img img-responsive"></div>
                                     </div>
                                     <div class="item">
-                                        <div class="cat-image"><img src="assets/images/product/pd-cat-dinner.png" alt="" class="img img-responsive"></div>
+                                        <div class="cat-image"><img src="{{asset('images/product/pd-cat-dinner.png')}}" alt="" class="img img-responsive"></div>
                                     </div>
                                     <div class="item">
-                                        <div class="cat-image"><img src="assets/images/product/pd-cat-dessert.png" alt="" class="img img-responsive"></div>
+                                        <div class="cat-image"><img src="{{asset('images/product/pd-cat-dessert.png')}}" alt="" class="img img-responsive"></div>
                                     </div>
-                                </div>-->
+                                </div>
                             </div>
                         </div>
                         <div class="row">
@@ -43,8 +43,8 @@
 
                                             <div class="col-md-2 col-sm-4 col-xs-12">
                                                 <div class="item product-01">
-                                                    <div class="block-img"><img src="{{asset('images/product/product-01.jpg')}}" alt="">
-                                                        <div class="group-btn"><a href="{{route('product.show',$product->slug)}}" class="swin-btn btn-link"><i class="icons fa fa-link"></i></a><a href="#" class="swin-btn btn-add-to-card"><i class="fa fa-shopping-basket"></i></a></div>
+                                                    <div class="block-img"><img src="{{Voyager::image( $product->image )}}" alt="" width="140" height="70">
+                                                        <div class="group-btn"><a href="{{route('product.show',$product->slug)}}" class="swin-btn btn-link"><i class="icons fa fa-link"></i></a></div>
                                                     </div>
                                                     <h5 class="title">{{$product->product_name}}</h5><span class="price woocommerce-Price-amount amount"><span class="price-symbol">$</span>{{$product->price}}</span>
                                                 </div>

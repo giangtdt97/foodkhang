@@ -171,7 +171,7 @@
                 <div class="col-md-4">
                     <div class="panel panel panel-bordered panel-warning">
                         <div class="panel-heading">
-                            <h3 class="panel-title"><i class="icon wb-clipboard"></i> {{ __('voyager::post.details') }}</h3>
+                            <h3 class="panel-title"><i class="icon wb-clipboard"></i>Blog Details</h3>
                             <div class="panel-actions">
                                 <a class="panel-action voyager-angle-down" data-toggle="panel-collapse" aria-hidden="true"></a>
                             </div>
@@ -236,7 +236,7 @@
                     </div>
                     <div class="panel-footer">
                         @section('submit-buttons')
-                            <button type="submit" class="btn btn-primary save">Update Blog</button>
+                            <button type="submit" class="btn btn-primary save">{{ __('voyager::generic.save') }}</button>
                         @stop
                         @yield('submit-buttons')
                     </div>
@@ -257,9 +257,6 @@
                     </form>
 
                 </div>
-
-            </div>
-            <div class="col-md-4">
 
             </div>
         </div>

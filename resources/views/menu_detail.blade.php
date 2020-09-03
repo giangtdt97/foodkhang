@@ -60,9 +60,13 @@
                                 <div class="product-meta-info">
                                     <div class="meta-info-item">
                                         <div class="meta-info-caption">Category:</div>
-                                        @foreach($product->categories as $category)
-                                        <div class="meta-info-text"><a href="javascript:void(0)">{{$category->name}}</a></div>
-                                        @endforeach
+
+                                        <div class="meta-info-text">
+                                            @foreach($product->categories as $category)
+                                                <a href="javascript:void(0)">{{$category->name}}</a>
+                                            @endforeach
+                                        </div>
+
                                     </div>
                                     <div class="meta-info-item">
                                         <div class="meta-info-caption">Tags:</div>
