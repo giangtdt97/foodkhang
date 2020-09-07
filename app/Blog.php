@@ -4,9 +4,14 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
+use TCG\Voyager\Traits\Resizable;
 
 class Blog extends Model
 {
+    public function tags()
+    {
+        return $this->belongsToMany(Tag::class);
+    }
     protected $fillable = [
         'author_id',
         'title',
@@ -27,4 +32,5 @@ class Blog extends Model
     {
         return $query->where('status', '=', static::PUBLISHED);
     }
+    use Resizable;
 }

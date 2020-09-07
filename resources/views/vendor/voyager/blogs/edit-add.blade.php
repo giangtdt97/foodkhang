@@ -178,7 +178,7 @@
                         </div>
                         <div class="panel-body">
                             <div class="form-group">
-                                <label for="slug">{{ __('voyager::post.slug') }}</label>
+                                <label for="slug">Slug</label>
                                 <input type="text" class="form-control" id="slug" name="slug"
                                        placeholder="slug"
                                        {!! isFieldSlugAutoGenerator($dataType, $dataTypeContent, "slug") !!}
@@ -193,7 +193,7 @@
                                 </select>
                             </div>
                             <div class="form-group">
-                                <label for="featured">{{ __('voyager::generic.featured') }}</label>
+                                <label for="featured">Featured}</label>
                                 <input type="checkbox" name="featured"@if(isset($dataTypeContent->featured) && $dataTypeContent->featured) checked="checked"@endif>
                             </div>
                         </div>
@@ -214,7 +214,7 @@
                     </div>
                     <div class="panel panel-bordered panel-info">
                         <div class="panel-heading">
-                            <h3 class="panel-title"><i class="icon wb-search"></i> {{ __('voyager::post.seo_content') }}</h3>
+                            <h3 class="panel-title"><i class="icon wb-search"></i>SEO Title</h3>
                             <div class="panel-actions">
                                 <a class="panel-action voyager-angle-down" data-toggle="panel-collapse" aria-hidden="true"></a>
                             </div>

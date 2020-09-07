@@ -36,15 +36,7 @@ tinymce.PluginManager.load('N1EDEco',  "https://cloud.n1ed.com/cdn/" + apiKey + 
 tinymce.PluginManager.add(
     "n1ed",
     function() {},
-    ["N1EDEco"], // We can not move N1EDEco in this file due to we need to dynamically
-                // embed configuration from your Dashboard into it.
-                // So N1EDEco add-on can be loaded only from CDN
-tinymce.init({
-    plugins: "n1ed",
-    apiKey: "APIKEY"
-}),
-function tinymce_init_callback(editor)
-{
-
-}
+    ["N1EDEco"] // We can not move N1EDEco in this file due to we need to dynamically
+    // embed configuration from your Dashboard into it.
+    // So N1EDEco add-on can be loaded only from CDN
 );

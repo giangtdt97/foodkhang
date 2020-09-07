@@ -18,7 +18,6 @@
                         <div class="col-md-6">
                             <div class="product-image">
                                 <div class="product-featured-image">
-
                                     <div class="main-slider">
                                         <div class="slides">
                                             @php $images = json_decode($product->images);@endphp
@@ -27,16 +26,13 @@
                                             @endforeach
                                         </div>
                                     </div>
-
                                     <div data-width="150" class="nav-slider">
-
                                         <ul class="slides list-inline">
                                             @php $images = json_decode($product->images);@endphp
                                             @foreach($images as $multimage)
                                             <li class="swin-transition thumbnail-image-item"><a href="javascript:void(0)" class="testimonial-nav-item"><img src="{{ Voyager::image($product->getThumbnail($multimage, 'small')) }}" alt="fooday" class="img img-responsive swin-transition"></a></li>
                                             @endforeach
                                         </ul>
-
                                     </div>
                                 </div>
                             </div>
@@ -60,20 +56,13 @@
                                 <div class="product-meta-info">
                                     <div class="meta-info-item">
                                         <div class="meta-info-caption">Category:</div>
-
                                         <div class="meta-info-text">
                                             @foreach($product->categories as $category)
                                                 <a href="javascript:void(0)">{{$category->name}}</a>
                                             @endforeach
                                         </div>
-
-                                    </div>
-                                    <div class="meta-info-item">
-                                        <div class="meta-info-caption">Tags:</div>
-                                        <div class="meta-info-text"><a href="javascript:void(0)">Shrimp</a>,<a href="javascript:void(0)">Vegetables</a></div>
                                     </div>
                                 </div>
-
                                 <div class="product-share"><span class="caption">Share</span>
                                     <ul class="socials list-unstyled list-inline">
                                         <li><a href="javascript:void(0)"><i class="fa fa-facebook"></i></a></li>
