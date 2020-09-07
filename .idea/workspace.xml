@@ -24,6 +24,10 @@
       <change afterPath="$PROJECT_DIR$/../PhpProject/.idea/vcs.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../TestBlade/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Category.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/menu.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/menu.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/vendor/voyager/products/edit-add.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/vendor/voyager/products/edit-add.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../PhpProject/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../PhpProject/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../larastart" beforeDir="false" afterPath="$PROJECT_DIR$/../larastart" afterDir="false" />
     </list>
@@ -171,20 +175,20 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ecomerce_voyager" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\xampp\htdocs\FoodKhang\app" />
-      <recent name="D:\xampp\htdocs\FoodKhang\app\Model" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\xampp\htdocs\FoodKhang" />
       <recent name="D:\xampp\htdocs\FoodKhang\public\js" />
       <recent name="D:\xampp\htdocs\FoodKhang\resources\views\vendor\voyager\resources\assets\js" />
       <recent name="D:\xampp\htdocs\FoodKhang\resources\js" />
       <recent name="D:\xampp\htdocs\FoodKhang\resources\views\vendor\voyager\products" />
-      <recent name="D:\xampp\htdocs\FoodKhang\resources\views\vendor\voyager\blogs" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\xampp\htdocs\FoodKhang\app" />
+      <recent name="D:\xampp\htdocs\FoodKhang\app\Model" />
     </key>
   </component>
   <component name="RunManager">
@@ -211,7 +215,23 @@
       <workItem from="1598840632359" duration="25173000" />
       <workItem from="1599104338921" duration="1302000" />
       <workItem from="1599111848277" duration="1071000" />
-      <workItem from="1599186175873" duration="127000" />
+      <workItem from="1599186147108" duration="1644000" />
+      <workItem from="1599187906904" duration="1779000" />
+      <workItem from="1599445014200" duration="1324000" />
+      <workItem from="1599446770108" duration="1800000" />
+      <workItem from="1599448584415" duration="1795000" />
+      <workItem from="1599450394175" duration="32000" />
+      <workItem from="1599450458839" duration="668000" />
+      <workItem from="1599451147869" duration="1794000" />
+      <workItem from="1599452957290" duration="1620000" />
+      <workItem from="1599454769569" duration="3274000" />
+      <workItem from="1599458062267" duration="1796000" />
+      <workItem from="1599459871086" duration="1795000" />
+      <workItem from="1599461680300" duration="1795000" />
+      <workItem from="1599463492534" duration="1840000" />
+      <workItem from="1599465346853" duration="1813000" />
+      <workItem from="1599467173386" duration="2073000" />
+      <workItem from="1599469281015" duration="1538000" />
     </task>
     <servers />
   </component>
@@ -235,18 +255,18 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="574" y="101" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.864@0.0.1536.864" timestamp="1598328251069" />
-    <state x="499" y="187" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1598855283515">
+    <state x="499" y="187" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1599451249642">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="499" y="187" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.864@0.0.1536.864" timestamp="1598855283515" />
-    <state x="549" y="187" key="FileChooserDialogImpl" timestamp="1599104369603">
+    <state x="499" y="187" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.864@0.0.1536.864" timestamp="1599451249642" />
+    <state x="549" y="187" key="FileChooserDialogImpl" timestamp="1599448118783">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="549" y="187" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1599104369603" />
-    <state x="604" y="356" key="NewPhpFileDialog" timestamp="1598501562944">
+    <state x="549" y="187" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1599448118783" />
+    <state x="604" y="356" key="NewPhpFileDialog" timestamp="1599465862773">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="604" y="356" key="NewPhpFileDialog/0.0.1536.864@0.0.1536.864" timestamp="1598501562944" />
+    <state x="604" y="356" key="NewPhpFileDialog/0.0.1536.864@0.0.1536.864" timestamp="1599465862773" />
     <state x="361" y="165" key="Vcs.Push.Dialog.v2" timestamp="1598321460019">
       <screen x="0" y="0" width="1536" height="864" />
     </state>

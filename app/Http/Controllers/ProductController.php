@@ -2,25 +2,26 @@
 
 namespace App\Http\Controllers;
 
+use App\Category;
 use App\Product;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class ProductController extends Controller
 {
     public function index()
     {
-        $product = Product::paginate(10);
-        return view('menu',
-            ['products'=>$product]);
+
+        $products=Product::all();
+        $categories=Category::all();
+        return view('menu')->with(compact('products','categories'));
     }
     public function show($slug)
     {
         $product = Product::where('slug', $slug)->first();
-        // dd($product);
         return view(
             'menu_detail',compact('product')
-
         );
-
     }
+
 }
