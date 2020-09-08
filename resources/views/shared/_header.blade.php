@@ -16,10 +16,9 @@
                 <div class="topbar-content">
                     <div class="item">
                         <ul class="socials-nb list-inline wg-social">
-                            <li><a href="javascript:void(0)"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="javascript:void(0)"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="javascript:void(0)"><i class="fa fa-pinterest"></i></a></li>
-                            <li><a href="javascript:void(0)"><i class="fa fa-google-plus"></i></a></li>
+                            <li><a href="https://www.facebook.com/Xoikhang.vn/"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-commenting-o"></i></a></li>
+                            <li><a href="{{route('contact')}}"><i class="fa fa-map-marker"></i></a></li>
                         </ul>
                     </div>
                 </div>

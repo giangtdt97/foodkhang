@@ -10,15 +10,16 @@ class Product extends Model
 {
     public function categories()
     {
-        return $this->belongsToMany(Category::class);
+        return $this->belongsToMany(Category::class,'category_product');
     }
-    public function categoryid()
+    public function services()
     {
-        return $this->belongsToMany(Category::class);
+        return $this->belongsToMany(Service::class,'product_service');
     }
+
     public function presentPrice()
     {
-        return money_format('$%i', $this->price / 100);
+        return numfmt_format_currency( '$%i', $this->price / 100);
     }
     public function scopeMightAlsoLike($query)
     {

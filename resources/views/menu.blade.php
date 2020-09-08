@@ -5,9 +5,9 @@
         <div data-bottom-top="background-position: 50% 50px;" data-center="background-position: 50% 0px;" data-top-bottom="background-position: 50% -50px;" class="page-title page-menu">
             <div class="container">
                 <div class="title-wrapper">
-                    <div data-top="transform: translateY(0px);opacity:1;" data--20-top="transform: translateY(-5px);" data--50-top="transform: translateY(-15px);opacity:0.8;" data--120-top="transform: translateY(-30px);opacity:0;" data-anchor-target=".page-title" class="title">Menu Grid 02</div>
+                    <div data-top="transform: translateY(0px);opacity:1;" data--20-top="transform: translateY(-5px);" data--50-top="transform: translateY(-15px);opacity:0.8;" data--120-top="transform: translateY(-30px);opacity:0;" data-anchor-target=".page-title" class="title">DỊCH VỤ TRỌN GÓI BÀN CÚNG TRUYỀN THỐNG</div>
                     <div data-top="opacity:1;" data--120-top="opacity:0;" data-anchor-target=".page-title" class="divider"><span class="line-before"></span><span class="dot"></span><span class="line-after"></span></div>
-                    <div data-top="transform: translateY(0px);opacity:1;" data--20-top="transform: translateY(5px);" data--50-top="transform: translateY(15px);opacity:0.8;" data--120-top="transform: translateY(30px);opacity:0;" data-anchor-target=".page-title" class="subtitle">The various dishes are waiting for your coming to enjoy its</div>
+                    <div data-top="transform: translateY(0px);opacity:1;" data--20-top="transform: translateY(5px);" data--50-top="transform: translateY(15px);opacity:0.8;" data--120-top="transform: translateY(30px);opacity:0;" data-anchor-target=".page-title" class="subtitle">Xôi Khang Mang Đến Niềm Vui Trọn Vẹn</div>
                 </div>
             </div>
         </div>
@@ -20,7 +20,7 @@
                                 <div data-slide-toshow="3" class="cat-wrapper-02 cat-images main-slider">
                                     @foreach($categories as $category)
                                     <div class="item">
-                                        <div class="cat-image"><a href="javascript:void(0)"><img src="{{ asset ('images/product/pd-cat-breakfast.png')}}" alt="" class="img img-responsive">{{$category->name}}</a></div>
+                                        <div class="cat-image"><a href="javascript:void(0)"><img src="{{Voyager::image( $category->image )}}" alt="" class="img img-responsive" width="140" height="70">{{$category->name}}</a></div>
                                     </div>
                                     @endforeach
                                 </div>
