@@ -24,14 +24,13 @@
       <change afterPath="$PROJECT_DIR$/../PhpProject/.idea/vcs.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../TestBlade/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Blog.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Blog.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Tag.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Tag.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/voyager.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/voyager.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_09_07_024205_create_tags_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_09_07_024205_create_tags_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/plugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/plugin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/menu_detail.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/menu_detail.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/shared/_blog_sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/shared/_blog_sidebar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Product.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/shared/_footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/shared/_footer.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/shared/_header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/shared/_header.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/vendor/voyager/blogs/edit-add.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/vendor/voyager/blogs/edit-add.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/vendor/voyager/products/browse.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/vendor/voyager/products/edit-add.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/vendor/voyager/products/edit-add.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../PhpProject/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../PhpProject/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../larastart" beforeDir="false" afterPath="$PROJECT_DIR$/../larastart" afterDir="false" />
     </list>
@@ -239,6 +238,12 @@
       <workItem from="1599471036101" duration="307000" />
       <workItem from="1599471950792" duration="3988000" />
       <workItem from="1599475968397" duration="150000" />
+      <workItem from="1599476148968" duration="756000" />
+      <workItem from="1599532805712" duration="1786000" />
+      <workItem from="1599534611911" duration="1242000" />
+      <workItem from="1599536473563" duration="1794000" />
+      <workItem from="1599538282276" duration="1794000" />
+      <workItem from="1599540091425" duration="432000" />
     </task>
     <servers />
   </component>
@@ -262,10 +267,10 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="574" y="101" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.864@0.0.1536.864" timestamp="1598328251069" />
-    <state x="499" y="187" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1599473329247">
+    <state x="499" y="187" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1599536225328">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="499" y="187" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.864@0.0.1536.864" timestamp="1599473329247" />
+    <state x="499" y="187" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.864@0.0.1536.864" timestamp="1599536225328" />
     <state x="549" y="187" key="FileChooserDialogImpl" timestamp="1599448118783">
       <screen x="0" y="0" width="1536" height="864" />
     </state>

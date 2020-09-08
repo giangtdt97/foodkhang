@@ -2,6 +2,7 @@
 
 namespace App;
 
+use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 use TCG\Voyager\Traits\Resizable;
 
@@ -32,6 +33,12 @@ class Product extends Model
         ];
 
         return array_merge($array, $extraFields);
+    }
+    const inStock = 'inStock';
+
+    public function scopeInStock(Builder $query)
+    {
+        return $query->where('status', '=', static::inStock);
     }
     use Resizable;
 }

@@ -137,7 +137,7 @@
                         <div class="panel-body">
                             @php
                                 $dataTypeRows = $dataType->{($edit ? 'editRows' : 'addRows' )};
-                                $exclude = ['title', 'body', 'excerpt', 'slug', 'status','author_id', 'featured', 'image', 'meta_description', 'meta_keywords', 'seo_title'];
+                                $exclude = ['title', 'body', 'excerpt', 'slug', 'status','author_id', 'featured', 'image', 'meta_description', 'meta_keywords', 'seo_title','Blog_tag'];
                             @endphp
 
                             @foreach($dataTypeRows as $row)
@@ -193,7 +193,7 @@
                                 </select>
                             </div>
                             <div class="form-group">
-                                <label for="featured">Featured}</label>
+                                <label for="featured">Featured</label>
                                 <input type="checkbox" name="featured"@if(isset($dataTypeContent->featured) && $dataTypeContent->featured) checked="checked"@endif>
                             </div>
                         </div>
