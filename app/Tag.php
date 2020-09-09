@@ -8,7 +8,7 @@ class Tag extends Model
 {
     public function blog ()
     {
-        return $this->belongsToMany(Blog::class);
+        return $this->belongsToMany(Blog::class)->published();
     }
 
 }

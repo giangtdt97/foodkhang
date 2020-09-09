@@ -72,8 +72,8 @@
                                     @foreach($services as $service)
                                         <div class="item">
                                             <div class="item product-01">
-                                            <div class="cat-image"><a href="javascript:void(0)" ><img src="{{Voyager::image( $service->image )}}" alt="" width="140" height="70"></a></div>
-                                            <a href="{{route('service.show',$service->slug)}}" ><h5 class="title">{{$service->name}}</h5></a>
+                                            <div class="cat-image"><a href="javascript:void(0)" ><img src="{{Voyager::image( $service->image )}}" alt="" width="140" height="70">{{$service->name}}</a></div>
+                                            <a href="{{route('service.show',$service->slug)}}" ><h5 class="title">Detail</h5></a>
                                             </div>
                                         </div>
                                     @endforeach

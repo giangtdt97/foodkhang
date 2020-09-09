@@ -58,7 +58,7 @@
                                         <div class="meta-info-caption">Category:</div>
                                         <div class="meta-info-text">
                                             @foreach($product->categories as $category)
-                                                <a href="javascript:void(0)">{{$category->name}}</a>
+                                                <a href="{{route('menu')}}">{{$category->name}}</a>
                                             @endforeach
                                         </div>
                                     </div>

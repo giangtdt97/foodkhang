@@ -54,7 +54,6 @@
         <div class="widget-body widget-content clearfix">
             <ul class="list-unstyled list-inline">
                 <li><a href="http://localhost/floury/tag/wordpress-tv/" class="tag">Sea Food</a></li>
-
             </ul>
         </div>
     </div>

@@ -5,10 +5,10 @@
             <div class="topbar-left">
                 <div class="topbar-content">
                     <div class="item">
-                        <div class="wg-contact"><i class="fa fa-map-marker"></i><span>86A Đường 30/4 ,phường Phú Hoà,Thủ Dầu Một,Bình DƯƠng </span></div>
+                        <div class="wg-contact"><i class="fa fa-map-marker"></i><span>{{setting('site.site_address')}}</span></div>
                     </div>
                     <div class="item">
-                        <div class="wg-contact"><i class="fa fa-phone"></i><span>093 615 6349</span></div>
+                        <div class="wg-contact"><i class="fa fa-phone"></i><span>{{setting('site.site_phone')}}</span></div>
                     </div>
                 </div>
             </div>
@@ -29,7 +29,7 @@
         <div class="container">
             <div class="open-offcanvas">&#9776;</div>
 
-            <div class="header-logo"><a href="{{route('home')}}" class="logo logo-static"><img src="{{asset('images/logo-white.png')}}" alt="fooday" class="logo-img"></a><a href="{{route('home')}}" class="logo logo-fixed"><img src="{{asset('images/logo.png')}}" alt="fooday" class="logo-img"></a></div>
+            <div class="header-logo"><a href="{{route('home')}}" class="logo logo-static"><img src="{{asset('images/xoiKhang.jpg')}}" alt="fooday" class="logo-img" width="150" height="70" ></a><a href="{{route('home')}}" class="logo logo-fixed"><img src="{{asset('images/xoiKhang.jpg')}}" alt="fooday" class="logo-img" width="150" height="50" ></a></div>
             <nav id="main-nav-offcanvas" class="main-nav-wrapper">
                 <div class="close-offcanvas-wrapper"><span class="close-offcanvas">x</span></div>
                 <div class="main-nav">

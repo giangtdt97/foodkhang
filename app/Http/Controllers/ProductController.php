@@ -12,23 +12,15 @@ class ProductController extends Controller
 {
     public function index()
     {
-
-        $products=Product::inStock()->get();
         $categories=Category::all();
         $services=Service::all();
-        return view('menu')->with(compact('products','categories','services'));
+        return view('menu')->with(compact('categories','services'));
     }
     public function show($slug)
     {
         $product = Product::where('slug', $slug)->first();
         return view(
             'menu_detail',compact('product')
-        );
-    }
-    public function showCategory($slug){
-        $category= Category::where('slug', $slug)->first();
-        return view(
-            'menu_detail',compact('category')
         );
     }
     public function showService($slug){

@@ -25,7 +25,7 @@
                             <div class="col-md-6 col-sm-12">
                                 <div class="swin-sc swin-sc-title style-4 margin-bottom-20 margin-top-50">
                                     <p class="top-title"><span>Giới Thiệu</span></p>
-                                    <h3 class="title">Sứ Mệnh</h3>
+                                    <h3 class="title">Câu Chuyện Khởi Nghiệp</h3>
                                 </div>
                                 <p class="des font-bold text-center">Niềm Đam Mê Bắt Đầu Từ Tinh Hoa Ẩm Thực Việt</p>
                                 <p class="des margin-bottom-20 text-center">Phần Giới Thiệu Chung.</p>
@@ -40,8 +40,8 @@
                             <div class="col-lg-6 col-md-4"></div>
                             <div class="col-lg-6 col-md-8">
                                 <div class="swin-sc swin-sc-title text-left light">
-                                    <p class="top-title"><span>chef choise</span></p>
-                                    <h3 class="title">Daily Special</h3>
+                                    <p class="top-title"><span>Đề xuất</span></p>
+                                    <h3 class="title">Món Ngon Trong Tuần</h3>
                                 </div>
                                 <div class="swin-sc swin-sc-product products-01 style-04 light swin-vetical-slider">
                                     <div class="row">
@@ -232,8 +232,8 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="swin-sc swin-sc-title">
-                                    <p class="top-title"><span>Our Menu</span></p>
-                                    <h3 class="title">Tasty And Good Price</h3>
+                                    <p class="top-title"><span>Thực Đơn</span></p>
+                                    <h3 class="title">Món Đặc Biệt</h3>
                                 </div>
                                 <div class="swin-sc swin-sc-product products-01 style-02 woocommerce">
                                     <div class="row">
@@ -551,8 +551,8 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="swin-sc swin-sc-title">
-                                    <p class="top-title"><span>Meet Our</span></p>
-                                    <h3 class="title">Awesome Master Chefs</h3>
+                                    <p class="top-title"><span>GiỚi Thiệu</span></p>
+                                    <h3 class="title">Gia Đình Xôi Khang</h3>
                                 </div>
                                 <div class="swin-sc swin-sc-team-slider">
                                     <div class="team-item swin-transition wow fadeInLeft">
@@ -622,8 +622,8 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="swin-sc swin-sc-title">
-                                    <p class="top-title"><span>Testimonial</span></p>
-                                    <h3 class="title white-color">Our Customer Says</h3>
+                                    <p class="top-title"><span>Nhận Xét</span></p>
+                                    <h3 class="title white-color">Khách Hàng của Xôi Khang </h3>
                                 </div>
                                 <div class="row">
                                     <div class="col-md-10 col-md-offset-1">
@@ -634,19 +634,19 @@
                                                         <div class="testi-content">
                                                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
                                                         </div>
-                                                        <div class="testi-info"><span class="name">Timothy Doe</span> <span class="position">Customer</span></div>
+                                                        <div class="testi-info"><span class="name">Khách A</span> <span class="position">Customer</span></div>
                                                     </div>
                                                     <div class="testi-item item"><i class="testi-icon fa fa-quote-left"></i>
                                                         <div class="testi-content">
                                                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
                                                         </div>
-                                                        <div class="testi-info"><span class="name">Sarah	Ruiz</span> <span class="position">Director</span></div>
+                                                        <div class="testi-info"><span class="name">Khách B</span> <span class="position">Director</span></div>
                                                     </div>
                                                     <div class="testi-item item"><i class="testi-icon fa fa-quote-left"></i>
                                                         <div class="testi-content">
                                                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
                                                         </div>
-                                                        <div class="testi-info"><span class="name">Tracey Lewis</span> <span class="position">Designer</span></div>
+                                                        <div class="testi-info"><span class="name">Khách C</span> <span class="position">Designer</span></div>
                                                     </div>
                                                     <div class="testi-item item"><i class="testi-icon fa fa-quote-left"></i>
                                                         <div class="testi-content">

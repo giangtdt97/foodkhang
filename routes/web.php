@@ -24,6 +24,7 @@ Route::get('reservation','ReservationController@index')->name('reservation');
 Route::get('contact','ContactController@index')->name('contact');
 Route::get('blog','BlogController@index')->name('blog');
 Route::get('blog/{slug}','BlogController@show' )->name('blog.detail');
+Route::get('tag','blogController@indexTag')->name('tag');
 Route::get('menu','ProductController@index')->name('menu');
 Route::get('product/{slug}', 'ProductController@show')->name('product.show');
 Route::get('service/{slug}', 'ProductController@showService')->name('service.show');

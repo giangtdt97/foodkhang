@@ -8,6 +8,7 @@ use TCG\Voyager\Traits\Resizable;
 
 class Product extends Model
 {
+    const inStock = 'inStock';
     public function categories()
     {
         return $this->belongsToMany(Category::class,'category_product');
@@ -35,9 +36,9 @@ class Product extends Model
 
         return array_merge($array, $extraFields);
     }
-    const inStock = 'inStock';
 
-    public function scopeInStock(Builder $query)
+
+    public function scopePublished(Builder $query)
     {
         return $query->where('status', '=', static::inStock);
     }

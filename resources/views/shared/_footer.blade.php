@@ -40,17 +40,20 @@
                                     <div class="address-info">
                                         <div class="info-icon"><i class="fa fa-map-marker"></i></div>
                                         <div class="info-content">
-                                            <p>86A Đường 30/4 </p>
-                                            <p>Phú Hoà, Thủ Dầu Một, Binh Dương</p>
+                                            <p>{{setting('site.site_address')}}</p>
+
                                         </div>
                                     </div>
                                     <div class="phone-info">
                                         <div class="info-icon"><i class="fa fa-mobile-phone"></i></div>
                                         <div class="info-content">
-                                            <p>0936 156349</p>
-                                            <p>0936 667668</p>
+                                            <p>{{setting('site.site_phone')}}</p>
+                                            <p>{{setting('site.site_phone2')}}</p>
                                         </div>
                                     </div>
+                                </div>
+                                <div class="about-contact-info">
+
                                 </div>
                             </div>
                         </div>
@@ -60,123 +63,44 @@
                     <div class="ft-fixed-area">
                         <div class="reservation-box">
                             <div class="reservation-wrap">
-                                <h3 class="res-title">Open Hour</h3>
+                                <h3 class="res-title">Giờ Mở Cửa</h3>
                                 <div class="res-date-time">
                                     <div class="res-date-time-item">
                                         <div class="res-date">
                                             <div class="res-date-item">
                                                 <div class="res-date-text">
-                                                    <p>Tuesday:</p>
+                                                    <p>Thứ 2 đến Thứ 7 :</p>
                                                 </div>
-                                                <div class="res-date-dot">.......................................</div>
                                             </div>
                                         </div>
                                         <div class="res-time">
                                             <div class="res-time-item">
-                                                <p>7AM - 9PM</p>
+                                                <p>6AM - 11:30AM</p>
+                                                <p>3PM - 9PM</p>
                                             </div>
                                         </div>
                                         <div class="clearfix"></div>
                                     </div>
+                                    <div class="res-date-dot">.......................................</div>
                                     <div class="res-date-time-item">
                                         <div class="res-date">
                                             <div class="res-date-item">
                                                 <div class="res-date-text">
-                                                    <p>Wednesday:</p>
+                                                    <p>Chủ Nhật:</p>
                                                 </div>
-                                                <div class="res-date-dot">.......................................</div>
                                             </div>
                                         </div>
                                         <div class="res-time">
                                             <div class="res-time-item">
-                                                <p>7AM - 9PM</p>
-                                            </div>
-                                        </div>
-                                        <div class="clearfix"></div>
-                                    </div>
-                                    <div class="res-date-time-item">
-                                        <div class="res-date">
-                                            <div class="res-date-item">
-                                                <div class="res-date-text">
-                                                    <p>Thursday:</p>
-                                                </div>
-                                                <div class="res-date-dot">.......................................</div>
-                                            </div>
-                                        </div>
-                                        <div class="res-time">
-                                            <div class="res-time-item">
-                                                <p>7AM - 9PM</p>
-                                            </div>
-                                        </div>
-                                        <div class="clearfix"></div>
-                                    </div>
-                                    <div class="res-date-time-item">
-                                        <div class="res-date">
-                                            <div class="res-date-item">
-                                                <div class="res-date-text">
-                                                    <p>Friday:</p>
-                                                </div>
-                                                <div class="res-date-dot">.......................................</div>
-                                            </div>
-                                        </div>
-                                        <div class="res-time">
-                                            <div class="res-time-item">
-                                                <p>7AM - 9PM</p>
-                                            </div>
-                                        </div>
-                                        <div class="clearfix"></div>
-                                    </div>
-                                    <div class="res-date-time-item">
-                                        <div class="res-date">
-                                            <div class="res-date-item">
-                                                <div class="res-date-text">
-                                                    <p>Saturday:</p>
-                                                </div>
-                                                <div class="res-date-dot">.......................................</div>
-                                            </div>
-                                        </div>
-                                        <div class="res-time">
-                                            <div class="res-time-item">
-                                                <p>7AM - 9PM</p>
-                                            </div>
-                                        </div>
-                                        <div class="clearfix"></div>
-                                    </div>
-                                    <div class="res-date-time-item">
-                                        <div class="res-date">
-                                            <div class="res-date-item">
-                                                <div class="res-date-text">
-                                                    <p>Sunday:</p>
-                                                </div>
-                                                <div class="res-date-dot">.......................................</div>
-                                            </div>
-                                        </div>
-                                        <div class="res-time">
-                                            <div class="res-time-item">
-                                                <p>7AM - 9PM</p>
-                                            </div>
-                                        </div>
-                                        <div class="clearfix"></div>
-                                    </div>
-                                    <div class="res-date-time-item">
-                                        <div class="res-date">
-                                            <div class="res-date-item">
-                                                <div class="res-date-text">
-                                                    <p>Monday:</p>
-                                                </div>
-                                                <div class="res-date-dot">.......................................</div>
-                                            </div>
-                                        </div>
-                                        <div class="res-time">
-                                            <div class="res-time-item">
-                                                <p>Close</p>
+                                                <p>6AM - 11:30AM</p>
                                             </div>
                                         </div>
                                         <div class="clearfix"></div>
                                     </div>
                                 </div>
                                 <h3 class="res-title">Liên Hệ Đặt Hàng</h3>
-                                <p class="res-number">0936 156349 - 0936 667668</p>
+                                <p class="res-number">{{setting('site.site_phone')}}</p>
+
                             </div>
                         </div>
                     </div>

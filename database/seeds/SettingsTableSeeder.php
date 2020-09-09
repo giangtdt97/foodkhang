@@ -129,6 +129,28 @@ class SettingsTableSeeder extends Seeder
                 'group'        => 'Admin',
             ])->save();
         }
+        $setting = $this->findSetting('site.phone');
+        if (!$setting->exists) {
+            $setting->fill([
+                'display_name' => '0936 156 349 - 0936 667 668 ',
+                'value'        => '0936 156 349 - 0936 667 668 ',
+                'details'      => '',
+                'type'         => 'text',
+                'order'        => 1,
+                'group'        => 'Site',
+            ])->save();
+        }
+        $setting = $this->findSetting('site.address');
+        if (!$setting->exists) {
+            $setting->fill([
+                'display_name' => '86A Đường 30/4 ,phường Phú Hoà,Thủ Dầu Một,Bình Dương',
+                'value'        => '86A Đường 30/4 ,phường Phú Hoà,Thủ Dầu Một,Bình Dương',
+                'details'      => '',
+                'type'         => 'text',
+                'order'        => 1,
+                'group'        => 'Site',
+            ])->save();
+        }
     }
 
     /**
