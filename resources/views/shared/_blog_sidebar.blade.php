@@ -54,13 +54,7 @@
         <div class="widget-body widget-content clearfix">
             <ul class="list-unstyled list-inline">
                 <li><a href="http://localhost/floury/tag/wordpress-tv/" class="tag">Sea Food</a></li>
-                <li><a href="http://localhost/floury/tag/wordpress-tv/" class="tag">Vegetables Meal</a></li>
-                <li><a href="http://localhost/floury/tag/wordpress-tv/" class="tag">spicy</a></li>
-                <li><a href="http://localhost/floury/tag/wordpress-tv/" class="tag">5 start restaurent</a></li>
-                <li><a href="http://localhost/floury/tag/wordpress-tv/" class="tag">new menu</a></li>
-                <li><a href="http://localhost/floury/tag/wordpress-tv/" class="tag">traditional food</a></li>
-                <li><a href="http://localhost/floury/tag/wordpress-tv/" class="tag">drink</a></li>
-                <li><a href="http://localhost/floury/tag/wordpress-tv/" class="tag">nutrition</a></li>
+
             </ul>
         </div>
     </div>

@@ -1,7 +1,7 @@
 @php
     $edit = !is_null($dataTypeContent->getKey());
      $add  = is_null($dataTypeContent->getKey());
-
+    // dd($dataTypeContent);
 @endphp
 
 @extends('voyager::master')
@@ -89,15 +89,15 @@
 
                         <div class="panel-heading">
                             <h3 class="panel-title">
-                                <i class="voyager-character"></i>Prodcut
-                                <span class="panel-desc"> Product Name</span>
+                                <i class="voyager-character"></i>Service
+                                <span class="panel-desc">Service Name</span>
                             </h3>
                             <div class="panel-actions">
                                 <a class="panel-action voyager-angle-down" data-toggle="panel-collapse" aria-hidden="true"></a>
                             </div>
                         </div>
                         <div class="panel-body">
-                            <input type="text" class="form-control" id="product_name" name="product_name" placeholder="product name" value="{{ $dataTypeContent->product_name ?? '' }}">
+                            <input type="text" class="form-control" id="name" name="name" placeholder="Service Name" value="{{ $dataTypeContent->name ?? '' }}">
                         </div>
                     </div>
                     <div class="panel">
@@ -117,7 +117,7 @@
                         </div>
                     </div>
 
-                    <div class="panel">
+                    <div class="panel panel panel-bordered panel-warning">
                         <div class="panel-heading">
                             <h3 class="panel-title">{{ __('voyager::post.additional_fields') }}</h3>
                             <div class="panel-actions">
@@ -127,17 +127,7 @@
                         <div class="panel-body">
                             @php
                                 $dataTypeRows = $dataType->{($edit ? 'editRows' : 'addRows' )};
-                                $exclude = ['product_name', 'short_description', 'slug', 'status','description', 'featured', 'image',];
-                                //dd($dataTypeRows);
-                                //foreach ($dataTypeRows as $key=>$data){
-                                  //  if ($data->edit==0 ){
-                                   //     dd($data->field);
-
-                                   //     unset($dataTypeContent[$data->field]) ;
-                                   //     }
-                                //}
-                                //unset($dataTypeContent['slug']) ;
-
+                                $exclude = ['name', 'short_description', 'slug','description', 'featured', 'image',];
                             @endphp
 
                             @foreach($dataTypeRows as $row)
@@ -148,7 +138,7 @@
                                     @if (isset($row->details->formfields_custom))
                                         @include('voyager::formfields.custom.' . $row->details->formfields_custom)
                                     @else
-                                        <div class="form-group  @if($row->type == 'hidden') hidden @endif  @if(isset($display_options->width)){{ 'col-md-' . $display_options->width }}@endif" @if(isset($display_options->id)){{ "id=$display_options->id" }}@endif>
+                                        <div class="form-group @if($row->type == 'hidden') hidden @endif @if(isset($display_options->width)){{ 'col-md-' . $display_options->width }}@endif" @if(isset($display_options->id)){{ "id=$display_options->id" }}@endif>
                                             {{ $row->slugify }}
                                             <label for="name">{{ $row->getTranslatedAttribute('display_name') }}</label>
                                             @include('voyager::multilingual.input-hidden-bread-edit-add')
@@ -171,7 +161,7 @@
                 <div class="col-md-4">
                     <div class="panel panel panel-bordered panel-warning">
                         <div class="panel-heading">
-                            <h3 class="panel-title"><i class="icon wb-clipboard"></i>Product Details</h3>
+                            <h3 class="panel-title"><i class="icon wb-clipboard"></i>Service Details</h3>
                             <div class="panel-actions">
                                 <a class="panel-action voyager-angle-down" data-toggle="panel-collapse" aria-hidden="true"></a>
                             </div>
@@ -185,19 +175,10 @@
                         <div class="panel-body">
                             <div class="form-group">
                                 <label for="slug">Slug</label>
-
                                 <input type="text" class="form-control" id="slug" name="slug"
                                        placeholder="slug"
                                        {!! isFieldSlugAutoGenerator($dataType, $dataTypeContent, "slug") !!}
                                        value="{{ $dataTypeContent->slug ?? '' }}">
-                            </div>
-
-                            <div class="form-group">
-                                <label for="status">Status</label>
-                                <select class="form-control" name="status">
-                                    <option value="inStock"@if(isset($dataTypeContent->status) && $dataTypeContent->status == 'inStock') selected="selected"@endif>Còn Món</option>
-                                    <option value="outStock"@if(isset($dataTypeContent->status) && $dataTypeContent->status == 'outStock') selected="selected"@endif>Hết Món</option>
-                                </select>
                             </div>
                             <div class="form-group">
                                 <label for="featured">Featured</label>

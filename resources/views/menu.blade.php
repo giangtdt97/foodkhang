@@ -20,7 +20,7 @@
                                 <div data-slide-toshow="3" class="cat-wrapper-02 cat-images main-slider">
                                     @foreach($categories as $category)
                                     <div class="item">
-                                        <div class="cat-image"><a href="javascript:void(0)"><img src="{{Voyager::image( $category->image )}}" alt="" class="img img-responsive" width="140" height="70">{{$category->name}}</a></div>
+                                        <div class="cat-image"><a href="javascript:void(0)"><img src="{{Voyager::image( $category->image )}}" alt="" width="140" height="70">{{$category->name}}</a></div>
                                     </div>
                                     @endforeach
                                 </div>
@@ -63,6 +63,45 @@
                     </div>
                 </div>
             </section>
-        </div>
+            <section class="menu-grid-02 padding-top-100 padding-bottom-100">
+                <div class="container">
+                    <div class="swin-sc swin-sc-product products-01 style-03 woocommerce">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div data-slide-toshow="2" class="cat-wrapper-02 cat-images main-slider">
+                                    @foreach($services as $service)
+                                        <div class="item">
+                                            <div class="item product-01">
+                                            <div class="cat-image"><a href="javascript:void(0)" ><img src="{{Voyager::image( $service->image )}}" alt="" width="140" height="70"></a></div>
+                                            <a href="{{route('service.show',$service->slug)}}" ><h5 class="title">{{$service->name}}</h5></a>
+                                            </div>
+                                        </div>
+                                    @endforeach
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="products nav-slider">
+                                        @foreach($services as $service)
+                                            <div class="item-slick">
+                                                <div class="row">
+                                                    @foreach($service->products as  $product)
+                                                        <div class="col-md-2 col-sm-4 col-xs-12">
+                                                            <div class="item product-01">
+                                                                <div class="block-img"><img src="{{Voyager::image( $product->image )}}" alt="" width="140" height="70"></div>
+                                                                <h5 class="title">{{$product->product_name}}</h5>
+                                                            </div>
+                                                        </div>
+                                                    @endforeach
+                                                </div>
+                                            </div>
+                                        @endforeach
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
     </div>
 @endsection
