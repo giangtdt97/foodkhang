@@ -5,7 +5,7 @@
         <div data-bottom-top="background-position: 50% 50px;" data-center="background-position: 50% 0px;" data-top-bottom="background-position: 50% -50px;" class="page-title page-contact">
             <div class="container">
                 <div class="title-wrapper">
-                    <div data-top="transform: translateY(0px);opacity:1;" data--120-top="transform: translateY(-30px);opacity:0;" data-anchor-target=".page-title" class="title">Contact Us</div>
+                    <div data-top="transform: translateY(0px);opacity:1;" data--120-top="transform: translateY(-30px);opacity:0;" data-anchor-target=".page-title" class="title">Liên Hệ</div>
                     <div data-top="opacity:1;" data--120-top="opacity:0;" data-anchor-target=".page-title" class="divider"><span class="line-before"></span><span class="dot"></span><span class="line-after"></span></div>
                     <div data-top="transform: translateY(0px);opacity:1;" data--20-top="transform: translateY(5px);" data--50-top="transform: translateY(15px);opacity:0.8;" data--120-top="transform: translateY(30px);opacity:0;" data-anchor-target=".page-title" class="subtitle">Let us know if you have any concern about our menu, service or other information you want to have</div>
                 </div>
@@ -17,7 +17,7 @@
                     <div class="row">
                         <div class="col-md-8 col-sm-12">
                             <div class="swin-sc swin-sc-title style-2 text-left">
-                                <p class="title"><span>Get In Touch</span></p>
+                                <p class="title"><span>Để lại Thông Tin</span></p>
                             </div>
                             <div class="reservation-form style-02">
                                 <div class="swin-sc swin-sc-contact-form light mtl style-full">
