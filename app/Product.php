@@ -18,7 +18,10 @@ class Product extends Model
     {
         return $this->belongsToMany(Service::class,'product_service');
     }
-
+    public function orders()
+    {
+        return $this->belongsToMany(Order::class,'order_product');
+    }
     public function presentPrice()
     {
         return money_format( '$%i', $this->price / 100);
@@ -45,10 +48,6 @@ class Product extends Model
     }
     public function scopeFeatured(Builder $sql){
         return $sql->where('featured','=',1);
-    }
-    public function scopeActive($query)
-    {
-        return $query->where('active', 1);
     }
     use Resizable;
 }

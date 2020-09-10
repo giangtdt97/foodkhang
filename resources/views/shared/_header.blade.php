@@ -29,7 +29,7 @@
         <div class="container">
             <div class="open-offcanvas">&#9776;</div>
 
-            <div class="header-logo"><a href="{{route('home')}}" class="logo logo-static"><img src="{{asset('images/xoiKhang.jpg')}}" alt="fooday" class="logo-img" width="150" height="70" ></a><a href="{{route('home')}}" class="logo logo-fixed"><img src="{{asset('images/xoiKhang.jpg')}}" alt="fooday" class="logo-img" width="150" height="50" ></a></div>
+            <div class="header-logo"><a href="{{route('home')}}" class="logo logo-static"><img src="{{asset('images/logoXoiKhang.png')}}" alt="fooday" class="logo-img"  height="80" ></a><a href="{{route('home')}}" class="logo logo-fixed"><img src="{{asset('images/logoXoiKhang.png')}}" alt="fooday" class="logo-img"  width="100" height="60" ></a></div>
             <nav id="main-nav-offcanvas" class="main-nav-wrapper">
                 <div class="close-offcanvas-wrapper"><span class="close-offcanvas">x</span></div>
                 <div class="main-nav">
@@ -37,7 +37,7 @@
                         <li class="nav-item {{(strpos(Route::currentRouteName(), 'home')===0) ? 'active' : ''}} "><a href="{{route('home')}}" class="dropdown-toggle">Trang Chủ</a><i class="fa fa-angle-down btn-open-dropdown"></i>
                         </li>
                         <li class="nav-item {{ (request()->is('about')) ? 'active' : '' }}" ><a href="{{route('about')}}">Giới Thiệu</a></li>
-                      <!--  <li class="nav-item {{ (request()->is('reservation')) ? 'active' : '' }}" ><a href="{{route('reservation')}}">Reservation</a></li>-->
+                        <li class="nav-item {{ (request()->is('reservation')) ? 'active' : '' }}" ><a href="{{route('reservation')}}">Theo Dõi Đơn Hàng</a></li>
                         <li class="nav-item {{ (request()->is('menu')) ? 'active' : '' }}"><a href="{{route('menu')}}">Thực Đơn</a>
                         </li>
                         <li class="nav-item {{ (request()->is('blog')) ? 'active' : '' }}"><a href="{{route('blog')}}">Bài Viết</a>

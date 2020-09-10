@@ -24,18 +24,10 @@
                                             <div class="blog-item swin-transition">
                                                 <div class="blog-featured-img"><img src="{{Voyager::image( $blog->image )}}" alt="fooday" class="img img-responsive"></div>
                                                 <div class="blog-content">
-                                                    <div class="blog-date"><span class="day">12</span><span class="month">Jun</span></div>
+                                                    <div class="blog-date"><span class="day">{{$blog->created_at->format('d')}}</span><span class="month">{{$blog->created_at->format('F')}}</span><span class="year">{{$blog->created_at->format('y')}}</span></div>
                                                     <div class="blog-info clearfix">
-                                                        <div class="blog-info-item blog-view">
-                                                            <p><i class="fa fa-eye"></i><span>18</span></p>
-                                                            <p></p>
-                                                        </div>
-                                                        <div class="blog-info-item blog-comment">
-                                                            <p><i class="fa fa-comment"></i><span>18</span></p>
-                                                            <p></p>
-                                                        </div>
                                                         <div class="blog-info-item blog-author">
-                                                            <p><span>Post By </span><a href="#">{{$blog->author_id}}</a></p>
+                                                            <p><span>Post By :</span><a href="#">Admin</a></p>
                                                             <p></p>
                                                         </div>
                                                     </div>

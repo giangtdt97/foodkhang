@@ -154,6 +154,7 @@ This file include css code conrespond for table and mobile device
     max-width: 180px; }
   .header-main .logo {
     left: 50%;
+      top:80%;
     -webkit-transform: translate(0%, -50%);
     transform: translate(-50%, -50%); }
   .utility-nav {

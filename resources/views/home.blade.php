@@ -29,7 +29,7 @@
                                 </div>
                                 <p class="des font-bold text-center">Niềm Đam Mê Bắt Đầu Từ Tinh Hoa Ẩm Thực Việt</p>
                                 <p class="des margin-bottom-20 text-center">Phần Giới Thiệu Chung.</p>
-                                <div class="swin-btn-wrap center"><a href="#" class="swin-btn center form-submit btn-transparent"> <span>	About Us</span></a></div>
+                                <div class="swin-btn-wrap center"><a href="{{route('about')}}" class="swin-btn center form-submit btn-transparent"> <span>Giới Thiệu</span></a></div>
                             </div>
                         </div>
                     </div>
@@ -40,59 +40,24 @@
                             <div class="col-lg-6 col-md-4"></div>
                             <div class="col-lg-6 col-md-8">
                                 <div class="swin-sc swin-sc-title text-left light">
-                                    <p class="top-title"><span>MÓN ĐƯỢC ĐỀ XUẤT</span></p>
-                                    <h3 class="title">Daily Special</h3>
+                                    <p class="top-title"><span>MóN ĐƯỢC ĐỀ XUẤT</span></p>
+                                    <h3 class="title">Món Ngon Hàng Tuần</h3>
                                 </div>
                                 <div class="swin-sc swin-sc-product products-01 style-04 light swin-vetical-slider">
                                     <div class="row">
                                         <div class="col-md-12">
                                             <div data-height="200" class="products nav-slider">
+                                                @foreach($products as $product)
                                                 <div class="item product-01">
-                                                    <div class="item-left"><img src="assets/images/product/product-2a.jpg" alt="" class="img img-responsive">
-                                                        <div class="content-wrapper"><a class="title">The Cracker Barrel's Country Boy Breakfast</a>
+                                                    <div class="item-left"><img src="{{Voyager::image( $product->image )}}" alt="" class="img img-responsive">
+                                                        <div class="content-wrapper"><a class="title">{{$product->product_name}}</a>
                                                             <div class="dot">.....................................................................</div>
-                                                            <div class="des">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum </div>
+                                                            <div class="des">{{$product->short_description}}</div>
                                                         </div>
                                                     </div>
-                                                    <div class="item-right"><span class="price woocommerce-Price-amount amount"><span class="price-symbol">$</span>25.0</span></div>
+                                                    <div class="item-right"><span class="price woocommerce-Price-amount amount">{{$product->price}}<span class="price-symbol">VNĐ</span></span></div>
                                                 </div>
-                                                <div class="item product-01">
-                                                    <div class="item-left"><img src="assets/images/product/product-2b.jpg" alt="" class="img img-responsive">
-                                                        <div class="content-wrapper"><a class="title">Uncle Herschel's Favorite </a>
-                                                            <div class="dot">.....................................................................</div>
-                                                            <div class="des">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="item-right"><span class="price woocommerce-Price-amount amount"><span class="price-symbol">$</span>45.0</span></div>
-                                                </div>
-                                                <div class="item product-01">
-                                                    <div class="item-left"><img src="assets/images/product/product-2c.jpg" alt="" class="img img-responsive">
-                                                        <div class="content-wrapper"><a class="title">Grandpa's Country Fried Breakfast </a>
-                                                            <div class="dot">.....................................................................</div>
-                                                            <div class="des">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="item-right"><span class="price woocommerce-Price-amount amount"><span class="price-symbol">$</span>30.0</span></div>
-                                                </div>
-                                                <div class="item product-01">
-                                                    <div class="item-left"><img src="assets/images/product/product-2d.jpg" alt="" class="img img-responsive">
-                                                        <div class="content-wrapper"><a class="title">Chinese Chicken Bread Spicy Soup</a>
-                                                            <div class="dot">.....................................................................</div>
-                                                            <div class="des">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="item-right"><span class="price woocommerce-Price-amount amount"><span class="price-symbol">$</span>12.0</span></div>
-                                                </div>
-                                                <div class="item product-01">
-                                                    <div class="item-left"><img src="assets/images/product/product-2b.jpg" alt="" class="img img-responsive">
-                                                        <div class="content-wrapper"><a class="title">Uncle Herschel's Favorite </a>
-                                                            <div class="dot">.....................................................................</div>
-                                                            <div class="des">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="item-right"><span class="price woocommerce-Price-amount amount"><span class="price-symbol">$</span>45.0</span></div>
-                                                </div>
-
+                                                @endforeach
                                             </div>
                                         </div>
                                     </div>
@@ -226,269 +191,65 @@
                             <div class="col-md-12">
                                 <div class="swin-sc swin-sc-title">
                                     <p class="top-title"><span>Thực Đơn</span></p>
-                                    <h3 class="title">Món Đặc Biệt</h3>
+                                    <h3 class="title">Món Đặc Trưng</h3>
                                 </div>
                                 <div class="swin-sc swin-sc-product products-01 style-02 woocommerce">
                                     <div class="row">
                                         <div class="col-md-2"></div>
                                         <div data-slide-toshow="5" class="cat-wrapper-02 main-slider col-md-8">
+                                            @foreach($categories as $category)
                                             <div class="item">
                                                 <div class="cat-icons"><i class="icons swin-icon-pasta"></i>
-                                                    <h5 class="cat-title">Breakfast</h5>
+                                                    <h5 class="cat-title">{{$category->name}}</h5>
                                                 </div>
                                             </div>
-                                            <div class="item">
-                                                <div class="cat-icons"><i class="icons swin-icon-fish"></i>
-                                                    <h5 class="cat-title">Lunch</h5>
-                                                </div>
-                                            </div>
-                                            <div class="item">
-                                                <div class="cat-icons"><i class="icons swin-icon-meat"></i></div>
-                                                <h5 class="cat-title">Dinner</h5>
-                                            </div>
-                                            <div class="item">
-                                                <div class="cat-icons"><i class="icons swin-icon-ice-cream"></i></div>
-                                                <h5 class="cat-title">Desset</h5>
-                                            </div>
-                                            <div class="item">
-                                                <div class="cat-icons"><i class="icons swin-icon-dinner"></i></div>
-                                                <h5 class="cat-title">Drink</h5>
-                                            </div>
+                                            @endforeach
+{{--                                            <div class="item">--}}
+{{--                                                <div class="cat-icons"><i class="icons swin-icon-fish"></i>--}}
+{{--                                                    <h5 class="cat-title">Lunch</h5>--}}
+{{--                                                </div>--}}
+{{--                                            </div>--}}
+{{--                                            <div class="item">--}}
+{{--                                                <div class="cat-icons"><i class="icons swin-icon-meat"></i></div>--}}
+{{--                                                <h5 class="cat-title">Dinner</h5>--}}
+{{--                                            </div>--}}
+{{--                                            <div class="item">--}}
+{{--                                                <div class="cat-icons"><i class="icons swin-icon-ice-cream"></i></div>--}}
+{{--                                                <h5 class="cat-title">Desset</h5>--}}
+{{--                                            </div>--}}
+{{--                                            <div class="item">--}}
+{{--                                                <div class="cat-icons"><i class="icons swin-icon-dinner"></i></div>--}}
+{{--                                                <h5 class="cat-title">Drink</h5>--}}
+{{--                                            </div>--}}
                                         </div>
                                         <div class="col-md-2"></div>
                                     </div>
                                     <div class="row">
                                         <div class="nav-slider">
+                                            @foreach($categories as $category)
                                             <div class="tab-content">
                                                 <div class="col-md-5 col-sm-12">
                                                     <div class="cat-wrapper">
-                                                        <div class="item"><img src="{{asset('images/product/pd-cat-dessert.png')}}" alt="" class="img img-responsive img-full"></div>
+                                                        <div class="item"><img src="{{Voyager::image( $category->image )}}" alt="" class="img img-responsive img-full"></div>
                                                     </div>
                                                 </div>
+
                                                 <div class="col-md-7 col-sm-12">
                                                     <div class="products">
+
+                                                            @foreach($category->products as  $product)
                                                         <div class="item product-01">
                                                             <div class="item-left">
-                                                                <h5 class="title">The Cracker Barrel's Country Boy Breakfast</h5>
-                                                                <div class="des">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum </div>
+                                                                <h5 class="title">{{$product->product_name}}</h5>
+                                                                <div class="des">{{$product->short_description}}</div>
                                                             </div>
-                                                            <div class="item-right"><span class="price woocommerce-Price-amount amount"><span class="price-symbol">$</span>25.0</span></div>
+                                                            <div class="item-right"><span class="price woocommerce-Price-amount amount">{{$product->price}}</span><span class="price-symbol">VNĐ</span></div>
                                                         </div>
-                                                        <div class="item product-01">
-                                                            <div class="item-left">
-                                                                <h5 class="title">Uncle Herschel's Favorite </h5>
-                                                                <div class="des">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum </div>
-                                                            </div>
-                                                            <div class="item-right"><span class="price woocommerce-Price-amount amount"><span class="price-symbol">$</span>45.0</span></div>
-                                                        </div>
-                                                        <div class="item product-01">
-                                                            <div class="item-left">
-                                                                <h5 class="title">Grandpa's Country Fried Breakfast </h5>
-                                                                <div class="des">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum </div>
-                                                            </div>
-                                                            <div class="item-right"><span class="price woocommerce-Price-amount amount"><span class="price-symbol">$</span>30.0</span></div>
-                                                        </div>
-                                                        <div class="item product-01">
-                                                            <div class="item-left">
-                                                                <h5 class="title">Old Timer's Meat Breakfast</h5>
-                                                                <div class="des">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum </div>
-                                                            </div>
-                                                            <div class="item-right"><span class="price woocommerce-Price-amount amount"><span class="price-symbol">$</span>12.0</span></div>
-                                                        </div>
-                                                        <div class="item product-01">
-                                                            <div class="item-left">
-                                                                <h5 class="title">Chinese Chicken Bread Spicy Soup</h5>
-                                                                <div class="des">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum </div>
-                                                            </div>
-                                                            <div class="item-right"><span class="price woocommerce-Price-amount amount"><span class="price-symbol">$</span>12.0</span></div>
-                                                        </div>
+                                                            @endforeach
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="tab-content">
-                                                <div class="col-md-5 col-sm-12">
-                                                    <div class="cat-wrapper">
-                                                        <div class="item"><img src="{{asset('images/product/pd-cat-lunch.png')}}" alt="" class="img img-responsive img-full"></div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-7 col-sm-12">
-                                                    <div class="products">
-                                                        <div class="item product-01">
-                                                            <div class="item-left">
-                                                                <h5 class="title">The Cracker Barrel's Country Boy Breakfast</h5>
-                                                                <div class="des">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum </div>
-                                                            </div>
-                                                            <div class="item-right"><span class="price woocommerce-Price-amount amount"><span class="price-symbol">$</span>25.0</span></div>
-                                                        </div>
-                                                        <div class="item product-01">
-                                                            <div class="item-left">
-                                                                <h5 class="title">Grandpa's Country Fried Breakfast </h5>
-                                                                <div class="des">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum </div>
-                                                            </div>
-                                                            <div class="item-right"><span class="price woocommerce-Price-amount amount"><span class="price-symbol">$</span>30.0</span></div>
-                                                        </div>
-                                                        <div class="item product-01">
-                                                            <div class="item-left">
-                                                                <h5 class="title">Uncle Herschel's Favorite </h5>
-                                                                <div class="des">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum </div>
-                                                            </div>
-                                                            <div class="item-right"><span class="price woocommerce-Price-amount amount"><span class="price-symbol">$</span>45.0</span></div>
-                                                        </div>
-                                                        <div class="item product-01">
-                                                            <div class="item-left">
-                                                                <h5 class="title">Chinese Chicken Bread Spicy Soup</h5>
-                                                                <div class="des">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum </div>
-                                                            </div>
-                                                            <div class="item-right"><span class="price woocommerce-Price-amount amount"><span class="price-symbol">$</span>12.0</span></div>
-                                                        </div>
-                                                        <div class="item product-01">
-                                                            <div class="item-left">
-                                                                <h5 class="title">Old Timer's Meat Breakfast</h5>
-                                                                <div class="des">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum </div>
-                                                            </div>
-                                                            <div class="item-right"><span class="price woocommerce-Price-amount amount"><span class="price-symbol">$</span>12.0</span></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="tab-content">
-                                                <div class="col-md-5 col-sm-12">
-                                                    <div class="cat-wrapper">
-                                                        <div class="item"><img src="{{asset('images/product/pd-cat-dinner.png')}}" alt="" class="img img-responsive img-full"></div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-7 col-sm-12">
-                                                    <div class="products">
-                                                        <div class="item product-01">
-                                                            <div class="item-left">
-                                                                <h5 class="title">Uncle Herschel's Favorite </h5>
-                                                                <div class="des">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum </div>
-                                                            </div>
-                                                            <div class="item-right"><span class="price woocommerce-Price-amount amount"><span class="price-symbol">$</span>45.0</span></div>
-                                                        </div>
-                                                        <div class="item product-01">
-                                                            <div class="item-left">
-                                                                <h5 class="title">Old Timer's Meat Breakfast</h5>
-                                                                <div class="des">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum </div>
-                                                            </div>
-                                                            <div class="item-right"><span class="price woocommerce-Price-amount amount"><span class="price-symbol">$</span>12.0</span></div>
-                                                        </div>
-                                                        <div class="item product-01">
-                                                            <div class="item-left">
-                                                                <h5 class="title">The Cracker Barrel's Country Boy Breakfast</h5>
-                                                                <div class="des">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum </div>
-                                                            </div>
-                                                            <div class="item-right"><span class="price woocommerce-Price-amount amount"><span class="price-symbol">$</span>25.0</span></div>
-                                                        </div>
-                                                        <div class="item product-01">
-                                                            <div class="item-left">
-                                                                <h5 class="title">Grandpa's Country Fried Breakfast </h5>
-                                                                <div class="des">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum </div>
-                                                            </div>
-                                                            <div class="item-right"><span class="price woocommerce-Price-amount amount"><span class="price-symbol">$</span>30.0</span></div>
-                                                        </div>
-                                                        <div class="item product-01">
-                                                            <div class="item-left">
-                                                                <h5 class="title">Chinese Chicken Bread Spicy Soup</h5>
-                                                                <div class="des">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum </div>
-                                                            </div>
-                                                            <div class="item-right"><span class="price woocommerce-Price-amount amount"><span class="price-symbol">$</span>12.0</span></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="tab-content">
-                                                <div class="col-md-5 col-sm-12">
-                                                    <div class="cat-wrapper">
-                                                        <div class="item"><img src="{{asset('images/product/pd-cat-dessert.png')}}" alt="" class="img img-responsive img-full"></div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-7 col-sm-12">
-                                                    <div class="products">
-                                                        <div class="item product-01">
-                                                            <div class="item-left">
-                                                                <h5 class="title">The Cracker Barrel's Country Boy Breakfast</h5>
-                                                                <div class="des">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum </div>
-                                                            </div>
-                                                            <div class="item-right"><span class="price woocommerce-Price-amount amount"><span class="price-symbol">$</span>25.0</span></div>
-                                                        </div>
-                                                        <div class="item product-01">
-                                                            <div class="item-left">
-                                                                <h5 class="title">Grandpa's Country Fried Breakfast </h5>
-                                                                <div class="des">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum </div>
-                                                            </div>
-                                                            <div class="item-right"><span class="price woocommerce-Price-amount amount"><span class="price-symbol">$</span>30.0</span></div>
-                                                        </div>
-                                                        <div class="item product-01">
-                                                            <div class="item-left">
-                                                                <h5 class="title">Old Timer's Meat Breakfast</h5>
-                                                                <div class="des">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum </div>
-                                                            </div>
-                                                            <div class="item-right"><span class="price woocommerce-Price-amount amount"><span class="price-symbol">$</span>12.0</span></div>
-                                                        </div>
-                                                        <div class="item product-01">
-                                                            <div class="item-left">
-                                                                <h5 class="title">Uncle Herschel's Favorite </h5>
-                                                                <div class="des">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum </div>
-                                                            </div>
-                                                            <div class="item-right"><span class="price woocommerce-Price-amount amount"><span class="price-symbol">$</span>45.0</span></div>
-                                                        </div>
-                                                        <div class="item product-01">
-                                                            <div class="item-left">
-                                                                <h5 class="title">Chinese Chicken Bread Spicy Soup</h5>
-                                                                <div class="des">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum </div>
-                                                            </div>
-                                                            <div class="item-right"><span class="price woocommerce-Price-amount amount"><span class="price-symbol">$</span>12.0</span></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="tab-content">
-                                                <div class="col-md-5 col-sm-12">
-                                                    <div class="cat-wrapper">
-                                                        <div class="item"><img src="{{asset('images/product/pd-cat-lunch.png')}}" alt="" class="img img-responsive img-full"></div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-7 col-sm-12">
-                                                    <div class="products">
-                                                        <div class="item product-01">
-                                                            <div class="item-left">
-                                                                <h5 class="title">Old Timer's Meat Breakfast</h5>
-                                                                <div class="des">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum </div>
-                                                            </div>
-                                                            <div class="item-right"><span class="price woocommerce-Price-amount amount"><span class="price-symbol">$</span>12.0</span></div>
-                                                        </div>
-                                                        <div class="item product-01">
-                                                            <div class="item-left">
-                                                                <h5 class="title">The Cracker Barrel's Country Boy Breakfast</h5>
-                                                                <div class="des">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum </div>
-                                                            </div>
-                                                            <div class="item-right"><span class="price woocommerce-Price-amount amount"><span class="price-symbol">$</span>25.0</span></div>
-                                                        </div>
-                                                        <div class="item product-01">
-                                                            <div class="item-left">
-                                                                <h5 class="title">Grandpa's Country Fried Breakfast </h5>
-                                                                <div class="des">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum </div>
-                                                            </div>
-                                                            <div class="item-right"><span class="price woocommerce-Price-amount amount"><span class="price-symbol">$</span>30.0</span></div>
-                                                        </div>
-                                                        <div class="item product-01">
-                                                            <div class="item-left">
-                                                                <h5 class="title">Uncle Herschel's Favorite </h5>
-                                                                <div class="des">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum </div>
-                                                            </div>
-                                                            <div class="item-right"><span class="price woocommerce-Price-amount amount"><span class="price-symbol">$</span>45.0</span></div>
-                                                        </div>
-                                                        <div class="item product-01">
-                                                            <div class="item-left">
-                                                                <h5 class="title">Chinese Chicken Bread Spicy Soup</h5>
-                                                                <div class="des">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum </div>
-                                                            </div>
-                                                            <div class="item-right"><span class="price woocommerce-Price-amount amount"><span class="price-symbol">$</span>12.0</span></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                            @endforeach
                                         </div>
                                     </div>
                                 </div>
@@ -499,8 +260,8 @@
 
                 <section class="gallery-section-01 padding-top-100">
                     <div class="swin-sc swin-sc-title">
-                        <p class="top-title"><span>Our Gallery</span></p>
-                        <h3 class="title white-color">Fooday Hot Dishes</h3>
+                        <p class="top-title"><span>Bộ Sưu Tập</span></p>
+                        <h3 class="title white-color">Xôi Khang</h3>
                     </div>
                     <div class="swin-sc swin-sc-isotope">
                         <div class="grid">
@@ -555,12 +316,6 @@
                                         <p class="team-name">MICHAEL DOE</p>
                                         <p class="team-position">Head Chef</p>
                                         <hr>
-                                        <ul class="socials-nb list-inline">
-                                            <li><a href="javascript:void(0)"><i class="fa fa-facebook"></i></a></li>
-                                            <li><a href="javascript:void(0)"><i class="fa fa-twitter"></i></a></li>
-                                            <li><a href="javascript:void(0)"><i class="fa fa-pinterest"></i></a></li>
-                                            <li><a href="javascript:void(0)"><i class="fa fa-google-plus"></i></a></li>
-                                        </ul>
                                     </div>
                                     <div class="team-item swin-transition wow fadeInUp">
                                         <div class="team-img-wrap">
@@ -569,12 +324,6 @@
                                         <p class="team-name">Teresa Doe</p>
                                         <p class="team-position">Head Chef</p>
                                         <hr>
-                                        <ul class="socials-nb list-inline">
-                                            <li><a href="javascript:void(0)"><i class="fa fa-facebook"></i></a></li>
-                                            <li><a href="javascript:void(0)"><i class="fa fa-twitter"></i></a></li>
-                                            <li><a href="javascript:void(0)"><i class="fa fa-pinterest"></i></a></li>
-                                            <li><a href="javascript:void(0)"><i class="fa fa-google-plus"></i></a></li>
-                                        </ul>
                                     </div>
                                     <div class="team-item swin-transition wow fadeInRight">
                                         <div class="team-img-wrap">
@@ -583,12 +332,6 @@
                                         <p class="team-name">BENJAMIN MARK</p>
                                         <p class="team-position">Head Chef</p>
                                         <hr>
-                                        <ul class="socials-nb list-inline">
-                                            <li><a href="javascript:void(0)"><i class="fa fa-facebook"></i></a></li>
-                                            <li><a href="javascript:void(0)"><i class="fa fa-twitter"></i></a></li>
-                                            <li><a href="javascript:void(0)"><i class="fa fa-pinterest"></i></a></li>
-                                            <li><a href="javascript:void(0)"><i class="fa fa-google-plus"></i></a></li>
-                                        </ul>
                                     </div>
                                     <div class="team-item swin-transition">
                                         <div class="team-img-wrap">
@@ -597,13 +340,7 @@
                                         <p class="team-name">Teresa Doe</p>
                                         <p class="team-position">Head Chef</p>
                                         <hr>
-                                        <ul class="socials-nb list-inline">
-                                            <li><a href="javascript:void(0)"><i class="fa fa-facebook"></i></a></li>
-                                            <li><a href="javascript:void(0)"><i class="fa fa-twitter"></i></a></li>
-                                            <li><a href="javascript:void(0)"><i class="fa fa-pinterest"></i></a></li>
-                                            <li><a href="javascript:void(0)"><i class="fa fa-google-plus"></i></a></li>
-                                        </ul>
-                                    </div>
+                                        </div>
                                 </div>
                             </div>
                         </div>
@@ -668,115 +405,34 @@
                 <section class="blog-section-03 padding-top-100 padding-bottom-100">
                     <div class="container">
                         <div class="swin-sc swin-sc-title">
-                            <p class="top-title"><span>Update From</span></p>
-                            <h3 class="title">Our Featured Blog</h3>
+                            <p class="top-title"><span>Cập Nhật Thêm Từ</span></p>
+                            <h3 class="title">Blog của Xôi Khang</h3>
                         </div>
                         <div class="swin-sc swin-sc-blog-masonry">
                             <div class="grid">
                                 <div class="grid-sizer col-md-1 col-sm-1 col-xs-1"></div>
-                                <div class="grid-item col-md-8 col-sm-12 grid-item-h1">
-                                    <div class="blog-item swin-transition wow fadeInUpShort">
-                                        <div class="blog-info clearfix">
-                                            <div class="blog-info-item blog-view">
-                                                <p><i class="fa fa-eye"></i><span>18</span></p>
-                                                <p></p>
-                                            </div>
-                                            <div class="blog-info-item blog-comment">
-                                                <p><i class="fa fa-comment"></i><span>18</span></p>
-                                                <p></p>
-                                            </div>
-                                            <div class="blog-info-item blog-author">
-                                                <p><span>Post By </span><a href="#">Admin</a></p>
-                                                <p></p>
-                                            </div>
-                                        </div>
-                                        <div class="blog-featured-img"><img src="{{asset('images/blog/blog-slider-1.jpg')}}" alt="fooday" class="img img-responsive"></div>
-                                        <div class="blog-content">
-                                            <div class="blog-date"><span class="day">12</span><span class="month">Jun</span></div>
-                                            <h3 class="blog-title"><a href="#" class="swin-transition">How To Cook The Spicy Chinese Noodle For Cold Weather</a></h3>
-                                            <p class="blog-description">Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.</p>
-                                            <div class="blog-readmore"><a href="#" class="swin-transition">Read More <i class="fa fa-angle-double-right"></i></a></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="grid-item col-md-4 col-sm-12 grid-item-h1">
-                                    <div class="blog-item swin-transition wow fadeInUpShort">
-                                        <div class="blog-info clearfix">
-                                            <div class="blog-info-item blog-view">
-                                                <p><i class="fa fa-eye"></i><span>18</span></p>
-                                                <p></p>
-                                            </div>
-                                            <div class="blog-info-item blog-comment">
-                                                <p><i class="fa fa-comment"></i><span>18</span></p>
-                                                <p></p>
-                                            </div>
-                                            <div class="blog-info-item blog-author">
-                                                <p><span>Post By </span><a href="#">Admin</a></p>
-                                                <p></p>
-                                            </div>
-                                        </div>
-                                        <div class="blog-featured-img"><img src="{{asset('images/blog/blog-grid-1.jpg')}}" alt="fooday" class="img img-responsive"></div>
-                                        <div class="blog-content">
-                                            <div class="blog-date"><span class="day">12</span><span class="month">Jun</span></div>
-                                            <h3 class="blog-title"><a href="#" class="swin-transition">How To Cook The Spicy Noodle For Cold Weather</a></h3>
-                                            <p class="blog-description">Lorem ipsum dolor sit amet, consectetur, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                            <div class="blog-readmore"><a href="#" class="swin-transition">Read More <i class="fa fa-angle-double-right"></i></a></div>
-                                        </div>
-                                    </div>
-                                </div>
+                                @foreach($blogs ?? '' as $blog)
                                 <div class="grid-item col-md-6 col-sm-6 grid-item-ha">
                                     <div class="blog-item swin-transition wow fadeInUpShort">
                                         <div class="blog-info clearfix">
-                                            <div class="blog-info-item blog-view">
-                                                <p><i class="fa fa-eye"></i><span>18</span></p>
-                                                <p></p>
-                                            </div>
-                                            <div class="blog-info-item blog-comment">
-                                                <p><i class="fa fa-comment"></i><span>18</span></p>
-                                                <p></p>
-                                            </div>
                                             <div class="blog-info-item blog-author">
                                                 <p><span>Post By </span><a href="#">Admin</a></p>
                                                 <p></p>
                                             </div>
                                         </div>
-                                        <div class="blog-featured-img"><img src="{{asset('images/blog/blog-grid-3.jpg')}}" alt="fooday" class="img img-responsive"></div>
+                                        <div class="blog-featured-img"><img src="{{Voyager::image( $blog->image )}}" alt="fooday" class="img img-responsive"></div>
                                         <div class="blog-content">
-                                            <div class="blog-date"><span class="day">12</span><span class="month">Jun</span></div>
-                                            <h3 class="blog-title"><a href="#" class="swin-transition">How To Cook The Spicy Noodle For Cold Weather</a></h3>
-                                            <p class="blog-description">Lorem ipsum dolor sit amet, consectetur, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                            <div class="blog-readmore"><a href="#" class="swin-transition">Read More <i class="fa fa-angle-double-right"></i></a></div>
+                                            <div class="blog-date"><span class="day">{{$blog->created_at->format('d')}}</span><span class="month">{{$blog->created_at->format('F')}}</span><span class="year">{{$blog->created_at->format('y')}}</span></div>
+                                            <h3 class="blog-title"><a href="#" class="swin-transition">{{$blog->title}}</a></h3>
+                                            <p class="blog-description">{{$blog->excerpt}}</p>
+                                            <div class="blog-readmore"><a href="{{route('blog.detail',$blog->slug)}}" class="swin-transition">Read More <i class="fa fa-angle-double-right"></i></a></div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="grid-item col-md-6 col-sm-6 grid-item-ha">
-                                    <div class="blog-item swin-transition wow fadeInUpShort">
-                                        <div class="blog-info clearfix">
-                                            <div class="blog-info-item blog-view">
-                                                <p><i class="fa fa-eye"></i><span>18</span></p>
-                                                <p></p>
-                                            </div>
-                                            <div class="blog-info-item blog-comment">
-                                                <p><i class="fa fa-comment"></i><span>18</span></p>
-                                                <p></p>
-                                            </div>
-                                            <div class="blog-info-item blog-author">
-                                                <p><span>Post By </span><a href="#">Admin</a></p>
-                                                <p></p>
-                                            </div>
-                                        </div>
-                                        <div class="blog-featured-img"><img src="{{asset('images/blog/blog-grid-4.jpg')}}" alt="fooday" class="img img-responsive"></div>
-                                        <div class="blog-content">
-                                            <div class="blog-date"><span class="day">12</span><span class="month">Jun</span></div>
-                                            <h3 class="blog-title"><a href="#" class="swin-transition">How To Cook The Spicy Noodle For Cold Weather</a></h3>
-                                            <p class="blog-description">Lorem ipsum dolor sit amet, consectetur, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                            <div class="blog-readmore"><a href="#" class="swin-transition">Read More <i class="fa fa-angle-double-right"></i></a></div>
-                                        </div>
-                                    </div>
-                                </div>
+                                @endforeach
                             </div>
                         </div>
-                        <div class="swin-btn-wrap center mtxxl"><a href="{{route('blog')}}" class="swin-btn center btn-transparent"> <span>Full Blog</span></a></div>
+                        <div class="swin-btn-wrap center mtxxl"><a href="{{route('blog')}}" class="swin-btn center btn-transparent"> <span>Đến Trang Blog</span></a></div>
                     </div>
                 </section>
             </div>

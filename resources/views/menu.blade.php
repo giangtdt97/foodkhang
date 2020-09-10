@@ -37,7 +37,7 @@
                                                     <div class="block-img"><img src="{{Voyager::image( $product->image )}}" alt="" width="140" height="70">
                                                         <div class="group-btn"><a href="{{route('product.show',$product->slug)}}" class="swin-btn btn-link"><i class="icons fa fa-link"></i></a></div>
                                                     </div>
-                                                    <h5 class="title">{{$product->product_name}}</h5><span class="price woocommerce-Price-amount amount"><span class="price-symbol">$</span>{{$product->price}}</span>
+                                                    <h5 class="title">{{$product->product_name}}</h5><span class="price woocommerce-Price-amount amount">{{$product->price}}<span class="price-symbol">VNĐ</span></span>
                                                 </div>
                                             </div>
                                             @endforeach
@@ -51,13 +51,12 @@
                 </div>
                 </div>
             </section>
-            <section class="menu-banner-section banner-section padding-top-100 padding-bottom-100"><img src="{{asset('images/background/lemon.png')}}" alt="" class="img-left img-bg img-deco img-responsive"><img src="asset{{'images/background/vegetable_03.png'}}" alt="" class="img-right img-bg img-deco img-responsive">
+            <section class="menu-banner-section banner-section padding-top-100 padding-bottom-100"><img src="{{asset('images/background/lemon.png')}}" alt="" class="img-left img-bg img-deco img-responsive"><img src="{{asset('images/background/vegetable_03.png')}}" alt="" class="img-right img-bg img-deco img-responsive">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-8 col-md-offset-2">
                             <div class="content-wrapper">
-                                <h2 class="heading-title">Let's Make Your Meal be Fantastic With<span class="text-large"> FOODAY</span>Awesome Menu!</h2>
-                                <div class="swin-btn-wrap"><a href="#" class="swin-btn"><span>Book Table</span></a></div>
+                                <h2 class="heading-title">Thực Đơn Dinh Dưỡng! Hãy để<span class="text-large">Xôi Khang</span>được phục vụ bạn</h2>
                             </div>
                         </div>
                     </div>
@@ -73,7 +72,7 @@
                                         <div class="item">
                                             <div class="item product-01">
                                             <div class="cat-image"><a href="javascript:void(0)" ><img src="{{Voyager::image( $service->image )}}" alt="" width="140" height="70">{{$service->name}}</a></div>
-                                            <a href="{{route('service.show',$service->slug)}}" ><h5 class="title">Detail</h5></a>
+                                            <a href="{{route('service.show',$service->slug)}}" ><h5>Detail</h5></a>
                                             </div>
                                         </div>
                                     @endforeach

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Blog;
+use App\Category;
 use App\Tag;
 use Illuminate\Http\Request;
 
@@ -11,7 +12,9 @@ class BlogController extends Controller
     public function index()
     {
         $blogs =Blog::published()->paginate(5);
-        return view('blogs.index')->with(compact('blogs'));
+        $categories=Category::all();
+        $tags=Tag::all();
+        return view('blogs.index')->with(compact('blogs','categories','tags'));
     }
     public function show($slug)
     {

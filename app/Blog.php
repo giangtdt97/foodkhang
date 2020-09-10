@@ -32,5 +32,8 @@ class Blog extends Model
     {
         return $query->where('status', '=', static::PUBLISHED);
     }
+    public function scopeFeatured(Builder $sql){
+        return $sql->where('featured','=',1);
+    }
     use Resizable;
 }

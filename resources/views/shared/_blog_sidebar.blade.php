@@ -10,8 +10,11 @@
     <!-- categories-->
     <div class="swin-widget widget-categories">
         <div class="title-widget">Category</div>
-        <div class="widget-body widget-content clearfix"><a href="#" class="link"><i class="icons fa fa-angle-right"></i><span class="text">hot Drink</span><span class="badge">12</span></a><a href="#" class="link"><i class="icons fa fa-angle-right"></i><span class="text">spicy food</span><span class="badge">14</span></a><a href="#" class="link"><i class="icons fa fa-angle-right"></i><span class="text">New Dishes</span><span class="badge">17</span></a><a href="#" class="link"><i class="icons fa fa-angle-right"></i><span class="text">Dessert</span><span class="badge">07</span></a><a href="#" class="link"><i class="icons fa fa-angle-right"></i><span class="text">Discount Event</span><span class="badge">06</span></a></div>
-    </div>
+        <div class="widget-body widget-content clearfix">
+            @foreach($categories as $category)
+            <a href="{{route('category.show',$category->slug)}}" class="link"><i class="icons fa fa-angle-right"></i><span class="text">{{$category->name}}</span></a>
+            @endforeach
+            </div>
     <!-- recent post-->
     <div class="swin-widget widget-recent-post">
         <div class="title-widget">Recent Post</div>
@@ -49,14 +52,16 @@
         </div>
     </div>
     <!-- tag-->
-{{--    <div class="swin-widget widget-tag">--}}
-{{--        <div class="title-widget">TAG</div>--}}
-{{--        <div class="widget-body widget-content clearfix">--}}
-{{--            <ul class="list-unstyled list-inline">--}}
-{{--                <li><a href="http://localhost/floury/tag/wordpress-tv/" class="tag">Sea Food</a></li>--}}
-{{--            </ul>--}}
-{{--        </div>--}}
-{{--    </div>--}}
+    <div class="swin-widget widget-tag">
+        <div class="title-widget">TAG</div>
+        <div class="widget-body widget-content clearfix">
+            <ul class="list-unstyled list-inline">
+                @foreach($tags as $tag)
+                <li><a href="{{route('tag.detail',$tag->slug)}}" class="tag">{{$tag->name}}</a></li>
+                @endforeach
+            </ul>
+        </div>
+    </div>
     <!-- gallery-->
     <div class="swin-widget widget-gallery carousel">
         <div class="title-widget">Gallery</div>

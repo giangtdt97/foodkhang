@@ -24,18 +24,10 @@
                                                 <div class="blog-featured-img"><img src="{{Voyager::image( $blog->image )}}" alt="fooday" class="img img-responsive"></div>
                                                 <div class="blog-content">
                                                     <div class="blog-meta-info">
-                                                        <div class="blog-date"><span class="day">12</span><span class="month">Jun</span></div>
+                                                        <div class="blog-date"><span class="day">{{$blog->created_at->format('d')}}</span><span class="month">{{$blog->created_at->format('F')}}</span></div>
                                                         <div class="blog-info clearfix">
-                                                            <div class="blog-info-item blog-view">
-                                                                <p><i class="fa fa-eye"></i><span>18</span></p>
-                                                                <p></p>
-                                                            </div>
-                                                            <div class="blog-info-item blog-comment">
-                                                                <p><i class="fa fa-comment"></i><span>18</span></p>
-                                                                <p></p>
-                                                            </div>
                                                             <div class="blog-info-item blog-author">
-                                                                <p><span>Post By </span><a href="#">Admin</a></p>
+                                                                <p><span>Post By :</span><a href="#">Admin</a></p>
                                                                 <p></p>
                                                             </div>
                                                         </div>
@@ -49,7 +41,7 @@
                                                                 <cite title="Source Title">/ Food Blogger</cite>
                                                             </footer>
                                                         </blockquote>
-                                                    {!! $blog->body !!}
+                                                        {!! $blog->body !!}
                                                     </div>
                                                     <div class="blog-footer clearfix">
                                                         <div class="blog-share">
@@ -71,86 +63,14 @@
                                     <div class="navi-item next-post pull-right"><a href="#">Next<i class="fa fa-chevron-right"></i></a></div>
                                     <div class="navi-item prev-post pull-left"><a href="#">Previous<i class="fa fa-chevron-left"></i></a></div>
                                 </div>
-                                <div class="blog-author-area">
-                                    <div class="media">
-                                        <div class="author-image media-left"><a href="#"><img src="{{asset('images/blog/blog-author.jpg')}}" alt="fooday" class="media-object"></a></div>
-                                        <div class="media-body">
-                                            <p class="author-name media-heading">KELLY DOE</p>
-                                            <p>Picasio ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mini.</p>
-                                            <ul class="socials-nb list-inline">
-                                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                                <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
-                                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="blog-comment">
-                                    <div class="comment-heading swin-sc swin-sc-title style-2 text-left">
-                                        <p class="title"><span>3 Comments</span></p>
-                                    </div>
-                                    <div class="comment-area">
-                                        <div class="comment-list media-list list-unstyledl">
-                                            <div class="comment-item media">
-                                                <div class="author-comment-image media-left"><a href="#"><img src="{{asset('images/blog/blog-comment-avatar01.jpg')}}" alt="fooday" class="media-object"></a></div>
-                                                <div class="media-body">
-                                                    <p class="author-comment-name media-heading">Andy Doe</p>
-                                                    <p>Picasio ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mini.</p>
-                                                    <ul class="list-inline">
-                                                        <li class="comment-date">25.12.2016</li>
-                                                        <li class="comment-reply"><a href="#"><i class="fa fa-mail-reply"></i>Reply</a></li>
-                                                    </ul>
-                                                    <div class="comment-item media">
-                                                        <div class="author-comment-image media-left"><a href="#"><img src="{{asset('images/blog/blog-comment-avatar02.jpg')}}" alt="fooday" class="media-object"></a></div>
-                                                        <div class="media-body">
-                                                            <p class="author-comment-name media-heading">Mary Louis</p>
-                                                            <p>Picasio ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mini.</p>
-                                                            <ul class="list-inline">
-                                                                <li class="comment-date">25.12.2016</li>
-                                                                <li class="comment-reply"><a href="#"><i class="fa fa-mail-reply"></i>Reply</a></li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="comment-item media">
-                                                <div class="author-comment-image media-left"><a href="#"><img src="{{asset('images/blog/blog-comment-avatar03.jpg')}}" alt="fooday" class="media-object"></a></div>
-                                                <div class="media-body">
-                                                    <p class="author-comment-name media-heading">Kelvin Tang</p>
-                                                    <p>Picasio ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mini.</p>
-                                                    <ul class="list-inline">
-                                                        <li class="comment-date">25.12.2016</li>
-                                                        <li class="comment-reply"><a href="#"><i class="fa fa-mail-reply"></i>Reply</a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="comment-form">
-                                        <div class="comment-heading swin-sc swin-sc-title style-2 text-left">
-                                            <p class="title"><span>Leave Comments</span></p>
-                                        </div>
-                                        <div class="swin-sc swin-sc-contact-form light mtl margin-bottom-100">
-                                            <form>
-                                                <div class="form-group">
-                                                    <div class="input-group">
-                                                        <div class="input-group-addon"><i class="fa fa-user"></i></div>
-                                                        <input type="text" placeholder="Username" class="form-control">
-                                                    </div>
-                                                    <div class="input-group">
-                                                        <div class="input-group-addon"><i class="fa fa-envelope"></i></div>
-                                                        <input type="text" placeholder="Email" class="form-control">
-                                                    </div>
-                                                </div>
-                                                <div class="form-group">
-                                                    <textarea class="form-control"></textarea>
-                                                </div>
-                                                <div class="form-group">
-                                                    <div class="swin-btn-wrap"><a href="#" class="swin-btn form-submit"> <span>Send</span></a></div>
-                                                </div>
-                                            </form>
-                                        </div>
+                                <div class="swin-widget widget-tag">
+                                    <div class="title-widget">TAG</div>
+                                    <div class="widget-body widget-content clearfix">
+                                        <ul class="list-unstyled list-inline">
+                                            @foreach($blog->tags as $tag)
+                                                <li><a href="{{route('tag.detail',$tag->slug)}}" class="tag">{{$tag->name}}</a></li>
+                                            @endforeach
+                                        </ul>
                                     </div>
                                 </div>
                             </div>

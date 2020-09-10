@@ -431,6 +431,7 @@ header.header-fixed .header-top {
   .header-main .logo {
     position: absolute;
     top: 50%;
+      right:1%;
     -webkit-transform: translate(0%, -50%);
     transform: translate(0%, -50%); }
   .header-main .main-nav-wrapper {
@@ -610,15 +611,15 @@ header.header-fixed {
   -moz-transform: translateY(-50%);
   transform: translateY(-50%); }
   .top-header .slide-content.slide-layout-02 .slide-title {
-    font-family: "Merriweather Sans";
+    font-family: "grenze";
     font-weight: 900;
     font-size: 90px;
     color: #fff;
     text-align: center;
     margin-bottom: 0; }
   .top-header .slide-content.slide-layout-02 .slide-sub-title {
-    font-family: "Merriweather Sans";
-    font-size: 60px;
+    font-family: "Dancing Script";
+    font-size: 65px;
     color: #fff;
     text-align: center;
     position: relative; }
@@ -812,7 +813,7 @@ header.header-fixed {
           margin-left: -10px; }
   .page-title .title {
     color: #fff;
-    font-family: "Rancho";
+    font-family: "grenze";
     font-size: 64px;
     text-transform: uppercase;
     line-height: 1;
@@ -2427,7 +2428,7 @@ ul.nav.nav-tabs {
 
 /* #Title */
 .title {
-  font-family: 'Rancho', cursive;
+  font-family: 'Dancing Script', cursive;
   font-size: 50px;
   text-transform: capitalize;
   color: #29272e;
