@@ -40,15 +40,15 @@
                             <div class="col-lg-6 col-md-4"></div>
                             <div class="col-lg-6 col-md-8">
                                 <div class="swin-sc swin-sc-title text-left light">
-                                    <p class="top-title"><span>Đề xuất</span></p>
-                                    <h3 class="title">Món Ngon Trong Tuần</h3>
+                                    <p class="top-title"><span>MÓN ĐƯỢC ĐỀ XUẤT</span></p>
+                                    <h3 class="title">Daily Special</h3>
                                 </div>
                                 <div class="swin-sc swin-sc-product products-01 style-04 light swin-vetical-slider">
                                     <div class="row">
                                         <div class="col-md-12">
                                             <div data-height="200" class="products nav-slider">
                                                 <div class="item product-01">
-                                                    <div class="item-left"><img src="{{asset('images/product/product-2a.jpg')}}" alt="" class="img img-responsive">
+                                                    <div class="item-left"><img src="assets/images/product/product-2a.jpg" alt="" class="img img-responsive">
                                                         <div class="content-wrapper"><a class="title">The Cracker Barrel's Country Boy Breakfast</a>
                                                             <div class="dot">.....................................................................</div>
                                                             <div class="des">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum </div>
@@ -57,7 +57,7 @@
                                                     <div class="item-right"><span class="price woocommerce-Price-amount amount"><span class="price-symbol">$</span>25.0</span></div>
                                                 </div>
                                                 <div class="item product-01">
-                                                    <div class="item-left"><img src="{{asset('images/product/product-2b.jpg')}}" alt="" class="img img-responsive">
+                                                    <div class="item-left"><img src="assets/images/product/product-2b.jpg" alt="" class="img img-responsive">
                                                         <div class="content-wrapper"><a class="title">Uncle Herschel's Favorite </a>
                                                             <div class="dot">.....................................................................</div>
                                                             <div class="des">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum </div>
@@ -66,7 +66,7 @@
                                                     <div class="item-right"><span class="price woocommerce-Price-amount amount"><span class="price-symbol">$</span>45.0</span></div>
                                                 </div>
                                                 <div class="item product-01">
-                                                    <div class="item-left"><img src="{{asset('images/product/product-2c.jpg')}}" alt="" class="img img-responsive">
+                                                    <div class="item-left"><img src="assets/images/product/product-2c.jpg" alt="" class="img img-responsive">
                                                         <div class="content-wrapper"><a class="title">Grandpa's Country Fried Breakfast </a>
                                                             <div class="dot">.....................................................................</div>
                                                             <div class="des">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum </div>
@@ -75,7 +75,7 @@
                                                     <div class="item-right"><span class="price woocommerce-Price-amount amount"><span class="price-symbol">$</span>30.0</span></div>
                                                 </div>
                                                 <div class="item product-01">
-                                                    <div class="item-left"><img src="{{asset('images/product/product-2d.jpg')}}" alt="" class="img img-responsive">
+                                                    <div class="item-left"><img src="assets/images/product/product-2d.jpg" alt="" class="img img-responsive">
                                                         <div class="content-wrapper"><a class="title">Chinese Chicken Bread Spicy Soup</a>
                                                             <div class="dot">.....................................................................</div>
                                                             <div class="des">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum </div>
@@ -84,7 +84,7 @@
                                                     <div class="item-right"><span class="price woocommerce-Price-amount amount"><span class="price-symbol">$</span>12.0</span></div>
                                                 </div>
                                                 <div class="item product-01">
-                                                    <div class="item-left"><img src="{{asset('images/product/product-2b.jpg')}}" alt="" class="img img-responsive">
+                                                    <div class="item-left"><img src="assets/images/product/product-2b.jpg" alt="" class="img img-responsive">
                                                         <div class="content-wrapper"><a class="title">Uncle Herschel's Favorite </a>
                                                             <div class="dot">.....................................................................</div>
                                                             <div class="des">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum </div>
@@ -92,15 +92,7 @@
                                                     </div>
                                                     <div class="item-right"><span class="price woocommerce-Price-amount amount"><span class="price-symbol">$</span>45.0</span></div>
                                                 </div>
-                                                <div class="item product-01">
-                                                    <div class="item-left"><img src="{{asset('images/product/product-2a.jpg')}}" alt="" class="img img-responsive">
-                                                        <div class="content-wrapper"><a class="title">The Cracker Barrel's Country Boy Breakfast</a>
-                                                            <div class="dot">.....................................................................</div>
-                                                            <div class="des">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="item-right"><span class="price woocommerce-Price-amount amount"><span class="price-symbol">$</span>25.0</span></div>
-                                                </div>
+
                                             </div>
                                         </div>
                                     </div>
@@ -112,36 +104,36 @@
                 <section class="service-section-02 padding-top-100 padding-bottom-100">
                     <div class="container">
                         <div class="swin-sc swin-sc-title">
-                            <p class="top-title"><span>Our Service</span></p>
-                            <h3 class="title">What We Focus On</h3>
+                            <p class="top-title"><span>Dịch Vụ</span></p>
+                            <h3 class="title">Chúng Tôi Phục Vụ</h3>
                         </div>
                         <div class="swin-sc swin-sc-iconbox">
                             <div class="row">
                                 <div class="col-md-3 col-sm-6 col-xs-12">
                                     <div class="item icon-box-02 wow fadeInUpShort">
                                         <div class="wrapper-icon"><i class="icons swin-icon-dish"></i><span class="number">1</span></div>
-                                        <h4 class="title">Reservation</h4>
+                                        <h4 class="title">XÔi sáng/chiều </h4>
                                         <div class="description">Lorem ipsum dolor sit amet, tong consecteturto sed eiusmod incididunt utote labore et</div>
                                     </div>
                                 </div>
                                 <div class="col-md-3 col-sm-6 col-xs-12">
                                     <div data-wow-delay="0.5s" class="item icon-box-02 wow fadeInUpShort">
                                         <div class="wrapper-icon"><i class="icons swin-icon-dinner-2"></i><span class="number">2</span></div>
-                                        <h4 class="title">Private Event</h4>
+                                        <h4 class="title">Đồ Cúng</h4>
                                         <div class="description">Lorem ipsum dolor sit amet, tong consecteturto sed eiusmod incididunt utote labore et</div>
                                     </div>
                                 </div>
                                 <div class="col-md-3 col-sm-6 col-xs-12">
                                     <div data-wow-delay="1s" class="item icon-box-02 wow fadeInUpShort">
                                         <div class="wrapper-icon"><i class="icons swin-icon-browser"></i><span class="number">3</span></div>
-                                        <h4 class="title">Online Order</h4>
+                                        <h4 class="title">Bánh sinh Nhật</h4>
                                         <div class="description">Lorem ipsum dolor sit amet, tong consecteturto sed eiusmod incididunt utote labore et</div>
                                     </div>
                                 </div>
                                 <div class="col-md-3 col-sm-6 col-xs-12">
                                     <div data-wow-delay="1.5s" class="item icon-box-02 wow fadeInUpShort">
                                         <div class="wrapper-icon"><i class="icons swin-icon-delivery"></i><span class="number">4</span></div>
-                                        <h4 class="title">Fast Delivery</h4>
+                                        <h4 class="title">Chè Các Loại</h4>
                                         <div class="description">Lorem ipsum dolor sit amet, tong consecteturto sed eiusmod incididunt utote labore et</div>
                                     </div>
                                 </div>
@@ -149,82 +141,83 @@
                         </div>
                     </div>
                 </section>
-                <section class="reservation-section-02 padding-top-100 padding-bottom-100">
-                    <div class="container"><img src="{{asset('images/background/home2-img-deco.png')}}" alt="" class="img-deco img-responsive">
-                        <div class="row">
-                            <div class="col-md-6 left-wrapper">
-                                <div class="form-dark-wrapper">
-                                    <div class="swin-sc swin-sc-title style-3 light">
-                                        <p class="title"><span>Make A Reservation</span></p>
-                                        <p class="subtitle">You can call us directly at <span class="text-default"> 225-88888</span></p>
-                                    </div>
-                                    <div class="swin-sc swin-sc-contact-form dark mtl">
-                                        <form>
-                                            <div class="form-group">
-                                                <div class="input-group">
-                                                    <div class="input-group-addon">
-                                                        <div class="fa fa-phone"></div>
-                                                    </div>
-                                                    <input type="text" placeholder="Phone" class="form-control">
-                                                </div>
-                                                <div class="input-group">
-                                                    <div class="input-group-addon"><i class="fa fa-male"></i></div>
-                                                    <select type="text" placeholder="People" class="form-control">
-                                                        <option>1 person</option>
-                                                        <option>2 People</option>
-                                                        <option>3 People</option>
-                                                        <option>4 People</option>
-                                                        <option>5 People</option>
-                                                        <option>6 People</option>
-                                                        <option>7 People</option>
-                                                        <option>8 People</option>
-                                                        <option>9 People</option>
-                                                        <option>10 People</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <div class="input-group">
-                                                    <div class="input-group-addon"><i class="fa fa-calendar"></i></div>
-                                                    <input type="text" placeholder="Date" class="form-control datepicker">
-                                                </div>
-                                                <div class="input-group">
-                                                    <div class="input-group-addon">
-                                                        <div class="fa fa-clock-o"></div>
-                                                    </div>
-                                                    <select type="text" placeholder="Time" class="form-control">
-                                                        <option>7:00 AM</option>
-                                                        <option>8:00 AM</option>
-                                                        <option>9:00 AM</option>
-                                                        <option>10:00 AM</option>
-                                                        <option>11:00 AM</option>
-                                                        <option>12:00 AM</option>
-                                                        <option>1:00 PM</option>
-                                                        <option>2:00 PM</option>
-                                                        <option>3:00 PM</option>
-                                                        <option>4:00 PM</option>
-                                                        <option>5:00 PM</option>
-                                                        <option>6:00 PM</option>
-                                                        <option>7:00 PM</option>
-                                                        <option>8:00 PM</option>
-                                                        <option>9:00 PM</option>
-                                                        <option>10:00 PM</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <div class="swin-btn-wrap center"><a href="#" class="swin-btn center form-submit"> <span>	Find Table</span></a></div>
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="video-wrapper equal-height deco-abs">
-                        <div class="swin-sc swin-sc-video">
-                            <div class="play-wrap"><a href="https://vimeo.com/27814858" class="play-btn swipebox"><i class="play-icon fa fa-play"></i></a></div>
-                        </div>
+
+{{--                <section class="reservation-section-02 padding-top-100 padding-bottom-100">--}}
+{{--                    <div class="container"><img src="{{asset('images/background/home2-img-deco.png')}}" alt="" class="img-deco img-responsive">--}}
+{{--                        <div class="row">--}}
+{{--                            <div class="col-md-6 left-wrapper">--}}
+{{--                                <div class="form-dark-wrapper">--}}
+{{--                                    <div class="swin-sc swin-sc-title style-3 light">--}}
+{{--                                        <p class="title"><span>Make A Reservation</span></p>--}}
+{{--                                        <p class="subtitle">You can call us directly at <span class="text-default"> 225-88888</span></p>--}}
+{{--                                    </div>--}}
+{{--                                    <div class="swin-sc swin-sc-contact-form dark mtl">--}}
+{{--                                        <form>--}}
+{{--                                            <div class="form-group">--}}
+{{--                                                <div class="input-group">--}}
+{{--                                                    <div class="input-group-addon">--}}
+{{--                                                        <div class="fa fa-phone"></div>--}}
+{{--                                                    </div>--}}
+{{--                                                    <input type="text" placeholder="Phone" class="form-control">--}}
+{{--                                                </div>--}}
+{{--                                                <div class="input-group">--}}
+{{--                                                    <div class="input-group-addon"><i class="fa fa-male"></i></div>--}}
+{{--                                                    <select type="text" placeholder="People" class="form-control">--}}
+{{--                                                        <option>1 person</option>--}}
+{{--                                                        <option>2 People</option>--}}
+{{--                                                        <option>3 People</option>--}}
+{{--                                                        <option>4 People</option>--}}
+{{--                                                        <option>5 People</option>--}}
+{{--                                                        <option>6 People</option>--}}
+{{--                                                        <option>7 People</option>--}}
+{{--                                                        <option>8 People</option>--}}
+{{--                                                        <option>9 People</option>--}}
+{{--                                                        <option>10 People</option>--}}
+{{--                                                    </select>--}}
+{{--                                                </div>--}}
+{{--                                            </div>--}}
+{{--                                            <div class="form-group">--}}
+{{--                                                <div class="input-group">--}}
+{{--                                                    <div class="input-group-addon"><i class="fa fa-calendar"></i></div>--}}
+{{--                                                    <input type="text" placeholder="Date" class="form-control datepicker">--}}
+{{--                                                </div>--}}
+{{--                                                <div class="input-group">--}}
+{{--                                                    <div class="input-group-addon">--}}
+{{--                                                        <div class="fa fa-clock-o"></div>--}}
+{{--                                                    </div>--}}
+{{--                                                    <select type="text" placeholder="Time" class="form-control">--}}
+{{--                                                        <option>7:00 AM</option>--}}
+{{--                                                        <option>8:00 AM</option>--}}
+{{--                                                        <option>9:00 AM</option>--}}
+{{--                                                        <option>10:00 AM</option>--}}
+{{--                                                        <option>11:00 AM</option>--}}
+{{--                                                        <option>12:00 AM</option>--}}
+{{--                                                        <option>1:00 PM</option>--}}
+{{--                                                        <option>2:00 PM</option>--}}
+{{--                                                        <option>3:00 PM</option>--}}
+{{--                                                        <option>4:00 PM</option>--}}
+{{--                                                        <option>5:00 PM</option>--}}
+{{--                                                        <option>6:00 PM</option>--}}
+{{--                                                        <option>7:00 PM</option>--}}
+{{--                                                        <option>8:00 PM</option>--}}
+{{--                                                        <option>9:00 PM</option>--}}
+{{--                                                        <option>10:00 PM</option>--}}
+{{--                                                    </select>--}}
+{{--                                                </div>--}}
+{{--                                            </div>--}}
+{{--                                            <div class="form-group">--}}
+{{--                                                <div class="swin-btn-wrap center"><a href="#" class="swin-btn center form-submit"> <span>	Find Table</span></a></div>--}}
+{{--                                            </div>--}}
+{{--                                        </form>--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                    <div class="video-wrapper equal-height deco-abs">--}}
+{{--                        <div class="swin-sc swin-sc-video">--}}
+{{--                            <div class="play-wrap"><a href="https://vimeo.com/27814858" class="play-btn swipebox"><i class="play-icon fa fa-play"></i></a></div>--}}
+{{--                        </div>--}}
                     </div>
                 </section>
                 <section class="product-sesction-01 padding-bottom-100 padding-top-100">
@@ -783,7 +776,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="swin-btn-wrap center mtxxl"><a href="#" class="swin-btn center btn-transparent"> <span>Full Blog</span></a></div>
+                        <div class="swin-btn-wrap center mtxxl"><a href="{{route('blog')}}" class="swin-btn center btn-transparent"> <span>Full Blog</span></a></div>
                     </div>
                 </section>
             </div>

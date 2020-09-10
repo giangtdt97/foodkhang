@@ -8,6 +8,7 @@ use TCG\Voyager\Traits\Resizable;
 
 class Product extends Model
 {
+
     const inStock = 'inStock';
     public function categories()
     {
@@ -20,7 +21,7 @@ class Product extends Model
 
     public function presentPrice()
     {
-        return numfmt_format_currency( '$%i', $this->price / 100);
+        return money_format( '$%i', $this->price / 100);
     }
     public function scopeMightAlsoLike($query)
     {
@@ -41,6 +42,13 @@ class Product extends Model
     public function scopePublished(Builder $query)
     {
         return $query->where('status', '=', static::inStock);
+    }
+    public function scopeFeatured(Builder $sql){
+        return $sql->where('featured','=',1);
+    }
+    public function scopeActive($query)
+    {
+        return $query->where('active', 1);
     }
     use Resizable;
 }

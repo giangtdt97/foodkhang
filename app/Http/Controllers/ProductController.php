@@ -16,6 +16,12 @@ class ProductController extends Controller
         $services=Service::all();
         return view('menu')->with(compact('categories','services'));
     }
+    public function indexFeatured()
+    {
+        $products=Product::all()->featured()->get();
+
+        return view('home')->with(compact('products'));
+    }
     public function show($slug)
     {
         $product = Product::where('slug', $slug)->first();
