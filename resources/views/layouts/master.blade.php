@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="_token" content="{{ csrf_token() }}">
     <title>@yield('title')</title>
     <!-- Bootstrap CSS-->
     <link href="{{asset('vendors/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
@@ -40,6 +41,7 @@
     <script src="{{asset('vendors/respond.min.js')}}"></script>
     <script src="{{asset('vendors/pageloading/js/snap.svg-min.js')}}"></script>
     <script src="{{asset('vendors/pageloading/sidebartransition/js/modernizr.custom.js')}}"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 </head>
 <body>
 @include('shared._header')

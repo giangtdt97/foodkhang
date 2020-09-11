@@ -21,12 +21,17 @@ Route::get('/welcome', function () {
 Route::get('','HomeController@index')->name('home');
 Route::get('about','AboutController@index')->name('about');
 Route::get('reservation','ReservationController@index')->name('reservation');
+Route::any('reservation/search',function(){
+    $search = Input::get ( 'search' );
+    \App\Order::where('phone_number','LIKE','%'.$search.'%')->get();
+});
 Route::get('contact','ContactController@index')->name('contact');
 
 
 Route::get('blog','BlogController@index')->name('blog');
 Route::get('blog/{slug}','BlogController@show' )->name('blog.detail');
 Route::get('tag/{slug}','blogController@showTag')->name('tag.detail');
+
 
 Route::get('menu','ProductController@index')->name('menu');
 Route::get('product/{slug}', 'ProductController@show')->name('product.show');

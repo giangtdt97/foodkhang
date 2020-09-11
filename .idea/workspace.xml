@@ -24,6 +24,15 @@
       <change afterPath="$PROJECT_DIR$/../PhpProject/.idea/vcs.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../TestBlade/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BlogController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/BlogController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ReservationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ReservationController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Tag.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Tag.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/master.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/reservation.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/reservation.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/shared/_blog_sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/shared/_blog_sidebar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/shared/_footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/shared/_footer.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/tag_detail.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/tag_detail.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../PhpProject/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../PhpProject/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../larastart" beforeDir="false" afterPath="$PROJECT_DIR$/../larastart" afterDir="false" />
     </list>
@@ -172,7 +181,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/images" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/vendor/voyager/orders" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
@@ -183,11 +192,11 @@
       <recent name="D:\xampp\htdocs\FoodKhang\app\Model" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\xampp\htdocs\FoodKhang\resources\views\vendor\voyager\orders" />
+      <recent name="D:\xampp\htdocs\FoodKhang\database\sql" />
       <recent name="D:\xampp\htdocs\FoodKhang\public\images" />
       <recent name="D:\xampp\htdocs\FoodKhang\resources\views\vendor\voyager" />
       <recent name="D:\xampp\htdocs\FoodKhang\resources\views\vendor\voyager\services" />
-      <recent name="D:\xampp\htdocs\FoodKhang" />
-      <recent name="D:\xampp\htdocs\FoodKhang\public\js" />
     </key>
   </component>
   <component name="RunManager">
@@ -281,7 +290,14 @@
       <workItem from="1599730507858" duration="1485000" />
       <workItem from="1599732408029" duration="1758000" />
       <workItem from="1599734182029" duration="1797000" />
-      <workItem from="1599790209852" duration="605000" />
+      <workItem from="1599790209852" duration="1381000" />
+      <workItem from="1599792012226" duration="1792000" />
+      <workItem from="1599793820855" duration="1799000" />
+      <workItem from="1599795632248" duration="1798000" />
+      <workItem from="1599797453696" duration="1794000" />
+      <workItem from="1599799270235" duration="1790000" />
+      <workItem from="1599801076753" duration="1584000" />
+      <workItem from="1599803048648" duration="1794000" />
     </task>
     <servers />
   </component>
@@ -325,10 +341,10 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="549" y="187" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1599555063587" />
-    <state x="604" y="356" key="NewPhpFileDialog" timestamp="1599709894203">
+    <state x="604" y="356" key="NewPhpFileDialog" timestamp="1599797182634">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="604" y="356" key="NewPhpFileDialog/0.0.1536.864@0.0.1536.864" timestamp="1599709894203" />
+    <state x="604" y="356" key="NewPhpFileDialog/0.0.1536.864@0.0.1536.864" timestamp="1599797182634" />
     <state x="277" y="77" key="SettingsEditor" timestamp="1599552659433">
       <screen x="0" y="0" width="1536" height="864" />
     </state>

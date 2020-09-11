@@ -27,19 +27,40 @@
                                         </div>
                                     </div>
                                     <div class="swin-sc swin-sc-contact-form light mtl">
-                                        <form>
-                                            <div class="form-group">
-                                                <div class="input-group">
-                                                    <div class="input-group-addon">
-                                                        <div class="fa fa-phone"></div>
-                                                    </div>
-                                                    <input type="text" placeholder="Phone" class="form-control">
+                                      <form method="post" action="/search" role="search">
+                                        <div class="form-group">
+                                            <div class="input-group">
+                                                <div class="input-group-addon">
+                                                    <div class="fa fa-phone"></div>
                                                 </div>
+                                            <input type="text" class="form-controller" id="search" name="search">
                                             </div>
-                                            <div class="form-group">
-                                                <div class="swin-btn-wrap center"><a href="#" class="swin-btn center form-submit"> <span>Kiểm Tra Đơn Hàng</span></a></div>
-                                            </div>
-                                        </form>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="swin-btn-wrap center"><button type="submit" class="swin-btn center form-submit"><span>Kiểm Tra Đơn Hàng</span></button></div>
+                                        </div>
+                                      </form>
+                                        @if(isset($orders))
+                                        <table class="table table-bordered table-hover">
+                                            <thead>
+                                            <tr>
+                                                <th>Customer Name</th>
+                                                <th>Phone Number</th>
+                                                <th>Status</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                                @foreach ($orders as $order)
+                                                    <tr>
+                                                        <td>{{$order->customer_name}}</td>
+                                                        <td>{{$order->phone_number}}</td>
+                                                        <td>{{$order->status}}</td>
+                                                    </tr>
+                                                @endforeach
+                                            </tbody>
+                                        </table>
+                                        @endif
+
                                     </div>
                                 </div>
                                 <div class="section-deco"><img src="{{asset('images/pages/reservation-showcase.png')}}" alt="fooday" class="img-deco"></div>

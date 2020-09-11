@@ -19,36 +19,19 @@
     <div class="swin-widget widget-recent-post">
         <div class="title-widget">Recent Post</div>
         <div class="widget-body widget-content clearfix">
+            @foreach($tags as $tag)
             <div class="swin-media">
-                <div class="content-left"><a href="#"><img src="{{asset('images/widget/wg-recent-post1.jpg')}}" alt="..." class="media-object"></a></div>
-                <div class="content-right"><a href="#" class="heading">
-                        Chinese Spicy Food Is Make
-                        By Jankan-Cook</a>
+                @foreach($tag->blogs ?? '' as $blog)
+                <div class="content-left"><a href="{{route('blog.detail',$blog->slug)}}"><img src="{{Voyager::image( $blog->image )}}" alt="..." class="media-object " height="100"></a></div>
+                <div class="content-right"><a href="{{route('blog.detail',$blog->slug)}}" class="heading">
+                    {{$blog->title}}</a>
                     <div class="info">
                         <div><i class="swin-icon fa fa-clock-o"></i><span class="text">20 minutes ago</span></div>
                     </div>
                 </div>
+                    @endforeach
             </div>
-            <div class="swin-media">
-                <div class="content-left"><a href="#"><img src="{{asset('images/widget/wg-recent-post2.jpg')}}" alt="..." class="media-object"></a></div>
-                <div class="content-right"><a href="#" class="heading">
-                        Recipe Collection From
-                        Master Chef KingDom</a>
-                    <div class="info">
-                        <div><i class="swin-icon fa fa-clock-o"></i><span class="text">06 minutes ago</span></div>
-                    </div>
-                </div>
-            </div>
-            <div class="swin-media">
-                <div class="content-left"><a href="#"><img src="{{asset('images/widget/wg-recent-post3.jpg')}}" alt="..." class="media-object"></a></div>
-                <div class="content-right"><a href="#" class="heading">
-                        The Best Nutrition For Your
-                        Daily Meal</a>
-                    <div class="info">
-                        <div><i class="swin-icon fa fa-clock-o"></i><span class="text">04 hours ago</span></div>
-                    </div>
-                </div>
-            </div>
+            @endforeach
         </div>
     </div>
     <!-- tag-->
