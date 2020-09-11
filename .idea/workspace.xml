@@ -24,15 +24,6 @@
       <change afterPath="$PROJECT_DIR$/../PhpProject/.idea/vcs.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../TestBlade/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BlogController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/BlogController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ReservationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ReservationController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Tag.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Tag.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/master.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/reservation.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/reservation.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/shared/_blog_sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/shared/_blog_sidebar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/shared/_footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/shared/_footer.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/tag_detail.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/tag_detail.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../PhpProject/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../PhpProject/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../larastart" beforeDir="false" afterPath="$PROJECT_DIR$/../larastart" afterDir="false" />
     </list>
@@ -298,6 +289,7 @@
       <workItem from="1599799270235" duration="1790000" />
       <workItem from="1599801076753" duration="1584000" />
       <workItem from="1599803048648" duration="1794000" />
+      <workItem from="1599804855740" duration="624000" />
     </task>
     <servers />
   </component>

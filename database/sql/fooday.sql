@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 11, 2020 at 04:29 AM
+-- Generation Time: Sep 11, 2020 at 08:27 AM
 -- Server version: 10.4.13-MariaDB
 -- PHP Version: 7.4.8
 
@@ -251,7 +251,15 @@ INSERT INTO `data_rows` (`id`, `data_type_id`, `field`, `type`, `display_name`, 
 (102, 10, 'featured', 'checkbox', 'Featured', 1, 1, 1, 1, 1, 1, '{}', 9),
 (103, 10, 'created_at', 'timestamp', 'Created At', 0, 0, 0, 0, 0, 0, '{}', 10),
 (104, 10, 'updated_at', 'timestamp', 'Updated At', 0, 0, 0, 0, 0, 0, '{}', 11),
-(107, 7, 'product_belongstomany_service_relationship', 'relationship', 'Services', 0, 1, 1, 1, 1, 1, '{\"model\":\"App\\\\Service\",\"table\":\"services\",\"type\":\"belongsToMany\",\"column\":\"id\",\"key\":\"id\",\"label\":\"name\",\"pivot_table\":\"product_service\",\"pivot\":\"1\",\"taggable\":\"0\"}', 15);
+(107, 7, 'product_belongstomany_service_relationship', 'relationship', 'Services', 0, 1, 1, 1, 1, 1, '{\"model\":\"App\\\\Service\",\"table\":\"services\",\"type\":\"belongsToMany\",\"column\":\"id\",\"key\":\"id\",\"label\":\"name\",\"pivot_table\":\"product_service\",\"pivot\":\"1\",\"taggable\":\"0\"}', 15),
+(108, 11, 'id', 'text', 'Id', 1, 0, 0, 0, 0, 0, '{}', 1),
+(109, 11, 'customer_name', 'text', 'Customer Name', 1, 1, 1, 1, 1, 1, '{}', 2),
+(110, 11, 'phone_number', 'number', 'Phone Number', 1, 1, 1, 1, 1, 1, '{}', 3),
+(111, 11, 'status', 'number', 'Status', 1, 1, 1, 1, 1, 1, '{}', 4),
+(112, 11, 'address', 'text', 'Address', 1, 1, 1, 1, 1, 1, '{}', 5),
+(113, 11, 'created_at', 'timestamp', 'Created At', 0, 1, 1, 1, 0, 1, '{}', 6),
+(114, 11, 'updated_at', 'timestamp', 'Updated At', 0, 0, 0, 0, 0, 0, '{}', 7),
+(115, 11, 'order_belongstomany_product_relationship', 'relationship', 'products', 0, 1, 1, 1, 1, 1, '{\"model\":\"App\\\\Product\",\"table\":\"products\",\"type\":\"belongsToMany\",\"column\":\"id\",\"key\":\"id\",\"label\":\"product_name\",\"pivot_table\":\"order_product\",\"pivot\":\"1\",\"taggable\":\"0\"}', 8);
 
 -- --------------------------------------------------------
 
@@ -291,7 +299,8 @@ INSERT INTO `data_types` (`id`, `name`, `slug`, `display_name_singular`, `displa
 (7, 'products', 'products', 'Product', 'Products', 'voyager-bag', 'App\\Product', NULL, NULL, NULL, 1, 0, '{\"order_column\":null,\"order_display_column\":null,\"order_direction\":\"asc\",\"default_search_key\":null,\"scope\":null}', '2020-09-07 23:21:11', '2020-09-08 22:03:27'),
 (8, 'blogs', 'blogs', 'Blog', 'Blogs', 'voyager-polaroid', 'App\\Blog', NULL, NULL, NULL, 1, 0, '{\"order_column\":null,\"order_display_column\":null,\"order_direction\":\"asc\",\"default_search_key\":null,\"scope\":null}', '2020-09-07 23:24:43', '2020-09-08 01:30:55'),
 (9, 'tags', 'tags', 'Tag', 'Tags', 'voyager-tag', 'App\\Tag', NULL, NULL, NULL, 1, 0, '{\"order_column\":null,\"order_display_column\":null,\"order_direction\":\"asc\",\"default_search_key\":null,\"scope\":null}', '2020-09-07 23:29:50', '2020-09-09 03:20:03'),
-(10, 'services', 'services', 'Service', 'Services', 'voyager-lab', 'App\\Service', NULL, NULL, NULL, 1, 0, '{\"order_column\":null,\"order_display_column\":null,\"order_direction\":\"asc\",\"default_search_key\":null,\"scope\":null}', '2020-09-08 01:24:16', '2020-09-08 03:19:25');
+(10, 'services', 'services', 'Service', 'Services', 'voyager-lab', 'App\\Service', NULL, NULL, NULL, 1, 0, '{\"order_column\":null,\"order_display_column\":null,\"order_direction\":\"asc\",\"default_search_key\":null,\"scope\":null}', '2020-09-08 01:24:16', '2020-09-08 03:19:25'),
+(11, 'orders', 'orders', 'Order', 'Orders', NULL, 'App\\Order', NULL, NULL, NULL, 1, 0, '{\"order_column\":null,\"order_display_column\":null,\"order_direction\":\"asc\",\"default_search_key\":null,\"scope\":null}', '2020-09-10 21:08:45', '2020-09-10 21:43:28');
 
 -- --------------------------------------------------------
 
@@ -356,23 +365,24 @@ CREATE TABLE `menu_items` (
 
 INSERT INTO `menu_items` (`id`, `menu_id`, `title`, `url`, `target`, `icon_class`, `color`, `parent_id`, `order`, `created_at`, `updated_at`, `route`, `parameters`) VALUES
 (1, 1, 'Dashboard', '', '_self', 'voyager-boat', NULL, NULL, 1, '2020-09-07 23:18:16', '2020-09-07 23:18:16', 'voyager.dashboard', NULL),
-(2, 1, 'Media', '', '_self', 'voyager-images', NULL, NULL, 9, '2020-09-07 23:18:16', '2020-09-08 01:31:29', 'voyager.media.index', NULL),
-(3, 1, 'Users', '', '_self', 'voyager-person', NULL, NULL, 8, '2020-09-07 23:18:16', '2020-09-08 01:31:29', 'voyager.users.index', NULL),
-(4, 1, 'Roles', '', '_self', 'voyager-lock', NULL, NULL, 7, '2020-09-07 23:18:16', '2020-09-08 01:31:29', 'voyager.roles.index', NULL),
-(5, 1, 'Tools', '', '_self', 'voyager-tools', NULL, NULL, 12, '2020-09-07 23:18:16', '2020-09-08 01:31:29', NULL, NULL),
+(2, 1, 'Media', '', '_self', 'voyager-images', NULL, NULL, 10, '2020-09-07 23:18:16', '2020-09-10 21:44:23', 'voyager.media.index', NULL),
+(3, 1, 'Users', '', '_self', 'voyager-person', NULL, NULL, 9, '2020-09-07 23:18:16', '2020-09-10 21:44:23', 'voyager.users.index', NULL),
+(4, 1, 'Roles', '', '_self', 'voyager-lock', NULL, NULL, 8, '2020-09-07 23:18:16', '2020-09-10 21:44:23', 'voyager.roles.index', NULL),
+(5, 1, 'Tools', '', '_self', 'voyager-tools', NULL, NULL, 13, '2020-09-07 23:18:16', '2020-09-10 21:44:23', NULL, NULL),
 (6, 1, 'Menu Builder', '', '_self', 'voyager-list', NULL, 5, 1, '2020-09-07 23:18:16', '2020-09-07 23:33:16', 'voyager.menus.index', NULL),
 (7, 1, 'Database', '', '_self', 'voyager-data', NULL, 5, 2, '2020-09-07 23:18:16', '2020-09-07 23:33:16', 'voyager.database.index', NULL),
 (8, 1, 'Compass', '', '_self', 'voyager-compass', NULL, 5, 3, '2020-09-07 23:18:16', '2020-09-07 23:33:16', 'voyager.compass.index', NULL),
 (9, 1, 'BREAD', '', '_self', 'voyager-bread', NULL, 5, 4, '2020-09-07 23:18:16', '2020-09-07 23:33:16', 'voyager.bread.index', NULL),
-(10, 1, 'Settings', '', '_self', 'voyager-settings', NULL, NULL, 13, '2020-09-07 23:18:17', '2020-09-08 01:31:29', 'voyager.settings.index', NULL),
-(11, 1, 'Categories', '', '_self', 'voyager-categories', NULL, NULL, 6, '2020-09-07 23:18:19', '2020-09-08 01:31:29', 'voyager.categories.index', NULL),
-(12, 1, 'Posts', '', '_self', 'voyager-news', NULL, NULL, 10, '2020-09-07 23:18:21', '2020-09-08 01:31:29', 'voyager.posts.index', NULL),
-(13, 1, 'Pages', '', '_self', 'voyager-file-text', NULL, NULL, 11, '2020-09-07 23:18:22', '2020-09-08 01:31:29', 'voyager.pages.index', NULL),
+(10, 1, 'Settings', '', '_self', 'voyager-settings', NULL, NULL, 14, '2020-09-07 23:18:17', '2020-09-10 21:44:23', 'voyager.settings.index', NULL),
+(11, 1, 'Categories', '', '_self', 'voyager-categories', NULL, NULL, 7, '2020-09-07 23:18:19', '2020-09-10 21:44:23', 'voyager.categories.index', NULL),
+(12, 1, 'Posts', '', '_self', 'voyager-news', NULL, NULL, 11, '2020-09-07 23:18:21', '2020-09-10 21:44:23', 'voyager.posts.index', NULL),
+(13, 1, 'Pages', '', '_self', 'voyager-file-text', NULL, NULL, 12, '2020-09-07 23:18:22', '2020-09-10 21:44:23', 'voyager.pages.index', NULL),
 (14, 1, 'Hooks', '', '_self', 'voyager-hook', NULL, 5, 5, '2020-09-07 23:18:24', '2020-09-07 23:33:16', 'voyager.hooks', NULL),
 (15, 1, 'Products', '', '_self', 'voyager-bag', '#000000', NULL, 2, '2020-09-07 23:21:11', '2020-09-08 01:32:01', 'voyager.products.index', 'null'),
-(16, 1, 'Blogs', '', '_self', 'voyager-laptop', '#000000', NULL, 4, '2020-09-07 23:24:43', '2020-09-08 01:32:39', 'voyager.blogs.index', 'null'),
-(17, 1, 'Tags', '', '_self', 'voyager-tag', NULL, NULL, 5, '2020-09-07 23:29:50', '2020-09-08 01:31:29', 'voyager.tags.index', NULL),
-(18, 1, 'Services', '', '_self', 'voyager-lab', NULL, NULL, 3, '2020-09-08 01:24:16', '2020-09-08 01:31:29', 'voyager.services.index', NULL);
+(16, 1, 'Blogs', '', '_self', 'voyager-laptop', '#000000', NULL, 5, '2020-09-07 23:24:43', '2020-09-10 21:44:23', 'voyager.blogs.index', 'null'),
+(17, 1, 'Tags', '', '_self', 'voyager-tag', NULL, NULL, 6, '2020-09-07 23:29:50', '2020-09-10 21:44:23', 'voyager.tags.index', NULL),
+(18, 1, 'Services', '', '_self', 'voyager-lab', NULL, NULL, 4, '2020-09-08 01:24:16', '2020-09-10 21:44:23', 'voyager.services.index', NULL),
+(19, 1, 'Orders', '', '_self', 'voyager-basket', '#000000', NULL, 3, '2020-09-10 21:08:45', '2020-09-10 21:44:23', 'voyager.orders.index', 'null');
 
 -- --------------------------------------------------------
 
@@ -447,6 +457,13 @@ CREATE TABLE `orders` (
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+--
+-- Dumping data for table `orders`
+--
+
+INSERT INTO `orders` (`id`, `customer_name`, `phone_number`, `status`, `address`, `created_at`, `updated_at`) VALUES
+(1, 'Giang', 987314609, 'COMPLETE', '123/456/789 Đường ABC', '2020-09-10 21:42:00', '2020-09-10 21:42:44');
+
 -- --------------------------------------------------------
 
 --
@@ -460,6 +477,13 @@ CREATE TABLE `order_product` (
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `order_product`
+--
+
+INSERT INTO `order_product` (`id`, `order_id`, `product_id`, `created_at`, `updated_at`) VALUES
+(1, 1, 2, NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -580,7 +604,12 @@ INSERT INTO `permissions` (`id`, `key`, `table_name`, `created_at`, `updated_at`
 (58, 'read_services', 'services', '2020-09-08 01:24:16', '2020-09-08 01:24:16'),
 (59, 'edit_services', 'services', '2020-09-08 01:24:16', '2020-09-08 01:24:16'),
 (60, 'add_services', 'services', '2020-09-08 01:24:16', '2020-09-08 01:24:16'),
-(61, 'delete_services', 'services', '2020-09-08 01:24:16', '2020-09-08 01:24:16');
+(61, 'delete_services', 'services', '2020-09-08 01:24:16', '2020-09-08 01:24:16'),
+(62, 'browse_orders', 'orders', '2020-09-10 21:08:45', '2020-09-10 21:08:45'),
+(63, 'read_orders', 'orders', '2020-09-10 21:08:45', '2020-09-10 21:08:45'),
+(64, 'edit_orders', 'orders', '2020-09-10 21:08:45', '2020-09-10 21:08:45'),
+(65, 'add_orders', 'orders', '2020-09-10 21:08:45', '2020-09-10 21:08:45'),
+(66, 'delete_orders', 'orders', '2020-09-10 21:08:45', '2020-09-10 21:08:45');
 
 -- --------------------------------------------------------
 
@@ -657,7 +686,12 @@ INSERT INTO `permission_role` (`permission_id`, `role_id`) VALUES
 (58, 1),
 (59, 1),
 (60, 1),
-(61, 1);
+(61, 1),
+(62, 1),
+(63, 1),
+(64, 1),
+(65, 1),
+(66, 1);
 
 -- --------------------------------------------------------
 
@@ -1159,13 +1193,13 @@ ALTER TABLE `category_product`
 -- AUTO_INCREMENT for table `data_rows`
 --
 ALTER TABLE `data_rows`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=108;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=116;
 
 --
 -- AUTO_INCREMENT for table `data_types`
 --
 ALTER TABLE `data_types`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT for table `failed_jobs`
@@ -1183,7 +1217,7 @@ ALTER TABLE `menus`
 -- AUTO_INCREMENT for table `menu_items`
 --
 ALTER TABLE `menu_items`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 
 --
 -- AUTO_INCREMENT for table `migrations`
@@ -1195,13 +1229,13 @@ ALTER TABLE `migrations`
 -- AUTO_INCREMENT for table `orders`
 --
 ALTER TABLE `orders`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `order_product`
 --
 ALTER TABLE `order_product`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `pages`
@@ -1213,7 +1247,7 @@ ALTER TABLE `pages`
 -- AUTO_INCREMENT for table `permissions`
 --
 ALTER TABLE `permissions`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=62;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=67;
 
 --
 -- AUTO_INCREMENT for table `posts`
