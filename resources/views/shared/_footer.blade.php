@@ -39,15 +39,15 @@
                                     <div class="phone-info">
                                         <div class="info-icon"><i class="fa fa-mobile-phone"></i></div>
                                         <div class="info-content">
-                                            <a href="tel:0936-156-349"><p>{{setting('site.site_phone')}}</p></a>
-                                            <a href="tel:0936-667-668"> <p>{{setting('site.site_phone2')}}</p></a>
+                                            <a href="tel:{{setting('site.site_phone')}}"><p>{{setting('site.site_phone')}}</p></a>
+                                            <a href="tel:{{setting('site.site_phone2')}}"> <p>{{setting('site.site_phone2')}}</p></a>
                                         </div>
                                     </div>
                                     <div>
                                         <div class="clearfix"><a class="wget-logo"><img src="assets/images/logo-ft.png" alt="" class="img img-responsive"></a>
                                             <ul class="socials socials-about list-unstyled list-inline">
                                                 <li><a href="https://www.facebook.com/Xoikhang.vn/"><i class="fa fa-facebook"></i></a></li>
-                                                <li><a href="tel:0936-156-349"><i class="fa fa-commenting-o"></i></a></li>
+                                                <li><a href="tel:{{setting('site.site_phone')}}"><i class="fa fa-commenting-o"></i></a></li>
                                                 <li><a href="{{route('contact')}}"><i class="fa fa-map-marker"></i></a></li>
 
                                             </ul>

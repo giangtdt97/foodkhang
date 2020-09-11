@@ -8,12 +8,12 @@
                         <div class="wg-contact"><i class="fa fa-map-marker"></i><span>{{setting('site.site_address')}}</span></div>
                     </div>
                     <div class="item">
-                        <div class="wg-contact"><i class="fa fa-phone"></i><a href="tel:0936-156-349"><span>{{setting('site.site_phone')}}</span></a></div>
+                        <div class="wg-contact"><i class="fa fa-phone"></i><a href="tel:{{setting('site.site_phone')}}"><span>{{setting('site.site_phone')}}</span></a></div>
                     </div>
                     <div class="item">
                         <ul class="socials-nb list-inline wg-social">
                             <li><a href="https://www.facebook.com/Xoikhang.vn/"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="tel:0936-156-349"><i class="fa fa-commenting-o"></i></a></li>
+                            <li><a href="tel:{{setting('site.site_phone')}}"><i class="fa fa-commenting-o"></i></a></li>
                             <li><a href="{{route('contact')}}"><i class="fa fa-map-marker"></i></a></li>
                         </ul>
                     </div>
@@ -38,9 +38,8 @@
                         <li class="nav-item {{(strpos(Route::currentRouteName(), 'home')===0) ? 'active' : ''}} "><a href="{{route('home')}}" class="dropdown-toggle">Trang Chủ</a><i class="fa fa-angle-down btn-open-dropdown"></i>
                         </li>
                         <li class="nav-item {{ (request()->is('about')) ? 'active' : '' }}" ><a href="{{route('about')}}">Giới Thiệu</a></li>
+                        <li class="nav-item {{ (request()->is('menu')) ? 'active' : '' }}"><a href="{{route('menu')}}">Thực Đơn</a></li>
                         <li class="nav-item {{ (request()->is('reservation')) ? 'active' : '' }}" ><a href="{{route('reservation')}}">Theo Dõi Đơn Hàng</a></li>
-                        <li class="nav-item {{ (request()->is('menu')) ? 'active' : '' }}"><a href="{{route('menu')}}">Thực Đơn</a>
-                        </li>
                         <li class="nav-item {{ (request()->is('blog')) ? 'active' : '' }}"><a href="{{route('blog')}}">Bài Viết</a>
                         <li class="nav-item {{ (request()->is('contact')) ? 'active' : '' }}"><a href="{{route('contact')}}">Liên Hệ</a></li>
                     </ul>
