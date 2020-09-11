@@ -23,7 +23,7 @@
       <change afterPath="$PROJECT_DIR$/../BanabaTech/ui/.idea/ultim8.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../PhpProject/.idea/vcs.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../TestBlade/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/contact.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/contact.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../PhpProject/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../PhpProject/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../larastart" beforeDir="false" afterPath="$PROJECT_DIR$/../larastart" afterDir="false" />
     </list>
@@ -280,7 +280,8 @@
       <workItem from="1599728693271" duration="1799000" />
       <workItem from="1599730507858" duration="1485000" />
       <workItem from="1599732408029" duration="1758000" />
-      <workItem from="1599734182029" duration="1114000" />
+      <workItem from="1599734182029" duration="1797000" />
+      <workItem from="1599790209852" duration="605000" />
     </task>
     <servers />
   </component>
