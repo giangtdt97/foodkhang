@@ -24,6 +24,12 @@
       <change afterPath="$PROJECT_DIR$/../PhpProject/.idea/vcs.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../TestBlade/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/about.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/about.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/menu_detail.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/menu_detail.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/reservation.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/reservation.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/shared/_blog_sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/shared/_blog_sidebar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/shared/_footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/shared/_footer.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../PhpProject/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../PhpProject/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../larastart" beforeDir="false" afterPath="$PROJECT_DIR$/../larastart" afterDir="false" />
     </list>
@@ -172,22 +178,22 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/vendor/voyager/orders" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/database/sql" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\xampp\htdocs\FoodKhang\app" />
-      <recent name="D:\xampp\htdocs\FoodKhang\app\Model" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\xampp\htdocs\FoodKhang\resources\views\vendor\voyager\orders" />
       <recent name="D:\xampp\htdocs\FoodKhang\database\sql" />
+      <recent name="D:\xampp\htdocs\FoodKhang\resources\views\vendor\voyager\orders" />
       <recent name="D:\xampp\htdocs\FoodKhang\public\images" />
       <recent name="D:\xampp\htdocs\FoodKhang\resources\views\vendor\voyager" />
       <recent name="D:\xampp\htdocs\FoodKhang\resources\views\vendor\voyager\services" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\xampp\htdocs\FoodKhang\app" />
+      <recent name="D:\xampp\htdocs\FoodKhang\app\Model" />
     </key>
   </component>
   <component name="RunManager">
@@ -289,7 +295,8 @@
       <workItem from="1599799270235" duration="1790000" />
       <workItem from="1599801076753" duration="1584000" />
       <workItem from="1599803048648" duration="1794000" />
-      <workItem from="1599804855740" duration="624000" />
+      <workItem from="1599804855740" duration="1799000" />
+      <workItem from="1599807028765" duration="1796000" />
     </task>
     <servers />
   </component>

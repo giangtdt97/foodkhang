@@ -26,42 +26,43 @@
                                             <p class="reservation-form-title text-center">Chúng tôi rất hân hạnh phục vụ quý khách, vui lòng  nhập số điện thoại để kiểm tra đơn hàng</p>
                                         </div>
                                     </div>
-                                    <div class="swin-sc swin-sc-contact-form light mtl">
-                                      <form method="post" action="/search" role="search">
+                                     <div class="swin-sc swin-sc-contact-form light mtl">
+                                      <form method="post" action="../search" role="search">
                                         <div class="form-group">
-                                            <div class="input-group">
-                                                <div class="input-group-addon">
+
+                                            <div class="swin-btn-wrap center">
+
                                                     <div class="fa fa-phone"></div>
-                                                </div>
-                                            <input type="text" class="form-controller" id="search" name="search">
+                                                <input type="text" class="form-controller" id="search" name="search">
+
                                             </div>
                                         </div>
                                         <div class="form-group">
                                             <div class="swin-btn-wrap center"><button type="submit" class="swin-btn center form-submit"><span>Kiểm Tra Đơn Hàng</span></button></div>
                                         </div>
                                       </form>
-                                        @if(isset($orders))
-                                        <table class="table table-bordered table-hover">
-                                            <thead>
-                                            <tr>
-                                                <th>Customer Name</th>
-                                                <th>Phone Number</th>
-                                                <th>Status</th>
-                                            </tr>
-                                            </thead>
-                                            <tbody>
-                                                @foreach ($orders as $order)
-                                                    <tr>
-                                                        <td>{{$order->customer_name}}</td>
-                                                        <td>{{$order->phone_number}}</td>
-                                                        <td>{{$order->status}}</td>
-                                                    </tr>
-                                                @endforeach
-                                            </tbody>
-                                        </table>
-                                        @endif
+{{--                                        @if(isset($orders))--}}
+{{--                                        <table class="table table-bordered table-hover">--}}
+{{--                                            <thead>--}}
+{{--                                            <tr>--}}
+{{--                                                <th>Customer Name</th>--}}
+{{--                                                <th>Phone Number</th>--}}
+{{--                                                <th>Status</th>--}}
+{{--                                            </tr>--}}
+{{--                                            </thead>--}}
+{{--                                            <tbody>--}}
+{{--                                                @foreach ($orders as $order)--}}
+{{--                                                    <tr>--}}
+{{--                                                        <td>{{$order->customer_name}}</td>--}}
+{{--                                                        <td>{{$order->phone_number}}</td>--}}
+{{--                                                        <td>{{$order->status}}</td>--}}
+{{--                                                    </tr>--}}
+{{--                                                @endforeach--}}
+{{--                                            </tbody>--}}
+{{--                                        </table>--}}
+{{--                                        @endif--}}
 
-                                    </div>
+                                      </div>
                                 </div>
                                 <div class="section-deco"><img src="{{asset('images/pages/reservation-showcase.png')}}" alt="fooday" class="img-deco"></div>
                             </div>

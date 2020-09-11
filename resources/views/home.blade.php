@@ -353,7 +353,7 @@
                             <div class="col-md-12">
                                 <div class="swin-sc swin-sc-title">
                                     <p class="top-title"><span>Nhận Xét</span></p>
-                                    <h3 class="title white-color">Khách Hàng của Xôi Khang </h3>
+                                    <h3 class="title white-color">Khách Hàng Xôi Khang </h3>
                                 </div>
                                 <div class="row">
                                     <div class="col-md-10 col-md-offset-1">
@@ -406,7 +406,7 @@
                     <div class="container">
                         <div class="swin-sc swin-sc-title">
                             <p class="top-title"><span>Cập Nhật Thêm Từ</span></p>
-                            <h3 class="title">Blog của Xôi Khang</h3>
+                            <h3 class="title">Blog Xôi Khang</h3>
                         </div>
                         <div class="swin-sc swin-sc-blog-masonry">
                             <div class="grid">

@@ -9,7 +9,7 @@
     </div>
     <!-- categories-->
     <div class="swin-widget widget-categories">
-        <div class="title-widget">Category</div>
+        <div class="title-widget">Danh Mục Món Ăn</div>
         <div class="widget-body widget-content clearfix">
             @foreach($categories as $category)
             <a href="{{route('category.show',$category->slug)}}" class="link"><i class="icons fa fa-angle-right"></i><span class="text">{{$category->name}}</span></a>
@@ -17,7 +17,7 @@
             </div>
     <!-- recent post-->
     <div class="swin-widget widget-recent-post">
-        <div class="title-widget">Recent Post</div>
+        <div class="title-widget">Bài Viết</div>
         <div class="widget-body widget-content clearfix">
             @foreach($tags as $tag)
             <div class="swin-media">
@@ -36,7 +36,7 @@
     </div>
     <!-- tag-->
     <div class="swin-widget widget-tag">
-        <div class="title-widget">TAG</div>
+        <div class="title-widget">Tag</div>
         <div class="widget-body widget-content clearfix">
             <ul class="list-unstyled list-inline">
                 @foreach($tags as $tag)
@@ -47,7 +47,7 @@
     </div>
     <!-- gallery-->
     <div class="swin-widget widget-gallery carousel">
-        <div class="title-widget">Gallery</div>
+        <div class="title-widget">Hình Ảnh</div>
         <div class="widget-body widget-content clearfix">
             <div class="main-slider">
                 <div class="item-slide"><img src="{{asset('images/widget/wg-gallery1.jpg')}}" alt="" class="img-responsive showcase"></div>

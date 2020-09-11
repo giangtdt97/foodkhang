@@ -136,12 +136,15 @@
                                             <div data-wow-delay="1s" class="swin-sc sc-featured-box item wow fadeInUp"><img src="{{asset('images/featured-box-bg-1.jpg')}}" alt="fooday" class="box-bg">
                                                 <div class="box-inner">
                                                     <h4 class="box-title">Rau câu 3D</h4>
-                                                    <div class="box-content">🎊🎊Những mẫu bánh rau cau 3D luôn là những quà tặng ấn tương, gây đươc nhiều thiện cảm cho người "đặc biệt" được nhận món quà này.
+                                                    <div class="box-content">🎊🎊Những mẫu bánh rau cau 3D luôn là những quà tặng ấn tương, gây đươc nhiều thiện cảm cho người "đặc biệt" được nhận món quà này.<span id="dots">...</span><span id="more">
 
                                                         👍🏻👍🏻Với những hoạ tiết thật công phu, cách phối màu sang trọng, vị ngọt thanh và béo ngậy trong từng lớp rau câu... Sẽ không làm thất vọng những khách hàng khá kỹ tính đa tin tưởng va chon Xôi Khang là người làm nên những món quà mang tên RAU CÂU 3D.
 
-                                                        Bánh Rau câu 3D phong phú về mẫu - size bánh - giá bán hợp lý theo từng têu cầu của khách hàng .</div>
-                                                    <div class="btn-wrap text-center"><a href="{{route('menu')}}" class="btn swin-btn"><span>Read More</span></a></div>
+                                                            Bánh Rau câu 3D phong phú về mẫu - size bánh - giá bán hợp lý theo từng têu cầu của khách hàng .</span>
+
+                                                    </div>
+                                                    <button onclick="myFunction()" id="myBtn">Chi tiết</button>
+                                                    <div class="btn-wrap text-center"><a href="{{route('menu')}}" class="btn swin-btn"><span>Đến Menu</span></a></div>
                                                     <div class="showcase"><img src="{{asset('images/feature-box-bg-3.jpg')}}" alt="" class="img-responsive img-showcase">
                                                         <div class="title-showcase">Rau câu 3D</div>
                                                     </div>
