@@ -21,9 +21,12 @@ Route::get('/welcome', function () {
 Route::get('','HomeController@index')->name('home');
 Route::get('about','AboutController@index')->name('about');
 Route::get('reservation','ReservationController@index')->name('reservation');
-Route::any('reservation/search',function(){
+Route::any('/search',function(){
     $search = Input::get ( 'search' );
-    \App\Order::where('phone_number','LIKE','%'.$search.'%')->get();
+    $order = \App\Order::where('phone_number','LIKE','%'.$search.'%')->orWhere('customer_name','LIKE','%'.$search.'%')->get();
+    if(count($order) > 0)
+        return view('welcome')->withDetails($order)->withQuery ( $search );
+    else return view ('welcome')->withMessage('No Details found. Try to search again !');
 });
 Route::get('contact','ContactController@index')->name('contact');
 

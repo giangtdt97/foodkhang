@@ -19,11 +19,6 @@
                     </div>
                 </div>
             </div>
-            <div class="topbar-right">
-                <div class="topbar-content">
-
-                </div>
-            </div>
         </div>
     </div>
     <div class="header-main">

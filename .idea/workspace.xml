@@ -23,10 +23,10 @@
       <change afterPath="$PROJECT_DIR$/../BanabaTech/ui/.idea/ultim8.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../PhpProject/.idea/vcs.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../TestBlade/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/shared/_footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/shared/_footer.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/reservation.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/reservation.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/shared/_header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/shared/_header.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../PhpProject/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../PhpProject/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../larastart" beforeDir="false" afterPath="$PROJECT_DIR$/../larastart" afterDir="false" />
     </list>
@@ -299,6 +299,7 @@
       <workItem from="1599812611875" duration="2271000" />
       <workItem from="1599814922353" duration="1777000" />
       <workItem from="1599816734874" duration="1796000" />
+      <workItem from="1599818545390" duration="1492000" />
     </task>
     <servers />
   </component>
