@@ -10,7 +10,7 @@
                             <div class="container">
                                 <div class="slide-content-inner"><img src="{{asset('images/slider/slider2-icon.png')}}" data-ani-in="fadeInUp" data-ani-out="fadeOutDown" data-ani-delay="500" alt="fooday" class="slide-icon img img-responsive animated">
                                     <h3 data-ani-in="fadeInUp" data-ani-out="fadeOutDown" data-ani-delay="1000" class="slide-title animated">XÔI KHANG</h3>
-                                    <p data-ani-in="fadeInUp" data-ani-out="fadeOutDown" data-ani-delay="1500" class="slide-sub-title animated"><span class="line-before"></span><span class="line-after"></span><span class="text"><span>NGON TRUYỀN THỐNG - GIỮ TINH HOA </span></span></p>
+                                    <p data-ani-in="fadeInUp" data-ani-out="fadeOutDown" data-ani-delay="1500" class="slide-sub-title animated"><span class="line-before"></span><span class="line-after"></span><span class="text"><span>NGON TRUYỀN THỐNG   GIỮ TINH HOA </span></span></p>
                                 </div>
                             </div>
                         </div>
@@ -405,7 +405,7 @@
                 <section class="blog-section-03 padding-top-100 padding-bottom-100">
                     <div class="container">
                         <div class="swin-sc swin-sc-title">
-                            <p class="top-title"><span>Cập Nhật Thêm Từ</span></p>
+                            <p class="top-title"><span>Bài Viết</span></p>
                             <h3 class="title">Blog Xôi Khang</h3>
                         </div>
                         <div class="swin-sc swin-sc-blog-masonry">

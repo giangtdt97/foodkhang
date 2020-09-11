@@ -113,7 +113,7 @@
                                                 <div class="box-inner">
                                                     <h4 class="box-title">Xôi Chè Sạch </h4>
                                                     <div class="box-content">Lorem ipsum dolor sit amet, consec adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</div>
-                                                    <div class="btn-wrap text-center"><a href="{{route('menu')}}" class="btn swin-btn"><span>Read More</span></a></div>
+                                                    <div class="btn-wrap text-center"><a href="{{route('menu')}}" class="btn swin-btn"><span>Đến Menu</span></a></div>
                                                     <div class="showcase"><img src="{{asset('images/feature-box-bg.jpg')}}" alt="" class="img-responsive img-showcase">
                                                         <div class="title-showcase">Xôi Chè Sạch</div>
                                                     </div>
@@ -125,7 +125,7 @@
                                                 <div class="box-inner">
                                                     <h4 class="box-title">Măm cúng </h4>
                                                     <div class="box-content">Lorem ipsum dolor sit amet, consec adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</div>
-                                                    <div class="btn-wrap text-center"><a href="{{route('menu')}}" class="btn swin-btn"><span>Read More</span></a></div>
+                                                    <div class="btn-wrap text-center"><a href="{{route('menu')}}" class="btn swin-btn"><span>Đến Menu</span></a></div>
                                                     <div class="showcase"><img src="{{asset('images/feature-box-bg-2.jpg')}}" alt="" class="img-responsive img-showcase">
                                                         <div class="title-showcase">Măm cúng </div>
                                                     </div>
@@ -136,148 +136,19 @@
                                             <div data-wow-delay="1s" class="swin-sc sc-featured-box item wow fadeInUp"><img src="{{asset('images/featured-box-bg-1.jpg')}}" alt="fooday" class="box-bg">
                                                 <div class="box-inner">
                                                     <h4 class="box-title">Rau câu 3D</h4>
-                                                    <div class="box-content">🎊🎊Những mẫu bánh rau cau 3D luôn là những quà tặng ấn tương, gây đươc nhiều thiện cảm cho người "đặc biệt" được nhận món quà này.<span id="dots">...</span><span id="more">
+                                                    <div class="box-content">🎊🎊Những mẫu bánh rau cau 3D luôn là những quà tặng ấn tương, gây đươc nhiều thiện cảm cho người "đặc biệt" đ<span id="dots">...</span><span id="more">ược nhận món quà này.
 
                                                         👍🏻👍🏻Với những hoạ tiết thật công phu, cách phối màu sang trọng, vị ngọt thanh và béo ngậy trong từng lớp rau câu... Sẽ không làm thất vọng những khách hàng khá kỹ tính đa tin tưởng va chon Xôi Khang là người làm nên những món quà mang tên RAU CÂU 3D.
 
-                                                            Bánh Rau câu 3D phong phú về mẫu - size bánh - giá bán hợp lý theo từng têu cầu của khách hàng .</span>
+                                                            Bánh Rau câu 3D phong phú về mẫu - size bánh - giá bán hợp lý theo từng têu cầu của khách hàng .
 
-                                                    </div>
-                                                    <button onclick="myFunction()" id="myBtn">Chi tiết</button>
+                                                        </span><button onclick="myFunction()" id="myBtn">Chi Tiết</button></div>
                                                     <div class="btn-wrap text-center"><a href="{{route('menu')}}" class="btn swin-btn"><span>Đến Menu</span></a></div>
                                                     <div class="showcase"><img src="{{asset('images/feature-box-bg-3.jpg')}}" alt="" class="img-responsive img-showcase">
                                                         <div class="title-showcase">Rau câu 3D</div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    <section class="partner-section-03 padding-top-100 padding-bottom-100">
-                        <div class="container">
-                            <div data-item="6" class="swin-sc swin-sc-partner">
-                                <div class="main-slider">
-                                    <div class="slides">
-                                        <div class="item"><img src="{{asset('images/partner/partner-01.png')}}" alt="fooday" class="img img-responsive"></div>
-                                        <div class="item"><img src="{{asset('images/partner/partner-02.png')}}" alt="fooday" class="img img-responsive"></div>
-                                        <div class="item"><img src="{{asset('images/partner/partner-03.png')}}" alt="fooday" class="img img-responsive"></div>
-                                        <div class="item"><img src="{{asset('images/partner/partner-04.png')}}" alt="fooday" class="img img-responsive"></div>
-                                        <div class="item"><img src="{{asset('images/partner/partner-01.png')}}" alt="fooday" class="img img-responsive"></div>
-                                        <div class="item"><img src="{{asset('images/partner/partner-02.png')}}" alt="fooday" class="img img-responsive"></div>
-                                        <div class="item"><img src="{{asset('images/partner/partner-03.png')}}" alt="fooday" class="img img-responsive"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    <section class="counter-section-03 padding-top-100 padding-bottom-100">
-                        <div class="container"><img src="{{asset('images/background/vegetable_01.png')}}" alt="" class="img-left img-bg img-responsive"><img src="{{asset('images/background/vegetable_02.png')}}" alt="" class="img-right img-bg img-responsive">
-                            <div class="swin-sc swin-sc-counter">
-                                <div class="row">
-                                    <div class="col-md-3 col-sm-6 col-xs-12">
-                                        <div class="counter-info item"><span data-from="50" data-to="103" data-speed="3000" data-refresh-interval="5" class="number timer">0</span><span class="caption">/dishes</span></div>
-                                        <div class="counter-avatar"><img src="{{asset('images/counter-1.png')}}" alt="fooday" class="img img-responsive"></div>
-                                    </div>
-                                    <div class="col-md-3 col-sm-6 col-xs-12">
-                                        <div class="counter-info item"><span data-from="2300" data-to="2389" data-speed="3000" data-refresh-interval="5" class="number timer">0</span><span class="caption">/customers</span></div>
-                                        <div class="counter-avatar"><img src="{{asset('images/counter-2.png')}}" alt="fooday" class="img img-responsive"></div>
-                                    </div>
-                                    <div class="col-md-3 col-sm-6 col-xs-12">
-                                        <div class="counter-info item"><span data-from="1" data-to="20" data-speed="3000" data-refresh-interval="5" class="number timer">0</span><span class="caption">/awards</span></div>
-                                        <div class="counter-avatar"><img src="{{asset('images/counter-3.png')}}" alt="fooday" class="img img-responsive"></div>
-                                    </div>
-                                    <div class="col-md-3 col-sm-6 col-xs-12">
-                                        <div class="counter-info item"><span data-from="2500" data-to="2589" data-speed="3000" data-refresh-interval="5" class="number timer">0</span><span class="caption">/working hours</span></div>
-                                        <div class="counter-avatar"><img src="{{asset('images/counter-4.png')}}" alt="fooday" class="img img-responsive"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    <section class="section-reservation-form padding-top-100 padding-bottom-100">
-                        <div class="container">
-                            <div class="section-content">
-                                <div class="swin-sc swin-sc-title style-2">
-                                    <h3 class="title"><span>Make Reservation</span></h3>
-                                </div>
-                                <div class="reservation-form layout-2">
-                                    <div class="reservation-form-inner">
-                                        <div class="row">
-                                            <div class="col-md-8 col-md-offset-2">
-                                                <p class="reservation-form-title text-center">We willing to help you make the reservation online to save your time and money or you can call us directly through the customer service hotline:<span class="text-default"> 225-88888</span></p>
-                                            </div>
-                                        </div>
-                                        <div class="swin-sc swin-sc-contact-form light mtl">
-                                            <form>
-                                                <div class="form-group">
-                                                    <div class="input-group">
-                                                        <div class="input-group-addon"><i class="fa fa-user"></i></div>
-                                                        <input type="text" placeholder="Username" class="form-control">
-                                                    </div>
-                                                    <div class="input-group">
-                                                        <div class="input-group-addon"><i class="fa fa-envelope"></i></div>
-                                                        <input type="text" placeholder="Email" class="form-control">
-                                                    </div>
-                                                </div>
-                                                <div class="form-group">
-                                                    <div class="input-group">
-                                                        <div class="input-group-addon">
-                                                            <div class="fa fa-phone"></div>
-                                                        </div>
-                                                        <input type="text" placeholder="Phone" class="form-control">
-                                                    </div>
-                                                    <div class="input-group">
-                                                        <div class="input-group-addon"><i class="fa fa-male"></i></div>
-                                                        <select type="text" placeholder="People" class="form-control">
-                                                            <option>1 person</option>
-                                                            <option>2 People</option>
-                                                            <option>3 People</option>
-                                                            <option>4 People</option>
-                                                            <option>5 People</option>
-                                                            <option>6 People</option>
-                                                            <option>7 People</option>
-                                                            <option>8 People</option>
-                                                            <option>9 People</option>
-                                                            <option>10 People</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                                <div class="form-group">
-                                                    <div class="input-group">
-                                                        <div class="input-group-addon"><i class="fa fa-calendar"></i></div>
-                                                        <input type="text" placeholder="Date" class="form-control datepicker">
-                                                    </div>
-                                                    <div class="input-group">
-                                                        <div class="input-group-addon">
-                                                            <div class="fa fa-clock-o"></div>
-                                                        </div>
-                                                        <select type="text" placeholder="Time" class="form-control">
-                                                            <option>7:00 AM</option>
-                                                            <option>8:00 AM</option>
-                                                            <option>9:00 AM</option>
-                                                            <option>10:00 AM</option>
-                                                            <option>11:00 AM</option>
-                                                            <option>12:00 AM</option>
-                                                            <option>1:00 PM</option>
-                                                            <option>2:00 PM</option>
-                                                            <option>3:00 PM</option>
-                                                            <option>4:00 PM</option>
-                                                            <option>5:00 PM</option>
-                                                            <option>6:00 PM</option>
-                                                            <option>7:00 PM</option>
-                                                            <option>8:00 PM</option>
-                                                            <option>9:00 PM</option>
-                                                            <option>10:00 PM</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                                <div class="form-group">
-                                                    <div class="swin-btn-wrap center"><a href="#" class="swin-btn center form-submit"> <span>Book Table</span></a></div>
-                                                </div>
-                                            </form>
                                         </div>
                                     </div>
                                 </div>

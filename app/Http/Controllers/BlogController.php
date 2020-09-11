@@ -28,9 +28,11 @@ class BlogController extends Controller
         );
     }
     public function showTag($slug){
+        $blogs =Blog::published()->paginate(5);
         $tag= Tag::where('slug', $slug)->first();
+        $categories=Category::all();
         return view(
-            'tag_detail',compact('tag')
+            'tag_detail',compact('tag','categories','blogs')
         );
     }
 }

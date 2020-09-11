@@ -15,42 +15,8 @@
             <section class="ct-info-section padding-top-100 padding-bottom-100">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-8 col-sm-12">
-                            <div class="swin-sc swin-sc-title style-2 text-left">
-                                <p class="title"><span>Để lại Thông Tin</span></p>
-                            </div>
-                            <div class="reservation-form style-02">
-                                <div class="swin-sc swin-sc-contact-form light mtl style-full">
-                                    <form>
-                                        <div class="form-group">
-                                            <div class="input-group">
-                                                <div class="input-group-addon"><i class="fa fa-user"></i></div>
-                                                <input type="text" placeholder="Username" class="form-control">
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <div class="input-group">
-                                                <div class="input-group-addon"><i class="fa fa-envelope"></i></div>
-                                                <input type="text" placeholder="Email" class="form-control">
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <div class="input-group">
-                                                <div class="input-group-addon">
-                                                    <div class="fa fa-phone"></div>
-                                                </div>
-                                                <input type="text" placeholder="Phone" class="form-control">
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <textarea placeholder="Message" class="form-control"></textarea>
-                                        </div>
-                                        <div class="form-group">
-                                            <div class="swin-btn-wrap"><a href="#" class="swin-btn center form-submit"><span>Send</span></a></div>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
+                        <div class="col-md-8 col-sm-8">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.7976552316554!2d106.67009231500417!3d10.97864035843015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3174d12658d743af%3A0x4360e229cd7e3653!2zODZhIMSQxrDhu51uZyAzMC80LCBQaMO6IEhvw6AsIFRo4bunIEThuqd1IE3hu5l0LCBCw6xuaCBExrDGoW5nLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1599642804241!5m2!1svi!2s" width="750" height="550" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                         </div>
                         <div class="col-md-4">
                             <div class="swin-sc swin-sc-title style-2 text-left">
@@ -102,11 +68,6 @@
                 </div>
             </section>
             <section class="map-section padding-bottom-100">
-                <div class="container">
-
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.7976552316554!2d106.67009231500417!3d10.97864035843015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3174d12658d743af%3A0x4360e229cd7e3653!2zODZhIMSQxrDhu51uZyAzMC80LCBQaMO6IEhvw6AsIFRo4bunIEThuqd1IE3hu5l0LCBCw6xuaCBExrDGoW5nLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1599642804241!5m2!1svi!2s" width="1200" height="500" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-
-                </div>
             </section>
         </div>
     </div>

@@ -25,20 +25,12 @@
                     <div class="ft-widget-area">
                         <div class="ft-area1">
                             <div class="swin-wget swin-wget-about">
-                                <div class="clearfix"><a class="wget-logo"><img src="assets/images/logo-ft.png" alt="" class="img img-responsive"></a>
-                                    <ul class="socials socials-about list-unstyled list-inline">
-                                        <li><a href="https://www.facebook.com/Xoikhang.vn/"><i class="fa fa-facebook"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-commenting-o"></i></a></li>
-                                        <li><a href="{{route('contact')}}"><i class="fa fa-map-marker"></i></a></li>
-
-                                    </ul>
-                                </div>
                                 <div class="wget-about-content">
                                     <p>Xôi khang là nơi gìn giữ bản sắc văn hoá và tinh hoà dân tộc Việt thể hiện qua phương pháp chế biến và sự phối hợp các nguyên liệu thuần Việt, để tạo thành những sản phẩm mang hồn và tinh thần của quê hương. CHúng tôi tự hào mang đến cho quý khách những sản phẩm và dịch vụ giá trị nhất, an toàn và thuần Việt Nhất.  </p>
                                 </div>
                                 <div class="about-contact-info clearfix">
                                     <div class="address-info">
-                                        <div class="info-icon"><i class="fa fa-map-marker"></i></div>
+                                        <div class="info-icon"><a href="{{route('contact')}}"><i class="fa fa-map-marker"></i></a></div>
                                         <div class="info-content">
                                             <p>{{setting('site.site_address')}}</p>
 
@@ -47,8 +39,18 @@
                                     <div class="phone-info">
                                         <div class="info-icon"><i class="fa fa-mobile-phone"></i></div>
                                         <div class="info-content">
-                                            <p>{{setting('site.site_phone')}}</p>
-                                            <p>{{setting('site.site_phone2')}}</p>
+                                            <a href="tel:0936-156-349"><p>{{setting('site.site_phone')}}</p></a>
+                                            <a href="tel:0936-667-668"> <p>{{setting('site.site_phone2')}}</p></a>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="clearfix"><a class="wget-logo"><img src="assets/images/logo-ft.png" alt="" class="img img-responsive"></a>
+                                            <ul class="socials socials-about list-unstyled list-inline">
+                                                <li><a href="https://www.facebook.com/Xoikhang.vn/"><i class="fa fa-facebook"></i></a></li>
+                                                <li><a href="tel:0936-156-349"><i class="fa fa-commenting-o"></i></a></li>
+                                                <li><a href="{{route('contact')}}"><i class="fa fa-map-marker"></i></a></li>
+
+                                            </ul>
                                         </div>
                                     </div>
                                 </div>
@@ -100,6 +102,7 @@
                                 </div>
                                 <h3 class="res-title">Liên Hệ Đặt Hàng</h3>
                                 <p class="res-number">{{setting('site.site_phone')}}</p>
+                                <p class="res-number">{{setting('site.site_phone2')}}</p>
 
                             </div>
                         </div>
@@ -188,14 +191,12 @@
             $('#search-suggest div').hide();
         } else {
             $.ajax({
-                url: '/search',
+                url: '/reservation/search',
                 type: 'POST',
                 data: search,
             })
         };
     });
-</script>
-<script>
     function myFunction() {
         var dots = document.getElementById("dots");
         var moreText = document.getElementById("more");
@@ -207,9 +208,10 @@
             moreText.style.display = "none";
         } else {
             dots.style.display = "none";
-            btnText.innerHTML = "Ít hơn";
+            btnText.innerHTML = "Ít Hơn";
             moreText.style.display = "inline";
         }
     }
 </script>
+
 
