@@ -23,10 +23,6 @@
       <change afterPath="$PROJECT_DIR$/../BanabaTech/ui/.idea/ultim8.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../PhpProject/.idea/vcs.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../TestBlade/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/reservation.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/reservation.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/shared/_header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/shared/_header.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../PhpProject/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../PhpProject/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../larastart" beforeDir="false" afterPath="$PROJECT_DIR$/../larastart" afterDir="false" />
     </list>
@@ -175,22 +171,22 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/images" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/storage/app/public" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\xampp\htdocs\FoodKhang\app" />
+      <recent name="D:\xampp\htdocs\FoodKhang\app\Model" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\xampp\htdocs\FoodKhang\storage\app\public" />
       <recent name="D:\xampp\htdocs\FoodKhang\public\images" />
       <recent name="D:\xampp\htdocs\FoodKhang\database\sql" />
       <recent name="D:\xampp\htdocs\FoodKhang\resources\views\vendor\voyager\orders" />
       <recent name="D:\xampp\htdocs\FoodKhang\resources\views\vendor\voyager" />
-      <recent name="D:\xampp\htdocs\FoodKhang\resources\views\vendor\voyager\services" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\xampp\htdocs\FoodKhang\app" />
-      <recent name="D:\xampp\htdocs\FoodKhang\app\Model" />
     </key>
   </component>
   <component name="RunManager">
@@ -299,7 +295,7 @@
       <workItem from="1599812611875" duration="2271000" />
       <workItem from="1599814922353" duration="1777000" />
       <workItem from="1599816734874" duration="1796000" />
-      <workItem from="1599818545390" duration="1492000" />
+      <workItem from="1599818545390" duration="1796000" />
     </task>
     <servers />
   </component>
