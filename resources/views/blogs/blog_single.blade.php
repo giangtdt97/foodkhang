@@ -5,7 +5,7 @@
         <div data-bottom-top="background-position: 50% 50px;" data-center="background-position: 50% 0px;" data-top-bottom="background-position: 50% -50px;" class="page-title page-blog">
             <div class="container">
                 <div class="title-wrapper">
-                    <div data-top="transform: translateY(0px);opacity:1;" data--120-top="transform: translateY(-30px);opacity:0;" data-anchor-target=".page-title" class="title">Blog Single</div>
+                    <div data-top="transform: translateY(0px);opacity:1;" data--120-top="transform: translateY(-30px);opacity:0;" data-anchor-target=".page-title" class="title">Bài Viết Chi Tiết</div>
                     <div data-top="opacity:1;" data--120-top="opacity:0;" data-anchor-target=".page-title" class="divider"><span class="line-before"></span><span class="dot"></span><span class="line-after"></span></div>
                     <div data-top="transform: translateY(0px);opacity:1;" data--20-top="transform: translateY(5px);" data--50-top="transform: translateY(15px);opacity:0.8;" data--120-top="transform: translateY(30px);opacity:0;" data-anchor-target=".page-title" class="subtitle">All information and stories from our blog will help you have a best meal for your day</div>
                 </div>
@@ -24,7 +24,7 @@
                                                 <div class="blog-featured-img"><img src="{{Voyager::image( $blog->image )}}" alt="fooday" class="img img-responsive"></div>
                                                 <div class="blog-content">
                                                     <div class="blog-meta-info">
-                                                        <div class="blog-date"><span class="day">{{$blog->created_at->format('d')}}</span><span class="month">{{$blog->created_at->format('F')}}</span></div>
+                                                        <div class="blog-date"><span class="day">{{$blog->created_at->format('d')}}</span><span class="month">{{$blog->created_at->format('F')}}</span><span class="year">{{$blog->created_at->format('y')}}</span></div>
                                                         <div class="blog-info clearfix">
                                                             <div class="blog-info-item blog-author">
                                                                 <p><span>Post By :</span><a href="#">Admin</a></p>
@@ -36,8 +36,8 @@
                                                     <div class="blog-content-inner">
                                                         <p>{{$blog->excerpt}}</p>
                                                         <blockquote>
-                                                            <p>The role of a good cook ware in the preparation of a sumptuous meal cannot be overempha.</p>
-                                                            <footer>KELLY DOE
+                                                            {!! $blog->quote !!}
+                                                            <footer>
                                                                 <cite title="Source Title">/ Food Blogger</cite>
                                                             </footer>
                                                         </blockquote>

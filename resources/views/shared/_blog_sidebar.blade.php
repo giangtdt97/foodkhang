@@ -26,7 +26,7 @@
                 <div class="content-right"><a href="{{route('blog.detail',$blog->slug)}}" class="heading">
                     {{$blog->title}}</a>
                     <div class="info">
-                        <div><i class="swin-icon fa fa-clock-o"></i><span class="text">20 minutes ago</span></div>
+                        <div><i class="swin-icon fa fa-clock-o"></i><span class="day">{{$blog->created_at->format('d')}}</span>/<span class="month">{{$blog->created_at->format('F')}}</span></div>
                     </div>
                 </div>
                     @endforeach

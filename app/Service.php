@@ -3,6 +3,7 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use TCG\Voyager\Traits\Resizable;
 
 class Service extends Model
 {
@@ -11,4 +12,5 @@ class Service extends Model
     {
         return $this->belongsToMany(Product::class,'product_service')->published();
     }
+    use Resizable;
 }

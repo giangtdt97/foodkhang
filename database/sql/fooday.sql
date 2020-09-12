@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 11, 2020 at 08:27 AM
+-- Generation Time: Sep 12, 2020 at 03:22 AM
 -- Server version: 10.4.13-MariaDB
 -- PHP Version: 7.4.8
 
@@ -41,15 +41,16 @@ CREATE TABLE `blogs` (
   `status` enum('PUBLISHED','PENDING','DRAFT') COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'PUBLISHED',
   `featured` tinyint(1) NOT NULL DEFAULT 0,
   `created_at` timestamp NULL DEFAULT NULL,
-  `updated_at` timestamp NULL DEFAULT NULL
+  `updated_at` timestamp NULL DEFAULT NULL,
+  `quote` text COLLATE utf8mb4_unicode_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Dumping data for table `blogs`
 --
 
-INSERT INTO `blogs` (`id`, `author_id`, `title`, `seo_title`, `excerpt`, `body`, `image`, `slug`, `meta_description`, `meta_keyword`, `status`, `featured`, `created_at`, `updated_at`) VALUES
-(1, NULL, 'aaa', NULL, 'aaa', '<p>aaa</p>', 'blogs\\September2020\\cLJdDXiSS30c8zanFZI3.png', 'aaa', NULL, NULL, 'PUBLISHED', 1, '2020-09-09 03:21:03', '2020-09-09 03:21:03');
+INSERT INTO `blogs` (`id`, `author_id`, `title`, `seo_title`, `excerpt`, `body`, `image`, `slug`, `meta_description`, `meta_keyword`, `status`, `featured`, `created_at`, `updated_at`, `quote`) VALUES
+(1, NULL, 'Xôi gấc', NULL, 'Sôi gấc là món ăn rất ngon, vừa ngon mắt, ngon miệng bởi màu sắc rực rỡ và có nhiều vitamin, vị rẻo thơm béo ngậy của sôi', '<div class=\"ingredient-list\">\r\n<div>\r\n<h2 class=\"text-cookpad-24 font-extrabold\">Nguy&ecirc;n Liệu</h2>\r\n<div class=\"ingredient-list\">\r\n<ol class=\"list-unstyled text-cookpad-18 divide-y\" dir=\"auto\" data-target=\"dir.auto\">\r\n<li id=\"ingredient_2441722\" class=\"ingredient py-1 border-quaternary border-dashed\">\r\n<div><bdi class=\"ingredient__quantity\">1 kg</bdi> gạo nếp</div>\r\n</li>\r\n<li id=\"ingredient_2441723\" class=\"ingredient py-1 border-quaternary border-dashed\">\r\n<div><bdi class=\"ingredient__quantity\">1 quả</bdi> gấc nếp</div>\r\n</li>\r\n<li id=\"ingredient_2441725\" class=\"ingredient py-1 border-quaternary border-dashed\">\r\n<div><bdi class=\"ingredient__quantity\">3 th&igrave;a c&agrave; phe muối tinh</bdi> ( hoặc đường trắng)</div>\r\n</li>\r\n<li id=\"ingredient_2442209\" class=\"ingredient py-1 border-quaternary border-dashed\">\r\n<div><bdi class=\"ingredient__quantity\">2 th&igrave;a</bdi> rượu trắng ( hoặc 2 th&igrave;a mắm cốt)</div>\r\n</li>\r\n</ol>\r\n<p>&nbsp;</p>\r\n<section id=\"steps\" class=\"steps-container document__section bg-pure-white\">\r\n<div class=\"document__title-container\">\r\n<h2 class=\"text-cookpad-24 font-extrabold\">C&aacute;c bước</h2>\r\n</div>\r\n<ol class=\"numbered-list\" dir=\"auto\" data-target=\"dir.auto\">\r\n<li id=\"step_1271536\" class=\"step numbered-list__item\" dir=\"auto\" data-target=\"dir.auto\">\r\n<div class=\"numbered-list__contents\">\r\n<div class=\"text-cookpad-18\">\r\n<div class=\"prose\">\r\n<div data-dir-attribute=\"auto\">\r\n<p class=\"mb-2 inline\">Cho gạo v&agrave;o chậu vo sạch ng&acirc;m từ 8 đến 10 tiếng đồng hồ</p>\r\n</div>\r\n</div>\r\n</div>\r\n<div class=\"flex space-x-2\"><a class=\"md:w-auto w-full\" href=\"https://cookpad.com/vn/step_attachment/images/2458582_838e2725a82cd3da\" rel=\"nofollow\" data-action=\"modal#advance\"> <img class=\"rounded-lg object-cover w-full h-full lazy-image lazy-image--loaded\" src=\"https://img-global.cpcdn.com/steps/2458582_838e2725a82cd3da/160x128cq70/xoi-gấc-recipe-step-1-photo.jpg\" alt=\"X&ocirc;i gấc bước l&agrave;m 1 h&igrave;nh\" width=\"160\" height=\"128\" data-original=\"https://img-global.cpcdn.com/steps/2458582_838e2725a82cd3da/160x128cq70/xoi-gấc-recipe-step-1-photo.jpg\" data-src=\"https://img-global.cpcdn.com/steps/2458582_838e2725a82cd3da/160x128cq70/xoi-gấc-recipe-step-1-photo.jpg\" data-srcset=\"https://img-global.cpcdn.com/steps/2458582_838e2725a82cd3da/320x256cq70/xoi-gấc-recipe-step-1-photo.jpg 2x\" data-was-processed=\"true\" /> </a></div>\r\n</div>\r\n</li>\r\n<li id=\"step_1271537\" class=\"step numbered-list__item\" dir=\"auto\" data-target=\"dir.auto\">\r\n<div class=\"numbered-list__contents\">\r\n<div class=\"text-cookpad-18\">\r\n<div class=\"prose\">\r\n<div data-dir-attribute=\"auto\">\r\n<p class=\"mb-2 inline\">Vớt gạo ra gi&aacute; sả lại bằng nước sạch, s&oacute;c gạo cho r&aacute;o nước, cho 3 th&igrave;a c&agrave; phe muối tinh trộn đều.</p>\r\n</div>\r\n</div>\r\n</div>\r\n<div class=\"flex space-x-2\"><a class=\"md:w-auto w-full\" href=\"https://cookpad.com/vn/step_attachment/images/2458582_4a0007c0210bcb9e\" rel=\"nofollow\" data-action=\"modal#advance\"> <img class=\"rounded-lg object-cover w-full h-full lazy-image lazy-image--loaded\" src=\"https://img-global.cpcdn.com/steps/2458582_4a0007c0210bcb9e/160x128cq70/xoi-gấc-recipe-step-2-photo.jpg\" alt=\"X&ocirc;i gấc bước l&agrave;m 2 h&igrave;nh\" width=\"160\" height=\"128\" data-original=\"https://img-global.cpcdn.com/steps/2458582_4a0007c0210bcb9e/160x128cq70/xoi-gấc-recipe-step-2-photo.jpg\" data-src=\"https://img-global.cpcdn.com/steps/2458582_4a0007c0210bcb9e/160x128cq70/xoi-gấc-recipe-step-2-photo.jpg\" data-srcset=\"https://img-global.cpcdn.com/steps/2458582_4a0007c0210bcb9e/320x256cq70/xoi-gấc-recipe-step-2-photo.jpg 2x\" data-was-processed=\"true\" /> </a></div>\r\n</div>\r\n</li>\r\n<li id=\"step_1271538\" class=\"step numbered-list__item\" dir=\"auto\" data-target=\"dir.auto\">\r\n<div class=\"numbered-list__contents\">\r\n<div class=\"text-cookpad-18\">\r\n<div class=\"prose\">\r\n<div data-dir-attribute=\"auto\">\r\n<p class=\"mb-2 inline\">Gấc bổ l&agrave;m đ&ocirc;i lấy hết nh&acirc;n gấc ra b&aacute;t t&ocirc; cho khoảng 2 th&igrave;a con rượu trắng hoặc 2 th&igrave;a con mắm ăn( mục đ&iacute;ch của việc cho th&ecirc;m rượu hoặc mắm v&agrave;o gấc đ&aacute;nh l&ecirc;n cho dậy m&agrave;u đẹp), d&ugrave;ng găng ni lon đeo v&agrave;o tay trộn b&oacute;p đều cho cho nhuyễn thịt gấc</p>\r\n</div>\r\n</div>\r\n</div>\r\n<div class=\"flex space-x-2\"><a class=\"md:w-auto w-full\" href=\"https://cookpad.com/vn/step_attachment/images/2458582_609b05ca68cfc674\" rel=\"nofollow\" data-action=\"modal#advance\"> <img class=\"rounded-lg object-cover w-full h-full lazy-image lazy-image--loaded\" src=\"https://img-global.cpcdn.com/steps/2458582_609b05ca68cfc674/160x128cq70/xoi-gấc-recipe-step-3-photo.jpg\" alt=\"X&ocirc;i gấc bước l&agrave;m 3 h&igrave;nh\" width=\"160\" height=\"128\" data-original=\"https://img-global.cpcdn.com/steps/2458582_609b05ca68cfc674/160x128cq70/xoi-gấc-recipe-step-3-photo.jpg\" data-src=\"https://img-global.cpcdn.com/steps/2458582_609b05ca68cfc674/160x128cq70/xoi-gấc-recipe-step-3-photo.jpg\" data-srcset=\"https://img-global.cpcdn.com/steps/2458582_609b05ca68cfc674/320x256cq70/xoi-gấc-recipe-step-3-photo.jpg 2x\" data-was-processed=\"true\" /> </a></div>\r\n</div>\r\n</li>\r\n<li id=\"step_1271750\" class=\"step numbered-list__item\" dir=\"auto\" data-target=\"dir.auto\">\r\n<div class=\"numbered-list__contents\">\r\n<div class=\"text-cookpad-18\">\r\n<div class=\"prose\">\r\n<div data-dir-attribute=\"auto\">\r\n<p class=\"mb-2 inline\">Cho gấc v&agrave;o trộn đều với gạo, loại bỏ hạt gấc</p>\r\n</div>\r\n</div>\r\n</div>\r\n<div class=\"flex space-x-2\"><a class=\"md:w-auto w-full\" href=\"https://cookpad.com/vn/step_attachment/images/2458582_b2b0cc70dce249a4\" rel=\"nofollow\" data-action=\"modal#advance\"> <img class=\"rounded-lg object-cover w-full h-full lazy-image lazy-image--loaded\" src=\"https://img-global.cpcdn.com/steps/2458582_b2b0cc70dce249a4/160x128cq70/xoi-gấc-recipe-step-4-photo.jpg\" alt=\"X&ocirc;i gấc bước l&agrave;m 4 h&igrave;nh\" width=\"160\" height=\"128\" data-original=\"https://img-global.cpcdn.com/steps/2458582_b2b0cc70dce249a4/160x128cq70/xoi-gấc-recipe-step-4-photo.jpg\" data-src=\"https://img-global.cpcdn.com/steps/2458582_b2b0cc70dce249a4/160x128cq70/xoi-gấc-recipe-step-4-photo.jpg\" data-srcset=\"https://img-global.cpcdn.com/steps/2458582_b2b0cc70dce249a4/320x256cq70/xoi-gấc-recipe-step-4-photo.jpg 2x\" data-was-processed=\"true\" /> </a></div>\r\n</div>\r\n</li>\r\n<li id=\"step_1271769\" class=\"step numbered-list__item\" dir=\"auto\" data-target=\"dir.auto\">\r\n<div class=\"numbered-list__contents\">\r\n<div class=\"text-cookpad-18\">\r\n<div class=\"prose\">\r\n<div data-dir-attribute=\"auto\">\r\n<p class=\"mb-2 inline\">Cho nước v&agrave;o nồi (cho vừa nước để s&ocirc;i lượt dưới đ&aacute;y kh&ocirc;ng bị ướt bết); đặt đế hấp v&agrave;o l&oacute;t lượt khăn bằng vải mỏng sạch c&oacute; xoa ch&uacute;t dầu hoặc mỡ, sau đ&oacute; cho gạo đ&atilde; trộn thịt gấc v&agrave;o đồ trong 25 đếm 30 ph&uacute;t mở vung cho khoảng 3 đến 4 th&igrave;a nhỏ mỡ g&agrave; ( c&oacute; thể d&ugrave;ng mỡ động vật) d&ugrave;ng đũa đảo cho đều rồi đậy vung đồ tiếp 20 đến 25 ph&uacute;t nữa l&agrave; s&ocirc;i ch&iacute;n đều. (Nếu gia đ&igrave;nh bạn muốn ăn s&ocirc;i gấc c&oacute; vị ngọt b&eacute;o, thơm ngậy th&igrave; cho th&ecirc;m đường v&agrave; &iacute;t nước cốt dừa Tuỳ vị ngọt, ngậy của mỗi gia đ&igrave;nh)</p>\r\n</div>\r\n</div>\r\n</div>\r\n<div class=\"flex space-x-2\"><a class=\"md:w-auto w-full\" href=\"https://cookpad.com/vn/step_attachment/images/2458582_02781ce49fc7b46b\" rel=\"nofollow\" data-action=\"modal#advance\"> <img class=\"rounded-lg object-cover w-full h-full lazy-image lazy-image--loaded\" src=\"https://img-global.cpcdn.com/steps/2458582_02781ce49fc7b46b/160x128cq70/xoi-gấc-recipe-step-5-photo.jpg\" alt=\"X&ocirc;i gấc bước l&agrave;m 5 h&igrave;nh\" width=\"160\" height=\"128\" data-original=\"https://img-global.cpcdn.com/steps/2458582_02781ce49fc7b46b/160x128cq70/xoi-gấc-recipe-step-5-photo.jpg\" data-src=\"https://img-global.cpcdn.com/steps/2458582_02781ce49fc7b46b/160x128cq70/xoi-gấc-recipe-step-5-photo.jpg\" data-srcset=\"https://img-global.cpcdn.com/steps/2458582_02781ce49fc7b46b/320x256cq70/xoi-gấc-recipe-step-5-photo.jpg 2x\" data-was-processed=\"true\" /> </a></div>\r\n</div>\r\n</li>\r\n<li id=\"step_1271970\" class=\"step numbered-list__item\" dir=\"auto\" data-target=\"dir.auto\">\r\n<div class=\"numbered-list__contents\">\r\n<div class=\"text-cookpad-18\">\r\n<div class=\"prose\">\r\n<div data-dir-attribute=\"auto\">\r\n<p class=\"mb-2 inline\">Khi s&ocirc;i đ&atilde; ch&iacute;n bạn tắt bếp để cho nguội bớt rồi lấy 1 b&aacute;t t&ocirc; sới s&ocirc;i v&agrave;o b&aacute;t, d&ugrave;ng th&igrave;a l&egrave;n nhẹ xung quang rồi &uacute;p v&agrave;o đĩa, thế l&agrave; m&oacute;n s&ocirc;i đ&atilde; ho&agrave;n tất.</p>\r\n</div>\r\n</div>\r\n</div>\r\n<div class=\"flex space-x-2\"><a class=\"md:w-auto w-full\" href=\"https://cookpad.com/vn/step_attachment/images/2458582_c40f7bf74a52aa95\" rel=\"nofollow\" data-action=\"modal#advance\"> <img class=\"rounded-lg object-cover w-full h-full lazy-image lazy-image--loaded\" src=\"https://img-global.cpcdn.com/steps/2458582_c40f7bf74a52aa95/160x128cq70/xoi-gấc-recipe-step-6-photo.jpg\" alt=\"X&ocirc;i gấc bước l&agrave;m 6 h&igrave;nh\" width=\"160\" height=\"128\" data-original=\"https://img-global.cpcdn.com/steps/2458582_c40f7bf74a52aa95/160x128cq70/xoi-gấc-recipe-step-6-photo.jpg\" data-src=\"https://img-global.cpcdn.com/steps/2458582_c40f7bf74a52aa95/160x128cq70/xoi-gấc-recipe-step-6-photo.jpg\" data-srcset=\"https://img-global.cpcdn.com/steps/2458582_c40f7bf74a52aa95/320x256cq70/xoi-gấc-recipe-step-6-photo.jpg 2x\" data-was-processed=\"true\" /> </a></div>\r\n</div>\r\n</li>\r\n</ol>\r\n</section>\r\n</div>\r\n</div>\r\n</div>', 'blogs\\September2020\\mH58nzbDLPF7zsWaPpQh.jpg', 'xoi-gac', NULL, NULL, 'PUBLISHED', 1, '2020-09-09 03:21:03', '2020-09-11 17:41:09', 'Mọi hạnh phúc trên đời đều bắt đầu từ một bữa ăn sáng nhàn nhã');
 
 -- --------------------------------------------------------
 
@@ -70,8 +71,7 @@ CREATE TABLE `blog_tag` (
 --
 
 INSERT INTO `blog_tag` (`id`, `blog_id`, `tag_id`, `created_at`, `updated_at`) VALUES
-(1, 1, 1, NULL, NULL),
-(2, 1, 2, NULL, NULL);
+(4, 1, 1, NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -95,9 +95,9 @@ CREATE TABLE `categories` (
 --
 
 INSERT INTO `categories` (`id`, `parent_id`, `order`, `name`, `image`, `slug`, `created_at`, `updated_at`) VALUES
-(2, NULL, 1, 'Xôi', NULL, 'xoi', '2020-09-07 23:18:20', '2020-09-07 23:40:59'),
-(3, NULL, 1, 'Chè', NULL, 'che', '2020-09-07 23:41:23', '2020-09-07 23:41:23'),
-(4, NULL, 1, 'Rau Câu 3D', NULL, 'rau-cau-3d', '2020-09-07 23:41:47', '2020-09-07 23:41:47');
+(2, NULL, 1, 'Xôi', 'categories\\September2020\\Z5ucxTE7LEedmVqiFKWu.jpg', 'xoi', '2020-09-07 23:18:20', '2020-09-11 02:21:19'),
+(3, NULL, 1, 'Chè', 'categories\\September2020\\pSkqH61xbyeSUowFlOyR.jpg', 'che', '2020-09-07 23:41:23', '2020-09-11 02:21:07'),
+(4, NULL, 1, 'Rau Câu 3D', 'categories\\September2020\\nEL6PXyEEnSqPSQjBXZf.jpg', 'rau-cau-3d', '2020-09-07 23:41:47', '2020-09-11 02:20:49');
 
 -- --------------------------------------------------------
 
@@ -120,7 +120,15 @@ CREATE TABLE `category_product` (
 INSERT INTO `category_product` (`id`, `product_id`, `category_id`, `created_at`, `updated_at`) VALUES
 (1, 1, 1, NULL, NULL),
 (2, 1, 2, NULL, NULL),
-(11, 2, 2, NULL, NULL);
+(11, 2, 2, NULL, NULL),
+(12, 2, 3, NULL, NULL),
+(13, 2, 4, NULL, NULL),
+(14, 3, 3, NULL, NULL),
+(15, 3, 2, NULL, NULL),
+(16, 3, 4, NULL, NULL),
+(17, 4, 4, NULL, NULL),
+(18, 4, 2, NULL, NULL),
+(19, 4, 3, NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -259,7 +267,8 @@ INSERT INTO `data_rows` (`id`, `data_type_id`, `field`, `type`, `display_name`, 
 (112, 11, 'address', 'text', 'Address', 1, 1, 1, 1, 1, 1, '{}', 5),
 (113, 11, 'created_at', 'timestamp', 'Created At', 0, 1, 1, 1, 0, 1, '{}', 6),
 (114, 11, 'updated_at', 'timestamp', 'Updated At', 0, 0, 0, 0, 0, 0, '{}', 7),
-(115, 11, 'order_belongstomany_product_relationship', 'relationship', 'products', 0, 1, 1, 1, 1, 1, '{\"model\":\"App\\\\Product\",\"table\":\"products\",\"type\":\"belongsToMany\",\"column\":\"id\",\"key\":\"id\",\"label\":\"product_name\",\"pivot_table\":\"order_product\",\"pivot\":\"1\",\"taggable\":\"0\"}', 8);
+(115, 11, 'order_belongstomany_product_relationship', 'relationship', 'products', 0, 1, 1, 1, 1, 1, '{\"model\":\"App\\\\Product\",\"table\":\"products\",\"type\":\"belongsToMany\",\"column\":\"id\",\"key\":\"id\",\"label\":\"product_name\",\"pivot_table\":\"order_product\",\"pivot\":\"1\",\"taggable\":\"0\"}', 8),
+(116, 8, 'quote', 'text_area', 'Quote', 1, 1, 1, 1, 1, 1, '{}', 15);
 
 -- --------------------------------------------------------
 
@@ -297,7 +306,7 @@ INSERT INTO `data_types` (`id`, `name`, `slug`, `display_name_singular`, `displa
 (5, 'posts', 'posts', 'Post', 'Posts', 'voyager-news', 'TCG\\Voyager\\Models\\Post', 'TCG\\Voyager\\Policies\\PostPolicy', NULL, NULL, 1, 0, '{\"order_column\":null,\"order_display_column\":null,\"order_direction\":\"desc\",\"default_search_key\":null,\"scope\":null}', '2020-09-07 23:18:20', '2020-09-08 02:25:15'),
 (6, 'pages', 'pages', 'Page', 'Pages', 'voyager-file-text', 'TCG\\Voyager\\Models\\Page', NULL, '', '', 1, 0, NULL, '2020-09-07 23:18:21', '2020-09-07 23:18:21'),
 (7, 'products', 'products', 'Product', 'Products', 'voyager-bag', 'App\\Product', NULL, NULL, NULL, 1, 0, '{\"order_column\":null,\"order_display_column\":null,\"order_direction\":\"asc\",\"default_search_key\":null,\"scope\":null}', '2020-09-07 23:21:11', '2020-09-08 22:03:27'),
-(8, 'blogs', 'blogs', 'Blog', 'Blogs', 'voyager-polaroid', 'App\\Blog', NULL, NULL, NULL, 1, 0, '{\"order_column\":null,\"order_display_column\":null,\"order_direction\":\"asc\",\"default_search_key\":null,\"scope\":null}', '2020-09-07 23:24:43', '2020-09-08 01:30:55'),
+(8, 'blogs', 'blogs', 'Blog', 'Blogs', 'voyager-polaroid', 'App\\Blog', NULL, NULL, NULL, 1, 0, '{\"order_column\":null,\"order_display_column\":null,\"order_direction\":\"asc\",\"default_search_key\":null,\"scope\":null}', '2020-09-07 23:24:43', '2020-09-11 17:34:38'),
 (9, 'tags', 'tags', 'Tag', 'Tags', 'voyager-tag', 'App\\Tag', NULL, NULL, NULL, 1, 0, '{\"order_column\":null,\"order_display_column\":null,\"order_direction\":\"asc\",\"default_search_key\":null,\"scope\":null}', '2020-09-07 23:29:50', '2020-09-09 03:20:03'),
 (10, 'services', 'services', 'Service', 'Services', 'voyager-lab', 'App\\Service', NULL, NULL, NULL, 1, 0, '{\"order_column\":null,\"order_display_column\":null,\"order_direction\":\"asc\",\"default_search_key\":null,\"scope\":null}', '2020-09-08 01:24:16', '2020-09-08 03:19:25'),
 (11, 'orders', 'orders', 'Order', 'Orders', NULL, 'App\\Order', NULL, NULL, NULL, 1, 0, '{\"order_column\":null,\"order_display_column\":null,\"order_direction\":\"asc\",\"default_search_key\":null,\"scope\":null}', '2020-09-10 21:08:45', '2020-09-10 21:43:28');
@@ -439,7 +448,8 @@ INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
 (232, '2020_09_08_072623_create_services_table', 5),
 (234, '2020_09_08_100236_create_product_service', 6),
 (235, '2020_09_10_080004_create_orders_table', 7),
-(236, '2020_09_10_081445_create_order_product_table', 7);
+(236, '2020_09_10_081445_create_order_product_table', 7),
+(237, '2020_09_11_111122_add_quote_to_blogs_table', 8);
 
 -- --------------------------------------------------------
 
@@ -754,7 +764,9 @@ CREATE TABLE `products` (
 --
 
 INSERT INTO `products` (`id`, `category_id`, `product_name`, `price`, `short_description`, `description`, `image`, `slug`, `status`, `featured`, `images`, `created_at`, `updated_at`) VALUES
-(2, NULL, 'Xôi Ép Tam Sắc', 1500, 'Xôi Ép Tam Sắc', '<p>X&ocirc;i &Eacute;p Tam Sắc</p>', 'products\\September2020\\cC5oxKU09AIGEcdqErQJ.jpg', 'xoi-ep-tam-sac', 'inStock', 1, '[\"products\\\\September2020\\\\nigbDl0nf8V3dP0VQaRQ.jpg\",\"products\\\\September2020\\\\Tm6P6gbwIt40SorT0ESu.jpg\"]', '2020-09-08 00:35:45', '2020-09-10 03:16:07');
+(2, NULL, 'Xôi Ép Tam Sắc', 1500, 'Xôi Ép Tam Sắc', '<p>X&ocirc;i &Eacute;p Tam Sắc</p>', 'products\\September2020\\cC5oxKU09AIGEcdqErQJ.jpg', 'xoi-ep-tam-sac', 'inStock', 1, '[\"products\\\\September2020\\\\nigbDl0nf8V3dP0VQaRQ.jpg\",\"products\\\\September2020\\\\Tm6P6gbwIt40SorT0ESu.jpg\"]', '2020-09-08 00:35:45', '2020-09-10 03:16:07'),
+(3, NULL, 'Chè Sâm Bổ Lượng', 1500, 'Chè Sâm Bổ Lượng', '<p>Ch&egrave; S&acirc;m Bổ Lượng</p>', 'products\\September2020\\E51EB4JPQ8D8If2sHxyF.jpg', 'che-sam-bo-luong', 'inStock', 1, '[\"products\\\\September2020\\\\5IfDGjXfxZZYzNE3YubC.jpg\",\"products\\\\September2020\\\\bTfhmXgzNJLZagYdmRju.jpg\",\"products\\\\September2020\\\\fCnOIpZmPJk2mEN2hWB1.jpg\"]', '2020-09-11 17:57:57', '2020-09-11 17:57:57'),
+(4, NULL, 'Rau Câu 3d', 1500, 'Rau Câu 3d', '<p>Rau C&acirc;u 3d</p>', 'products\\September2020\\2f1kjHLXLQhUgcqqY7I2.jpg', 'rau-cau-3d', 'inStock', 1, '[\"products\\\\September2020\\\\ZpgufTO0qGFilnxpstDx.jpg\",\"products\\\\September2020\\\\Xaqho0UCpgfyCk6WFsQw.jpg\",\"products\\\\September2020\\\\mgTw8IsusbmLo0aOhtZS.jpg\",\"products\\\\September2020\\\\z4C2BRXlCY3vR8jyGrYU.jpg\"]', '2020-09-11 18:09:58', '2020-09-11 18:09:58');
 
 -- --------------------------------------------------------
 
@@ -776,7 +788,20 @@ CREATE TABLE `product_service` (
 
 INSERT INTO `product_service` (`id`, `product_id`, `service_id`, `created_at`, `updated_at`) VALUES
 (2, 2, 2, NULL, NULL),
-(3, 2, 1, NULL, NULL);
+(3, 2, 1, NULL, NULL),
+(4, 2, 3, NULL, NULL),
+(5, 2, 4, NULL, NULL),
+(6, 2, 5, NULL, NULL),
+(7, 3, 5, NULL, NULL),
+(8, 3, 1, NULL, NULL),
+(9, 3, 2, NULL, NULL),
+(10, 3, 3, NULL, NULL),
+(11, 3, 4, NULL, NULL),
+(12, 4, 1, NULL, NULL),
+(13, 4, 2, NULL, NULL),
+(14, 4, 3, NULL, NULL),
+(15, 4, 4, NULL, NULL),
+(16, 4, 5, NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -825,8 +850,11 @@ CREATE TABLE `services` (
 --
 
 INSERT INTO `services` (`id`, `name`, `price`, `short_description`, `description`, `image`, `images`, `slug`, `featured`, `created_at`, `updated_at`) VALUES
-(1, 'BÀN CÚNG THÔI NÔI', 1500, 'Xôi Ép Tam Sắc', '<p>X&ocirc;i &Eacute;p Tam Sắc</p>', 'services\\September2020\\1hqltfac3Rl76yuSFkF3.jpg', NULL, 'ban-cung-thoi-noi', 1, '2020-09-08 02:31:51', '2020-09-08 02:45:12'),
-(2, 'BÀN CÚNG KHAI TRƯƠNG', 1500, 'BÀN CÚNG KHAI TRƯƠNG', '<p>B&Agrave;N C&Uacute;NG KHAI TRƯƠNG</p>', 'services\\September2020\\n06KC3Hi49i5rWsOCeFy.jpg', '[\"services\\\\September2020\\\\UOJkw3EWO6Uok3iG1L6k.jpg\",\"services\\\\September2020\\\\kf8BXbqrxMO9nOqHupN2.png\"]', 'ban-cung-khai-truong', 1, '2020-09-08 03:18:45', '2020-09-10 00:36:02');
+(1, 'CÚNG Thôi Nôi Bé Trai', 1500, 'Xôi Ép Tam Sắc', '<p>X&ocirc;i &Eacute;p Tam Sắc</p>', 'services\\September2020\\1hqltfac3Rl76yuSFkF3.jpg', '[\"services\\\\September2020\\\\HZkU2kXY0RN65VjwAAN3.jpg\",\"services\\\\September2020\\\\zfObYavjFkEUxiZsJNHO.jpg\",\"services\\\\September2020\\\\3gcWnSPPpi2j8NVVFlAH.jpg\",\"services\\\\September2020\\\\KL7YtiuyHB9GC7CtEYq7.jpg\"]', 'cung-thoi-noi-be-trai', 1, '2020-09-08 02:31:51', '2020-09-11 02:17:40'),
+(2, 'Cúng Khai Trương', 1500, 'BÀN CÚNG KHAI TRƯƠNG', '<p>B&Agrave;N C&Uacute;NG KHAI TRƯƠNG</p>', 'services\\September2020\\n06KC3Hi49i5rWsOCeFy.jpg', '[\"services\\\\September2020\\\\6DnhXSKRO51NrprDae0l.jpg\",\"services\\\\September2020\\\\2mMMeZHrgm47KyxWsxGY.jpg\",\"services\\\\September2020\\\\lYKeGkvQwK4LA5PLMXAw.jpg\",\"services\\\\September2020\\\\GOef1cVlEfK1dw1sU45G.jpg\"]', 'cung-khai-truong', 1, '2020-09-08 03:18:45', '2020-09-11 02:16:43'),
+(3, 'Cúng Động Thổ', 1500, 'Cúng Động Thổ', '<p>C&uacute;ng Động Thổ</p>', 'services\\September2020\\i4X8tJaE2oqAHTo4sozL.jpg', '[\"services\\\\September2020\\\\sz1qmH9Olx5PPsJK25Go.jpg\",\"services\\\\September2020\\\\i2EYLAUy5ePCR2qbJb6w.jpg\",\"services\\\\September2020\\\\wPBMWoLSOvvIj7AFaNNw.jpg\",\"services\\\\September2020\\\\gvD8p2lD71kTB9xQ8dIH.jpg\"]', 'cung-dong-tho', 1, '2020-09-11 02:13:49', '2020-09-11 02:13:49'),
+(4, 'Cúng Nhập Trạch', 1500, 'Cúng Nhập Trạch', '<p>C&uacute;ng Nhập Trạch</p>', 'services\\September2020\\i8YisaKMcC2y1EaayehZ.jpg', '[\"services\\\\September2020\\\\5Z4NA6TEkVsYC2c4tCGn.jpg\",\"services\\\\September2020\\\\bA9IYsQ9m6vzwVpg0WGm.jpg\",\"services\\\\September2020\\\\7tGV1s6CqfwNQ5XQ0yzS.jpg\",\"services\\\\September2020\\\\ow6aSRTdnGL72bSQvLEQ.jpg\"]', 'cung-nhap-trach', 1, '2020-09-11 02:15:08', '2020-09-11 02:15:08'),
+(5, 'Cúng Thôi Nôi Bé Gái', 1500, 'CÚNG Thôi Nôi Bé Gái', '<p>C&Uacute;NG Th&ocirc;i N&ocirc;i B&eacute; G&aacute;i</p>', 'services\\September2020\\VZ7es2vVGxxohKTKMkiv.jpg', '[\"services\\\\September2020\\\\EcY1fyOjIaJ6ttwzUR7S.jpg\",\"services\\\\September2020\\\\9ml9USWJCIg4IZQSdVhd.jpg\",\"services\\\\September2020\\\\gNFKgh2Z2fbw4GjNbQGj.jpg\",\"services\\\\September2020\\\\2ofEJ40WZQUnQoGMIUiX.jpg\"]', 'cung-thoi-noi-be-gai', 1, '2020-09-11 02:18:55', '2020-09-11 18:21:08');
 
 -- --------------------------------------------------------
 
@@ -884,9 +912,9 @@ CREATE TABLE `tags` (
 --
 
 INSERT INTO `tags` (`id`, `parent_id`, `name`, `slug`, `created_at`, `updated_at`) VALUES
-(1, NULL, 'aaa', 'aaa', '2020-09-09 03:19:20', '2020-09-09 03:19:20'),
-(2, NULL, 'bbb', 'bbb', '2020-09-09 03:19:31', '2020-09-09 03:19:31'),
-(3, NULL, 'ccc', 'ccc', '2020-09-09 03:20:13', '2020-09-09 03:20:13');
+(1, NULL, 'Món Xôi', 'mon-xoi', '2020-09-09 03:19:20', '2020-09-11 04:02:20'),
+(2, NULL, 'Món Chè', 'mon-che', '2020-09-09 03:19:31', '2020-09-11 04:02:32'),
+(3, NULL, 'Rau Câu 3D', 'rau-cau-3d', '2020-09-09 03:20:13', '2020-09-11 04:02:46');
 
 -- --------------------------------------------------------
 
@@ -1175,7 +1203,7 @@ ALTER TABLE `blogs`
 -- AUTO_INCREMENT for table `blog_tag`
 --
 ALTER TABLE `blog_tag`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `categories`
@@ -1187,13 +1215,13 @@ ALTER TABLE `categories`
 -- AUTO_INCREMENT for table `category_product`
 --
 ALTER TABLE `category_product`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 
 --
 -- AUTO_INCREMENT for table `data_rows`
 --
 ALTER TABLE `data_rows`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=116;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=117;
 
 --
 -- AUTO_INCREMENT for table `data_types`
@@ -1223,7 +1251,7 @@ ALTER TABLE `menu_items`
 -- AUTO_INCREMENT for table `migrations`
 --
 ALTER TABLE `migrations`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=237;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=238;
 
 --
 -- AUTO_INCREMENT for table `orders`
@@ -1259,13 +1287,13 @@ ALTER TABLE `posts`
 -- AUTO_INCREMENT for table `products`
 --
 ALTER TABLE `products`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `product_service`
 --
 ALTER TABLE `product_service`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
 -- AUTO_INCREMENT for table `roles`
@@ -1277,7 +1305,7 @@ ALTER TABLE `roles`
 -- AUTO_INCREMENT for table `services`
 --
 ALTER TABLE `services`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `settings`

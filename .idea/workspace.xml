@@ -23,6 +23,13 @@
       <change afterPath="$PROJECT_DIR$/../BanabaTech/ui/.idea/ultim8.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../PhpProject/.idea/vcs.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../TestBlade/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Service.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Service.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/blogs/blog_single.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/blogs/blog_single.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/menu_detail.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/menu_detail.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/service_detail.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/service_detail.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/shared/_blog_sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/shared/_blog_sidebar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/public/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../PhpProject/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../PhpProject/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../larastart" beforeDir="false" afterPath="$PROJECT_DIR$/../larastart" afterDir="false" />
     </list>
@@ -296,6 +303,10 @@
       <workItem from="1599814922353" duration="1777000" />
       <workItem from="1599816734874" duration="1796000" />
       <workItem from="1599818545390" duration="1796000" />
+      <workItem from="1599820355968" duration="1844000" />
+      <workItem from="1599822229290" duration="732000" />
+      <workItem from="1599870930217" duration="1772000" />
+      <workItem from="1599872724640" duration="1231000" />
     </task>
     <servers />
   </component>
@@ -327,10 +338,10 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="574" y="101" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.864@0.0.1536.864" timestamp="1598328251069" />
-    <state x="499" y="187" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1599733000804">
+    <state x="499" y="187" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1599873455734">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="499" y="187" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.864@0.0.1536.864" timestamp="1599733000804" />
+    <state x="499" y="187" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.864@0.0.1536.864" timestamp="1599873455734" />
     <state x="516" y="277" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1599633253910">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
