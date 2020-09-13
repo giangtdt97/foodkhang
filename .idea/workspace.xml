@@ -24,12 +24,18 @@
       <change afterPath="$PROJECT_DIR$/../PhpProject/.idea/vcs.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../TestBlade/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Service.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Service.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/color/colordefault.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/color/colordefault.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/elements.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/elements.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/extra.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/extra.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/responsive.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/responsive.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/blogs/blog_single.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/blogs/blog_single.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/contact.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/contact.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/master.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/menu.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/menu.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/menu_detail.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/menu_detail.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/service_detail.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/service_detail.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/shared/_blog_sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/shared/_blog_sidebar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/app/public/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/reservation.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/reservation.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/shared/_footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/shared/_footer.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../PhpProject/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../PhpProject/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../larastart" beforeDir="false" afterPath="$PROJECT_DIR$/../larastart" afterDir="false" />
     </list>
@@ -178,22 +184,22 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/storage/app/public" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\xampp\htdocs\FoodKhang\public" />
+      <recent name="D:\xampp\htdocs\FoodKhang" />
+      <recent name="D:\xampp\htdocs\FoodKhang\database\sql" />
+      <recent name="D:\xampp\htdocs\FoodKhang\storage\app\public" />
+      <recent name="D:\xampp\htdocs\FoodKhang\public\images" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\xampp\htdocs\FoodKhang\app" />
       <recent name="D:\xampp\htdocs\FoodKhang\app\Model" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\xampp\htdocs\FoodKhang\storage\app\public" />
-      <recent name="D:\xampp\htdocs\FoodKhang\public\images" />
-      <recent name="D:\xampp\htdocs\FoodKhang\database\sql" />
-      <recent name="D:\xampp\htdocs\FoodKhang\resources\views\vendor\voyager\orders" />
-      <recent name="D:\xampp\htdocs\FoodKhang\resources\views\vendor\voyager" />
     </key>
   </component>
   <component name="RunManager">
@@ -306,7 +312,12 @@
       <workItem from="1599820355968" duration="1844000" />
       <workItem from="1599822229290" duration="732000" />
       <workItem from="1599870930217" duration="1772000" />
-      <workItem from="1599872724640" duration="1231000" />
+      <workItem from="1599872724640" duration="1535000" />
+      <workItem from="1599967648834" duration="1735000" />
+      <workItem from="1599969432038" duration="1790000" />
+      <workItem from="1599971236645" duration="1957000" />
+      <workItem from="1599973209327" duration="1794000" />
+      <workItem from="1599975025404" duration="667000" />
     </task>
     <servers />
   </component>
@@ -330,10 +341,10 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="520" y="256" key="#Notifications/0.0.1536.864@0.0.1536.864" timestamp="1599552573629" />
-    <state x="507" y="234" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1599633242885">
+    <state x="507" y="234" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1599974317172">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="507" y="234" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.864@0.0.1536.864" timestamp="1599633242885" />
+    <state x="507" y="234" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.864@0.0.1536.864" timestamp="1599974317172" />
     <state x="574" y="101" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1598328251069">
       <screen x="0" y="0" width="1536" height="864" />
     </state>

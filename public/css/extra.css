@@ -138,7 +138,7 @@ section {
   .banner-section .content-wrapper .text-large {
     color: #f15f2a;
     font-size: 40px;
-    padding: 0 10px; }
+    padding: 0 10px;white-space: nowrap;}
   .banner-section .content-wrapper .des {
     color: #f8f8f8; }
 
@@ -172,7 +172,7 @@ section {
   background-size: cover;
   position: relative; }
   .menu-banner-section .heading-title {
-    font-family: "rancho"; }
+    font-family: "grenze"; }
   .menu-banner-section .img-left {
     left: 15%; }
   .menu-banner-section .img-right {

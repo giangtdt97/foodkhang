@@ -46,7 +46,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .img-full {
   width: 100%; }
-
+img{max-width: 100%;}
 .top-header .animated {
   opacity: 0; }
 
@@ -1748,7 +1748,7 @@ blockquote {
         border-color: #f15f2a;
         color: #f15f2a; }
     .swin-sc-product .cat-wrapper-02 .item .cat-image {
-      width: 150px;
+
       margin: 0 auto; }
     .swin-sc-product .cat-wrapper-02 .item .cat-title {
       font-size: 16px;

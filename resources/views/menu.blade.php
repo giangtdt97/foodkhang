@@ -20,7 +20,7 @@
                                 @foreach($services as $service)
                                     <div class="item">
                                         <div class="item product-01">
-                                            <div class="cat-image"><a href="javascript:void(0)" ><img src="{{Voyager::image( $service->image )}}" alt="" width="200" height="150">{{$service->name}}</a></div>
+                                            <div class="cat-image img-4-3"><a href="javascript:void(0)" ><img src="timthumb.php?src={{Voyager::image( $service->image )}}&w=200&h=150" alt="" >{{$service->name}}</a></div>
                                             <a href="{{route('service.show',$service->slug)}}" ><h5>Chi Tiết Dịch Vụ</h5></a>
                                         </div>
                                     </div>
@@ -36,7 +36,7 @@
                                                 @foreach($service->products as  $product)
                                                     <div class="col-md-2 col-sm-4 col-xs-12">
                                                         <div class="item product-01">
-                                                            <div class="block-img"><img src="{{Voyager::image( $product->image )}}" alt="" width="140" height="70"></div>
+                                                            <div class="block-img"><img src="timthumb.php?src={{Voyager::image( $product->image )}}&w=140&h=70" alt="" ></div>
                                                             <h5 class="title">{{$product->product_name}}</h5>
                                                         </div>
                                                     </div>
@@ -71,7 +71,7 @@
                                 <div data-slide-toshow="1" class="cat-wrapper-02 cat-images main-slider">
                                     @foreach($categories as $category)
                                     <div class="item">
-                                        <div class="cat-image"><a href="javascript:void(0)"><img src="{{Voyager::image( $category->image )}}" alt="" width="200" height="150">{{$category->name}}</a></div>
+                                        <div class="cat-image"><a href="javascript:void(0)"><img src="timthumb.php?src={{Voyager::image( $category->image )}}&w=200&h=150" alt="" >{{$category->name}}</a></div>
                                     </div>
                                     @endforeach
                                 </div>
@@ -85,7 +85,7 @@
                                             @foreach($category->products as  $product)
                                                 <div class="col-md-2 col-sm-4 col-xs-12">
                                                 <div class="item product-01">
-                                                    <div class="block-img"><img src="{{Voyager::image( $product->image )}}" alt="" width="140" height="70">
+                                                    <div class="block-img"><img src="timthumb.php?src={{Voyager::image( $product->image )}}&w=140&h=70" alt="">
                                                         <div class="group-btn"><a href="{{route('product.show',$product->slug)}}" class="swin-btn btn-link"><i class="icons fa fa-link"></i></a></div>
                                                     </div>
                                                     <h5 class="title">{{$product->product_name}}</h5><span class="price woocommerce-Price-amount amount">{{$product->price}}<span class="price-symbol">VNĐ</span></span>

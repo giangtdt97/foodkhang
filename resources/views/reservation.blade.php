@@ -32,35 +32,32 @@
                                         <div class="form-group">
                                             <div class="swin-btn-wrap center">
                                                 <div class="fa fa-phone"></div>
-                                                <input type="text" class="form-controller" id="search" name="search">
+                                                <input type="text" class="form-controller input search" id="search" name="search" >
                                             </div>
                                         </div>
                                         <div class="form-group">
                                             <div class="swin-btn-wrap center"><button type="submit" class="swin-btn center form-submit"><span>Kiểm Tra Đơn Hàng</span></button></div>
                                         </div>
                                       </form>
-                                         <div class="container">
-                                             @if(isset($details))
-                                                 <p> The Search results for your query <b> {{ $query }} </b> are :</p>
-                                                 <h2>Sample User details</h2>
-                                                 <table class="table table-striped">
-                                                     <thead>
-                                                     <tr>
-                                                         <th>Name</th>
-                                                         <th>Phone</th>
-                                                     </tr>
-                                                     </thead>
-                                                     <tbody>
-                                                     @foreach($details as $user)
-                                                         <tr>
-                                                             <td>{{$user->name}}</td>
-                                                             <td>{{$user->email}}</td>
-                                                         </tr>
-                                                     @endforeach
-                                                     </tbody>
-                                                 </table>
-                                             @endif
-                                         </div>
+{{--                                         <div class="container">--}}
+{{--                                                 <table class="table table-striped">--}}
+{{--                                                     <thead>--}}
+{{--                                                     <tr>--}}
+{{--                                                         <th>Name</th>--}}
+{{--                                                         <th>Status</th>--}}
+{{--                                                     </tr>--}}
+{{--                                                     </thead>--}}
+{{--                                                     <tbody>--}}
+{{--                                                     @foreach($orders as $order)--}}
+{{--                                                         <tr>--}}
+{{--                                                             <td>{{$order->customer_name}}</td>--}}
+{{--                                                             <td>{{$order->status}}</td>--}}
+{{--                                                         </tr>--}}
+{{--                                                     @endforeach--}}
+{{--                                                     </tbody>--}}
+{{--                                                 </table>--}}
+
+{{--                                         </div>--}}
                                       </div>
                                 </div>
                                 <div class="section-deco"><img src="{{asset('images/pages/reservation-showcase.png')}}" alt="fooday" class="img-deco"></div>

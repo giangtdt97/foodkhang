@@ -214,7 +214,9 @@ This file include css code conrespond for table and mobile device
   .header-transparent.header-fixed .logo-static {
     display: none; }
   .header-transparent.header-fixed .logo-fixed {
-    display: block; }
+    display: block;
+      top: 50%;
+  }
   .header-transparent.header-fixed .open-offcanvas {
     color: #616f7d; }
   .top-header .slide-content.slide-layout-02 .slide-sub-title {

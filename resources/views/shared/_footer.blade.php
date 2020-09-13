@@ -191,7 +191,7 @@
             $('#search-suggest div').hide();
         } else {
             $.ajax({
-                url: '/reservation/search',
+                url: '/search',
                 type: 'POST',
                 data: search,
             })
