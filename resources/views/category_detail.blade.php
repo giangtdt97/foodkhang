@@ -33,7 +33,7 @@
                                                     <div class="des">{{$product->short_description}}</div>
                                                 </div>
                                             </div>
-                                            <div class="item-right"><span class="price woocommerce-Price-amount amount">{{$product->price}}<span class="price-symbol">VNĐ</span></span></div>
+                                            <div class="item-right"><span class="price woocommerce-Price-amount amount">{{$product->presentPrice()}}<span class="price-symbol">VNĐ</span></span></div>
                                         </div>
                                     @endforeach
                                 </div>

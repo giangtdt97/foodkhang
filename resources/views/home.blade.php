@@ -1,6 +1,7 @@
 @extends('layouts.master')
 @section('title', 'Home')
 @section('content')
+
     <div id="pagewrap" class="pagewrap">
         <div id="html-content" class="wrapper-content">
             <div class="page-container">
@@ -57,7 +58,7 @@
                                                             <div class="des">{{$product->short_description}}</div>
                                                         </div>
                                                     </div>
-                                                    <div class="item-right"><span class="price woocommerce-Price-amount amount">{{$product->price}}<span class="price-symbol">VNĐ</span></span></div>
+                                                    <div class="item-right"><span class="price woocommerce-Price-amount amount">{{$product->presentPrice()}}<span class="price-symbol">VNĐ</span></span></div>
                                                 </div>
                                                 @endforeach
                                             </div>
@@ -245,7 +246,7 @@
                                                                 <h5 class="title">{{$product->product_name}}</h5>
                                                                 <div class="des">{{$product->short_description}}</div>
                                                             </div>
-                                                            <div class="item-right"><span class="price woocommerce-Price-amount amount">{{$product->price}}</span><span class="price-symbol">VNĐ</span></div>
+                                                            <div class="item-right"><span class="price woocommerce-Price-amount amount">{{$product->presentPrice()}}</span><span class="price-symbol">VNĐ</span></div>
                                                         </div>
                                                             @endforeach
                                                     </div>

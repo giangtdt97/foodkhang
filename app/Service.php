@@ -12,5 +12,6 @@ class Service extends Model
     {
         return $this->belongsToMany(Product::class,'product_service')->published();
     }
+    
     use Resizable;
 }

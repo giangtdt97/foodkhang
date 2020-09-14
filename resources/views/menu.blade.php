@@ -88,7 +88,7 @@
                                                     <div class="block-img"><img src="timthumb.php?src={{Voyager::image( $product->image )}}&w=140&h=70" alt="">
                                                         <div class="group-btn"><a href="{{route('product.show',$product->slug)}}" class="swin-btn btn-link"><i class="icons fa fa-link"></i></a></div>
                                                     </div>
-                                                    <h5 class="title">{{$product->product_name}}</h5><span class="price woocommerce-Price-amount amount">{{$product->price}}<span class="price-symbol">VNĐ</span></span>
+                                                    <h5 class="title">{{$product->product_name}}</h5><span class="price woocommerce-Price-amount amount">{{$product->presentPrice()}}<span class="price-symbol">VNĐ</span></span>
                                                 </div>
                                             </div>
                                             @endforeach
