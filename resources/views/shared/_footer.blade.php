@@ -7,7 +7,7 @@
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="subscribe-heading">
                             <h3 class="title">Đăng ký Email để nhận thông báo</h3>
-                            <div class="des">CHúng tôi sẽ gửi thông tin khuyến mãi và các sản phẩm mới</div>
+                            <div class="des">Chúng tôi sẽ gửi thông tin khuyến mãi và các sản phẩm mới</div>
                         </div>
                         <form class="widget-newsletter">
                             <input placeholder="Email" class="form-control"><span class="submit"><i class="fa fa-paper-plane"></i></span>
