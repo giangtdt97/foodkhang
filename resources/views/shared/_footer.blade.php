@@ -213,5 +213,19 @@
         }
     }
 </script>
+<script type="text/javascript">
+    $('#search').on('keyup', function() {
+        var search = $(this).serialize();
+        if ($(this).find('.m-input').val() == '') {
+            $('#search-suggest div').hide();
+        } else {
+            $.ajax({
+                url: '/search',
+                type: 'POST',
+                data: search,
+            })
+        };
+    });
+</script>
 
 

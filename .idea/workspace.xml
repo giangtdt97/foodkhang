@@ -24,16 +24,15 @@
       <change afterPath="$PROJECT_DIR$/../PhpProject/.idea/vcs.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../TestBlade/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BlogController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/BlogController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ReservationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ReservationController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Order.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Order.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_09_10_080004_create_orders_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_09_10_080004_create_orders_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/color/colordefault.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/color/colordefault.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/elements.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/elements.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/extra.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/extra.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/responsive.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/responsive.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/blogs/blog_single.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/blogs/blog_single.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/contact.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/contact.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/master.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/menu.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/menu.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/menu_detail.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/menu_detail.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/reservation.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/reservation.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/shared/_blog_sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/shared/_blog_sidebar.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/shared/_footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/shared/_footer.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../PhpProject/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../PhpProject/.idea/php.xml" afterDir="false" />
@@ -317,7 +316,13 @@
       <workItem from="1599969432038" duration="1790000" />
       <workItem from="1599971236645" duration="1957000" />
       <workItem from="1599973209327" duration="1794000" />
-      <workItem from="1599975025404" duration="667000" />
+      <workItem from="1599975025404" duration="770000" />
+      <workItem from="1600049993162" duration="1028000" />
+      <workItem from="1600051829419" duration="1795000" />
+      <workItem from="1600053773570" duration="1747000" />
+      <workItem from="1600055585338" duration="1802000" />
+      <workItem from="1600057418096" duration="1796000" />
+      <workItem from="1600059275205" duration="1764000" />
     </task>
     <servers />
   </component>
@@ -341,6 +346,10 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="520" y="256" key="#Notifications/0.0.1536.864@0.0.1536.864" timestamp="1599552573629" />
+    <state x="194" y="274" key="#SQL_Dialects" timestamp="1600060392055">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="194" y="274" key="#SQL_Dialects/0.0.1536.864@0.0.1536.864" timestamp="1600060392055" />
     <state x="507" y="234" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1599974317172">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -361,10 +370,10 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="549" y="187" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1599555063587" />
-    <state x="604" y="356" key="NewPhpFileDialog" timestamp="1599797182634">
+    <state x="604" y="356" key="NewPhpFileDialog" timestamp="1600056805531">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="604" y="356" key="NewPhpFileDialog/0.0.1536.864@0.0.1536.864" timestamp="1599797182634" />
+    <state x="604" y="356" key="NewPhpFileDialog/0.0.1536.864@0.0.1536.864" timestamp="1600056805531" />
     <state x="277" y="77" key="SettingsEditor" timestamp="1599552659433">
       <screen x="0" y="0" width="1536" height="864" />
     </state>

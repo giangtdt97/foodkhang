@@ -20,6 +20,7 @@ class CreateOrdersTable extends Migration
             $table->enum('status',['UNCONFIRMED','CONFIRMED','PROCESSING','DELIVERY','COMPLETE'])->default('UNCONFIRMED');
             $table->text('address');
             $table->timestamps();
+
         });
     }
 
@@ -30,6 +31,6 @@ class CreateOrdersTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('orders');
+       Schema::dropIfExists('orders');
     }
 }

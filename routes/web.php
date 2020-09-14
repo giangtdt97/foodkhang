@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use TCG\Voyager\Facades\Voyager;
+use App\Order;
+use Illuminate\Support\Facades\Input;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,6 +23,8 @@ Route::get('/welcome', function () {
 Route::get('','HomeController@index')->name('home');
 Route::get('about','AboutController@index')->name('about');
 Route::get('reservation','ReservationController@index')->name('reservation');
+Route::get('/search', 'ReservationController@search');
+Route::post('/search', 'ReservationController@searchFullText')->name('search');
 Route::get('contact','ContactController@index')->name('contact');
 
 
@@ -36,3 +40,10 @@ Route::get('category/{slug}', 'ProductController@showCategory')->name('category.
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });
+//Route::any('/search',function(){
+//    $search = Input::get('search');
+//    $order = \App\Order::where('phone_number','LIKE','%'.$search.'%')->get();
+//    if(count($order) > 0)
+//        return view('reservation')->withDetails($order)->withQuery ($search);
+//    else return view ('reservation')->withMessage('No Details found. Try to search again !');
+//});

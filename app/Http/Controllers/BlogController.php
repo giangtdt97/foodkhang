@@ -10,14 +10,14 @@ use MongoDB\Driver\Session;
 
 class BlogController extends Controller
 {
-    public function index()
+    public function index(Request $request)
     {
         $blogs =Blog::published()->paginate(5);
         $categories=Category::all();
         $tags=Tag::all();
         return view('blogs.index')->with(compact('blogs','categories','tags'));
     }
-    public function show($slug)
+    public function show(Request $request,$slug)
     {
         $blog= Blog::where('slug', $slug)->first();
         $categories=Category::all();

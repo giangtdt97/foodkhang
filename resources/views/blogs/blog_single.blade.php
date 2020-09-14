@@ -1,18 +1,6 @@
 @extends('layouts.master')
 @section('title', 'Single Blog')
 @section('content')
-    @php
-
-           if(isset(session('view'))){
-               $view = session('view');
-               array_push($view,$blog->slug);
-               session()->flash('view', $view );
-           }else{
-           session()->flash('view', [$blog->slug]);
-           }
-
-           var_dump(session('view'));
-    @endphp
     <div class="page-container">
         <div data-bottom-top="background-position: 50% 50px;" data-center="background-position: 50% 0px;" data-top-bottom="background-position: 50% -50px;" class="page-title page-blog">
             <div class="container">

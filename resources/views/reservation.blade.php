@@ -27,12 +27,13 @@
                                         </div>
                                     </div>
                                      <div class="swin-sc swin-sc-contact-form light mtl">
-                                      <form method="POST" action="/search" role="search">
-                                          {{ csrf_field() }}
+                                      <form method="post" action="/search" role="search"  id="search">
                                         <div class="form-group">
                                             <div class="swin-btn-wrap center">
-                                                <div class="fa fa-phone"></div>
-                                                <input type="text" class="form-controller input search" id="search" name="search" >
+                                                <div class="fa fa-phone">:Nhap so dien thoai</div>
+{{--                                                <input type="text" class="form-controller input search" id="search" name="search" >--}}
+                                                <input type="text" name="search" class="form-control m-input" placeholder="Enter Phone Number" />
+                                                {{ csrf_field() }}
                                             </div>
                                         </div>
                                         <div class="form-group">

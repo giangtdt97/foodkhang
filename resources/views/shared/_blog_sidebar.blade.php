@@ -18,21 +18,22 @@
     <!-- recent post-->
     <div class="swin-widget widget-recent-post">
         <div class="title-widget">Bài Viết</div>
+        @foreach($tags as $tag)
+            @foreach($tag->blogs as $blog)
         <div class="widget-body widget-content clearfix">
-            @foreach($tags as $tag)
+
             <div class="swin-media">
-                @foreach($tag->blogs ?? '' as $blog)
-                <div class="content-left"><a href="{{route('blog.detail',$blog->slug)}}"><img src="{{Voyager::image( $blog->image )}}" alt="..." class="media-object " height="100"></a></div>
-                <div class="content-right"><a href="{{route('blog.detail',$blog->slug)}}" class="heading">
-                    {{$blog->title}}</a>
+                <div class="content-left"><a href="{{route('blog.detail',$blog->slug)}}"><img src="timthumb.php?src={{Voyager::image($blog->image)}}&h=100" alt="..." class="media-object " ></a></div>
+                <div class="content-right"><a href="{{route('blog.detail',$blog->slug)}}" class="heading">{{$blog->title}}</a>
                     <div class="info">
                         <div><i class="swin-icon fa fa-clock-o"></i><span class="day">{{$blog->created_at->format('d')}}</span>/<span class="month">{{$blog->created_at->format('F')}}</span></div>
                     </div>
                 </div>
-                    @endforeach
             </div>
-            @endforeach
+
         </div>
+        @endforeach
+        @endforeach
     </div>
     <!-- tag-->
     <div class="swin-widget widget-tag">
@@ -58,4 +59,5 @@
             </div>
         </div>
     </div>
+</div>
 </div>
