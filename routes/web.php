@@ -23,8 +23,8 @@ Route::get('/welcome', function () {
 Route::get('','HomeController@index')->name('home');
 Route::get('about','AboutController@index')->name('about');
 Route::get('reservation','ReservationController@index')->name('reservation');
-Route::get('/search', 'ReservationController@search');
-Route::post('/search', 'ReservationController@searchFullText')->name('search');
+//Route::get('reservation/search', 'ReservationController@search');
+//Route::post('/search', 'ReservationController@searchFullText')->name('search');
 Route::get('contact','ContactController@index')->name('contact');
 
 

@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Order extends Model
 {
 
-    use FullTextSearch;
+
     protected $searchable = [
         'phone_number'
     ];

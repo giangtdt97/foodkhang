@@ -18,8 +18,8 @@
     <!-- recent post-->
     <div class="swin-widget widget-recent-post">
         <div class="title-widget">Bài Viết</div>
-        @foreach($tags as $tag)
-            @foreach($tag->blogs as $blog)
+
+
         <div class="widget-body widget-content clearfix">
 
             <div class="swin-media">
@@ -32,8 +32,8 @@
             </div>
 
         </div>
-        @endforeach
-        @endforeach
+
+
     </div>
     <!-- tag-->
     <div class="swin-widget widget-tag">

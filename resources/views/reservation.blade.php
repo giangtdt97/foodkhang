@@ -27,39 +27,47 @@
                                         </div>
                                     </div>
                                      <div class="swin-sc swin-sc-contact-form light mtl">
-                                      <form method="post" action="/search" role="search"  id="search">
+                                      <form  action="">
                                         <div class="form-group">
                                             <div class="swin-btn-wrap center">
-                                                <div class="fa fa-phone">:Nhap so dien thoai</div>
-{{--                                                <input type="text" class="form-controller input search" id="search" name="search" >--}}
-                                                <input type="text" name="search" class="form-control m-input" placeholder="Enter Phone Number" />
+                                                <div class="fa fa-phone">:</div>
+                                            <input type="text" class="form-controller input search"  name="search" >
+
                                                 {{ csrf_field() }}
+                                                <div class="form-group">
+                                                    <div class="swin-btn-wrap center"><button type="submit" class="swin-btn center form-submit"><span>Kiểm Tra Đơn Hàng</span></button></div>
+                                                </div>
+
                                             </div>
                                         </div>
-                                        <div class="form-group">
-                                            <div class="swin-btn-wrap center"><button type="submit" class="swin-btn center form-submit"><span>Kiểm Tra Đơn Hàng</span></button></div>
-                                        </div>
                                       </form>
-{{--                                         <div class="container">--}}
-{{--                                                 <table class="table table-striped">--}}
-{{--                                                     <thead>--}}
-{{--                                                     <tr>--}}
-{{--                                                         <th>Name</th>--}}
-{{--                                                         <th>Status</th>--}}
-{{--                                                     </tr>--}}
-{{--                                                     </thead>--}}
-{{--                                                     <tbody>--}}
-{{--                                                     @foreach($orders as $order)--}}
-{{--                                                         <tr>--}}
-{{--                                                             <td>{{$order->customer_name}}</td>--}}
-{{--                                                             <td>{{$order->status}}</td>--}}
-{{--                                                         </tr>--}}
-{{--                                                     @endforeach--}}
-{{--                                                     </tbody>--}}
-{{--                                                 </table>--}}
 
-{{--                                         </div>--}}
-                                      </div>
+                                              @if(isset($data))
+                                                  @if ($data-> isEmpty())
+                                                      <h2>Sorry, no results found for the Order.</h2>
+                                                  @else
+                                                 <table class="table table-bordered table-hover">
+                                                     <thead>
+                                                     <tr>
+                                                         <th>Name</th>
+                                                         <th>Phone</th>
+                                                         <th>Status</th>
+                                                     </tr>
+                                                     </thead>
+                                                     <tbody>
+                                              @foreach ($data as $order)
+                                                  <tr>
+                                                      <td>{{$order->customer_name}}</td>
+                                                      <td>{{$order->phone_number}}</td>
+                                                      <td>{{$order->status}}</td>
+                                                  </tr>
+                                              @endforeach
+                                                  @endif
+                                              @endif
+                                              </tbody>
+                                          </table>
+                                     </div>
+
                                 </div>
                                 <div class="section-deco"><img src="{{asset('images/pages/reservation-showcase.png')}}" alt="fooday" class="img-deco"></div>
                             </div>
