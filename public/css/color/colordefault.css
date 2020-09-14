@@ -619,7 +619,7 @@ header.header-fixed {
     margin-bottom: 0; }
   .top-header .slide-content.slide-layout-02 .slide-sub-title {
     font-family: "Dancing Script";
-    font-size: 65px;
+    font-size: 37px;
     color: #fff;
     text-align: center;
     position: relative; }
@@ -3308,7 +3308,7 @@ ul.nav.nav-tabs {
       line-height: 1;
       text-transform: uppercase; }
   .blog-item .blog-title {
-    font-family: "Rancho";
+    font-family: "Grenze";
     font-size: 30px;
     margin-bottom: 15px;
     margin-top: 15px; }

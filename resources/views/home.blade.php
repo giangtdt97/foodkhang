@@ -10,7 +10,9 @@
                             <div class="container">
                                 <div class="slide-content-inner"><img src="{{asset('images/slider/slider2-icon.png')}}" data-ani-in="fadeInUp" data-ani-out="fadeOutDown" data-ani-delay="500" alt="fooday" class="slide-icon img img-responsive animated">
                                     <h3 data-ani-in="fadeInUp" data-ani-out="fadeOutDown" data-ani-delay="1000" class="slide-title animated">XÔI KHANG</h3>
-                                    <p data-ani-in="fadeInUp" data-ani-out="fadeOutDown" data-ani-delay="1500" class="slide-sub-title animated"><span class="line-before"></span><span class="line-after"></span><span class="text"><span>NGON TRUYỀN THỐNG   GIỮ TINH HOA </span></span></p>
+                                    <p data-ani-in="fadeInUp" data-ani-out="fadeOutDown" data-ani-delay="1500" class="slide-sub-title animated"><span class="line-before"></span><span class="line-after"></span><span class="text"><span>NGON TRUYỀN THỐNG</span></span></p>
+                                    <p data-ani-in="fadeInUp" data-ani-out="fadeOutDown" data-ani-delay="1500" class="slide-sub-title animated"><span class="text"><span><span class="text-large"> GIỮ TINH HOA </span></span></span></p>
+
                                 </div>
                             </div>
                         </div>
@@ -196,7 +198,7 @@
                                 <div class="swin-sc swin-sc-product products-01 style-02 woocommerce">
                                     <div class="row">
                                         <div class="col-md-2"></div>
-                                        <div data-slide-toshow="5" class="cat-wrapper-02 main-slider col-md-8">
+                                        <div data-slide-toshow="3" class="cat-wrapper-02 main-slider col-md-8">
                                             @foreach($categories as $category)
                                             <div class="item">
                                                 <div class="cat-icons"><i class="icons swin-icon-pasta"></i>
