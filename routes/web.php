@@ -16,6 +16,10 @@ use Illuminate\Support\Facades\Input;
 |
 */
 
+if (App::environment('production', 'staging')) {
+    URL::forceScheme('https');
+}
+
 Route::get('/welcome', function () {
     return view('welcome');
 });
