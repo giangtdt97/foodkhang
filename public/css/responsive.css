@@ -37,7 +37,7 @@ This file include css code conrespond for table and mobile device
     height: 130%; }
   .product-sesction-03-1 .img-decorate {
     max-width: 850px;
-    right: 53%; }
+    right: 51%; }
   .header-box #bg-top-header {
     transform: translateY(-1px) scale(-1, -1);
     transform-origin: bottom; } }
@@ -555,7 +555,7 @@ This file include css code conrespond for table and mobile device
     height: auto;
     top: 0;
     width: auto;
-    left: -40%;
+    left: 3%;
     max-width: none; }
   .swin-blog-single .swin-sc-blog-slider .blog-item .blog-featured-img img {
     left: 0; }

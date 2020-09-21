@@ -23,7 +23,37 @@
       <change afterPath="$PROJECT_DIR$/../BanabaTech/ui/.idea/ultim8.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../PhpProject/.idea/vcs.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../TestBlade/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/master.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Product.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/color/colordefault.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/color/colordefault.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/elements.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/elements.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/extra.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/extra.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/responsive.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/responsive.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/logoXoiKhang.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/logoXoiKhang.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/photo/timthumb_ext_21a512b265b66a4667e7de442d8fd553.timthumb.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/photo/timthumb_ext_336d8ad35dee3b407c007ac5beffce7d.timthumb.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/photo/timthumb_ext_f647b626d4a615325e0b111d93954b4e.timthumb.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/photo/timthumb_int_0bd8488eefef37c0f1b5984018dd4f24.timthumb.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/photo/timthumb_int_21af97c7e85084e3f7026d1d5acccae8.timthumb.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/photo/timthumb_int_433b8a142db48534669871ad0a284e72.timthumb.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/photo/timthumb_int_58cc28405f29c998a9cf5684cbe371d8.timthumb.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/photo/timthumb_int_693fe7934f12a09b351a233f1f148730.timthumb.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/photo/timthumb_int_a52b904439f47f6e7fa081524011f76e.timthumb.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/photo/timthumb_int_ce7de63034a6849e4f59b112aaaebcdf.timthumb.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/photo/timthumb_int_d376405a80b711ff9f6da61bacbe3982.timthumb.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/photo/timthumb_int_d87ec5302403092c6e3c48fcb45ee327.timthumb.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/photo/timthumb_int_e7fd7c397b8b899f54acd6d7f3454d8b.timthumb.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/photo/timthumb_int_f7aa2d16bb400a090b33bd36f762438c.timthumb.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/storage/services/September2020/6DnhXSKRO51NrprDae0l-cropped.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/storage/services/September2020/6DnhXSKRO51NrprDae0l-medium.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/storage/services/September2020/6DnhXSKRO51NrprDae0l-small.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/storage/services/September2020/6DnhXSKRO51NrprDae0l.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/blogs/blog_single.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/blogs/blog_single.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/service_detail.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/service_detail.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/shared/_blog_sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/shared/_blog_sidebar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/shared/_footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/shared/_footer.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../PhpProject/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../PhpProject/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../larastart" beforeDir="false" afterPath="$PROJECT_DIR$/../larastart" afterDir="false" />
     </list>
@@ -172,22 +202,22 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../laravel-ecommerce-example" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/images" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\xampp\htdocs\FoodKhang\app" />
+      <recent name="D:\xampp\htdocs\FoodKhang\app\Model" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\xampp\htdocs\FoodKhang\public\images" />
       <recent name="D:\xampp\htdocs\FoodKhang\public" />
       <recent name="D:\xampp\htdocs\FoodKhang" />
       <recent name="D:\xampp\htdocs\FoodKhang\database\sql" />
       <recent name="D:\xampp\htdocs\FoodKhang\storage\app\public" />
-      <recent name="D:\xampp\htdocs\FoodKhang\public\images" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\xampp\htdocs\FoodKhang\app" />
-      <recent name="D:\xampp\htdocs\FoodKhang\app\Model" />
     </key>
   </component>
   <component name="RunManager">
@@ -319,6 +349,15 @@
       <workItem from="1600069906490" duration="1827000" />
       <workItem from="1600071815220" duration="1591000" />
       <workItem from="1600078737178" duration="644000" />
+      <workItem from="1600655607128" duration="1473000" />
+      <workItem from="1600657371228" duration="1823000" />
+      <workItem from="1600670003119" duration="1795000" />
+      <workItem from="1600672005683" duration="1796000" />
+      <workItem from="1600673820421" duration="1790000" />
+      <workItem from="1600675630048" duration="1794000" />
+      <workItem from="1600677441751" duration="1797000" />
+      <workItem from="1600679281680" duration="1793000" />
+      <workItem from="1600681090880" duration="1841000" />
     </task>
     <servers />
   </component>

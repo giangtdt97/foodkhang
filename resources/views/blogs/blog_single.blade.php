@@ -59,10 +59,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="blog-navigation clearfix">
-                                    <div class="navi-item next-post pull-right"><a href="#">Next<i class="fa fa-chevron-right"></i></a></div>
-                                    <div class="navi-item prev-post pull-left"><a href="#">Previous<i class="fa fa-chevron-left"></i></a></div>
-                                </div>
+                        
                                 <div class="swin-widget widget-tag">
                                     <div class="title-widget">TAG</div>
                                     <div class="widget-body widget-content clearfix">

@@ -1,22 +1,22 @@
 
 <footer>
-    <div class="subscribe-section"><img src="{{asset('images/background/bg5.png')}}" alt="" class="img-subscribe">
-        <div class="container">
-            <div class="subscribe-wrapper">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="subscribe-heading">
-                            <h3 class="title">Đăng ký Email để nhận thông báo</h3>
-                            <div class="des">Chúng tôi sẽ gửi thông tin khuyến mãi và các sản phẩm mới</div>
-                        </div>
-                        <form class="widget-newsletter">
-                            <input placeholder="Email" class="form-control"><span class="submit"><i class="fa fa-paper-plane"></i></span>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+{{--    <div class="subscribe-section"><img src="{{asset('images/background/bg5.png')}}" alt="" class="img-subscribe">--}}
+{{--        <div class="container">--}}
+{{--            <div class="subscribe-wrapper">--}}
+{{--                <div class="row">--}}
+{{--                    <div class="col-lg-8 col-lg-offset-2">--}}
+{{--                        <div class="subscribe-heading">--}}
+{{--                            <h3 class="title">Đăng ký Email để nhận thông báo</h3>--}}
+{{--                            <div class="des">Chúng tôi sẽ gửi thông tin khuyến mãi và các sản phẩm mới</div>--}}
+{{--                        </div>--}}
+{{--                        <form class="widget-newsletter">--}}
+{{--                            <input placeholder="Email" class="form-control"><span class="submit"><i class="fa fa-paper-plane"></i></span>--}}
+{{--                        </form>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--        </div>--}}
+{{--    </div>--}}
     <div class="footer-top"></div>
     <div class="footer-main">
         <div class="container">

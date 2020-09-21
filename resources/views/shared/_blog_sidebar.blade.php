@@ -1,12 +1,12 @@
 <div class="page-sidebar col-md-4">
-    <!-- search-->
+    <!-- search
     <div class="swin-widget widget-search">
         <div class="title-widget">
             <form accept-charset="utf-8" class="search-form">
                 <input type="search" placeholder="Search" name="s" value="" class="search-input"><span class="search-submit"><i class="fa fa-search"></i></span>
             </form>
         </div>
-    </div>
+    </div>-->
     <!-- categories-->
     <div class="swin-widget widget-categories">
         <div class="title-widget">Danh Mục Món Ăn</div>

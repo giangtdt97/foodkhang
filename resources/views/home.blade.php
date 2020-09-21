@@ -37,14 +37,14 @@
                         </div>
                     </div>
                 </section>
-                <section class="product-sesction-03-1 padding-top-100 padding-bottom-100"><img src="{{asset('images/product/product-decorate.jpg')}}" alt="" class="img-responsive img-decorate">
+                <section class="product-sesction-03-1 padding-top-100 padding-bottom-100"><img src="{{Voyager::image($feature_images[6]->value)}}" alt="" class="img-responsive img-decorate">
                     <div class="container">
                         <div class="row">
                             <div class="col-lg-6 col-md-4"></div>
                             <div class="col-lg-6 col-md-8">
                                 <div class="swin-sc swin-sc-title text-left light">
                                     <p class="top-title"><span>MóN ĐƯỢC ĐỀ XUẤT</span></p>
-                                    <h3 class="title">Món Ngon Hàng Tuần</h3>
+                                    <h3 class="title">{{($feature_images[6]->title)}}</h3>
                                 </div>
                                 <div class="swin-sc swin-sc-product products-01 style-04 light swin-vetical-slider">
                                     <div class="row">
@@ -77,117 +77,20 @@
                         </div>
                         <div class="swin-sc swin-sc-iconbox">
                             <div class="row">
+                                @foreach($feature_service as $feature_service)
                                 <div class="col-md-3 col-sm-6 col-xs-12">
                                     <div class="item icon-box-02 wow fadeInUpShort">
-                                        <div class="wrapper-icon"><i class="icons swin-icon-dish"></i><span class="number">1</span></div>
-                                        <h4 class="title">XÔi sáng/chiều </h4>
-                                        <div class="description">Lorem ipsum dolor sit amet, tong consecteturto sed eiusmod incididunt utote labore et</div>
+                                        <div class="wrapper-icon"><i class="{{$feature_service->icon}}"></i></div>
+                                        <h4 class="title">{{$feature_service->name}}</h4>
+                                        <div class="description">{{$feature_service->description}}</div>
                                     </div>
                                 </div>
-                                <div class="col-md-3 col-sm-6 col-xs-12">
-                                    <div data-wow-delay="0.5s" class="item icon-box-02 wow fadeInUpShort">
-                                        <div class="wrapper-icon"><i class="icons swin-icon-dinner-2"></i><span class="number">2</span></div>
-                                        <h4 class="title">Đồ Cúng</h4>
-                                        <div class="description">Lorem ipsum dolor sit amet, tong consecteturto sed eiusmod incididunt utote labore et</div>
-                                    </div>
-                                </div>
-                                <div class="col-md-3 col-sm-6 col-xs-12">
-                                    <div data-wow-delay="1s" class="item icon-box-02 wow fadeInUpShort">
-                                        <div class="wrapper-icon"><i class="icons swin-icon-browser"></i><span class="number">3</span></div>
-                                        <h4 class="title">Bánh sinh Nhật</h4>
-                                        <div class="description">Lorem ipsum dolor sit amet, tong consecteturto sed eiusmod incididunt utote labore et</div>
-                                    </div>
-                                </div>
-                                <div class="col-md-3 col-sm-6 col-xs-12">
-                                    <div data-wow-delay="1.5s" class="item icon-box-02 wow fadeInUpShort">
-                                        <div class="wrapper-icon"><i class="icons swin-icon-delivery"></i><span class="number">4</span></div>
-                                        <h4 class="title">Chè Các Loại</h4>
-                                        <div class="description">Lorem ipsum dolor sit amet, tong consecteturto sed eiusmod incididunt utote labore et</div>
-                                    </div>
-                                </div>
+                                @endforeach
                             </div>
                         </div>
                     </div>
                 </section>
-
-{{--                <section class="reservation-section-02 padding-top-100 padding-bottom-100">--}}
-{{--                    <div class="container"><img src="{{asset('images/background/home2-img-deco.png')}}" alt="" class="img-deco img-responsive">--}}
-{{--                        <div class="row">--}}
-{{--                            <div class="col-md-6 left-wrapper">--}}
-{{--                                <div class="form-dark-wrapper">--}}
-{{--                                    <div class="swin-sc swin-sc-title style-3 light">--}}
-{{--                                        <p class="title"><span>Make A Reservation</span></p>--}}
-{{--                                        <p class="subtitle">You can call us directly at <span class="text-default"> 225-88888</span></p>--}}
-{{--                                    </div>--}}
-{{--                                    <div class="swin-sc swin-sc-contact-form dark mtl">--}}
-{{--                                        <form>--}}
-{{--                                            <div class="form-group">--}}
-{{--                                                <div class="input-group">--}}
-{{--                                                    <div class="input-group-addon">--}}
-{{--                                                        <div class="fa fa-phone"></div>--}}
-{{--                                                    </div>--}}
-{{--                                                    <input type="text" placeholder="Phone" class="form-control">--}}
-{{--                                                </div>--}}
-{{--                                                <div class="input-group">--}}
-{{--                                                    <div class="input-group-addon"><i class="fa fa-male"></i></div>--}}
-{{--                                                    <select type="text" placeholder="People" class="form-control">--}}
-{{--                                                        <option>1 person</option>--}}
-{{--                                                        <option>2 People</option>--}}
-{{--                                                        <option>3 People</option>--}}
-{{--                                                        <option>4 People</option>--}}
-{{--                                                        <option>5 People</option>--}}
-{{--                                                        <option>6 People</option>--}}
-{{--                                                        <option>7 People</option>--}}
-{{--                                                        <option>8 People</option>--}}
-{{--                                                        <option>9 People</option>--}}
-{{--                                                        <option>10 People</option>--}}
-{{--                                                    </select>--}}
-{{--                                                </div>--}}
-{{--                                            </div>--}}
-{{--                                            <div class="form-group">--}}
-{{--                                                <div class="input-group">--}}
-{{--                                                    <div class="input-group-addon"><i class="fa fa-calendar"></i></div>--}}
-{{--                                                    <input type="text" placeholder="Date" class="form-control datepicker">--}}
-{{--                                                </div>--}}
-{{--                                                <div class="input-group">--}}
-{{--                                                    <div class="input-group-addon">--}}
-{{--                                                        <div class="fa fa-clock-o"></div>--}}
-{{--                                                    </div>--}}
-{{--                                                    <select type="text" placeholder="Time" class="form-control">--}}
-{{--                                                        <option>7:00 AM</option>--}}
-{{--                                                        <option>8:00 AM</option>--}}
-{{--                                                        <option>9:00 AM</option>--}}
-{{--                                                        <option>10:00 AM</option>--}}
-{{--                                                        <option>11:00 AM</option>--}}
-{{--                                                        <option>12:00 AM</option>--}}
-{{--                                                        <option>1:00 PM</option>--}}
-{{--                                                        <option>2:00 PM</option>--}}
-{{--                                                        <option>3:00 PM</option>--}}
-{{--                                                        <option>4:00 PM</option>--}}
-{{--                                                        <option>5:00 PM</option>--}}
-{{--                                                        <option>6:00 PM</option>--}}
-{{--                                                        <option>7:00 PM</option>--}}
-{{--                                                        <option>8:00 PM</option>--}}
-{{--                                                        <option>9:00 PM</option>--}}
-{{--                                                        <option>10:00 PM</option>--}}
-{{--                                                    </select>--}}
-{{--                                                </div>--}}
-{{--                                            </div>--}}
-{{--                                            <div class="form-group">--}}
-{{--                                                <div class="swin-btn-wrap center"><a href="#" class="swin-btn center form-submit"> <span>	Find Table</span></a></div>--}}
-{{--                                            </div>--}}
-{{--                                        </form>--}}
-{{--                                    </div>--}}
-{{--                                </div>--}}
-{{--                            </div>--}}
-{{--                        </div>--}}
-{{--                    </div>--}}
-{{--                    <div class="video-wrapper equal-height deco-abs">--}}
-{{--                        <div class="swin-sc swin-sc-video">--}}
-{{--                            <div class="play-wrap"><a href="https://vimeo.com/27814858" class="play-btn swipebox"><i class="play-icon fa fa-play"></i></a></div>--}}
-{{--                        </div>--}}
                     </div>
-                </section>
                 <section class="product-sesction-01 padding-bottom-100 padding-top-100">
                     <div class="container">
                         <div class="row">
@@ -207,23 +110,6 @@
                                                 </div>
                                             </div>
                                             @endforeach
-{{--                                            <div class="item">--}}
-{{--                                                <div class="cat-icons"><i class="icons swin-icon-fish"></i>--}}
-{{--                                                    <h5 class="cat-title">Lunch</h5>--}}
-{{--                                                </div>--}}
-{{--                                            </div>--}}
-{{--                                            <div class="item">--}}
-{{--                                                <div class="cat-icons"><i class="icons swin-icon-meat"></i></div>--}}
-{{--                                                <h5 class="cat-title">Dinner</h5>--}}
-{{--                                            </div>--}}
-{{--                                            <div class="item">--}}
-{{--                                                <div class="cat-icons"><i class="icons swin-icon-ice-cream"></i></div>--}}
-{{--                                                <h5 class="cat-title">Desset</h5>--}}
-{{--                                            </div>--}}
-{{--                                            <div class="item">--}}
-{{--                                                <div class="cat-icons"><i class="icons swin-icon-dinner"></i></div>--}}
-{{--                                                <h5 class="cat-title">Drink</h5>--}}
-{{--                                            </div>--}}
                                         </div>
                                         <div class="col-md-2"></div>
                                     </div>
@@ -233,7 +119,7 @@
                                             <div class="tab-content">
                                                 <div class="col-md-5 col-sm-12">
                                                     <div class="cat-wrapper">
-                                                        <div class="item"><img src="{{Voyager::image( $category->image )}}" alt="" class="img img-responsive img-full"></div>
+                                                        <div class="item"><img src="{{Voyager::image( $category->image )}}" alt="" class="img img-responsive"></div>
                                                     </div>
                                                 </div>
 
@@ -246,7 +132,7 @@
                                                                 <h5 class="title">{{$product->product_name}}</h5>
                                                                 <div class="des">{{$product->short_description}}</div>
                                                             </div>
-                                                            <div class="item-right"><span class="price woocommerce-Price-amount amount">{{$product->presentPrice()}}</span><span class="price-symbol">VNĐ</span></div>
+                                                            <div class="item-right"><span class="price woocommerce-Price-amount amount">{{$product->presentPrice()}}</span>VNĐ</div>
                                                         </div>
                                                             @endforeach
                                                     </div>
@@ -270,33 +156,33 @@
                         <div class="grid">
                             <div class="grid-sizer col-sm-1"></div>
                             <div class="grid-item col-sm-3 grid-item-h2">
-                                <div class="grid-wrap-item"><a href="#" class="gallery-title title">Chicago Beefsteak</a>
-                                    <div class="img-wrap"><img src="{{asset('images/gallery/gallery-1.jpg')}}" alt="" class="img img-responsive"></div>
+                                <div class="grid-wrap-item"><a href="{{Voyager::image($feature_images[0]->value)}}" class="gallery-title title">{{($feature_images[0]->title)}}</a>
+                                    <div class="img-wrap"><img src="{{Voyager::image($feature_images[0]->value)}}" alt="" class="img img-responsive"></div>
                                 </div>
                             </div>
                             <div class="grid-item col-sm-4 grid-item-h1">
-                                <div class="grid-wrap-item"><a href="#" class="gallery-title title">Chicago Beefsteak</a>
-                                    <div class="img-wrap"><img src="{{asset('images/gallery/gallery-2.jpg')}}" alt="" class="img img-responsive"></div>
+                                <div class="grid-wrap-item"><a href="{{Voyager::image($feature_images[5]->value)}}" class="gallery-title title">{{($feature_images[5]->title)}}</a>
+                                    <div class="img-wrap"><img src="{{Voyager::image($feature_images[5]->value)}}" alt="" class="img img-responsive"></div>
                                 </div>
                             </div>
                             <div class="grid-item col-sm-2 grid-item-h1">
-                                <div class="grid-wrap-item"><a href="#" class="gallery-title title">Chicago Beefsteak</a>
-                                    <div class="img-wrap"><img src="{{asset('images/gallery/gallery-3.jpg')}}" alt="" class="img img-responsive"></div>
+                                <div class="grid-wrap-item"><a href="{{Voyager::image($feature_images[1]->value)}}" class="gallery-title title">{{($feature_images[1]->title)}}</a>
+                                    <div class="img-wrap"><img src="{{Voyager::image($feature_images[1]->value)}}" alt="" class="img img-responsive"></div>
                                 </div>
                             </div>
                             <div class="grid-item col-sm-3 grid-item-h2">
-                                <div class="grid-wrap-item"><a href="#" class="gallery-title title">Chicago Beefsteak</a>
-                                    <div class="img-wrap"><img src="{{asset('images/gallery/gallery-4.jpg')}}" alt="" class="img img-responsive"></div>
+                                <div class="grid-wrap-item"><a href="{{Voyager::image($feature_images[3]->value)}}" class="gallery-title title">{{($feature_images[3]->title)}}</a>
+                                    <div class="img-wrap"><img src="{{Voyager::image($feature_images[3]->value)}}" alt="" class="img img-responsive"></div>
                                 </div>
                             </div>
                             <div class="grid-item col-sm-2 grid-item-h1">
-                                <div class="grid-wrap-item"><a href="#" class="gallery-title title">Chicago Beefsteak</a>
-                                    <div class="img-wrap"><img src="{{asset('images/gallery/gallery-5.jpg')}}" alt="" class="img img-responsive"></div>
+                                <div class="grid-wrap-item"><a href="{{Voyager::image($feature_images[4]->value)}}" class="gallery-title title">{{($feature_images[4]->title)}}</a>
+                                    <div class="img-wrap"><img src="{{Voyager::image($feature_images[4]->value)}}" alt="" class="img img-responsive"></div>
                                 </div>
                             </div>
                             <div class="grid-item col-sm-4 grid-item-h1">
-                                <div class="grid-wrap-item"><a href="#" class="gallery-title title">Chicago Beefsteak</a>
-                                    <div class="img-wrap"><img src="{{asset('images/gallery/gallery-6.jpg')}}" alt="" class="img img-responsive"></div>
+                                <div class="grid-wrap-item"><a href="{{Voyager::image($feature_images[2]->value)}}" class="gallery-title title">{{($feature_images[2]->title)}}</a></a>
+                                    <div class="img-wrap"><img src="{{Voyager::image($feature_images[2]->value)}}" alt="" class="img img-responsive"></div>
                                 </div>
                             </div>
                         </div>
@@ -314,36 +200,32 @@
                                 <div class="swin-sc swin-sc-team-slider">
                                     <div class="team-item swin-transition wow fadeInLeft">
                                         <div class="team-img-wrap">
-                                            <div class="team-img"><img src="{{asset('images/team/team-1.png')}}" alt="" class="img img-responsive"></div>
+                                            <div class="team-img"><img id="myImg" src="{{Voyager::image($feature_images[7]->value)}}" alt="" class="img img-responsive"></div>
                                         </div>
-                                        <p class="team-name">MICHAEL DOE</p>
-                                        <p class="team-position">Head Chef</p>
+                                        <p class="team-name">{{($feature_images[7]->title)}}</p>
                                         <hr>
                                     </div>
                                     <div class="team-item swin-transition wow fadeInUp">
                                         <div class="team-img-wrap">
-                                            <div class="team-img"><img src="{{asset('images/team/team-2.png')}}" alt="" class="img img-responsive"></div>
+                                            <div class="team-img"><img src="{{Voyager::image($feature_images[8]->value)}}"  width="261" height="195" alt=""  ></div>
                                         </div>
-                                        <p class="team-name">Teresa Doe</p>
-                                        <p class="team-position">Head Chef</p>
+                                        <p class="team-name">{{($feature_images[8]->title)}}</p>
                                         <hr>
                                     </div>
                                     <div class="team-item swin-transition wow fadeInRight">
                                         <div class="team-img-wrap">
-                                            <div class="team-img"><img src="{{asset('images/team/team-3.png')}}" alt="" class="img img-responsive"></div>
+                                            <div class="team-img"><img src="{{Voyager::image($feature_images[9]->value)}}"  alt="" class="img img-responsive" ></div>
                                         </div>
-                                        <p class="team-name">BENJAMIN MARK</p>
-                                        <p class="team-position">Head Chef</p>
+                                        <p class="team-name">{{($feature_images[9]->title)}}</p>
                                         <hr>
                                     </div>
                                     <div class="team-item swin-transition">
                                         <div class="team-img-wrap">
-                                            <div class="team-img"><img src="{{asset('images/team/team-4.png')}}" alt="" class="img img-responsive"></div>
+                                            <div class="team-img"><img src="{{Voyager::image($feature_images[8]->value)}}" alt="" class="img img-responsive"></div>
                                         </div>
-                                        <p class="team-name">Teresa Doe</p>
-                                        <p class="team-position">Head Chef</p>
+                                        <p class="team-name">{{($feature_images[8]->title)}}</p>
                                         <hr>
-                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -365,27 +247,27 @@
                                                 <div class="slides">
                                                     <div class="testi-item item"><i class="testi-icon fa fa-quote-left"></i>
                                                         <div class="testi-content">
-                                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
+                                                            <p>{{setting('site.comment01')}}</p>
                                                         </div>
-                                                        <div class="testi-info"><span class="name">Khách A</span> <span class="position">Customer</span></div>
+                                                        <div class="testi-info"><span class="position">Khách Hàng</span></div>
                                                     </div>
                                                     <div class="testi-item item"><i class="testi-icon fa fa-quote-left"></i>
                                                         <div class="testi-content">
-                                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
+                                                            <p>{{setting('site.comment02')}}</p>
                                                         </div>
-                                                        <div class="testi-info"><span class="name">Khách B</span> <span class="position">Director</span></div>
+                                                        <div class="testi-info"><span class="position">Khách Hàng</span></div>
                                                     </div>
                                                     <div class="testi-item item"><i class="testi-icon fa fa-quote-left"></i>
                                                         <div class="testi-content">
-                                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
+                                                            <p>{{setting('site.comment03')}}</p>
                                                         </div>
-                                                        <div class="testi-info"><span class="name">Khách C</span> <span class="position">Designer</span></div>
+                                                        <div class="testi-info"><span class="position">Khách Hàng</span></div>
                                                     </div>
                                                     <div class="testi-item item"><i class="testi-icon fa fa-quote-left"></i>
                                                         <div class="testi-content">
-                                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
+                                                            <p>{{setting('site.comment04')}}</p>
                                                         </div>
-                                                        <div class="testi-info"><span class="name">Jamie	Erickson</span> <span class="position">Manager</span></div>
+                                                        <div class="testi-info"><span class="position">Khách Hàng</span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -439,4 +321,5 @@
                     </div>
                 </section>
             </div>
+
 @endsection
