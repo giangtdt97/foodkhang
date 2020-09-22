@@ -317,7 +317,7 @@ header {
 
 .header-top.top-layout-02 {
   color: #fff;
-  background-color: #f15f2a;
+  background-color: #96b125;
   border: none; }
   .header-top.top-layout-02 a {
     color: #ffffff; }
@@ -388,7 +388,7 @@ header.header-fixed .header-top {
       width: 0;
       top: 50%;
       margin-top: 15px;
-      background-color: #f15f2a;
+      background-color: #96b125;
       -ms-transition: all 0.3s ease;
       -webkit-transition: all 0.3s ease;
       transition: all 0.3s ease; }
@@ -639,7 +639,7 @@ header.header-fixed {
   transform-origin: bottom; }
 
 .header-box .gambit_sep_decor1 {
-  fill: #f15f2a; }
+  fill: #96b125; }
 
 .header-box .header-bg {
   position: absolute;
@@ -647,7 +647,7 @@ header.header-fixed {
   left: 0;
   width: 100%;
   height: 80px;
-  background: #f15f2a;
+  background: #96b125;
   padding-top: 35px; }
 
 .header-box .header-main-wrapper {
@@ -727,7 +727,7 @@ header.header-fixed {
   position: relative;
   font-weight: 700;
   font-size: 16px;
-  color: #f15f2a;
+  color: #96b125;
   position: relative;
   text-transform: uppercase;
   display: inline-block;
@@ -748,7 +748,7 @@ header.header-fixed {
     position: absolute;
     border-bottom-width: 1px;
     border-bottom-style: solid;
-    border-bottom-color: #f15f2a;
+    border-bottom-color: #96b125;
     top: 50%;
     margin-top: 0px; }
   .top-header .slide-content .slide-text-01 span.text:before {
@@ -761,7 +761,7 @@ header.header-fixed {
     width: 3px;
     height: 3px;
     border-radius: 50%;
-    background-color: #f15f2a;
+    background-color: #96b125;
     top: 50%;
     margin-top: -1px; }
   .top-header .slide-content .slide-text-01:before {
@@ -858,7 +858,7 @@ header.header-fixed {
       position: absolute;
       bottom: 2px;
       height: 1px;
-      background-color: #f15f2a; }
+      background-color: #96b125; }
       .top-header .slide-content.slide-layout-03 .top-content .line.short {
         width: 48px;
         bottom: 13px; }
@@ -1022,7 +1022,7 @@ header.header-fixed {
   right: 1.5%;
   display: none;
   z-index: 9999;
-  background: #f15f2a;
+  background: #96b125;
   border: 3px solid #ffffff;
   border-radius: 50%;
   height: 47px;
@@ -1067,7 +1067,7 @@ header.header-fixed {
       box-shadow: none;
       border: none; }
     .subscribe-wrapper .widget-newsletter i {
-      color: #f15f2a; }
+      color: #96b125; }
     .subscribe-wrapper .widget-newsletter .submit {
       position: absolute;
       top: 0;
@@ -1115,7 +1115,7 @@ header.header-fixed {
     width: 80px;
     height: 80px;
     border-radius: 50%;
-    background-color: #f15f2a;
+    background-color: #96b125;
     border: 3px solid #fff;
     color: #fff;
     text-align: center;
@@ -1189,7 +1189,7 @@ header.header-fixed {
     .product-single .product-summary .product-share .socials li a {
       background-color: #ededed; }
       .product-single .product-summary .product-share .socials li a:hover {
-        background-color: #f15f2a; }
+        background-color: #96b125; }
 
 .product-single #reviews .product-reviews-title {
   margin-bottom: 40px; }
@@ -1207,7 +1207,7 @@ header.header-fixed {
   margin-left: 80px; }
 
 .product-single #reviews .comment_container .star-rating i {
-  color: #f15f2a; }
+  color: #96b125; }
   .product-single #reviews .comment_container .star-rating i.fa-star-o {
     color: #616f7d; }
 
@@ -1233,7 +1233,7 @@ header.header-fixed {
     .blog-footer .blog-share .socials li a i {
       color: #a2a2a2; }
     .blog-footer .blog-share .socials li a:hover {
-      background-color: #f15f2a; }
+      background-color: #96b125; }
       .blog-footer .blog-share .socials li a:hover i {
         color: #fff; }
 
@@ -1246,7 +1246,7 @@ header.header-fixed {
     font-weight: 300;
     font-style: italic; }
     .blog-footer .blog-tags a:hover {
-      color: #f15f2a; }
+      color: #96b125; }
 
 .blog-navigation {
   position: relative;
@@ -1264,7 +1264,7 @@ header.header-fixed {
       color: #616f7d;
       font-weight: 700; }
       .blog-navigation .navi-item a:hover {
-        color: #f15f2a; }
+        color: #96b125; }
       .blog-navigation .navi-item a i {
         font-size: 12px;
         margin: 7px 10px; }
@@ -1322,14 +1322,14 @@ header.header-fixed {
       width: 1px;
       background-color: #cccccc; }
   .blog-comment .comment-item .comment-reply a {
-    color: #f15f2a;
+    color: #96b125;
     opacity: 0.8; }
     .blog-comment .comment-item .comment-reply a:hover {
       opacity: 1; }
   .blog-comment .comment-item .comment-reply i {
     font-size: 12px;
     margin-right: 5px;
-    color: #f15f2a; }
+    color: #96b125; }
 
 .blog-comment .comment-form {
   margin-top: 70px; }
@@ -1454,7 +1454,7 @@ a#open-popup {
   .color-setting li.active a {
     border-radius: 5px; }
   .color-setting li.colordefault a {
-    background-color: #f15f2a; }
+    background-color: #96b125; }
   .color-setting li.color01 a {
     background-color: #cc9f65; }
   .color-setting li.color02 a {
