@@ -50,25 +50,25 @@
                                             <div class="slides">
                                                 <div class="testi-item item"><i class="testi-icon fa fa-quote-left"></i>
                                                     <div class="testi-content">
-                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
+                                                        <p>{{setting('site.comment01')}}</p>
                                                     </div><img src="{{asset('images/testi/testi-signal.png')}}" alt="" class="testi-signal">
                                                     <div class="testi-info"><span class="name">Timothy Doe</span> <span class="position">Customer</span></div>
                                                 </div>
                                                 <div class="testi-item item"><i class="testi-icon fa fa-quote-left"></i>
                                                     <div class="testi-content">
-                                                        <p>Ut enim ad minim veniam, lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
+                                                        <p>{{setting('site.comment02')}}</p>
                                                     </div><img src="{{asset('images/testi/testi-signal.png')}}" alt="" class="testi-signal">
                                                     <div class="testi-info"><span class="name">Sarah	Ruiz</span> <span class="position">Customer</span></div>
                                                 </div>
                                                 <div class="testi-item item"><i class="testi-icon fa fa-quote-left"></i>
                                                     <div class="testi-content">
-                                                        <p>Consectetur adipisicing elit, lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
+                                                        <p>{{setting('site.comment03')}}</p>
                                                     </div><img src="{{asset('images/testi/testi-signal.png')}}" alt="" class="testi-signal">
                                                     <div class="testi-info"><span class="name">Tracey Lewis</span> <span class="position">Customer</span></div>
                                                 </div>
                                                 <div class="testi-item item"><i class="testi-icon fa fa-quote-left"></i>
                                                     <div class="testi-content">
-                                                        <p>Quis nostrud exercitation ullamco laboris, lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
+                                                        <p>{{setting('site.comment04')}}</p>
                                                     </div><img src="{{asset('images/testi/testi-signal.png')}}" alt="" class="testi-signal">
                                                     <div class="testi-info"><span class="name">Jamie	Erickson</span> <span class="position">Customer</span></div>
                                                 </div>
