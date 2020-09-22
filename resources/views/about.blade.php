@@ -22,40 +22,20 @@
                             <div data-item="3" class="swin-sc swin-sc-timeline-2">
                                 <div class="main-slider">
                                     <div class="slides">
+                                        @foreach($abouts as $about)
                                         <div class="timeline-item item swin-transition">
-                                            <div class="timeline-item-wrap"><span class="timeline-year swin-transition">2016-2017</span></div><img src="{{asset('images/timeline/timeline-5.jpg')}}" alt="fooday" class="img img-responsive">
+                                            <div class="timeline-item-wrap"><span class="timeline-year swin-transition">{{$about->year}}</span></div><img src="{{Voyager::image( $about->image )}}" alt="fooday" class="img img-responsive">
                                         </div>
-                                        <div class="timeline-item item swin-transition">
-                                            <div class="timeline-item-wrap"><span class="timeline-year swin-transition">2017-2018</span></div><img src="{{asset('images/timeline/timeline-6.jpg')}}" alt="fooday" class="img img-responsive">
-                                        </div>
-                                        <div class="timeline-item item swin-transition">
-                                            <div class="timeline-item-wrap"><span class="timeline-year swin-transition">2018-2019</span></div><img src="{{asset('images/timeline/timeline-7.jpg')}}" alt="fooday" class="img img-responsive">
-                                        </div>
+                                        @endforeach
                                     </div>
                                 </div>
                                 <div class="nav-slider">
                                     <div class="slides">
+                                        @foreach($abouts as $about)
                                         <div class="timeline-content-item">
-                                            <p class="timeline-heading"><strong>16.10.2012:</strong>The Begin of Fooday Restaurents</p>
-                                            <div class="timeline-content-detail">
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nosrud lorem exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</p>
-                                                <p>Accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
-                                            </div>
+                                            {!! $about->context !!}
                                         </div>
-                                        <div class="timeline-content-item">
-                                            <p class="timeline-heading"><strong>16.10.2016:</strong>The Begin of Fooday Restaurents</p>
-                                            <div class="timeline-content-detail">
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nosrud lorem exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</p>
-                                                <p>Accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
-                                            </div>
-                                        </div>
-                                        <div class="timeline-content-item">
-                                            <p class="timeline-heading"><strong>16.10.2017:</strong>The Begin of Fooday Restaurents</p>
-                                            <div class="timeline-content-detail">
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nosrud lorem exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</p>
-                                                <p>Accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
-                                            </div>
-                                        </div>
+                                        @endforeach
                                     </div>
                                 </div>
                             </div>
@@ -160,3 +140,5 @@
         </div>
     </div>
 @endsection
+
+

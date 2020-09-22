@@ -45,7 +45,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1; }
 
 .img-full {
-  /*width: 100%; }*/
+  /*width: 100%;*/ }
 img{max-width: 100%;}
 .top-header .animated {
   opacity: 0; }
@@ -2819,7 +2819,7 @@ ul.nav.nav-tabs {
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.5); }
   .swin-sc-timeline-2 .timeline-item .timeline-year {
-    font-size: 40px;
+    font-size: 30px;
     position: absolute;
     color: #fff;
     left: 50%;
