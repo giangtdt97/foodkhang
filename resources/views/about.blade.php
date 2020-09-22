@@ -88,48 +88,24 @@
                                         <h3 class="title">Ba nhóm sản Phẩm chính</h3>
                                     </div>
                                     <div class="row">
+                                        @foreach($feature_products as $feature_product)
                                         <div class="col-md-4 col-sm-6 col-xs-12">
-                                            <div class="swin-sc sc-featured-box item wow fadeInUp"><img src="{{asset('images/featured-box-bg-1.jpg')}}" alt="fooday" class="box-bg">
-                                                <div class="box-inner">
-                                                    <h4 class="box-title">Xôi Chè Sạch </h4>
-                                                    <div class="box-content">Lorem ipsum dolor sit amet, consec adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</div>
+                                            <div data-wow-delay="1s" class="swin-sc sc-featured-box item wow fadeInUp"><img src="{{Voyager::image($feature_product->background_image)}}" alt="fooday" class="box-bg">
+                                                <div class="box-inner ">
+                                                    <h4 class="box-title">{{$feature_product->product_name}}</h4>
+                                                    <div class=" sidebar-box">
+                                                    <p class="box-content">{{$feature_product->description}}</p>
+                                                    <p class="read-more"><a href="javascript:void(0)" class="button">Xem Thêm</a></p>
+                                                    </div>
                                                     <div class="btn-wrap text-center"><a href="{{route('menu')}}" class="btn swin-btn"><span>Đến Menu</span></a></div>
-                                                    <div class="showcase"><img src="{{asset('images/feature-box-bg.jpg')}}" alt="" class="img-responsive img-showcase">
-                                                        <div class="title-showcase">Xôi Chè Sạch</div>
+                                                    <div class="showcase"><img src="{{Voyager::image($feature_product->image)}}" alt="" class="img-responsive img-showcase">
+                                                        <div class="title-showcase">{{$feature_product->product_name}}</div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-md-4 col-sm-6 col-xs-12">
-                                            <div data-wow-delay="0.5s" class="swin-sc sc-featured-box item wow fadeInUp"><img src="{{asset('images/featured-box-bg-1.jpg')}}" alt="fooday" class="box-bg">
-                                                <div class="box-inner">
-                                                    <h4 class="box-title">Măm cúng </h4>
-                                                    <div class="box-content">Lorem ipsum dolor sit amet, consec adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</div>
-                                                    <div class="btn-wrap text-center"><a href="{{route('menu')}}" class="btn swin-btn"><span>Đến Menu</span></a></div>
-                                                    <div class="showcase"><img src="{{asset('images/feature-box-bg-2.jpg')}}" alt="" class="img-responsive img-showcase">
-                                                        <div class="title-showcase">Măm cúng </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4 col-sm-6 col-xs-12">
-                                            <div data-wow-delay="1s" class="swin-sc sc-featured-box item wow fadeInUp"><img src="{{asset('images/featured-box-bg-1.jpg')}}" alt="fooday" class="box-bg">
-                                                <div class="box-inner">
-                                                    <h4 class="box-title">Rau câu 3D</h4>
-                                                    <div class="box-content">🎊🎊Những mẫu bánh rau cau 3D luôn là những quà tặng ấn tương, gây đươc nhiều thiện cảm cho người "đặc biệt" đ<span id="dots">...</span><span id="more">ược nhận món quà này.
+                                        @endforeach
 
-                                                        👍🏻👍🏻Với những hoạ tiết thật công phu, cách phối màu sang trọng, vị ngọt thanh và béo ngậy trong từng lớp rau câu... Sẽ không làm thất vọng những khách hàng khá kỹ tính đa tin tưởng va chon Xôi Khang là người làm nên những món quà mang tên RAU CÂU 3D.
-
-                                                            Bánh Rau câu 3D phong phú về mẫu - size bánh - giá bán hợp lý theo từng têu cầu của khách hàng .
-
-                                                        </span><button onclick="myFunction()" id="myBtn">Chi Tiết</button></div>
-                                                    <div class="btn-wrap text-center"><a href="{{route('menu')}}" class="btn swin-btn"><span>Đến Menu</span></a></div>
-                                                    <div class="showcase"><img src="{{asset('images/feature-box-bg-3.jpg')}}" alt="" class="img-responsive img-showcase">
-                                                        <div class="title-showcase">Rau câu 3D</div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -139,6 +115,24 @@
             </div>
         </div>
     </div>
+    <style type="text/css">
+        .sidebar-box {
+            max-height: 120px;
+            position: relative;
+            overflow: hidden;
+        }
+        .sidebar-box .read-more {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            margin: 0; padding: 30px 0;
+
+            /* "transparent" only works here because == rgba(0,0,0,0) */
+            background-image: linear-gradient(to bottom, transparent, black);
+        }
+    </style>
 @endsection
 
 

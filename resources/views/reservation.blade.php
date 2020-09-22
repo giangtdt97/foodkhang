@@ -30,7 +30,7 @@
                                       <form  action="">
                                         <div class="form-group">
                                             <div class="swin-btn-wrap center">
-                                                <div class="fa fa-phone">:</div>
+                                                <div class="fa fa-phone"></div>
                                             <input type="text" class="form-controller input search"  name="search" >
 
                                                 {{ csrf_field() }}
@@ -81,34 +81,15 @@
                                 </div>
                                 <div class="swin-sc swin-sc-iconbox light">
                                     <div class="row">
-                                        <div class="col-md-3 col-sm-6 col-xs-12">
-                                            <div class="item icon-box-02 wow fadeInUpShort">
-                                                <div class="wrapper-icon"><i class="icons swin-icon-dish"></i><span class="number">1</span></div>
-                                                <h4 class="title">Cúng mừng Thôi Nôi</h4>
-                                                <div class="description">Lorem ipsum dolor sit amet, tong consecteturto sed eiusmod incididunt utote labore et</div>
+                                        @foreach($feature_service as $feature_service)
+                                            <div class="col-md-3 col-sm-6 col-xs-12">
+                                                <div class="item icon-box-02 wow fadeInUpShort">
+                                                    <div class="wrapper-icon"><i class="{{$feature_service->icon}}"></i></div>
+                                                    <h4 class="title">{{$feature_service->name}}</h4>
+                                                    <div class="description">{{$feature_service->description}}</div>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="col-md-3 col-sm-6 col-xs-12">
-                                            <div data-wow-delay="0.5s" class="item icon-box-02 wow fadeInUpShort">
-                                                <div class="wrapper-icon"><i class="icons swin-icon-dinner-2"></i><span class="number">2</span></div>
-                                                <h4 class="title"> Cúng mừng Đầy Tháng</h4>
-                                                <div class="description">Lorem ipsum dolor sit amet, tong consecteturto sed eiusmod incididunt utote labore et</div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-3 col-sm-6 col-xs-12">
-                                            <div data-wow-delay="1s" class="item icon-box-02 wow fadeInUpShort">
-                                                <div class="wrapper-icon"><i class="icons swin-icon-browser"></i><span class="number">3</span></div>
-                                                <h4 class="title">Cúng Tết Đoan Ngọ</h4>
-                                                <div class="description">Lorem ipsum dolor sit amet, tong consecteturto sed eiusmod incididunt utote labore et</div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-3 col-sm-6 col-xs-12">
-                                            <div data-wow-delay="1.5s" class="item icon-box-02 wow fadeInUpShort">
-                                                <div class="wrapper-icon"><i class="icons swin-icon-delivery"></i><span class="number">4</span></div>
-                                                <h4 class="title">Cúng Các Lễ khác</h4>
-                                                <div class="description">Lorem ipsum dolor sit amet, tong consecteturto sed eiusmod incididunt utote labore et</div>
-                                            </div>
-                                        </div>
+                                        @endforeach
                                     </div>
                                 </div>
                             </div>
