@@ -16,6 +16,7 @@
         "laravel/framework": "^7.24",
         "laravel/scout": "^8.3",
         "laravel/tinker": "^2.0",
+        "orangehill/iseed": "^2.6",
         "spatie/laravel-searchable": "^1.7",
         "tcg/voyager": "^1.4"
     },
