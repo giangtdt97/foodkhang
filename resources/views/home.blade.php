@@ -24,7 +24,7 @@
                 <section class="about-us-session padding-top-100 padding-bottom-100">
                     <div class="container">
                         <div class="row">
-                            <div class="col-md-6 colsm-12"><img src="{{asset('images/pages/home1-about.jpg')}}" alt="" class="img img-responsive wow zoomIn"></div>
+                            <div class="col-md-6 colsm-12"><img src="{{asset('images/pages/home.jpg')}}" alt="" class="img img-responsive wow zoomIn"></div>
                             <div class="col-md-6 col-sm-12">
                                 <div class="swin-sc swin-sc-title style-4 margin-bottom-20 margin-top-50">
                                     <p class="top-title"><span>Giới Thiệu</span></p>
