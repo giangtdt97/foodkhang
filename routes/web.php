@@ -32,7 +32,7 @@ Route::get('contact','ContactController@index')->name('contact');
 
 Route::get('blog','BlogController@index')->name('blog');
 Route::get('blog/{slug}','BlogController@show' )->name('blog.detail');
-Route::get('tag/{slug}','blogController@showTag')->name('tag.detail');
+Route::get('tag/{slug}','BlogController@showTag')->name('tag.detail');
 
 
 Route::get('menu','ProductController@index')->name('menu');
