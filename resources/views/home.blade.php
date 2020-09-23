@@ -37,7 +37,7 @@
                         </div>
                     </div>
                 </section>
-                <section class="product-sesction-03-1 padding-top-100 padding-bottom-100"><a href="{{route('menu')}}"><img src="{{Voyager::image($feature_images[6]->value)}}" alt="" class="img-responsive img-decorate"></a>
+                <section class="product-sesction-03-1 padding-top-100 padding-bottom-100"><a href="{{route('menu')}}"><img src="{{Voyager::image($feature_images[6]->getThumbnail($feature_images[6]->value,'medium'))}}" alt="" class="img-responsive img-decorate"></a>
                     <div class="container">
                         <div class="row">
                             <div class="col-lg-6 col-md-4"></div>

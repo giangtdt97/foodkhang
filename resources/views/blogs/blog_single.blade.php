@@ -21,7 +21,7 @@
                                     <div class="main-slider">
                                         <div class="slides">
                                             <div class="blog-item">
-                                                <div class="blog-featured-img"><img src="{{Voyager::image( $blog->image )}}" alt="fooday" class="img img-responsive"></div>
+                                                <div class="blog-featured-img"><img src="{{Voyager::image( $blog->image, 'small' )}}" alt="fooday" class="img img-responsive"></div>
                                                 <div class="blog-content">
                                                     <div class="blog-meta-info">
                                                         <div class="blog-date"><span class="day">{{$blog->created_at->format('d')}}</span><span class="month">{{$blog->created_at->format('F')}}</span><span class="year">{{$blog->created_at->format('y')}}</span></div>

@@ -3,6 +3,7 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use TCG\Voyager\Traits\Resizable;
 
 class Ultility extends Model
 {
@@ -10,4 +11,5 @@ class Ultility extends Model
     {
         return $this->belongsToMany(Service::class,'ultility_service');
     }
+    use Resizable;
 }

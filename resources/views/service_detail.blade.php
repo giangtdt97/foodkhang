@@ -86,7 +86,7 @@
                     <div class="container">
                         <div class="col-lg-6 col-md-12">
                                 <div class="swin-sc swin-sc-title text-left light">
-                                    <p class="top-title"><span>MÓN ĂN THEO DANH MỤC </span></p>
+                                    <p class="top-title"><span>THƯC ĐƠN </span></p>
                                 </div>
                                 <div class="swin-sc swin-sc-product products-01 style-04 light swin-vetical-slider">
                                     <div class="row">

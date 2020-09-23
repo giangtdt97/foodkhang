@@ -20,7 +20,7 @@
                                 @foreach($ultilities as $ultility)
                                     <div class="item">
                                         <div class="item product-01">
-                                            <div class="cat-image img-4-3"><a href="javascript:void(0)" ><img src="timthumb.php?src={{Voyager::image( $ultility->image )}}&w=200&h=150" alt="" >{{$ultility->name}}</a></div>
+                                            <div class="cat-image img-4-3"><a href="javascript:void(0)" ><img src="timthumb.php?src={{Voyager::image( $ultility->getThumbnail($ultility->image ,'medium'))}}&w=200&h=150" alt="" >{{$ultility->name}}</a></div>
 {{--                                            --}}
                                         </div>
                                     </div>
@@ -36,7 +36,7 @@
                                                 @foreach($ultility->services as  $service)
                                                     <div class="col-md-2 col-sm-4 col-xs-12">
                                                         <div class="item product-01">
-                                                            <div class="block-img"><a href="{{route('service.show',$service->slug)}}"><img src="timthumb.php?src={{Voyager::image( $service->image )}}&w=140&h=70&q=100" alt="" ></a></div>
+                                                            <div class="block-img"><a href="{{route('service.show',$service->slug)}}"><img src="timthumb.php?src={{Voyager::image( $service->image )}}&w=140&h=70" alt="" ></a></div>
                                                             <h5 class="title">{{$service->name}}</h5><span class="price woocommerce-Price-amount amount">{{$service->presentPrice()}}<span class="price-symbol">VNĐ</span></span>
                                                         </div>
                                                     </div>
@@ -85,7 +85,7 @@
                                             @foreach($category->products as  $product)
                                                 <div class="col-md-2 col-sm-4 col-xs-12">
                                                 <div class="item product-01">
-                                                    <div class="block-img"><img src="timthumb.php?src={{Voyager::image( $product->image )}}&w=140&h=70" alt="">
+                                                    <div class="block-img"><img src="timthumb.php?src={{Voyager::image( $product->image,'small' )}}&w=140&h=70" alt="">
                                                         <div class="group-btn"><a href="{{route('product.show',$product->slug)}}" class="swin-btn btn-link"><i class="icons fa fa-link"></i></a></div>
                                                     </div>
                                                     <h5 class="title">{{$product->product_name}}</h5><span class="price woocommerce-Price-amount amount">{{$product->presentPrice()}}<span class="price-symbol">VNĐ</span></span>
