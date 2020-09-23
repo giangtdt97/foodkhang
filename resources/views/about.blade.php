@@ -51,26 +51,26 @@
                                                 <div class="testi-item item"><i class="testi-icon fa fa-quote-left"></i>
                                                     <div class="testi-content">
                                                         <p>{{setting('site.comment01')}}</p>
-                                                    </div><img src="{{asset('images/testi/testi-signal.png')}}" alt="" class="testi-signal">
-                                                    <div class="testi-info"><span class="name">Timothy Doe</span> <span class="position">Customer</span></div>
+                                                    </div>
+                                                    <div class="testi-info"><span class="position">Khách Hàng</span></div>
                                                 </div>
                                                 <div class="testi-item item"><i class="testi-icon fa fa-quote-left"></i>
                                                     <div class="testi-content">
                                                         <p>{{setting('site.comment02')}}</p>
-                                                    </div><img src="{{asset('images/testi/testi-signal.png')}}" alt="" class="testi-signal">
-                                                    <div class="testi-info"><span class="name">Sarah	Ruiz</span> <span class="position">Customer</span></div>
+                                                    </div>
+                                                    <div class="testi-info"><span class="position">Khách Hàng</span></div>
                                                 </div>
                                                 <div class="testi-item item"><i class="testi-icon fa fa-quote-left"></i>
                                                     <div class="testi-content">
                                                         <p>{{setting('site.comment03')}}</p>
-                                                    </div><img src="{{asset('images/testi/testi-signal.png')}}" alt="" class="testi-signal">
-                                                    <div class="testi-info"><span class="name">Tracey Lewis</span> <span class="position">Customer</span></div>
+                                                    </div>
+                                                    <div class="testi-info"><span class="position">Khách Hàng</span></div>
                                                 </div>
                                                 <div class="testi-item item"><i class="testi-icon fa fa-quote-left"></i>
                                                     <div class="testi-content">
                                                         <p>{{setting('site.comment04')}}</p>
-                                                    </div><img src="{{asset('images/testi/testi-signal.png')}}" alt="" class="testi-signal">
-                                                    <div class="testi-info"><span class="name">Jamie	Erickson</span> <span class="position">Customer</span></div>
+                                                    </div>
+                                                    <div class="testi-info"><span class="position">Khách Hàng</span></div>
                                                 </div>
                                             </div>
                                         </div>
@@ -85,7 +85,7 @@
                                 <div class="col-md-12">
                                     <div class="swin-sc swin-sc-title">
                                         <p class="top-title"><span>Sản Phẩm Đặc Trưng</span></p>
-                                        <h3 class="title">Ba nhóm sản Phẩm chính</h3>
+                                        <h3 class="title">Nhóm sản Phẩm chính</h3>
                                     </div>
                                     <div class="row">
                                         @foreach($feature_products as $feature_product)

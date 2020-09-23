@@ -50,18 +50,6 @@
                                         <div class="description">{{setting('site.site_phone2')}}</div>
                                     </div>
                                 </div>
-                                <div class="media item">
-                                    <div class="media-left">
-                                        <div class="wrapper-icon"><i class="icons fa fa-envelope"></i></div>
-                                    </div>
-                                    <div class="media-body">
-                                        <h4 class="media-heading title">E-Mail</h4>
-                                        <div class="description">
-                                            <p>hello@fooday.com</p>
-                                            <p>contact@fooday.com</p>
-                                        </div>
-                                    </div>
-                                </div>
                             </div>
                         </div>
                     </div>
