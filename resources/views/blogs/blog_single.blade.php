@@ -5,9 +5,9 @@
         <div data-bottom-top="background-position: 50% 50px;" data-center="background-position: 50% 0px;" data-top-bottom="background-position: 50% -50px;" class="page-title page-blog">
             <div class="container">
                 <div class="title-wrapper">
-                    <div data-top="transform: translateY(0px);opacity:1;" data--120-top="transform: translateY(-30px);opacity:0;" data-anchor-target=".page-title" class="title">Bài Viết Chi Tiết</div>
+                    <div data-top="transform: translateY(0px);opacity:1;" data--120-top="transform: translateY(-30px);opacity:0;" data-anchor-target=".page-title" class="title">blog's xôi khang</div>
                     <div data-top="opacity:1;" data--120-top="opacity:0;" data-anchor-target=".page-title" class="divider"><span class="line-before"></span><span class="dot"></span><span class="line-after"></span></div>
-                    <div data-top="transform: translateY(0px);opacity:1;" data--20-top="transform: translateY(5px);" data--50-top="transform: translateY(15px);opacity:0.8;" data--120-top="transform: translateY(30px);opacity:0;" data-anchor-target=".page-title" class="subtitle">All information and stories from our blog will help you have a best meal for your day</div>
+                    <div data-top="transform: translateY(0px);opacity:1;" data--20-top="transform: translateY(5px);" data--50-top="transform: translateY(15px);opacity:0.8;" data--120-top="transform: translateY(30px);opacity:0;" data-anchor-target=".page-title" class="subtitle">Hạnh phúc là cho đi và phục vụ</div>
                 </div>
             </div>
         </div>
@@ -38,28 +38,19 @@
                                                         <blockquote>
                                                             {!! $blog->quote !!}
                                                             <footer>
-                                                                <cite title="Source Title">/ Food Blogger</cite>
+                                                                <cite title="Source Title">{{$blog->quote_author}}</cite>
                                                             </footer>
                                                         </blockquote>
                                                         {!! $blog->body !!}
                                                     </div>
                                                     <div class="blog-footer clearfix">
-                                                        <div class="blog-share">
-                                                            <ul class="socials list-unstyled list-inline">
-                                                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                                                <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
-                                                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                                                            </ul>
-                                                        </div>
-
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                        
+
                                 <div class="swin-widget widget-tag">
                                     <div class="title-widget">TAG</div>
                                     <div class="widget-body widget-content clearfix">

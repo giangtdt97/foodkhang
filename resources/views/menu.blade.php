@@ -17,11 +17,11 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div data-slide-toshow="3" class="cat-wrapper-02 cat-images main-slider">
-                                @foreach($services as $service)
+                                @foreach($ultilities as $ultility)
                                     <div class="item">
                                         <div class="item product-01">
-                                            <div class="cat-image img-4-3"><a href="javascript:void(0)" ><img src="timthumb.php?src={{Voyager::image( $service->image )}}&w=200&h=150" alt="" >{{$service->name}}</a></div>
-                                            <a href="{{route('service.show',$service->slug)}}" ><h5>Chi Tiết Dịch Vụ</h5></a>
+                                            <div class="cat-image img-4-3"><a href="javascript:void(0)" ><img src="timthumb.php?src={{Voyager::image( $ultility->image )}}&w=200&h=150" alt="" >{{$ultility->name}}</a></div>
+{{--                                            --}}
                                         </div>
                                     </div>
                                 @endforeach
@@ -30,14 +30,14 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="products nav-slider">
-                                    @foreach($services as $service)
+                                    @foreach($ultilities as $ultility)
                                         <div class="item-slick">
                                             <div class="row">
-                                                @foreach($service->products as  $product)
+                                                @foreach($ultility->services as  $service)
                                                     <div class="col-md-2 col-sm-4 col-xs-12">
                                                         <div class="item product-01">
-                                                            <div class="block-img"><img src="timthumb.php?src={{Voyager::image( $product->image )}}&w=140&h=70" alt="" ></div>
-                                                            <h5 class="title">{{$product->product_name}}</h5>
+                                                            <div class="block-img"><a href="{{route('service.show',$service->slug)}}"><img src="timthumb.php?src={{Voyager::image( $service->image )}}&w=140&h=70&q=100" alt="" ></a></div>
+                                                            <h5 class="title">{{$service->name}}</h5><span class="price woocommerce-Price-amount amount">{{$service->presentPrice()}}<span class="price-symbol">VNĐ</span></span>
                                                         </div>
                                                     </div>
                                                 @endforeach

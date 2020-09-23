@@ -43,7 +43,7 @@
                                     <div class="title">{{$product->product_name}}</div>
                                 </div>
                                 <div class="product-price">
-                                    <div class="price">{{$product->price}}<span class="currency-symbol">VNĐ</span></div>
+                                    <div class="price">{{$product->presentPrice()}}<span class="currency-symbol">VNĐ</span></div>
                                 </div>
                                 <div class="product-info">
                                     <ul class="list-inline">

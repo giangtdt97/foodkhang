@@ -47,7 +47,7 @@
                                     <div class="title">{{$service->name}},</div>
                                 </div>
                                 <div class="product-price">
-                                    <div class="price">{{$service->price}}<span class="currency-symbol">VNĐ</span></div>
+                                    <div class="price">{{$service->presentPrice()}}<span class="currency-symbol">VNĐ</span></div>
                                 </div>
                                 <div class="product-info">
                                     <ul class="list-inline">
@@ -59,14 +59,6 @@
 
                                 </div>
 
-                                <div class="product-share"><span class="caption">Share</span>
-                                    <ul class="socials list-unstyled list-inline">
-                                        <li><a href="javascript:void(0)"><i class="fa fa-facebook"></i></a></li>
-                                        <li><a href="javascript:void(0)"><i class="fa fa-twitter"></i></a></li>
-                                        <li><a href="javascript:void(0)"><i class="fa fa-pinterest"></i></a></li>
-                                        <li><a href="javascript:void(0)"><i class="fa fa-google-plus"></i></a></li>
-                                    </ul>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -89,6 +81,33 @@
                             </div>
                         </div>
                     </div>
+                </section>
+                <section class="product-sesction-03-1 padding-top-100 padding-bottom-100"><img src="" alt="" class="img-responsive img-decorate">
+                    <div class="container">
+                        <div class="col-lg-6 col-md-12">
+                                <div class="swin-sc swin-sc-title text-left light">
+                                    <p class="top-title"><span>MÓN ĂN THEO DANH MỤC </span></p>
+                                </div>
+                                <div class="swin-sc swin-sc-product products-01 style-04 light swin-vetical-slider">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div data-height="200" class="products nav-slider">
+                                                @foreach($service->products as  $product)
+                                                    <div class="item product-01">
+                                                        <div class="item-left"><a href="{{route('product.show',$product->slug)}}"><img src="{{Voyager::image( $product->image )}}" alt="" width="140" height="70" class="img img-responsive"></a>
+                                                            <div class="content-wrapper"><a href="{{route('product.show',$product->slug)}}" class="title">{{$product->product_name}}</a>
+                                                                <div class="dot">.....................................................................</div>
+                                                                <div class="des">{{$product->short_description}}</div>
+                                                            </div>
+                                                        </div>
+                                                        </div>
+                                                @endforeach
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                 </section>
             </div>
         </div>

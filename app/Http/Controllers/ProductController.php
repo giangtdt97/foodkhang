@@ -3,8 +3,11 @@
 namespace App\Http\Controllers;
 
 use App\Category;
+use App\Feature_Image;
+use App\Parent_Service;
 use App\Product;
 use App\Service;
+use App\Ultility;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
@@ -14,7 +17,8 @@ class ProductController extends Controller
     {
         $categories=Category::all();
         $services=Service::all();
-        return view('menu')->with(compact('categories','services'));
+        $ultilities=Ultility::all();
+        return view('menu')->with(compact('categories','services','ultilities'));
     }
     public function show($slug)
     {
@@ -31,8 +35,9 @@ class ProductController extends Controller
     }
     public function showCategory($slug){
         $category= Category::where('slug', $slug)->first();
+        $feature_images=Feature_Image::all();
         return view(
-            'category_detail',compact('category')
+            'category_detail',compact('category','feature_images')
         );
     }
 

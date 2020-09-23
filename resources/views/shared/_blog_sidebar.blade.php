@@ -21,7 +21,7 @@
 
 
         <div class="widget-body widget-content clearfix">
-
+            @foreach($blogs as $blog)
             <div class="swin-media">
                 <div class="content-left"><a href="{{route('blog.detail',$blog->slug)}}"><img src="timthumb.php?src={{Voyager::image($blog->image)}}&h=100" alt="..." class="media-object " ></a></div>
                 <div class="content-right"><a href="{{route('blog.detail',$blog->slug)}}" class="heading">{{$blog->title}}</a>
@@ -30,7 +30,7 @@
                     </div>
                 </div>
             </div>
-
+            @endforeach
         </div>
 
 
@@ -51,11 +51,10 @@
         <div class="title-widget">Hình Ảnh</div>
         <div class="widget-body widget-content clearfix">
             <div class="main-slider">
-                <div class="item-slide"><img src="{{asset('images/widget/wg-gallery1.jpg')}}" alt="" class="img-responsive showcase"></div>
-                <div class="item-slide"><img src="{{asset('images/widget/wg-gallery1.jpg')}}" alt="" class="img-responsive showcase"></div>
-                <div class="item-slide"><img src="{{asset('images/widget/wg-gallery1.jpg')}}" alt="" class="img-responsive showcase"></div>
-                <div class="item-slide"><img src="{{asset('images/widget/wg-gallery1.jpg')}}" alt="" class="img-responsive showcase"></div>
-                <div class="item-slide"><img src="{{asset('images/widget/wg-gallery1.jpg')}}" alt="" class="img-responsive showcase"></div>
+                <div class="item-slide"><img src="{{Voyager::image($feature_images[5]->value)}}" alt="" class="img-responsive showcase"></div>
+                <div class="item-slide"><img src="{{Voyager::image($feature_images[4]->value)}}" alt="" class="img-responsive showcase"></div>
+                <div class="item-slide"><img src="{{Voyager::image($feature_images[2]->value)}}" alt="" class="img-responsive showcase"></div>
+                <div class="item-slide"><img src="{{Voyager::image($feature_images[1]->value)}}" alt="" class="img-responsive showcase"></div>
             </div>
         </div>
     </div>

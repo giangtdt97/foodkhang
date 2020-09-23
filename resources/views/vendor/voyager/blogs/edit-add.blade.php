@@ -97,7 +97,7 @@
                             </div>
                         </div>
                         <div class="panel-body">
-                            <input type="text" class="form-control" id="title" name="title" placeholder="{{ __('voyager::generic.title') }}" value="{{ $dataTypeContent->title ?? '' }}">
+                            <input type="text" class="form-control" id="title" name="title" placeholder="{{ __('voyager::generic.title') }}" value="{{ $dataTypeContent->title ?? '' }}" required="true">
                         </div>
                     </div>
                     <div class="panel">
@@ -124,7 +124,7 @@
                             </div>
                         </div>
                         <div class="panel-body">
-                            <textarea class="form-control" name="excerpt">{{ $dataTypeContent->excerpt ?? '' }}</textarea>
+                            <textarea class="form-control" name="excerpt" required="true" >{{ $dataTypeContent->excerpt ?? '' }}</textarea>
                         </div>
                     </div>
                     <div class="panel">

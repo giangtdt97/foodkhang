@@ -37,7 +37,7 @@
                         </div>
                     </div>
                 </section>
-                <section class="product-sesction-03-1 padding-top-100 padding-bottom-100"><img src="{{Voyager::image($feature_images[6]->value)}}" alt="" class="img-responsive img-decorate">
+                <section class="product-sesction-03-1 padding-top-100 padding-bottom-100"><a href="{{route('menu')}}"><img src="{{Voyager::image($feature_images[6]->value)}}" alt="" class="img-responsive img-decorate"></a>
                     <div class="container">
                         <div class="row">
                             <div class="col-lg-6 col-md-4"></div>
@@ -80,8 +80,8 @@
                                 @foreach($feature_service as $feature_service)
                                 <div class="col-md-3 col-sm-6 col-xs-12">
                                     <div class="item icon-box-02 wow fadeInUpShort">
-                                        <div class="wrapper-icon"><i class="{{$feature_service->icon}}"></i></div>
-                                        <h4 class="title">{{$feature_service->name}}</h4>
+                                        <div class="wrapper-icon"><a href="{{route('menu')}}"><i class="{{$feature_service->icon}}"></i></a></div>
+                                        <a href="{{route('menu')}}"> <h4 class="title">{{$feature_service->name}}</h4></a>
                                         <div class="description">{{$feature_service->description}}</div>
                                     </div>
                                 </div>
@@ -106,7 +106,7 @@
                                             @foreach($categories as $category)
                                             <div class="item">
                                                 <div class="cat-icons"><i class="icons swin-icon-pasta"></i>
-                                                    <h5 class="cat-title">{{$category->name}}</h5>
+                                                    <a href="{{route('menu')}}"><h5 class="cat-title">{{$category->name}}</h5></a>
                                                 </div>
                                             </div>
                                             @endforeach
@@ -271,12 +271,12 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div data-width="150" class="nav-slider">
+                                            <div data-width="75" class="nav-slider">
                                                 <ul class="slides list-inline">
-                                                    <li class="swin-transition"><a href="javascript:void(0)" class="testimonial-nav-item"><img src="{{asset('images/testi/testi-1.jpg')}}" alt="fooday" class="img img-responsive swin-transition"></a></li>
-                                                    <li class="swin-transition"><a href="javascript:void(0)" class="testimonial-nav-item"><img src="{{asset('images/testi/testi-2.jpg')}}" alt="fooday" class="img img-responsive swin-transition"></a></li>
-                                                    <li class="swin-transition"><a href="javascript:void(0)" class="testimonial-nav-item"><img src="{{asset('images/testi/testi-3.jpg')}}" alt="fooday" class="img img-responsive swin-transition"></a></li>
-                                                    <li class="swin-transition"><a href="javascript:void(0)" class="testimonial-nav-item"><img src="{{asset('images/testi/testi-4.jpg')}}" alt="fooday" class="img img-responsive swin-transition"></a></li>
+                                                    <li class="swin-transition"><a href="javascript:void(0)" class="testimonial-nav-item"><img src="{{asset('images/right-arrow.png')}}" alt="fooday" class="img img-responsive swin-transition"></a></li>
+                                                    <li class="swin-transition"><a href="javascript:void(0)" class="testimonial-nav-item"><img src="" alt="fooday" class="img img-responsive swin-transition"></a></li>
+                                                    <li class="swin-transition"><a href="javascript:void(0)" class="testimonial-nav-item"><img src="" alt="fooday" class="img img-responsive swin-transition"></a></li>
+                                                    <li class="swin-transition"><a href="javascript:void(0)" class="testimonial-nav-item"><img src="" alt="fooday" class="img img-responsive swin-transition"></a></li>
                                                 </ul>
                                             </div>
                                         </div>

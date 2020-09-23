@@ -12,6 +12,13 @@ class Service extends Model
     {
         return $this->belongsToMany(Product::class,'product_service')->published();
     }
-    
+    public function ultilities()
+    {
+        return $this->belongsToMany(Ultility::class,'ultility_service');
+    }
+    public function presentPrice()
+    {
+        return ''.number_format($this->price / 1000, 3);
+    }
     use Resizable;
 }
