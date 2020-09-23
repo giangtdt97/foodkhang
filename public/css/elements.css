@@ -567,7 +567,7 @@ blockquote {
   .swin-sc-product.products-01 .cat-wrapper .slick-dots li button:before {
     color: #96b125; }
   .swin-sc-product.products-01 .products {
-    font-family: "Rancho"; }
+    font-family: "Grenze"; }
     .swin-sc-product.products-01 .products .col-md-3:nth-child(-n+4) .item {
       margin-top: 0px; }
     .swin-sc-product.products-01 .products div[class*='col-'] .item {
@@ -715,7 +715,7 @@ blockquote {
         display: table-cell;
         font-size: 24px;
         line-height: 27px;
-        font-family: "Rancho"; }
+        font-family: "Grenze"; }
       .swin-sc-product.products-01.style-04 .products .item-left .des {
         font-weight: 400;
         color: #616f7d;
@@ -819,7 +819,7 @@ blockquote {
     margin-top: 0;
     margin-bottom: 8px;
     font-size: 30px;
-    font-family: "rancho";
+    font-family: "Grenze";
     text-transform: capitalize; }
   .swin-sc-product.products-02 .products .item .product-info {
     margin-bottom: 0; }
@@ -1214,7 +1214,7 @@ ul.nav.nav-tabs {
 
 /* #Title */
 .title {
-  font-family: 'Rancho', cursive;
+  font-family: 'Grenze', cursive;
   font-size: 50px;
   text-transform: capitalize;
   color: #29272e;
@@ -2073,7 +2073,7 @@ ul.nav.nav-tabs {
     position: relative;
     padding: 30px; }
   .blog-item .blog-date {
-    font-family: "Rancho";
+    font-family: "Grenze";
     width: 80px;
     height: 80px;
     border-radius: 50%;
@@ -2100,7 +2100,7 @@ ul.nav.nav-tabs {
       line-height: 1;
       text-transform: uppercase; }
   .blog-item .blog-title {
-    font-family: "Rancho";
+    font-family: "Grenze";
     font-size: 30px;
     margin-bottom: 15px;
     margin-top: 15px; }
@@ -2129,7 +2129,7 @@ ul.nav.nav-tabs {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.16); }
   .swin-sc-event .event-info {
     padding: 10px 0;
-    font-family: "Rancho"; }
+    font-family: "Grenze"; }
     .swin-sc-event .event-info .event-date {
       height: 50px;
       line-height: 50px;
@@ -2207,7 +2207,7 @@ ul.nav.nav-tabs {
 /* #Counter Box */
 .swin-sc-counter {
   text-align: center;
-  font-family: "Rancho";
+  font-family: "Grenze";
   line-height: 1; }
   .swin-sc-counter .counter-info {
     position: relative;
@@ -2439,7 +2439,7 @@ footer {
     .ft-fixed-area .reservation-wrap .res-title {
       font-size: 40px;
       text-align: center;
-      font-family: 'Rancho', cursive; }
+      font-family: 'Grenze', cursive; }
     .ft-fixed-area .reservation-wrap .res-date {
       width: 60%;
       float: left;
