@@ -23,7 +23,7 @@
         <div class="widget-body widget-content clearfix">
             @foreach($blogs as $blog)
             <div class="swin-media">
-                <div class="content-left"><a href="{{route('blog.detail',$blog->slug)}}"><img src="timthumb.php?src={{Voyager::image($blog->image)}}&h=100" alt="..." class="media-object " ></a></div>
+                <div class="content-left"><a href="{{route('blog.detail',$blog->slug)}}"><img src="{{Voyager::image($blog->getThumbnail($blog->image,'small'))}}" alt="..." class="media-object " ></a></div>
                 <div class="content-right"><a href="{{route('blog.detail',$blog->slug)}}" class="heading">{{$blog->title}}</a>
                     <div class="info">
                         <div><i class="swin-icon fa fa-clock-o"></i><span class="day">{{$blog->created_at->format('d')}}</span>/<span class="month">{{$blog->created_at->format('F')}}</span></div>
