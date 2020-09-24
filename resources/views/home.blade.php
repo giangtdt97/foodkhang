@@ -301,14 +301,14 @@
                                     <div class="blog-item swin-transition wow fadeInUpShort">
                                         <div class="blog-info clearfix">
                                             <div class="blog-info-item blog-author">
-                                                <p><span>Post By </span><a href="#">Admin</a></p>
+                                                <p><span>Post By </span><a href="javascript:void(0)">Admin</a></p>
                                                 <p></p>
                                             </div>
                                         </div>
                                         <div class="blog-featured-img"><img src="{{Voyager::image( $blog->image )}}" alt="fooday" class="img img-responsive"></div>
                                         <div class="blog-content">
                                             <div class="blog-date"><span class="day">{{$blog->created_at->format('d')}}</span><span class="month">{{$blog->created_at->format('F')}}</span><span class="year">{{$blog->created_at->format('y')}}</span></div>
-                                            <h3 class="blog-title"><a href="#" class="swin-transition">{{$blog->title}}</a></h3>
+                                            <h3 class="blog-title"><a href="{{route('blog.detail',$blog->slug)}}" class="swin-transition">{{$blog->title}}</a></h3>
                                             <p class="blog-description">{{$blog->excerpt}}</p>
                                             <div class="blog-readmore"><a href="{{route('blog.detail',$blog->slug)}}" class="swin-transition">Read More <i class="fa fa-angle-double-right"></i></a></div>
                                         </div>
