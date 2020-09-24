@@ -51,10 +51,10 @@
         <div class="title-widget">Hình Ảnh</div>
         <div class="widget-body widget-content clearfix">
             <div class="main-slider">
-                <div class="item-slide"><img src="{{Voyager::image($feature_images[5]->value)}}" alt="" class="img-responsive showcase"></div>
-                <div class="item-slide"><img src="{{Voyager::image($feature_images[4]->value)}}" alt="" class="img-responsive showcase"></div>
-                <div class="item-slide"><img src="{{Voyager::image($feature_images[2]->value)}}" alt="" class="img-responsive showcase"></div>
-                <div class="item-slide"><img src="{{Voyager::image($feature_images[1]->value)}}" alt="" class="img-responsive showcase"></div>
+                <div class="item-slide"><img data-enlargeable style="cursor: zoom-in" src="{{Voyager::image($feature_images[5]->value)}}" alt="" class="img-responsive showcase"></div>
+                <div class="item-slide"><img data-enlargeable style="cursor: zoom-in" src="{{Voyager::image($feature_images[4]->value)}}" alt="" class="img-responsive showcase"></div>
+                <div class="item-slide"><img data-enlargeable style="cursor: zoom-in" src="{{Voyager::image($feature_images[2]->value)}}" alt="" class="img-responsive showcase"></div>
+                <div class="item-slide"><img data-enlargeable style="cursor: zoom-in" src="{{Voyager::image($feature_images[1]->value)}}" alt="" class="img-responsive showcase"></div>
             </div>
         </div>
     </div>

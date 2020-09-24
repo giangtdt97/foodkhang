@@ -119,7 +119,7 @@
                                             <div class="tab-content">
                                                 <div class="col-md-5 col-sm-12">
                                                     <div class="cat-wrapper">
-                                                        <div class="item"><img src="{{Voyager::image( $category->image )}}" alt="" class="img img-responsive"></div>
+                                                        <div class="item"><img data-enlargeable style="cursor: zoom-in" src="{{Voyager::image( $category->image )}}" alt="" class="img img-responsive"></div>
                                                     </div>
                                                 </div>
 
@@ -156,33 +156,33 @@
                         <div class="grid">
                             <div class="grid-sizer col-sm-1"></div>
                             <div class="grid-item col-sm-3 grid-item-h2">
-                                <div class="grid-wrap-item"><a href="{{Voyager::image($feature_images[0]->value)}}" class="gallery-title title">{{($feature_images[0]->title)}}</a>
-                                    <div class="img-wrap"><img src="{{Voyager::image($feature_images[0]->value)}}" alt="" class="img img-responsive"></div>
+                                <div class="grid-wrap-item"><a href="javascript:void(0)" class="gallery-title title">{{($feature_images[0]->title)}}</a>
+                                    <div class="img-wrap"><img data-enlargeable style="cursor: zoom-in" src="{{Voyager::image($feature_images[0]->value)}}" alt="xoikhang" class="img img-responsive"></div>
                                 </div>
                             </div>
                             <div class="grid-item col-sm-4 grid-item-h1">
-                                <div class="grid-wrap-item"><a href="{{Voyager::image($feature_images[5]->value)}}" class="gallery-title title">{{($feature_images[5]->title)}}</a>
-                                    <div class="img-wrap"><img src="{{Voyager::image($feature_images[5]->value)}}" alt="" class="img img-responsive"></div>
+                                <div class="grid-wrap-item"><a href="javascript:void(0)" class="gallery-title title">{{($feature_images[5]->title)}}</a>
+                                    <div class="img-wrap"><img data-enlargeable style="cursor: zoom-in" src="{{Voyager::image($feature_images[5]->value)}}" alt="" class="img img-responsive"></div>
                                 </div>
                             </div>
                             <div class="grid-item col-sm-2 grid-item-h1">
-                                <div class="grid-wrap-item"><a href="{{Voyager::image($feature_images[1]->value)}}" class="gallery-title title">{{($feature_images[1]->title)}}</a>
-                                    <div class="img-wrap"><img src="{{Voyager::image($feature_images[1]->value)}}" alt="" class="img img-responsive"></div>
+                                <div class="grid-wrap-item"><a href="javascript:void(0)" class="gallery-title title">{{($feature_images[1]->title)}}</a>
+                                    <div class="img-wrap"><img data-enlargeable style="cursor: zoom-in" src="{{Voyager::image($feature_images[1]->value)}}" alt="" class="img img-responsive"></div>
                                 </div>
                             </div>
                             <div class="grid-item col-sm-3 grid-item-h2">
-                                <div class="grid-wrap-item"><a href="{{Voyager::image($feature_images[3]->value)}}" class="gallery-title title">{{($feature_images[3]->title)}}</a>
-                                    <div class="img-wrap"><img src="{{Voyager::image($feature_images[3]->value)}}" alt="" class="img img-responsive"></div>
+                                <div class="grid-wrap-item"><a href="javascript:void(0)" class="gallery-title title">{{($feature_images[3]->title)}}</a>
+                                    <div class="img-wrap"><img data-enlargeable style="cursor: zoom-in" src="{{Voyager::image($feature_images[3]->value)}}" alt="" class="img img-responsive"></div>
                                 </div>
                             </div>
                             <div class="grid-item col-sm-2 grid-item-h1">
-                                <div class="grid-wrap-item"><a href="{{Voyager::image($feature_images[4]->value)}}" class="gallery-title title">{{($feature_images[4]->title)}}</a>
-                                    <div class="img-wrap"><img src="{{Voyager::image($feature_images[4]->value)}}" alt="" class="img img-responsive"></div>
+                                <div class="grid-wrap-item"><a href="javascript:void(0)" class="gallery-title title">{{($feature_images[4]->title)}}</a>
+                                    <div class="img-wrap"><img data-enlargeable style="cursor: zoom-in" src="{{Voyager::image($feature_images[4]->value)}}" alt="" class="img img-responsive"></div>
                                 </div>
                             </div>
                             <div class="grid-item col-sm-4 grid-item-h1">
-                                <div class="grid-wrap-item"><a href="{{Voyager::image($feature_images[2]->value)}}" class="gallery-title title">{{($feature_images[2]->title)}}</a></a>
-                                    <div class="img-wrap"><img src="{{Voyager::image($feature_images[2]->value)}}" alt="" class="img img-responsive"></div>
+                                <div class="grid-wrap-item"><a href="javascript:void(0)" class="gallery-title title">{{($feature_images[2]->title)}}</a></a>
+                                    <div class="img-wrap"><img data-enlargeable style="cursor: zoom-in" src="{{Voyager::image($feature_images[2]->value)}}" alt="" class="img img-responsive"></div>
                                 </div>
                             </div>
                         </div>
@@ -200,28 +200,28 @@
                                 <div class="swin-sc swin-sc-team-slider">
                                     <div class="team-item swin-transition wow fadeInLeft">
                                         <div class="team-img-wrap">
-                                            <div class="team-img"><img id="myImg" src="{{Voyager::image($feature_images[7]->value)}}" alt="" class="img img-responsive"></div>
+                                            <div class="team-img"><img data-enlargeable style="cursor: zoom-in" src="{{Voyager::image($feature_images[7]->value)}}" alt="" class="img img-responsive" ></div>
                                         </div>
                                         <p class="team-name">{{($feature_images[7]->title)}}</p>
                                         <hr>
                                     </div>
                                     <div class="team-item swin-transition wow fadeInUp">
                                         <div class="team-img-wrap">
-                                            <div class="team-img"><img src="{{Voyager::image($feature_images[8]->value)}}"  width="261" height="195" alt=""  ></div>
+                                            <div class="team-img"><img data-enlargeable style="cursor: zoom-in" src="{{Voyager::image($feature_images[8]->value)}}"  width="261" height="195" alt=""  ></div>
                                         </div>
                                         <p class="team-name">{{($feature_images[8]->title)}}</p>
                                         <hr>
                                     </div>
                                     <div class="team-item swin-transition wow fadeInRight">
                                         <div class="team-img-wrap">
-                                            <div class="team-img"><img src="{{Voyager::image($feature_images[9]->value)}}"  alt="" class="img img-responsive" ></div>
+                                            <div class="team-img"><img data-enlargeable style="cursor: zoom-in" src="{{Voyager::image($feature_images[9]->value)}}"  alt="" class="img img-responsive" ></div>
                                         </div>
                                         <p class="team-name">{{($feature_images[9]->title)}}</p>
                                         <hr>
                                     </div>
                                     <div class="team-item swin-transition">
                                         <div class="team-img-wrap">
-                                            <div class="team-img"><img src="{{Voyager::image($feature_images[8]->value)}}" alt="" class="img img-responsive"></div>
+                                            <div class="team-img"><img data-enlargeable style="cursor: zoom-in" src="{{Voyager::image($feature_images[8]->value)}}" alt="" class="img img-responsive"></div>
                                         </div>
                                         <p class="team-name">{{($feature_images[8]->title)}}</p>
                                         <hr>
@@ -320,6 +320,4 @@
                         <div class="swin-btn-wrap center mtxxl"><a href="{{route('blog')}}" class="swin-btn center btn-transparent"> <span>Đến Trang Blog</span></a></div>
                     </div>
                 </section>
-            </div>
-
 @endsection

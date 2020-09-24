@@ -15,4 +15,8 @@ class Order extends Model
     {
         return $this->belongsToMany(Product::class);
     }
+    public function services()
+    {
+        return $this->belongsToMany(Service::class,'order_service');
+    }
 }
