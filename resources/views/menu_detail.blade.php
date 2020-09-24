@@ -22,7 +22,7 @@
                                         <div class="slides">
                                             @php $images = json_decode($product->images);@endphp
                                             @foreach($images as $multimage)
-                                            <div class="featured-image-item"><img data-enlargeable style="cursor: zoom-in" src="{{ Voyager::image($product->getThumbnail($multimage, 'small')) }}" alt="fooday" class="img img-responsive"></div>
+                                            <div class="featured-image-item"><img data-enlargeable style="cursor: zoom-in" src="{{ Voyager::image($product->getThumbnail($multimage, 'medium')) }}"height="200" width="200" alt="fooday" class="img img-responsive"></div>
                                             @endforeach
                                         </div>
                                     </div>
@@ -30,7 +30,7 @@
                                         <ul class="slides list-inline">
                                             @php $images = json_decode($product->images);@endphp
                                             @foreach($images as $multimage)
-                                            <li class="swin-transition thumbnail-image-item"><a href="javascript:void(0)" class="testimonial-nav-item"><img src="{{ Voyager::image($product->getThumbnail($multimage, 'small')) }}" alt="fooday" class="img img-responsive swin-transition"></a></li>
+                                            <li class="swin-transition thumbnail-image-item"><a href="javascript:void(0)" class="testimonial-nav-item"><img src="{{ Voyager::image($product->getThumbnail($multimage, 'small')) }}"height="100" width="100" alt="fooday" class="img img-responsive swin-transition"></a></li>
                                             @endforeach
                                         </ul>
                                     </div>
