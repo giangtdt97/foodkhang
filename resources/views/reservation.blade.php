@@ -52,6 +52,7 @@
                                                          <th>Name</th>
                                                          <th>Phone</th>
                                                          <th>Status</th>
+                                                         <th>Service</th>
                                                      </tr>
                                                      </thead>
                                                      <tbody>
@@ -60,6 +61,9 @@
                                                       <td>{{$order->customer_name}}</td>
                                                       <td>{{$order->phone_number}}</td>
                                                       <td>{{$order->status}}</td>
+                                                      @foreach($order->services as $service)
+                                                          <td>{{$service->name}}</td>
+                                                      @endforeach
                                                   </tr>
                                               @endforeach
                                                   @endif
