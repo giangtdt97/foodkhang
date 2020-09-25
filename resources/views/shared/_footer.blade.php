@@ -99,18 +99,15 @@
 <!-- Your Chat Plugin code -->
 <div>
 {{--<a id="totop" href="#" class="animated"><i class="fa fa-angle-double-up" ></i></a>--}}
-</div>
+
 <div id="fb-root" ></div>
 <div class="fb-customerchat"
      attribution=setup_tool
      page_id="249648915706594"
      theme_color="#96b125">
 </div>
-<div class="zalo-chat-widget" data-oaid="579745863508352884" data-welcome-message="Rất vui khi được hỗ trợ bạn!" data-autopopup="0" data-width="350" data-height="420" style=
-".zalo-chat-widget{
-    bottom: 90px!important;
-    left: 20px!important;} "></div>
-
+<div class="zalo-chat-widget" data-oaid="579745863508352884" data-welcome-message="Rất vui khi được hỗ trợ bạn!" data-autopopup="0" data-width="350" data-height="420" ></div>
+</div>
 <div id="loader" data-opening="m -5,-5 0,70 90,0 0,-70 z m 5,35 c 0,0 15,20 40,0 25,-20 40,0 40,0 l 0,0 C 80,30 65,10 40,30 15,50 0,30 0,30 z" class="pageload-overlay">
     <div class="loader-wrapper">
         <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewbox="0 0 80 60" preserveaspectratio="none">
