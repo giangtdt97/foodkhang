@@ -98,11 +98,12 @@
 </footer><!-- Load Facebook SDK for JavaScript -->
 <div></div>
 <!-- Your Chat Plugin code -->
-<div id="fb-root"></div>
+<div id="fb-root">
 <div class="fb-customerchat"
      attribution=setup_tool
      page_id="249648915706594"
      theme_color="#96b125">
+</div>
 </div>
 <a id="totop" href="#" class="animated"><i class="fa fa-angle-double-up"></i></a>
 
