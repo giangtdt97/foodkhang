@@ -133,7 +133,7 @@
     </div>
 </div>
 <!-- jQuery-->
-<<<<<<< HEAD
+
 <script   src="{{asset('vendors/jquery-1.10.2.min.js')}}" ></script>
 <!-- Bootstrap JavaScript-->
 <script src="{{asset('vendors/bootstrap/js/bootstrap.min.js')}}"></script>
@@ -181,7 +181,7 @@
 <script   src="{{asset('vendors/bootstrap-datepicker/js/bootstrap-datepicker.min.js')}}"></script>
 <script   src="{{asset('vendors/jquery-cookie/js.cookie.js')}}"></script>
 <script   src="{{asset('vendors/ajax/libs/jquery-easing/1.3/jquery.easing.min.js')}}" integrity="sha384-mE6eXfrb8jxl0rzJDBRanYqgBxtJ6Unn4/1F7q4xRRyIw7Vdg9jP4ycT7x1iVsgb" crossorigin="anonymous"></script>
->>>>>>> 1f001f86f0e3808927f480eb73268eaf91282e47
+
 <!-- Own script-->
 <script   src="{{asset('js/layout.js')}}"></script>
 <script   src="{{asset('js/elements.js')}}"></script>
