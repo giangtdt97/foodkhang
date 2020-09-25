@@ -101,11 +101,12 @@
 {{--<a id="totop" href="#" class="animated"><i class="fa fa-angle-double-up" ></i></a>--}}
 
 <div id="fb-root" ></div>
-<div class="fb-customerchat"
-     attribution=setup_tool
-     page_id="249648915706594"
-     theme_color="#96b125">
-</div>
+    <!-- Your Chat Plugin code -->
+    <div class="fb-customerchat"
+         attribution=setup_tool
+         page_id="249648915706594"
+         theme_color="#96b125">
+    </div>
 <div class="zalo-chat-widget" data-oaid="579745863508352884" data-welcome-message="Rất vui khi được hỗ trợ bạn!" data-autopopup="0" data-width="350" data-height="420" ></div>
 </div>
 <div id="loader" data-opening="m -5,-5 0,70 90,0 0,-70 z m 5,35 c 0,0 15,20 40,0 25,-20 40,0 40,0 l 0,0 C 80,30 65,10 40,30 15,50 0,30 0,30 z" class="pageload-overlay">
@@ -181,7 +182,7 @@
         });
     });
 </script>
-<script type="text/javascript" defer>
+<script type="text/javascript" >
     $(document).ready(function() {
         var $el, $ps, $up, totalHeight;
 
@@ -218,7 +219,7 @@
         });
     });
 </script>
-<script type="text/javascript" defer>
+<script type="text/javascript">
     $('img[data-enlargeable]').addClass('img-enlargeable').click(function(){
         var src = $(this).attr('src');
         var modal;
@@ -240,8 +241,9 @@
         });
     });
 </script>
-<script >
-    window.fbdeferInit = function() {
+
+<script>
+    window.fbAsyncInit = function() {
         FB.init({
             xfbml            : true,
             version          : 'v8.0'
@@ -254,9 +256,10 @@
         js = d.createElement(s); js.id = id;
         js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
         fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
-</script>
-<script src="https://sp.zalo.me/plugins/sdk.js" defer></script>
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+
+<script src="https://sp.zalo.me/plugins/sdk.js" ></script>
 
 
 
