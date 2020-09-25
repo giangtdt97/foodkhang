@@ -98,6 +98,7 @@
 </footer><!-- Load Facebook SDK for JavaScript -->
 <div></div>
 <!-- Your Chat Plugin code -->
+<div id="fb-root"></div>
 <div class="fb-customerchat"
      attribution=setup_tool
      page_id="249648915706594"
