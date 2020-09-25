@@ -170,9 +170,9 @@
 <script   src="{{asset('vendors/ajax/libs/jquery-easing/1.3/jquery.easing.min.js')}}" integrity="sha384-mE6eXfrb8jxl0rzJDBRanYqgBxtJ6Unn4/1F7q4xRRyIw7Vdg9jP4ycT7x1iVsgb" crossorigin="anonymous"></script>
 
 <!-- Own script-->
-<script   src="{{asset('js/layout.js')}}"></script>
-<script   src="{{asset('js/elements.js')}}"></script>
-<script   src="{{asset('js/widget.js')}}"></script>
+<script async  src="{{asset('js/layout.js')}}"></script>
+<script async  src="{{asset('js/elements.js')}}"></script>
+<script async src="{{asset('js/widget.js')}}"></script>
 
 <script>
     $(document).ready(function(){
