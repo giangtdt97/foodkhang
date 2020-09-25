@@ -96,12 +96,14 @@
         </div>
     </div>
 </footer><!-- Load Facebook SDK for JavaScript -->
+<div></div>
 <!-- Your Chat Plugin code -->
 <div id="fb-root"></div>
 <div class="fb-customerchat"
      attribution=setup_tool
      page_id="249648915706594"
      theme_color="#96b125">
+</div>
 <a id="totop" href="#" class="animated"><i class="fa fa-angle-double-up"></i></a>
 
 <div id="loader" data-opening="m -5,-5 0,70 90,0 0,-70 z m 5,35 c 0,0 15,20 40,0 25,-20 40,0 40,0 l 0,0 C 80,30 65,10 40,30 15,50 0,30 0,30 z" class="pageload-overlay">
