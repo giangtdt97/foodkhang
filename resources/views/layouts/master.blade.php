@@ -35,7 +35,7 @@
     <!-- Google Font-->
     <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700,700i&display=swap" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Dancing+Script&display=swap' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Grenze&display=swap' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Grenze&display=swap'  rel='stylesheet'>
     <!-- Script Loading Page-->
     <script async src="{{asset('vendors/html5shiv.js')}}"></script>
     <script async src="{{asset('vendors/respond.min.js')}}"></script>
