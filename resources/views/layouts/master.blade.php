@@ -34,9 +34,9 @@
     <link rel="stylesheet" type="text/css" href="{{asset('css/responsive.css')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('css/live-settings.css')}}">
     <!-- Google Font-->
-    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700,700i&display=swap" rel="stylesheet">
-    <link href='https://fonts.googleapis.com/css?family=Dancing+Script&display=swap' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Grenze&display=swap'  rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700,700i" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Dancing+Script' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Grenze'  rel='stylesheet'>
     <!-- Script Loading Page-->
     <script src="{{asset('vendors/html5shiv.js')}}"></script>
     <script src="{{asset('vendors/respond.min.js')}}"></script>
