@@ -48,5 +48,6 @@
 @yield('content')
 <hr/>
 @include('shared._footer')
+
 </body>
 </html>

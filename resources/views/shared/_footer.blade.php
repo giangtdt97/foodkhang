@@ -95,7 +95,17 @@
             </div>
         </div>
     </div>
-</footer><a id="totop" href="#" class="animated"><i class="fa fa-angle-double-up"></i></a>
+</footer><!-- Load Facebook SDK for JavaScript -->
+<div></div>
+<!-- Your Chat Plugin code -->
+<div class="fb-customerchat"
+     attribution=setup_tool
+     page_id="249648915706594"
+     theme_color="#96b125">
+
+</div>
+<a id="totop" href="#" class="animated"><i class="fa fa-angle-double-up"></i></a>
+
 </div>
 <div id="loader" data-opening="m -5,-5 0,70 90,0 0,-70 z m 5,35 c 0,0 15,20 40,0 25,-20 40,0 40,0 l 0,0 C 80,30 65,10 40,30 15,50 0,30 0,30 z" class="pageload-overlay">
     <div class="loader-wrapper">
@@ -131,6 +141,7 @@
             <div class="sk-circle12 sk-child"></div>
         </div>
     </div>
+
 </div>
 <!-- jQuery-->
 <script src="{{asset('vendors/jquery-1.10.2.min.js')}}" ></script>
@@ -227,6 +238,22 @@
             if(e.key==='Escape'){ removeModal(); }
         });
     });
+</script>
+<script>
+    window.fbAsyncInit = function() {
+        FB.init({
+            xfbml            : true,
+            version          : 'v8.0'
+        });
+    };
+
+    (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
 </script>
 
 
