@@ -99,17 +99,17 @@
 <!-- Your Chat Plugin code -->
 <div>
 {{--<a id="totop" href="#" class="animated"><i class="fa fa-angle-double-up" ></i></a>--}}
-
+</div>
 <div id="fb-root" ></div>
 <div class="fb-customerchat"
      attribution=setup_tool
      page_id="249648915706594"
      theme_color="#96b125">
 </div>
-<div class="zalo-chat-widget" data-oaid="579745863508352884" data-welcome-message="Rất vui khi được hỗ trợ bạn!" data-autopopup="0" data-width="350" data-height="420" >
-
-</div>
-</div>
+<div class="zalo-chat-widget" data-oaid="579745863508352884" data-welcome-message="Rất vui khi được hỗ trợ bạn!" data-autopopup="0" data-width="350" data-height="420" style=
+".zalo-chat-widget{
+    bottom: 90px!important;
+    left: 20px!important;} "></div>
 
 <div id="loader" data-opening="m -5,-5 0,70 90,0 0,-70 z m 5,35 c 0,0 15,20 40,0 25,-20 40,0 40,0 l 0,0 C 80,30 65,10 40,30 15,50 0,30 0,30 z" class="pageload-overlay">
     <div class="loader-wrapper">
@@ -148,43 +148,43 @@
 
 </div>
 <!-- jQuery-->
-<script defer src="{{asset('vendors/jquery-1.10.2.min.js')}}" ></script>
+<script async src="{{asset('vendors/jquery-1.10.2.min.js')}}" ></script>
 <!-- Bootstrap JavaScript-->
-<script defer src="{{asset('vendors/bootstrap/js/bootstrap.min.js')}}"></script>
+<script async src="{{asset('vendors/bootstrap/js/bootstrap.min.js')}}"></script>
 <!-- Vendors-->
-<script defer  src="{{asset('vendors/flexslider/jquery.flexslider-min.js')}}"></script>
-<script defer  src="{{asset('vendors/swipebox/js/jquery.swipebox.min.js')}}"></script>
-<script  defer src="{{asset('vendors/slick/slick.min.js')}}"></script>
-<script  defer src="{{asset('vendors/isotope/isotope.pkgd.min.js')}}"></script>
-<script  defer src="{{asset('vendors/jquery-countTo/jquery.countTo.min.js')}}"></script>
-<script  defer src="{{asset('vendors/jquery-appear/jquery.appear.min.js')}}"></script>
-<script defer  src="{{asset('vendors/parallax/parallax.min.js')}}"></script>
-<script  defer src="{{asset('vendors/gmaps/gmaps.min.js')}}"></script>
-<script defer  src="{{asset('vendors/audiojs/audio.min.js')}}"></script>
-<script defer  src="{{asset('vendors/vide/jquery.vide.min.js')}}"></script>
-<script  defer src="{{asset('vendors/pageloading/js/svgLoader.min.js')}}"></script>
-<script defer  src="{{asset('vendors/pageloading/js/classie.min.js')}}"></script>
-<script defer  src="{{asset('vendors/pageloading/sidebartransition/js/sidebarEffects.min.js')}}"></script>
-<script  defer src="{{asset('vendors/nicescroll/jquery.nicescroll.min.js')}}"></script>
-<script defer  src="{{asset('vendors/wowjs/wow.min.js')}}"></script>
-<script defer  src="{{asset('vendors/skrollr.min.js')}}"></script>
-<script defer  src="{{asset('vendors/bootstrap-datepicker/js/bootstrap-datepicker.min.js')}}"></script>
-<script defer  src="{{asset('vendors/jquery-cookie/js.cookie.js')}}"></script>
-<script defer  src="{{asset('vendors/ajax/libs/jquery-easing/1.3/jquery.easing.min.js')}}" integrity="sha384-mE6eXfrb8jxl0rzJDBRanYqgBxtJ6Unn4/1F7q4xRRyIw7Vdg9jP4ycT7x1iVsgb" crossorigin="anonymous"></script>
+<script async  src="{{asset('vendors/flexslider/jquery.flexslider-min.js')}}"></script>
+<script async  src="{{asset('vendors/swipebox/js/jquery.swipebox.min.js')}}"></script>
+<script  async src="{{asset('vendors/slick/slick.min.js')}}"></script>
+<script  async src="{{asset('vendors/isotope/isotope.pkgd.min.js')}}"></script>
+<script  async src="{{asset('vendors/jquery-countTo/jquery.countTo.min.js')}}"></script>
+<script  async src="{{asset('vendors/jquery-appear/jquery.appear.min.js')}}"></script>
+<script async  src="{{asset('vendors/parallax/parallax.min.js')}}"></script>
+<script  async src="{{asset('vendors/gmaps/gmaps.min.js')}}"></script>
+<script async  src="{{asset('vendors/audiojs/audio.min.js')}}"></script>
+<script async  src="{{asset('vendors/vide/jquery.vide.min.js')}}"></script>
+<script  async src="{{asset('vendors/pageloading/js/svgLoader.min.js')}}"></script>
+<script async  src="{{asset('vendors/pageloading/js/classie.min.js')}}"></script>
+<script async  src="{{asset('vendors/pageloading/sidebartransition/js/sidebarEffects.min.js')}}"></script>
+<script  async src="{{asset('vendors/nicescroll/jquery.nicescroll.min.js')}}"></script>
+<script async  src="{{asset('vendors/wowjs/wow.min.js')}}"></script>
+<script async  src="{{asset('vendors/skrollr.min.js')}}"></script>
+<script async  src="{{asset('vendors/bootstrap-datepicker/js/bootstrap-datepicker.min.js')}}"></script>
+<script async  src="{{asset('vendors/jquery-cookie/js.cookie.js')}}"></script>
+<script async  src="{{asset('vendors/ajax/libs/jquery-easing/1.3/jquery.easing.min.js')}}" integrity="sha384-mE6eXfrb8jxl0rzJDBRanYqgBxtJ6Unn4/1F7q4xRRyIw7Vdg9jP4ycT7x1iVsgb" crossorigin="anonymous"></script>
 
 <!-- Own script-->
-<script  defer src="{{asset('js/layout.js')}}"></script>
-<script  defer src="{{asset('js/elements.js')}}"></script>
-<script  defer src="{{asset('js/widget.js')}}"></script>
+<script  async src="{{asset('js/layout.js')}}"></script>
+<script  async src="{{asset('js/elements.js')}}"></script>
+<script  async src="{{asset('js/widget.js')}}"></script>
 
-<script defer>
+<script async>
     $(document).ready(function(){
         $('.user-support').click(function(event) {
             $('.social-button-content').slideToggle();
         });
     });
 </script>
-<script type="text/javascript" defer>
+<script type="text/javascript" async>
     $(document).ready(function() {
         var $el, $ps, $up, totalHeight;
 
@@ -221,7 +221,7 @@
         });
     });
 </script>
-<script type="text/javascript" defer>
+<script type="text/javascript" async>
     $('img[data-enlargeable]').addClass('img-enlargeable').click(function(){
         var src = $(this).attr('src');
         var modal;
@@ -243,7 +243,7 @@
         });
     });
 </script>
-<script defer>
+<script async>
     window.fbAsyncInit = function() {
         FB.init({
             xfbml            : true,
@@ -259,7 +259,7 @@
         fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));
 </script>
-<script src="https://sp.zalo.me/plugins/sdk.js" defer></script>
+<script src="https://sp.zalo.me/plugins/sdk.js" async></script>
 
 
 
