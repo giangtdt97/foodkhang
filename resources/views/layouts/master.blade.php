@@ -1,6 +1,5 @@
-<?php session_start(); ?>
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en" itemscope itemtype="http://schema.org/WebPage">
 {{--itemscope itemtype="http://schema.org/WebPage"--}}
 <head>
     <meta charset="UTF-8">
