@@ -148,43 +148,43 @@
 
 </div>
 <!-- jQuery-->
-<script src="{{asset('vendors/jquery-1.10.2.min.js')}}" ></script>
+<script defer src="{{asset('vendors/jquery-1.10.2.min.js')}}" ></script>
 <!-- Bootstrap JavaScript-->
-<script src="{{asset('vendors/bootstrap/js/bootstrap.min.js')}}"></script>
+<script defer src="{{asset('vendors/bootstrap/js/bootstrap.min.js')}}"></script>
 <!-- Vendors-->
-<script   src="{{asset('vendors/flexslider/jquery.flexslider-min.js')}}"></script>
-<script   src="{{asset('vendors/swipebox/js/jquery.swipebox.min.js')}}"></script>
-<script   src="{{asset('vendors/slick/slick.min.js')}}"></script>
-<script   src="{{asset('vendors/isotope/isotope.pkgd.min.js')}}"></script>
-<script   src="{{asset('vendors/jquery-countTo/jquery.countTo.min.js')}}"></script>
-<script   src="{{asset('vendors/jquery-appear/jquery.appear.min.js')}}"></script>
-<script   src="{{asset('vendors/parallax/parallax.min.js')}}"></script>
-<script   src="{{asset('vendors/gmaps/gmaps.min.js')}}"></script>
-<script   src="{{asset('vendors/audiojs/audio.min.js')}}"></script>
-<script   src="{{asset('vendors/vide/jquery.vide.min.js')}}"></script>
-<script   src="{{asset('vendors/pageloading/js/svgLoader.min.js')}}"></script>
-<script   src="{{asset('vendors/pageloading/js/classie.min.js')}}"></script>
-<script   src="{{asset('vendors/pageloading/sidebartransition/js/sidebarEffects.min.js')}}"></script>
-<script   src="{{asset('vendors/nicescroll/jquery.nicescroll.min.js')}}"></script>
-<script   src="{{asset('vendors/wowjs/wow.min.js')}}"></script>
-<script   src="{{asset('vendors/skrollr.min.js')}}"></script>
-<script   src="{{asset('vendors/bootstrap-datepicker/js/bootstrap-datepicker.min.js')}}"></script>
-<script   src="{{asset('vendors/jquery-cookie/js.cookie.js')}}"></script>
-<script   src="{{asset('vendors/ajax/libs/jquery-easing/1.3/jquery.easing.min.js')}}" integrity="sha384-mE6eXfrb8jxl0rzJDBRanYqgBxtJ6Unn4/1F7q4xRRyIw7Vdg9jP4ycT7x1iVsgb" crossorigin="anonymous"></script>
+<script defer  src="{{asset('vendors/flexslider/jquery.flexslider-min.js')}}"></script>
+<script defer  src="{{asset('vendors/swipebox/js/jquery.swipebox.min.js')}}"></script>
+<script  defer src="{{asset('vendors/slick/slick.min.js')}}"></script>
+<script  defer src="{{asset('vendors/isotope/isotope.pkgd.min.js')}}"></script>
+<script  defer src="{{asset('vendors/jquery-countTo/jquery.countTo.min.js')}}"></script>
+<script  defer src="{{asset('vendors/jquery-appear/jquery.appear.min.js')}}"></script>
+<script defer  src="{{asset('vendors/parallax/parallax.min.js')}}"></script>
+<script  defer src="{{asset('vendors/gmaps/gmaps.min.js')}}"></script>
+<script defer  src="{{asset('vendors/audiojs/audio.min.js')}}"></script>
+<script defer  src="{{asset('vendors/vide/jquery.vide.min.js')}}"></script>
+<script  defer src="{{asset('vendors/pageloading/js/svgLoader.min.js')}}"></script>
+<script defer  src="{{asset('vendors/pageloading/js/classie.min.js')}}"></script>
+<script defer  src="{{asset('vendors/pageloading/sidebartransition/js/sidebarEffects.min.js')}}"></script>
+<script  defer src="{{asset('vendors/nicescroll/jquery.nicescroll.min.js')}}"></script>
+<script defer  src="{{asset('vendors/wowjs/wow.min.js')}}"></script>
+<script defer  src="{{asset('vendors/skrollr.min.js')}}"></script>
+<script defer  src="{{asset('vendors/bootstrap-datepicker/js/bootstrap-datepicker.min.js')}}"></script>
+<script defer  src="{{asset('vendors/jquery-cookie/js.cookie.js')}}"></script>
+<script defer  src="{{asset('vendors/ajax/libs/jquery-easing/1.3/jquery.easing.min.js')}}" integrity="sha384-mE6eXfrb8jxl0rzJDBRanYqgBxtJ6Unn4/1F7q4xRRyIw7Vdg9jP4ycT7x1iVsgb" crossorigin="anonymous"></script>
 
 <!-- Own script-->
-<script   src="{{asset('js/layout.js')}}"></script>
-<script   src="{{asset('js/elements.js')}}"></script>
-<script   src="{{asset('js/widget.js')}}"></script>
+<script  defer src="{{asset('js/layout.js')}}"></script>
+<script  defer src="{{asset('js/elements.js')}}"></script>
+<script  defer src="{{asset('js/widget.js')}}"></script>
 
-<script>
+<script defer>
     $(document).ready(function(){
         $('.user-support').click(function(event) {
             $('.social-button-content').slideToggle();
         });
     });
 </script>
-<script type="text/javascript">
+<script type="text/javascript" defer>
     $(document).ready(function() {
         var $el, $ps, $up, totalHeight;
 
@@ -221,7 +221,7 @@
         });
     });
 </script>
-<script type="text/javascript">
+<script type="text/javascript" defer>
     $('img[data-enlargeable]').addClass('img-enlargeable').click(function(){
         var src = $(this).attr('src');
         var modal;
@@ -243,7 +243,7 @@
         });
     });
 </script>
-<script>
+<script defer>
     window.fbAsyncInit = function() {
         FB.init({
             xfbml            : true,
@@ -259,7 +259,7 @@
         fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));
 </script>
-<script src="https://sp.zalo.me/plugins/sdk.js"></script>
+<script src="https://sp.zalo.me/plugins/sdk.js" defer></script>
 
 
 
