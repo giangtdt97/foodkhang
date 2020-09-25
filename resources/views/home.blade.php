@@ -271,14 +271,14 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div data-width="75" class="nav-slider">
-                                                <ul class="slides list-inline">
-                                                    <li class="swin-transition"><a href="javascript:void(0)" class="testimonial-nav-item"><img src="{{asset('images/right-arrow.jpg')}}" alt="fooday" class="img img-responsive swin-transition"></a></li>
-                                                    <li class="swin-transition"><a href="javascript:void(0)" class="testimonial-nav-item"><img src="{{asset('images/right-arrow.jpg')}}" alt="fooday" class="img img-responsive swin-transition"></a></li>
-                                                    <li class="swin-transition"><a href="javascript:void(0)" class="testimonial-nav-item"><img src="{{asset('images/right-arrow.jpg')}}" alt="fooday" class="img img-responsive swin-transition"></a></li>
-                                                    <li class="swin-transition"><a href="javascript:void(0)" class="testimonial-nav-item"><img src="{{asset('images/right-arrow.jpg')}}" alt="fooday" class="img img-responsive swin-transition"></a></li>
-                                                </ul>
-                                            </div>
+{{--                                            <div data-width="75" class="nav-slider">--}}
+{{--                                                <ul class="slides list-inline">--}}
+{{--                                                    <li class="swin-transition"><a href="javascript:void(0)" class="testimonial-nav-item"><img src="{{asset('images/right-arrow.jpg')}}" alt="fooday" class="img img-responsive swin-transition"></a></li>--}}
+{{--                                                    <li class="swin-transition"><a href="javascript:void(0)" class="testimonial-nav-item"><img src="{{asset('images/right-arrow.jpg')}}" alt="fooday" class="img img-responsive swin-transition"></a></li>--}}
+{{--                                                    <li class="swin-transition"><a href="javascript:void(0)" class="testimonial-nav-item"><img src="{{asset('images/right-arrow.jpg')}}" alt="fooday" class="img img-responsive swin-transition"></a></li>--}}
+{{--                                                    <li class="swin-transition"><a href="javascript:void(0)" class="testimonial-nav-item"><img src="{{asset('images/right-arrow.jpg')}}" alt="fooday" class="img img-responsive swin-transition"></a></li>--}}
+{{--                                                </ul>--}}
+{{--                                            </div>--}}
                                         </div>
                                     </div>
                                 </div>

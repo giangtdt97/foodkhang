@@ -1,6 +1,7 @@
 <?php session_start(); ?>
 <!DOCTYPE html>
-<html lang="en" itemscope itemtype="http://schema.org/WebPage">
+<html lang="en" >
+{{--itemscope itemtype="http://schema.org/WebPage"--}}
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -35,7 +36,7 @@
     <!-- Google Font-->
     <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700,700i&display=swap" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Dancing+Script&display=swap' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Grenze&display=swap' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Grenze&display=swap'  rel='stylesheet'>
     <!-- Script Loading Page-->
     <script src="{{asset('vendors/html5shiv.js')}}"></script>
     <script src="{{asset('vendors/respond.min.js')}}"></script>
