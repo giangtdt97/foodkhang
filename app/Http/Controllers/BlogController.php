@@ -13,7 +13,7 @@ class BlogController extends Controller
 {
     public function index(Request $request)
     {
-        $blogs =Blog::published()->paginate(3);
+        $blogs =Blog::orderBy('created_at','desc')->published()->paginate(3);
         $categories=Category::all();
         $tags=Tag::all();
         $feature_images=Feature_Image::all();

@@ -14,7 +14,7 @@ class HomeController extends Controller
     public function index()
     {
         $products=Product::featured()->orderBy('created_at')->get();
-        $blogs=Blog::featured()->orderBy('created_at')->get();
+        $blogs=Blog::featured()->orderBy('created_at','desc')->get();
         $categories=Category::all();
         $feature_images=Feature_Image::all();
         $feature_service=Feature_Service::all();
