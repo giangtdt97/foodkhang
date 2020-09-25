@@ -135,7 +135,7 @@
 <!-- jQuery-->
 <script async src="{{asset('vendors/jquery-1.10.2.min.js')}}" ></script>
 <!-- Bootstrap JavaScript-->
-<script async src="{{asset('vendors/bootstrap/js/bootstrap.min.js')}}"></script>
+<script src="{{asset('vendors/bootstrap/js/bootstrap.min.js')}}"></script>
 <!-- Vendors-->
 <script   src="{{asset('vendors/flexslider/jquery.flexslider-min.js')}}"></script>
 <script   src="{{asset('vendors/swipebox/js/jquery.swipebox.min.js')}}"></script>
