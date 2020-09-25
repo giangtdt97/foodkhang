@@ -150,7 +150,6 @@
 </div>
 <!-- jQuery-->
 <script src="{{asset('vendors/jquery-1.10.2.min.js')}}"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <!-- Bootstrap JavaScript-->
 <script src="{{asset('vendors/bootstrap/js/bootstrap.min.js')}}"></script>
 <!-- Vendors-->
