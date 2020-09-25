@@ -240,7 +240,7 @@
         });
     });
 </script>
-<script defer>
+<script >
     window.fbdeferInit = function() {
         FB.init({
             xfbml            : true,
