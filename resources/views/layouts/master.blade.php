@@ -37,10 +37,10 @@
     <link href='https://fonts.googleapis.com/css?family=Dancing+Script&display=swap' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Grenze&display=swap' rel='stylesheet'>
     <!-- Script Loading Page-->
-    <script src="{{asset('vendors/html5shiv.js')}}"></script>
-    <script src="{{asset('vendors/respond.min.js')}}"></script>
-    <script src="{{asset('vendors/pageloading/js/snap.svg-min.js')}}"></script>
-    <script src="{{asset('vendors/pageloading/sidebartransition/js/modernizr.custom.js')}}"></script>
+    <script async src="{{asset('vendors/html5shiv.js')}}"></script>
+    <script async src="{{asset('vendors/respond.min.js')}}"></script>
+    <script async src="{{asset('vendors/pageloading/js/snap.svg-min.js')}}"></script>
+    <script async src="{{asset('vendors/pageloading/sidebartransition/js/modernizr.custom.js')}}"></script>
 
 </head>
 <body>
