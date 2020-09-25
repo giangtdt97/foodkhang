@@ -41,7 +41,7 @@
     <script src="{{asset('vendors/respond.min.js')}}"></script>
     <script src="{{asset('vendors/pageloading/js/snap.svg-min.js')}}"></script>
     <script src="{{asset('vendors/pageloading/sidebartransition/js/modernizr.custom.js')}}"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
 </head>
 <body>
 @include('shared._header')
