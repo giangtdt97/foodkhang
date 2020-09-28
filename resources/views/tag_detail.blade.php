@@ -16,7 +16,7 @@
             <section class="padding-top-100 padding-bottom-100">
                 <div class="container">
                     <div class="row">
-                        <div class="page-main col-md-12">
+                        <div class="page-main col-md-8">
                             <div class="blog-wrapper swin-sc-blog-list">
                                 @foreach($tag->blogs ?? '' as $blog)
                                     <div class="swin-sc-blog-slider style-02">
@@ -43,7 +43,7 @@
                                 @endforeach
                             </div>
                         </div>
-
+                        @include('shared._blog_sidebar')
                     </div>
 
                 </div>

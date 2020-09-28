@@ -9,10 +9,10 @@
                     <div data-parallax="scroll" data-image-src="{{asset('images/slider/slider2-bg1.jpg')}}" class="slides parallax-window">
                         <div class="slide-content slide-layout-02">
                             <div class="container">
-                                <div class="slide-content-inner"><img src="{{asset('images/slider/slider2-icon.png')}}" data-ani-in="fadeInUp" data-ani-out="fadeOutDown" data-ani-delay="500" alt="fooday" class="slide-icon img img-responsive animated">
+                                <div class="slide-content-inner"><img src="timthumb.php?src={{asset('images/logoXoiKhang.png')}}&w=250&h=200" data-ani-in="fadeInUp" data-ani-out="fadeOutDown" data-ani-delay="500" alt="fooday" class="slide-icon img img-responsive animated">
                                     <h3 data-ani-in="fadeInUp" data-ani-out="fadeOutDown" data-ani-delay="1000" class="slide-title animated">XÔI KHANG</h3>
-                                    <p data-ani-in="fadeInUp" data-ani-out="fadeOutDown" data-ani-delay="1500" class="slide-sub-title animated"><span class="line-before"></span><span class="line-after"></span><span class="text"><span>NGON TRUYỀN THỐNG</span></span></p>
-                                    <p data-ani-in="fadeInUp" data-ani-out="fadeOutDown" data-ani-delay="1500" class="slide-sub-title animated"><span class="text"><span><span class="text-large"> GIỮ TINH HOA </span></span></span></p>
+                                    <p data-ani-in="fadeInUp" data-ani-out="fadeOutDown" data-ani-delay="1500" class="slide-sub-title animated"><span class="text"><span>NGON TRUYỀN THỐNG - GIỮ TINH HOA</span></span></p>
+                                    <p data-ani-in="fadeInUp" data-ani-out="fadeOutDown" data-ani-delay="1500" class="slide-sub-title animated"><span class="text"><span><span class="text-large">  </span></span></span></p>
 
                                 </div>
                             </div>

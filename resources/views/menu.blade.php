@@ -16,7 +16,7 @@
                 <div class="swin-sc swin-sc-product products-01 style-03 woocommerce">
                     <div class="row">
                         <div class="col-md-12">
-                            <div data-slide-toshow="3" class="cat-wrapper-02 cat-images main-slider">
+                            <div data-slide-toshow="2" class="cat-wrapper-02 cat-images main-slider">
                                 @foreach($ultilities as $ultility)
                                     <div class="item">
                                         <div class="item product-01">
@@ -37,7 +37,7 @@
                                                     <div class="col-md-2 col-sm-4 col-xs-12">
                                                         <div class="item product-01">
                                                             <div class="block-img"><a href="{{route('service.show',$service->slug)}}"><img src="timthumb.php?src={{Voyager::image( $service->image )}}&w=140&h=70" alt="" ></a></div>
-                                                            <h5 class="title">{{$service->name}}</h5><span class="price woocommerce-Price-amount amount">{{$service->presentPrice()}}<span class="price-symbol">VNĐ</span></span>
+                                                            <h5 class="title">{{$service->name}}</h5>
                                                         </div>
                                                     </div>
                                                 @endforeach
@@ -68,7 +68,7 @@
                     <div class="swin-sc swin-sc-product products-01 style-03 woocommerce">
                        <div class="row">
                             <div class="col-md-12">
-                                <div data-slide-toshow="1" class="cat-wrapper-02 cat-images main-slider">
+                                <div data-slide-toshow="3" class="cat-wrapper-02 cat-images main-slider">
                                     @foreach($categories as $category)
                                     <div class="item">
                                         <div class="cat-image"><a href="javascript:void(0)"><img src="timthumb.php?src={{Voyager::image( $category->image )}}&w=200&h=150" alt="" >{{$category->name}}</a></div>

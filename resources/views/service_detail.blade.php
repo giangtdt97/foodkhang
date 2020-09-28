@@ -82,11 +82,15 @@
                         </div>
                     </div>
                 </section>
-                <section class="product-sesction-03-1 padding-top-100 padding-bottom-100"><img src="" alt="" class="img-responsive img-decorate">
+                <section class="product-sesction-03-1 padding-top-100 padding-bottom-100"><img src="{{Voyager::image($service->getThumbnail($service->image,'medium'))}}" height="500" alt="" class="img-decorate">
                     <div class="container">
-                        <div class="col-lg-6 col-md-12">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-4"></div>
+                            <div class="col-lg-6 col-md-8">
                                 <div class="swin-sc swin-sc-title text-left light">
-                                    <p class="top-title"><span>THƯC ĐƠN </span></p>
+
+                                    <p class="top-title"><span> {{$service->name}}</span></p>
+
                                 </div>
                                 <div class="swin-sc swin-sc-product products-01 style-04 light swin-vetical-slider">
                                     <div class="row">
@@ -94,13 +98,14 @@
                                             <div data-height="200" class="products nav-slider">
                                                 @foreach($service->products as  $product)
                                                     <div class="item product-01">
-                                                        <div class="item-left"><a href="{{route('product.show',$product->slug)}}"><img src="{{Voyager::image( $product->image )}}" alt="" width="140" height="70" class="img img-responsive"></a>
+                                                        <div class="item-left"><a href="{{route('product.show',$product->slug)}}"><img src="{{Voyager::image( $product->image )}}" alt="" class="img img-responsive"></a>
                                                             <div class="content-wrapper"><a href="{{route('product.show',$product->slug)}}" class="title">{{$product->product_name}}</a>
                                                                 <div class="dot">.....................................................................</div>
                                                                 <div class="des">{{$product->short_description}}</div>
                                                             </div>
                                                         </div>
-                                                        </div>
+                                                        <div class="item-right"></div>
+                                                    </div>
                                                 @endforeach
                                             </div>
                                         </div>
@@ -108,6 +113,7 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
                 </section>
             </div>
         </div>

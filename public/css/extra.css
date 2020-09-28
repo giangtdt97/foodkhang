@@ -60,14 +60,7 @@ section {
 .reservation-section-02 {
   background-color: #090909;
   position: relative; }
-  .reservation-section-02 .video-wrapper {
-    background-image: url("../images/background/bg6.jpg");
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 50%;
-    background-size: cover;
-    height: 565px; }
+
     .reservation-section-02 .video-wrapper .swin-sc-video {
       height: 100%;
       background-color: rgba(0, 0, 0, 0.3); }
@@ -97,11 +90,7 @@ section {
     right: -200px;
     top: 0px; }
 
-.blog-section-02 {
-  background-image: url("../images/background/bg8.jpg");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover; }
+
 
 .subscribe-section-02 {
   background-color: #fcfcfc; }
@@ -141,10 +130,6 @@ section {
     padding: 0 10px;white-space: nowrap;}
   .banner-section .content-wrapper .des {
     color: #f8f8f8; }
-
-.video-section-03 {
-  background-image: url("../images/background/video-bg.jpg"); }
-
 .partner-section-03 {
   padding-top: 0; }
   .partner-section-03 .swin-sc-partner {
@@ -226,27 +211,27 @@ section {
 
 /* About */
 .page-title.page-about {
-  background-image: url("../images/background/pagetitle-about.jpg"); }
+  background-image: url("../images/slider/slider2-bg1.jpg"); }
 
 /* Menu */
 .page-title.page-menu {
-  background-image: url("../images/background/pagetitle-menu.jpg"); }
+  background-image: url("../images/slider/slider2-bg1.jpg"); }
 
 /* Reservation */
 .page-title.page-reservation {
-  background-image: url("../images/background/pagetitle-reservation.jpg"); }
+  background-image: url("../images/slider/slider2-bg1.jpg"); }
 
 /* Contact */
 .page-title.page-contact {
-  background-image: url("../images/background/pagetitle-about.jpg"); }
+  background-image: url("../images/slider/slider2-bg1.jpg"); }
 
 /* Blog */
 .page-title.page-blog {
-  background-image: url("../images/background/pagetitle-blog.jpg"); }
+  background-image: url("../images/slider/slider2-bg1.jpg"); }
 
 /* Product */
 .page-title.page-product {
-  background-image: url("../images/background/pagetitle-product.jpg"); }
+  background-image: url("../images/slider/slider2-bg1.jpg"); }
 
 h3.title-demo {
   width: 50%;
@@ -284,8 +269,6 @@ h3.title-demo.light {
   background-attachment: fixed;
   background-size: cover; }
 
-body.layout-boxed {
-  background-image: url("../images/background/layout-boxed.jpg"); }
 
 /* Fullpage */
 #fullpage .section {
@@ -329,7 +312,6 @@ body[nav-color="light"] #fp-nav ul li .fp-tooltip {
 /* Home Shop */
 .shop-banner {
   position: relative;
-  background-image: url("../images/background/shop-banner-bg2.jpg");
   background-size: cover;
   padding: 80px 0; }
   .shop-banner:before {

@@ -21,7 +21,7 @@ class BlogController extends Controller
     }
     public function show(Request $request,$slug)
     {
-        $blogs =Blog::published()->paginate(3);
+        $blogs =Blog::orderBy('created_at','desc')->published()->paginate(3);
         $blog= Blog::where('slug', $slug)->first();
         $categories=Category::all();
         $tags=Tag::all();
@@ -31,11 +31,13 @@ class BlogController extends Controller
         );
     }
     public function showTag($slug){
-        $blogs =Blog::published()->paginate(3);
+        $blogs =Blog::orderBy('created_at','desc')->published()->paginate(3);
         $tag= Tag::where('slug', $slug)->first();
         $categories=Category::all();
+        $tags=Tag::all();
+        $feature_images=Feature_Image::all();
         return view(
-            'tag_detail',compact('tag','categories','blogs')
+            'tag_detail',compact('tag','categories','blogs','tags','feature_images')
         );
     }
 }

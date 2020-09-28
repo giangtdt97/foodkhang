@@ -89,7 +89,7 @@
                                     </div>
                                     <div class="row">
                                         @foreach($feature_products as $feature_product)
-                                        <div class="col-md-3 col-sm-6 col-xs-12">
+                                        <div class="col-md-4 col-sm-6 col-xs-12">
                                             <div data-wow-delay="1s" class="swin-sc sc-featured-box item wow fadeInUp"><img src="{{Voyager::image($feature_product->background_image)}}" alt="fooday" class="box-bg">
                                                 <div class="box-inner ">
                                                     <h4 class="box-title">{{$feature_product->product_name}}</h4>

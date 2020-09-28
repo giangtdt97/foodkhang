@@ -98,6 +98,9 @@
 </footer><!-- Load Facebook SDK for JavaScript -->
 <!-- Your Chat Plugin code -->
 <div>
+    <style>
+        #totop{box-shadow:0 0 10px 0 rgba(0,0,0,0.2);position:fixed;bottom:60px;left:1.5%;display:none;z-index:9999;background:#96b125;border:3px solid #fff;border-radius:50%;height:47px;width:47px;text-align:center;transition:all .2s linear}
+    </style>
 {{--<a id="totop" href="#" class="animated"><i class="fa fa-angle-double-up" ></i></a>--}}
 
 <div id="fb-root" ></div>
@@ -107,6 +110,9 @@
          page_id="249648915706594"
          theme_color="#96b125">
     </div>
+    <style>
+        .zalo-chat-widget{bottom: 90px!important;right: 20px!important;}
+    </style>
 <div class="zalo-chat-widget" data-oaid="579745863508352884" data-welcome-message="Rất vui khi được hỗ trợ bạn!" data-autopopup="0" data-width="350" data-height="420" ></div>
 </div>
 <div id="loader" data-opening="m -5,-5 0,70 90,0 0,-70 z m 5,35 c 0,0 15,20 40,0 25,-20 40,0 40,0 l 0,0 C 80,30 65,10 40,30 15,50 0,30 0,30 z" class="pageload-overlay">
