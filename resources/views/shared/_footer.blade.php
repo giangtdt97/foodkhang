@@ -113,7 +113,7 @@
     <style>
         .zalo-chat-widget{bottom: 90px!important;right: 20px!important;}
     </style>
-<div class="zalo-chat-widget" data-oaid="579745863508352884" data-welcome-message="Rất vui khi được hỗ trợ bạn!" data-autopopup="0" data-width="350" data-height="420" ></div>
+<div class="zalo-chat-widget" data-oaid="1375671240982213476" data-welcome-message="Rất vui khi được hỗ trợ bạn!" data-autopopup="0" data-width="350" data-height="420" ></div>
 </div>
 <div id="loader" data-opening="m -5,-5 0,70 90,0 0,-70 z m 5,35 c 0,0 15,20 40,0 25,-20 40,0 40,0 l 0,0 C 80,30 65,10 40,30 15,50 0,30 0,30 z" class="pageload-overlay">
     <div class="loader-wrapper">
