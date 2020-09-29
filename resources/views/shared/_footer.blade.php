@@ -104,6 +104,9 @@
 {{--    <div>--}}
 {{--        <a id="totop" href="tel:{{setting('site.site_phone')}}" class="animated"><i class="fa fa-phone"></i></a>--}}
 {{--    </div>--}}
+    <style>
+        .hotline-phone-ring {position: relative;visibility: visible;background-color: transparent;width: 110px;height: 110px;cursor: pointer;z-index: 11;-webkit-backface-visibility: hidden;-webkit-transform: translateZ(0);transition: visibility .5s;right: 0;bottom: 140px;display: block;}
+    </style>
     <div class="hotline-phone-ring-wrap">
         <div class="hotline-phone-ring">
             <div class="hotline-phone-ring-circle"></div>
