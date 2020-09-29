@@ -85,9 +85,7 @@
                                             @foreach($category->products as  $product)
                                                 <div class="col-md-2 col-sm-4 col-xs-12">
                                                 <div class="item product-01">
-                                                    <div class="block-img"><img src="timthumb.php?src={{Voyager::image( $product->image,'small' )}}&w=140&h=70" alt="">
-                                                        <div class="group-btn"><a href="{{route('product.show',$product->slug)}}" class="swin-btn btn-link"><i class="icons fa fa-link"></i></a></div>
-                                                    </div>
+                                                    <div class="block-img"><a href="{{route('product.show',$product->slug)}}"><img src="timthumb.php?src={{Voyager::image( $product->image )}}&w=140&h=70" alt="" ></a></div>
                                                     <h5 class="title">{{$product->product_name}}</h5><span class="price woocommerce-Price-amount amount">{{$product->presentPrice()}}<span class="price-symbol">VNĐ</span></span>
                                                 </div>
                                             </div>
