@@ -98,10 +98,24 @@
 </footer><!-- Load Facebook SDK for JavaScript -->
 <!-- Your Chat Plugin code -->
 <div>
-    <style>
-        #totop{box-shadow:0 0 10px 0 rgba(0,0,0,0.2);position:fixed;bottom:60px;left:1.5%;display:none;z-index:9999;background:#96b125;border:3px solid #fff;border-radius:50%;height:47px;width:47px;text-align:center;transition:all .2s linear}
-    </style>
-{{--<a id="totop" href="#" class="animated"><i class="fa fa-angle-double-up" ></i></a>--}}
+{{--    <style>--}}
+{{--        #totop{box-shadow:0 0 10px 0 rgba(0,0,0,0.2);position:fixed;bottom:60px;left:1.5%;display:none;z-index:9999;background:#96b125;border:3px solid #fff;border-radius:50%;height:47px;width:47px;text-align:center;transition:all .2s linear}--}}
+{{--    </style>--}}
+{{--    <div>--}}
+{{--        <a id="totop" href="tel:{{setting('site.site_phone')}}" class="animated"><i class="fa fa-phone"></i></a>--}}
+{{--    </div>--}}
+    <div class="hotline-phone-ring-wrap">
+        <div class="hotline-phone-ring">
+            <div class="hotline-phone-ring-circle"></div>
+            <div class="hotline-phone-ring-circle-fill"></div>
+            <div class="hotline-phone-ring-img-circle">
+                <a href="tel:{{setting('site.site_phone')}}" class="pps-btn-img">
+                    <img src="https://nguyenhung.net/wp-content/uploads/2019/05/icon-call-nh.png" alt="Gọi điện thoại" width="50">
+                </a>
+            </div>
+        </div>
+    </div>
+
 
 <div id="fb-root" ></div>
     <!-- Your Chat Plugin code -->
