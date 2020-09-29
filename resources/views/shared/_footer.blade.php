@@ -181,13 +181,13 @@
 <script  defer src="{{asset('js/elements.js')}}"></script>
 <script  defer src="{{asset('js/widget.js')}}"></script>
 
-{{--<script defer>--}}
-{{--    $(document).ready(function(){--}}
-{{--        $('.user-support').click(function(event) {--}}
-{{--            $('.social-button-content').slideToggle();--}}
-{{--        });--}}
-{{--    });--}}
-{{--</script>--}}
+<script defer>
+    $(document).ready(function(){
+        $('.user-support').click(function(event) {
+            $('.social-button-content').slideToggle();
+        });
+    });
+</script>
 <script type="text/javascript" >
     $(document).ready(function() {
         var $el, $ps, $up, totalHeight;
