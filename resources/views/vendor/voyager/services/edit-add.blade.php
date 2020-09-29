@@ -97,14 +97,14 @@
                             </div>
                         </div>
                         <div class="panel-body">
-                            <input type="text" class="form-control" id="name" name="name" placeholder="Service Name" value="{{ $dataTypeContent->name ?? '' }}">
+                            <input type="text" class="form-control" id="name" name="name" placeholder="Service Name" value="{{ $dataTypeContent->name ?? '' }}" required="true">
                         </div>
                     </div>
                     <div class="panel">
                         <div class="panel-heading">
                             <h3 class="panel-title">Full Description</h3>
                             <div class="panel-actions">
-                                <a class="panel-action voyager-resize-full" data-toggle="panel-fullscreen" aria-hidden="true"></a>
+                                <a class="panel-action voyager-resize-full" data-toggle="panel-fullscreen" aria-hidden="true" required="true"></a>
                             </div>
                         </div>
 
@@ -169,7 +169,7 @@
                         <div class="panel-body">
                             <div class="form-group">
                                 <label for="short_description">Short Description</label>
-                                <textarea class="form-control" name="short_description">{{ $dataTypeContent->short_description ?? '' }}</textarea>
+                                <textarea class="form-control" name="short_description" required="true">{{ $dataTypeContent->short_description ?? '' }}</textarea>
                             </div>
                         </div>
                         <div class="panel-body">

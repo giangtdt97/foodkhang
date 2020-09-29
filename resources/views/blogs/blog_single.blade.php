@@ -44,21 +44,21 @@
                                                         {!! $blog->body !!}
                                                     </div>
                                                     <div class="blog-footer clearfix">
+                                                        <div class="blog-share">
+                                                            <ul class="socials list-unstyled list-inline">
+                                                                 <li><a href="https://www.facebook.com/Xoikhang.vn/"><i class="fa fa-facebook"></i></a></li>
+                                                                 <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="blog-tags"><strong>Tags:</strong>
+                                                            @foreach($blog->tags as $tag)
+                                                                 <a href="{{route('tag.detail',$tag->slug)}}" class="tag">{{$tag->name}}</a>.
+                                                            @endforeach
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
-
-                                <div class="swin-widget widget-tag">
-                                    <div class="title-widget">TAG</div>
-                                    <div class="widget-body widget-content clearfix">
-                                        <ul class="list-unstyled list-inline">
-                                            @foreach($blog->tags as $tag)
-                                                <li><a href="{{route('tag.detail',$tag->slug)}}" class="tag">{{$tag->name}}</a></li>
-                                            @endforeach
-                                        </ul>
                                     </div>
                                 </div>
                             </div>

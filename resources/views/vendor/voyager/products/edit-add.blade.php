@@ -97,7 +97,7 @@
                             </div>
                         </div>
                         <div class="panel-body">
-                            <input type="text" class="form-control" id="product_name" name="product_name" placeholder="product name" value="{{ $dataTypeContent->product_name ?? '' }}">
+                            <input type="text" class="form-control" id="product_name" name="product_name" placeholder="product name" value="{{ $dataTypeContent->product_name ?? '' }}" required="true">
                         </div>
                     </div>
                     <div class="panel">
@@ -179,7 +179,7 @@
                         <div class="panel-body">
                             <div class="form-group">
                                 <label for="short_description">Short Description</label>
-                                <textarea class="form-control" name="short_description">{{ $dataTypeContent->short_description ?? '' }}</textarea>
+                                <textarea class="form-control" name="short_description" required="true">{{ $dataTypeContent->short_description ?? '' }}</textarea>
                             </div>
                         </div>
                         <div class="panel-body">
