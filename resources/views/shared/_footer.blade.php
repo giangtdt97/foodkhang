@@ -107,7 +107,7 @@
     <!-- Your Chat Plugin code -->
     <div class="fb-customerchat"
          attribution=setup_tool
-         page_id="249648915706594"
+         page_id="{{setting('site.pageId')}}"
          theme_color="#96b125">
     </div>
     <style>
