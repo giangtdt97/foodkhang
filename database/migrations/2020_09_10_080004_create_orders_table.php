@@ -17,7 +17,7 @@ class CreateOrdersTable extends Migration
             $table->id();
             $table->string('customer_name');
             $table->integer('phone_number');
-            $table->enum('status',['UNCONFIRMED','CONFIRMED','PROCESSING','DELIVERY','COMPLETE'])->default('UNCONFIRMED');
+            $table->enum('status',['Chưa Xác Nhận','Đã Xác Nhận','Đang Chế Biến','Đang Giao','Hoàn Thành Đơn'])->default('Chưa Xác Nhận');
             $table->text('address');
             $table->timestamps();
 
