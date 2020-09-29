@@ -181,7 +181,7 @@
 <script  defer src="{{asset('js/elements.js')}}"></script>
 <script  defer src="{{asset('js/widget.js')}}"></script>
 
-<script defer>
+<script>
     $(document).ready(function(){
         $('.user-support').click(function(event) {
             $('.social-button-content').slideToggle();
