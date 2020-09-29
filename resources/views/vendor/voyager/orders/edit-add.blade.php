@@ -97,7 +97,7 @@
                             </div>
                         </div>
                         <div class="panel-body">
-                            <input type="text" class="form-control" id="customer_name" name="customer_name" placeholder="customer name" value="{{ $dataTypeContent->customer_name ?? '' }}">
+                            <input type="text" class="form-control" id="customer_name" name="customer_name" placeholder="customer name" value="{{ $dataTypeContent->customer_name ?? '' }}" required="true">
                         </div>
                     </div>
                     <div class="panel">
@@ -153,11 +153,11 @@
                             <div class="form-group">
                                 <label for="status">Status</label>
                                 <select class="form-control" name="status">
-                                    <option value="UNCONFIRMED"@if(isset($dataTypeContent->status) && $dataTypeContent->status == 'UNCONFIRMED') selected="selected"@endif>Chưa Xác Nhận</option>
-                                    <option value="CONFIRMED"@if(isset($dataTypeContent->status) && $dataTypeContent->status == 'CONFIRMED') selected="selected"@endif>Đã Xác Nhận</option>
-                                    <option value="PROCESSING"@if(isset($dataTypeContent->status) && $dataTypeContent->status == 'PROCESSING') selected="selected"@endif>Đang Chế Biến</option>
-                                    <option value="DELIVERY"@if(isset($dataTypeContent->status) && $dataTypeContent->status == 'DELIVERY') selected="selected"@endif>Đang Giao</option>
-                                    <option value="COMPLETE"@if(isset($dataTypeContent->status) && $dataTypeContent->status == 'COMPLETE') selected="selected"@endif>Hoàn Thành Đơn</option>
+                                    <option value="Chưa Xác Nhận"@if(isset($dataTypeContent->status) && $dataTypeContent->status == 'UNCONFIRMED') selected="selected"@endif>Chưa Xác Nhận</option>
+                                    <option value="Đã Xác Nhận"@if(isset($dataTypeContent->status) && $dataTypeContent->status == 'CONFIRMED') selected="selected"@endif>Đã Xác Nhận</option>
+                                    <option value="Đang Chế Biến"@if(isset($dataTypeContent->status) && $dataTypeContent->status == 'PROCESSING') selected="selected"@endif>Đang Chế Biến</option>
+                                    <option value="Đang Giao"@if(isset($dataTypeContent->status) && $dataTypeContent->status == 'DELIVERY') selected="selected"@endif>Đang Giao</option>
+                                    <option value="Hoàn Thành Đơn"@if(isset($dataTypeContent->status) && $dataTypeContent->status == 'COMPLETE') selected="selected"@endif>Hoàn Thành Đơn</option>
                                 </select>
                             </div>
                         </div>

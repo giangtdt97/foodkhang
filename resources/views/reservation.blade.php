@@ -32,7 +32,7 @@
                                                      <div class="swin-btn-wrap center">
                                                          <i></i>
                                                          <i class="fa fa-phone">
-                                                         <input type="text" class="form-controller input search"  name="search" required="true"></i>
+                                                         <input type="text" class="form-controller input search"  name="search" pattern="^\d{10}$" required="true"></i>
                                                          {{ csrf_field() }}
                                                          <div class="form-group">
                                                              <div class="swin-btn-wrap center"><button type="submit" class="swin-btn center form-submit"><span>Kiểm Tra Đơn Hàng</span></button></div>
@@ -42,7 +42,7 @@
 
                                             @if(isset($data))
                                                 @if ($data-> isEmpty())
-                                                      <h2>Sorry, no results found for the Order.</h2>
+                                                      <h2>Không Tìm Thấy Đơn Hàng Bạn Cần</h2>
                                                   @else
                                                  <table class="table table-bordered table-hover">
                                                      <thead>

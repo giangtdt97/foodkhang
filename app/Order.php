@@ -20,7 +20,7 @@ class Order extends Model
     {
         return $this->belongsToMany(Service::class,'order_service');
     }
-    const COMPLETE= 'COMPLETE';
+    const COMPLETE= 'Hoàn Thành Đơn';
     public function scopePublished(Builder $query)
     {
         return $query->where('status', '!=', static::COMPLETE);

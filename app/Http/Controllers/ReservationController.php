@@ -12,10 +12,13 @@ class ReservationController extends Controller
 {
     public function index(Request $request)
     {
+
         $products=Product::all();
         $services=Service::all();
         $feature_service=Feature_Service::all();
         $search =  $request->input('search');
+
+
         if($search!=""){
             $orders = Order::published()->where(function ($query) use ($search){
                 $query->where('phone_number', '=', $search);
