@@ -152,7 +152,7 @@
 
 </div>
 <!-- jQuery-->
-<script defer src="{{asset('vendors/jquery-1.10.2.min.js')}}" ></script>
+<script src="{{asset('vendors/jquery-1.10.2.min.js')}}" ></script>
 <!-- Bootstrap JavaScript-->
 <script defer src="{{asset('vendors/bootstrap/js/bootstrap.min.js')}}"></script>
 <!-- Vendors-->
@@ -181,19 +181,19 @@
 <script  defer src="{{asset('js/elements.js')}}"></script>
 <script  defer src="{{asset('js/widget.js')}}"></script>
 
-<script defer>
-    $(document).ready(function(){
-        $('.user-support').click(function(event) {
-            $('.social-button-content').slideToggle();
-        });
-    });
-</script>
+{{--<script defer>--}}
+{{--    $(document).ready(function(){--}}
+{{--        $('.user-support').click(function(event) {--}}
+{{--            $('.social-button-content').slideToggle();--}}
+{{--        });--}}
+{{--    });--}}
+{{--</script>--}}
 <script type="text/javascript" >
     $(document).ready(function() {
         var $el, $ps, $up, totalHeight;
 
         $(".sidebar-box .button").click(function () {
-
+            console.log("test")
             totalHeight = 0
 
             $el = $(this);
@@ -227,6 +227,7 @@
 </script>
 <script type="text/javascript">
     $('img[data-enlargeable]').addClass('img-enlargeable').click(function(){
+
         var src = $(this).attr('src');
         var modal;
         function removeModal(){ modal.remove(); $('body').off('keyup.modal-close'); }
