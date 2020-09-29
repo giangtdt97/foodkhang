@@ -25,25 +25,23 @@
                                         <div class="col-md-8 col-md-offset-2">
                                             <p class="reservation-form-title text-center">Chúng tôi rất hân hạnh phục vụ quý khách, vui lòng  nhập số điện thoại để kiểm tra đơn hàng</p>
                                         </div>
-                                    </div>
-                                     <div class="swin-sc swin-sc-contact-form light mtl">
-                                      <form  action="">
-                                        <div class="form-group">
-                                            <div class="swin-btn-wrap center">
-                                                <div class="fa fa-phone"></div>
-                                            <input type="text" class="form-controller input search"  name="search" >
 
-                                                {{ csrf_field() }}
-                                                <div class="form-group">
-                                                    <div class="swin-btn-wrap center"><button type="submit" class="swin-btn center form-submit"><span>Kiểm Tra Đơn Hàng</span></button></div>
-                                                </div>
+                                        <div class="swin-sc swin-sc-contact-form light mtl">
+                                            <form  action="">
+                                                 <div class="form-group">
+                                                     <div class="swin-btn-wrap center">
+                                                         <i></i>
+                                                         <i class="fa fa-phone">
+                                                         <input type="text" class="form-controller input search"  name="search" required="true"></i>
+                                                         {{ csrf_field() }}
+                                                         <div class="form-group">
+                                                             <div class="swin-btn-wrap center"><button type="submit" class="swin-btn center form-submit"><span>Kiểm Tra Đơn Hàng</span></button></div>
+                                                         </div>
+                                                     </div>
+                                                 </div>
 
-                                            </div>
-                                        </div>
-                                      </form>
-
-                                              @if(isset($data))
-                                                  @if ($data-> isEmpty())
+                                            @if(isset($data))
+                                                @if ($data-> isEmpty())
                                                       <h2>Sorry, no results found for the Order.</h2>
                                                   @else
                                                  <table class="table table-bordered table-hover">
@@ -56,21 +54,23 @@
                                                      </tr>
                                                      </thead>
                                                      <tbody>
-                                              @foreach ($data as $order)
-                                                  <tr>
-                                                      <td>{{$order->customer_name}}</td>
-                                                      <td>{{$order->phone_number}}</td>
-                                                      <td>{{$order->status}}</td>
-                                                      @foreach($order->services as $service)
-                                                          <td>{{$service->name}}</td>
+                                                      @foreach ($data as $order)
+                                                          <tr>
+                                                              <td>{{$order->customer_name}}</td>
+                                                              <td>{{$order->phone_number}}</td>
+                                                              <td class="text-danger">{{$order->status}}</td>
+                                                            @foreach($order->services as $service)
+                                                                  <td>{{$service->name}}</td>
+                                                            @endforeach
+                                                          </tr>
                                                       @endforeach
-                                                  </tr>
-                                              @endforeach
-                                                  @endif
-                                              @endif
-                                              </tbody>
-                                          </table>
-                                     </div>
+                                                      @endif
+                                                      @endif
+                                                     </tbody>
+                                                 </table>
+                                            </form>
+                                        </div>
+                                    </div>
 
                                 </div>
                                 <div class="section-deco"><img src="{{asset('images/pages/reservation-showcase.png')}}" alt="fooday" class="img-deco"></div>
