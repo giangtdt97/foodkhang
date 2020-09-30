@@ -23,8 +23,9 @@ class ProductController extends Controller
     public function show($slug)
     {
         $product = Product::where('slug', $slug)->first();
+        $mightAlsoLike = Product::where('slug','!=',$slug)->mightAlsoLike()->get();
         return view(
-            'menu_detail',compact('product')
+            'menu_detail',compact('product','mightAlsoLike')
         );
     }
     public function showService($slug){
