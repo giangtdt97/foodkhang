@@ -63,14 +63,6 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="product-share"><span class="caption">Share</span>
-                                    <ul class="socials list-unstyled list-inline">
-                                        <li><a href="javascript:void(0)"><i class="fa fa-facebook"></i></a></li>
-                                        <li><a href="javascript:void(0)"><i class="fa fa-twitter"></i></a></li>
-                                        <li><a href="javascript:void(0)"><i class="fa fa-pinterest"></i></a></li>
-                                        <li><a href="javascript:void(0)"><i class="fa fa-google-plus"></i></a></li>
-                                    </ul>
-                                </div>
                             </div>
                         </div>
                     </div>
