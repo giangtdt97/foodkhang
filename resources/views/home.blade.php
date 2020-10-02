@@ -125,7 +125,7 @@
                                                 <div class="col-md-7 col-sm-12">
                                                     <div class="products">
 
-                                                            @foreach($category->products as  $product)
+                                                            @foreach($category->productsFeature as  $product)
                                                         <div class="item product-01">
                                                             <div class="item-left">
                                                                 <h5 class="title">{{$product->product_name}}</h5>
