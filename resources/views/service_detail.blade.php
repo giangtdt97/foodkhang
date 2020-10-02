@@ -87,7 +87,7 @@
                         <div class="row">
                             <div class="col-lg-6 col-md-4"></div>
                             <div class="col-lg-6 col-md-8">
-                                <div class="swin-sc swin-sc-title text-left light">
+                                <div class="swin-sc swin-sc-title  light">
 
                                     <p class="top-title"><span> {{$service->name}}</span></p>
 
