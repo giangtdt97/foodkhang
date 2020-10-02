@@ -29,7 +29,7 @@
     <link rel="stylesheet" type="text/css" href="{{asset('css/extra.css')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('css/widget.css')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('css/phonecall.css')}}?v=16">
-    <link id="colorpattern" rel="stylesheet" type="text/css" href="{{asset('css/color/colordefault.css')}}">
+    <link id="colorpattern" rel="stylesheet" type="text/css" href="{{asset('css/color/colordefault.css?v=19')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('css/responsive.css')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('css/live-settings.css')}}">
     <!-- Google Font-->

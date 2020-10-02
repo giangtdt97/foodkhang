@@ -16,7 +16,7 @@
                 <div class="swin-sc swin-sc-product products-01 style-03 woocommerce">
                     <div class="row">
                         <div class="col-md-12">
-                            <div data-slide-toshow="4" class="cat-wrapper-02 cat-images main-slider">
+                            <div data-slide-toshow="3" class="cat-wrapper-02 cat-images main-slider">
                                 @foreach($ultilities as $ultility)
                                     <div class="item">
                                         <div class="item product-01">
