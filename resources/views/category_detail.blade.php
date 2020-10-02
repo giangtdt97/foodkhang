@@ -11,7 +11,7 @@
                 </div>
             </div>
         </div>
-    <section class="product-sesction-03-1 padding-top-100 padding-bottom-100"><img src="{{Voyager::image($category->getThumbnail($category->image,'medium'))}}" alt="" class="img-responsive img-decorate">
+    <section class="product-sesction-03-1 padding-top-100 padding-bottom-100"><img src="{{Voyager::image($category->getThumbnail($category->image,'medium'))}}" height="500" width="500"  alt="" class=" img-decorate">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-md-4"></div>
