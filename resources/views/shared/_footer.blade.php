@@ -113,7 +113,7 @@
             <div class="hotline-phone-ring-circle-fill"></div>
             <div class="hotline-phone-ring-img-circle">
                 <a href="tel:{{setting('site.site_phone')}}" class="pps-btn-img">
-                    <img src="https://nguyenhung.net/wp-content/uploads/2019/05/icon-call-nh.png" alt="Gọi điện thoại" width="50">
+                    <img src="https://nguyenhung.net/wp-content/uploads/2019/05/icon-call-nh.png" alt="" width="50">
                 </a>
             </div>
         </div>
@@ -173,25 +173,25 @@
 <!-- Bootstrap JavaScript-->
 <script src="{{asset('vendors/bootstrap/js/bootstrap.min.js')}}"></script>
 <!-- Vendors-->
-<script async  src="{{asset('vendors/flexslider/jquery.flexslider-min.js')}}"></script>
-<script async  src="{{asset('vendors/swipebox/js/jquery.swipebox.min.js')}}"></script>
-<script async src="{{asset('vendors/slick/slick.min.js')}}"></script>
-<script async src="{{asset('vendors/isotope/isotope.pkgd.min.js')}}"></script>
-<script async src="{{asset('vendors/jquery-countTo/jquery.countTo.min.js')}}"></script>
-<script async src="{{asset('vendors/jquery-appear/jquery.appear.min.js')}}"></script>
-<script async  src="{{asset('vendors/parallax/parallax.min.js')}}"></script>
-<script async src="{{asset('vendors/gmaps/gmaps.min.js')}}"></script>
-<script async  src="{{asset('vendors/audiojs/audio.min.js')}}"></script>
-<script async  src="{{asset('vendors/vide/jquery.vide.min.js')}}"></script>
-<script async src="{{asset('vendors/pageloading/js/svgLoader.min.js')}}"></script>
-<script async  src="{{asset('vendors/pageloading/js/classie.min.js')}}"></script>
-<script async  src="{{asset('vendors/pageloading/sidebartransition/js/sidebarEffects.min.js')}}"></script>
-<script async src="{{asset('vendors/nicescroll/jquery.nicescroll.min.js')}}"></script>
-<script async  src="{{asset('vendors/wowjs/wow.min.js')}}"></script>
-<script async  src="{{asset('vendors/skrollr.min.js')}}"></script>
-<script async  src="{{asset('vendors/bootstrap-datepicker/js/bootstrap-datepicker.min.js')}}"></script>
-<script async  src="{{asset('vendors/jquery-cookie/js.cookie.js')}}"></script>
-<script async  src="{{asset('vendors/ajax/libs/jquery-easing/1.3/jquery.easing.min.js')}}" integrity="sha384-mE6eXfrb8jxl0rzJDBRanYqgBxtJ6Unn4/1F7q4xRRyIw7Vdg9jP4ycT7x1iVsgb" crossorigin="anonymous"></script>
+<script  src="{{asset('vendors/flexslider/jquery.flexslider-min.js')}}"></script>
+<script  src="{{asset('vendors/swipebox/js/jquery.swipebox.min.js')}}"></script>
+<script  src="{{asset('vendors/slick/slick.min.js')}}"></script>
+<script  src="{{asset('vendors/isotope/isotope.pkgd.min.js')}}"></script>
+<script  src="{{asset('vendors/jquery-countTo/jquery.countTo.min.js')}}"></script>
+<script  src="{{asset('vendors/jquery-appear/jquery.appear.min.js')}}"></script>
+<script  src="{{asset('vendors/parallax/parallax.min.js')}}"></script>
+<script  src="{{asset('vendors/gmaps/gmaps.min.js')}}"></script>
+<script  src="{{asset('vendors/audiojs/audio.min.js')}}"></script>
+<script  src="{{asset('vendors/vide/jquery.vide.min.js')}}"></script>
+<script  src="{{asset('vendors/pageloading/js/svgLoader.min.js')}}"></script>
+<script  src="{{asset('vendors/pageloading/js/classie.min.js')}}"></script>
+<script  src="{{asset('vendors/pageloading/sidebartransition/js/sidebarEffects.min.js')}}"></script>
+<script  src="{{asset('vendors/nicescroll/jquery.nicescroll.min.js')}}"></script>
+<script  src="{{asset('vendors/wowjs/wow.min.js')}}"></script>
+<script  src="{{asset('vendors/skrollr.min.js')}}"></script>
+<script  src="{{asset('vendors/bootstrap-datepicker/js/bootstrap-datepicker.min.js')}}"></script>
+<script  src="{{asset('vendors/jquery-cookie/js.cookie.js')}}"></script>
+<script  src="{{asset('vendors/ajax/libs/jquery-easing/1.3/jquery.easing.min.js')}}" integrity="sha384-mE6eXfrb8jxl0rzJDBRanYqgBxtJ6Unn4/1F7q4xRRyIw7Vdg9jP4ycT7x1iVsgb" crossorigin="anonymous"></script>
 
 <!-- Own script-->
 <script src="{{asset('js/layout.js')}}"></script>
