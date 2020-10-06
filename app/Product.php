@@ -28,7 +28,7 @@ class Product extends Model
     }
     public function scopeMightAlsoLike($query)
     {
-        return $query->inRandomOrder()->take(3);
+        return $query->inRandomOrder()->take(5);
     }
     public function toSearchableArray()
     {

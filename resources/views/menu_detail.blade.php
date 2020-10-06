@@ -83,6 +83,27 @@
                         </div>
                     </div>
                 </section>
+                <section class="product-related padding-bottom-100">
+                    <div class="swin-sc swin-sc-title style-2">
+                        <p class="title"><span>Bạn Có Thể Thích</span></p>
+                    </div>
+                    <div class="swin-sc swin-sc-product products-02 carousel-01 woocommerce">
+
+                        <div class="products nav-slider">
+                            @foreach($mightAlsoLike as $product)
+                            <div class="blog-item item swin-transition">
+                                <div class="block-img"><a href="javascript:void(0)"><img src="{{Voyager::image( $product->image )}}" alt="" height="350px" width="350px"></a>
+                                    <div class="block-circle price-wrapper"><span class="price woocommerce-Price-amount amount">{{$product->presentPrice()}}<span class="price-symbol">VNĐ</span></span></div>
+                                </div>
+                                <div class="block-content">
+                                    <h5 class="title"><a href="{{route('product.show',$product->slug)}}">{{$product->product_name}}</a></h5>
+                                </div>
+                            </div>
+                            @endforeach
+                        </div>
+
+                    </div>
+                </section>
             </div>
         </div>
     </div>
