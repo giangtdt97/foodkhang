@@ -68,7 +68,7 @@
                     <div class="swin-sc swin-sc-product products-01 style-03 woocommerce">
                        <div class="row">
                             <div class="col-md-12">
-                                <div data-slide-toshow="3" class="cat-wrapper-02 cat-images main-slider">
+                                <div data-slide-toshow="2" class="cat-wrapper-02 cat-images main-slider">
                                     @foreach($categories as $category)
                                     <div class="item">
                                         <div class="cat-image"><a href="javascript:void(0)"><img src="timthumb.php?src={{Voyager::image( $category->image )}}&w=200&h=150" alt="" >{{$category->name}}</a></div>

@@ -36,15 +36,14 @@
     <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700,700i&display=swap" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Kalam&display=swap' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Cookie&display=swap' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Hobo&display=swap' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Dancing+Script&display=swap' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Grenze&display=swap'  rel='stylesheet'>
+    <link href='https://use.typekit.net/odj2frh.css' rel="stylesheet">
     <!-- Script Loading Page-->
     <script src="{{asset('vendors/html5shiv.js')}}"></script>
     <script src="{{asset('vendors/respond.min.js')}}"></script>
     <script src="{{asset('vendors/pageloading/js/snap.svg-min.js')}}"></script>
     <script src="{{asset('vendors/pageloading/sidebartransition/js/modernizr.custom.js')}}"></script>
-
 </head>
 <body>
 @include('shared._header')
