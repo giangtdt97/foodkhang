@@ -51,7 +51,7 @@
                 </div>
             </div>
         </section>
-        <section class="menu-banner-section banner-section padding-top-100 padding-bottom-100"><img src="{{asset('images/background/lemon.png')}}" alt="" class="img-left img-bg img-deco img-responsive"><img src="{{asset('images/background/vegetable_03.png')}}" alt="" class="img-right img-bg img-deco img-responsive">
+        <section class="menu-banner-section banner-section padding-top-100 padding-bottom-100"><img src="timthumb.php?src={{asset('images/logoXoiKhang.png')}}&w=200&h=160" alt="" class="img-left img-bg img-deco img-responsive">
             <div class="container">
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2">
