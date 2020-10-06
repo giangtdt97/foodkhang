@@ -101,9 +101,9 @@
 {{--    <style>--}}
 {{--        #totop{box-shadow:0 0 10px 0 rgba(0,0,0,0.2);position:fixed;bottom:60px;left:1.5%;display:none;z-index:9999;background:#96b125;border:3px solid #fff;border-radius:50%;height:47px;width:47px;text-align:center;transition:all .2s linear}--}}
 {{--    </style>--}}
-{{--    <div>--}}
-{{--        <a id="totop" href="tel:{{setting('site.site_phone')}}" class="animated"><i class="fa fa-phone"></i></a>--}}
-{{--    </div>--}}
+    <div>
+        <a id="totop" href="javascript:void(0)" class="animated"><i class="fa fa-angle-double-up"></i></a>
+    </div>
     <style>
         .hotline-phone-ring {position: relative;visibility: visible;background-color: transparent;width: 110px;height: 110px;cursor: pointer;z-index: 11;-webkit-backface-visibility: hidden;-webkit-transform: translateZ(0);transition: visibility .5s;right: 0;bottom: 140px;display: block;}.hotline-phone-ring-circle {right: 10px}.hotline-phone-ring-circle-fill {right: 25px}.hotline-phone-ring-img-circle {right: 37px}
     </style>
