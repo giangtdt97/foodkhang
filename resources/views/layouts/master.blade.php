@@ -29,11 +29,14 @@
     <link rel="stylesheet" type="text/css" href="{{asset('css/extra.css')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('css/widget.css')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('css/phonecall.css')}}?v=16">
-    <link id="colorpattern" rel="stylesheet" type="text/css" href="{{asset('css/color/colordefault.css?v=19')}}">
+    <link id="colorpattern" rel="stylesheet" type="text/css" href="{{asset('css/color/colordefault.css?v=20')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('css/responsive.css')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('css/live-settings.css')}}">
     <!-- Google Font-->
     <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700,700i&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Kalam&display=swap' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Cookie&display=swap' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Hobo&display=swap' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Dancing+Script&display=swap' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Grenze&display=swap'  rel='stylesheet'>
     <!-- Script Loading Page-->

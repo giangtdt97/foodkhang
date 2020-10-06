@@ -10,9 +10,9 @@
                         <div class="slide-content slide-layout-02">
                             <div class="container">
                                 <div class="slide-content-inner"><img src="timthumb.php?src={{asset('images/logoXoiKhang.png')}}&w=200&h=160" data-ani-in="fadeInUp" data-ani-out="fadeOutDown" data-ani-delay="500" alt="fooday" class="slide-icon img img-responsive animated">
-                                    <h3 data-ani-in="fadeInUp" data-ani-out="fadeOutDown" data-ani-delay="1000" class="slide-title animated">XÔI KHANG</h3>
-                                    <p data-ani-in="fadeInUp" data-ani-out="fadeOutDown" data-ani-delay="1500" class="slide-sub-title animated"><span class="text"><span>NGON TRUYỀN THỐNG - GIỮ TINH HOA</span></span></p>
+                                    <h3 data-ani-in="fadeInUp" data-ani-out="fadeOutDown" data-ani-delay="1000" class="slide-title animated"><span style="font-family:'Kalam'; font-size:120px;font-style: italic">X</span><span style="font-family:'Cookie';font-style: italic;font-weight: normal;font-size: 70px">ôi</span> <span style="font-family:'Hobo Std'; font-size:70px">KHANG</span></h3>
                                     <p data-ani-in="fadeInUp" data-ani-out="fadeOutDown" data-ani-delay="1500" class="slide-sub-title animated"><span class="text"><span><span class="text-large">  </span></span></span></p>
+                                    <p data-ani-in="fadeInUp" data-ani-out="fadeOutDown" data-ani-delay="1500" class="slide-sub-title animated"><span class="text"><span>NGON TRUYỀN THỐNG - GIỮ TINH HOA</span></span></p>
                                 </div>
                             </div>
                         </div>
@@ -105,7 +105,7 @@
                                             @foreach($categories as $category)
                                             <div class="item">
                                                 <div class="cat-icons"><i class="icons swin-icon-pasta"></i>
-                                                    <a href="{{route('menu')}}"><h5 class="cat-title">{{$category->name}}</h5></a>
+                                                    <a href="{{route('category.show',$category->slug)}}"><h5 class="cat-title">{{$category->name}}</h5></a>
                                                 </div>
                                             </div>
                                             @endforeach
