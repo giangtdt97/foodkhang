@@ -23,7 +23,7 @@
                                 <div class="reservation-form">
                                     <div class="row">
                                         <div class="col-md-8 col-md-offset-2">
-                                            <p class="reservation-form-title text-center">Chúng tôi rất hân hạnh phục vụ quý khách, vui lòng  nhập số điện thoại để kiểm tra đơn hàng</p>
+                                            <p class="reservation-form-title text-center">Vui lòng  nhập số điện thoại để kiểm tra đơn hàng(Chú ý : số điện thoại phải bắt đầu từ chữ số 0.VD:0xxxxxxxxx)</p>
                                         </div>
 
                                         <div class="swin-sc swin-sc-contact-form light mtl">
@@ -42,7 +42,7 @@
 
                                             @if(isset($data))
                                                 @if ($data-> isEmpty())
-                                                      <h2>Không Tìm Thấy Đơn Hàng Bạn Cần</h2>
+                                                      <h2>Anh/Chị vui lòng kiểm tra lại số điện thoại vừa nhập đã chính xác chưa,hoặc đơn hàng đang trong quá trình xử lý</h2>
                                                   @else
                                                  <table class="table table-bordered table-hover">
                                                      <thead>
