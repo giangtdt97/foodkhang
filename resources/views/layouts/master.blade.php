@@ -49,9 +49,6 @@
             font-family: SVN-Balladeer Light;
             src: url('{{public_path('../fonts/SVN-Balladeer Light.tff')}}') format('tff');
         }
-        span{
-            font-family: 'SVN-Balladeer Light';
-        }
     </style>
 </head>
 <body>
