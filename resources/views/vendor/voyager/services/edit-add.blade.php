@@ -119,7 +119,7 @@
 
                     <div class="panel panel panel-bordered panel-warning">
                         <div class="panel-heading">
-                            <h3 class="panel-title">{{ __('voyager::post.additional_fields') }}</h3>
+                            <h3 class="panel-title">Custom Field</h3>
                             <div class="panel-actions">
                                 <a class="panel-action voyager-angle-down" data-toggle="panel-collapse" aria-hidden="true"></a>
                             </div>
