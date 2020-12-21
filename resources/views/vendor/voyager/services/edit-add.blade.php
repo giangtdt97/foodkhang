@@ -100,22 +100,22 @@
                             <input type="text" class="form-control" id="name" name="name" placeholder="Service Name" value="{{ $dataTypeContent->name ?? '' }}" required="true">
                         </div>
                     </div>
-                    <div class="panel">
-                        <div class="panel-heading">
-                            <h3 class="panel-title">Full Description</h3>
-                            <div class="panel-actions">
-                                <a class="panel-action voyager-resize-full" data-toggle="panel-fullscreen" aria-hidden="true" required="true"></a>
-                            </div>
-                        </div>
+{{--                    <div class="panel">--}}
+{{--                        <div class="panel-heading">--}}
+{{--                            <h3 class="panel-title">Full Description</h3>--}}
+{{--                            <div class="panel-actions">--}}
+{{--                                <a class="panel-action voyager-resize-full" data-toggle="panel-fullscreen" aria-hidden="true" required="true"></a>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
 
-                        <div class="panel-body">
-                            @php
-                                $dataTypeRows = $dataType->{($edit ? 'editRows' : 'addRows' )};
-                                $row = $dataTypeRows->where('field', 'description')->first();
-                            @endphp
-                            {!! app('voyager')->formField($row, $dataType, $dataTypeContent) !!}
-                        </div>
-                    </div>
+{{--                        <div class="panel-body">--}}
+{{--                            @php--}}
+{{--                                $dataTypeRows = $dataType->{($edit ? 'editRows' : 'addRows' )};--}}
+{{--                                $row = $dataTypeRows->where('field', 'description')->first();--}}
+{{--                            @endphp--}}
+{{--                            {!! app('voyager')->formField($row, $dataType, $dataTypeContent) !!}--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
 
                     <div class="panel panel panel-bordered panel-warning">
                         <div class="panel-heading">
@@ -127,7 +127,7 @@
                         <div class="panel-body">
                             @php
                                 $dataTypeRows = $dataType->{($edit ? 'editRows' : 'addRows' )};
-                                $exclude = ['name', 'short_description', 'slug','description', 'featured', 'image',];
+                                $exclude = ['name', 'short_description', 'slug','featured', 'image',];
                             @endphp
 
                             @foreach($dataTypeRows as $row)
