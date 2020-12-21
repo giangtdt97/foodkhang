@@ -49,6 +49,11 @@
             font-family: SVN-Balladeer Light;
             src: url('{{public_path('../fonts/SVN-Balladeer Light.tff')}}') format('tff');
         }
+        .font-change{
+            font-family: 'SVN-Balladeer Light';
+            font-style: italic;
+
+        }
     </style>
 </head>
 <body>

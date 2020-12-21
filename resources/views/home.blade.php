@@ -11,7 +11,7 @@
                             <div class="container">
                                 <div class="slide-content-inner"><img src="timthumb.php?src={{asset('images/logoXoiKhang.png')}}&w=200&h=160" data-ani-in="fadeInUp" data-ani-out="fadeOutDown" data-ani-delay="500" alt="fooday" class="slide-icon img img-responsive animated">
                                     <h3 data-ani-in="fadeInUp" data-ani-out="fadeOutDown" data-ani-delay="1000" class="slide-title animated"><span><span style="font-family:'Kalam'; font-size:70px;font-style: italic">X</span><span style="font-family:'Cookie';font-style: italic;font-weight: normal;font-size: 50px">ôi</span><span></span><span style="font-family:'hobo-std'; font-size:55px"> KHANG</span></span></h3>
-                                    <p data-ani-in="fadeInUp" data-ani-out="fadeOutDown" data-ani-delay="1500" class="slide-sub-title animated"><span>Ngon Truyền Thống - <span>Giữ Tinh Hoa</span></span></p>
+                                    <p data-ani-in="fadeInUp" data-ani-out="fadeOutDown" data-ani-delay="1500" class="slide-sub-title animated"><span class="font-change">Ngon Truyền Thống - <span>Giữ Tinh Hoa</span></span></p>
 
                                 </div>
                             </div>
