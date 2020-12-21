@@ -55,34 +55,18 @@
                                         <div class="res-date">
                                             <div class="res-date-item">
                                                 <div class="res-date-text">
-                                                    <p>Thứ 2 đến Thứ 7 :</p>
+                                                    <p>Thứ 2 đến Chủ Nhật :</p>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="res-time">
                                             <div class="res-time-item">
-                                                <p>6AM - 11:30AM</p>
-                                                <p>3PM - 9PM</p>
+                                                <p>{{setting('site.open_time')}}</p>
                                             </div>
                                         </div>
                                         <div class="clearfix"></div>
                                     </div>
                                     <div class="res-date-dot">.......................................</div>
-                                    <div class="res-date-time-item">
-                                        <div class="res-date">
-                                            <div class="res-date-item">
-                                                <div class="res-date-text">
-                                                    <p>Chủ Nhật:</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="res-time">
-                                            <div class="res-time-item">
-                                                <p>6AM - 11:30AM</p>
-                                            </div>
-                                        </div>
-                                        <div class="clearfix"></div>
-                                    </div>
                                 </div>
                                 <h3 class="res-title">Liên Hệ Đặt Hàng</h3>
                                 <p class="res-number">{{setting('site.site_phone')}}</p>

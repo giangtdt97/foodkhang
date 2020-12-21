@@ -44,6 +44,15 @@
     <script src="{{asset('vendors/respond.min.js')}}"></script>
     <script src="{{asset('vendors/pageloading/js/snap.svg-min.js')}}"></script>
     <script src="{{asset('vendors/pageloading/sidebartransition/js/modernizr.custom.js')}}"></script>
+    <style type="text/css">
+        @font-face {
+            font-family: SVN-Balladeer Light;
+            src: url('{{public_path('../fonts/SVN-Balladeer Light.tff')}}') format('tff');
+        }
+        span{
+            font-family: 'SVN-Balladeer Light';
+        }
+    </style>
 </head>
 <body>
 @include('shared._header')

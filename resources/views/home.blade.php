@@ -11,7 +11,8 @@
                             <div class="container">
                                 <div class="slide-content-inner"><img src="timthumb.php?src={{asset('images/logoXoiKhang.png')}}&w=200&h=160" data-ani-in="fadeInUp" data-ani-out="fadeOutDown" data-ani-delay="500" alt="fooday" class="slide-icon img img-responsive animated">
                                     <h3 data-ani-in="fadeInUp" data-ani-out="fadeOutDown" data-ani-delay="1000" class="slide-title animated"><span><span style="font-family:'Kalam'; font-size:70px;font-style: italic">X</span><span style="font-family:'Cookie';font-style: italic;font-weight: normal;font-size: 50px">ôi</span><span></span><span style="font-family:'hobo-std'; font-size:55px"> KHANG</span></span></h3>
-                                    <p data-ani-in="fadeInUp" data-ani-out="fadeOutDown" data-ani-delay="1500" class="slide-sub-title animated"><span class="text">NGON TRUYỀN THỐNG - <span>GIỮ TINH HOA</span></span></p>
+                                    <p data-ani-in="fadeInUp" data-ani-out="fadeOutDown" data-ani-delay="1500" class="slide-sub-title animated"><span>Ngon Truyền Thống - <span>Giữ Tinh Hoa</span></span></p>
+
                                 </div>
                             </div>
                         </div>
@@ -76,7 +77,7 @@
                         <div class="swin-sc swin-sc-iconbox">
                             <div class="row">
                                 @foreach($feature_service as $feature_service)
-                                <div class="col-md-3 col-sm-6 col-xs-12">
+                                <div class="col-md-4 col-sm-6 col-xs-12">
                                     <div class="item icon-box-02 wow fadeInUpShort">
                                         <div class="wrapper-icon"><a href="{{route('menu')}}"><i class="{{$feature_service->icon}}"></i></a></div>
                                         <a href="{{route('menu')}}"> <h4 class="title">{{$feature_service->name}}</h4></a>

@@ -97,7 +97,9 @@
                             </div>
                         </div>
                         <div class="panel-body">
-                            <input type="text" class="form-control" id="title" name="title" placeholder="{{ __('voyager::generic.title') }}" value="{{ $dataTypeContent->title ?? '' }}" required="true">
+                            <input type="text" class="form-control" id="title" name="title"
+                                   placeholder="{{ __('voyager::generic.title') }}"
+                                   value="{{ $dataTypeContent->title ?? '' }}" required="true">
                         </div>
                     </div>
                     <div class="panel">
