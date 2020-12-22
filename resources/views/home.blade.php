@@ -101,7 +101,7 @@
                                 <div class="swin-sc swin-sc-product products-01 style-02 woocommerce">
                                     <div class="row">
                                         <div class="col-md-2"></div>
-                                        <div data-slide-toshow="3" class="cat-wrapper-02 main-slider col-md-8">
+                                        <div data-slide-toshow="4" class="cat-wrapper-02 main-slider col-md-8">
                                             @foreach($categories as $category)
                                             <div class="item">
                                                 <div class="cat-icons"><i class="icons swin-icon-pasta"></i>
