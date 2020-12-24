@@ -118,7 +118,7 @@
                                             <div class="tab-content">
                                                 <div class="col-md-5 col-sm-12">
                                                     <div class="cat-wrapper">
-                                                        <div class="item"><img data-enlargeable style="cursor: zoom-in" src="timthumb.php?src={{Voyager::image( $category->image)}}&w=200&h=150" alt="" class="img img-responsive"></div>
+                                                        <div class="item"><img data-enlargeable style="cursor: zoom-in" src="timthumb.php?src={{Voyager::image( $category->image)}}&w=200&h=150&q=100" alt="" class="img img-responsive"></div>
                                                     </div>
                                                 </div>
 
