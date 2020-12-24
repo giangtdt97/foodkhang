@@ -304,7 +304,7 @@
                                                 <p></p>
                                             </div>
                                         </div>
-                                        <div class="blog-featured-img"><img src="timthumb.php?src={{Voyager::image( $blog->image)}}&w=200&h=200" alt="fooday"></div>
+                                        <div class="blog-featured-img"><img src="timthumb.php?src={{Voyager::image( $blog->image)}}&w=200&h=200&q=100" alt="fooday"></div>
                                         <div class="blog-content">
                                             <div class="blog-date"><span class="day">{{$blog->created_at->format('d')}}</span><span class="month">{{$blog->created_at->format('F')}}</span><span class="year">{{$blog->created_at->format('y')}}</span></div>
                                             <h3 class="blog-title"><a href="{{route('blog.detail',$blog->slug)}}" class="swin-transition">{{$blog->title}}</a></h3>
