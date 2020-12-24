@@ -118,7 +118,7 @@
                                             <div class="tab-content">
                                                 <div class="col-md-5 col-sm-12">
                                                     <div class="cat-wrapper">
-                                                        <div class="item"><img data-enlargeable style="cursor: zoom-in" src="timthumb.php?src={{Voyager::image( $category->image)}}&w=200&h=150&q=100" alt="" class="img img-responsive"></div>
+                                                        <div class="item"><img data-enlargeable style="cursor: zoom-in" src="timthumb.php?src={{Voyager::image( $category->image)}}&w=200&h=200&q=100" alt="" class="img img-responsive"></div>
                                                     </div>
                                                 </div>
 
@@ -304,7 +304,7 @@
                                                 <p></p>
                                             </div>
                                         </div>
-                                        <div class="blog-featured-img"><img src="{{Voyager::image( $blog->image,'medium' )}}" alt="fooday" class="img img-responsive"></div>
+                                        <div class="blog-featured-img"><img src="timthumb.php?src={{Voyager::image( $blog->image)}}&w=200&h=200" alt="fooday"></div>
                                         <div class="blog-content">
                                             <div class="blog-date"><span class="day">{{$blog->created_at->format('d')}}</span><span class="month">{{$blog->created_at->format('F')}}</span><span class="year">{{$blog->created_at->format('y')}}</span></div>
                                             <h3 class="blog-title"><a href="{{route('blog.detail',$blog->slug)}}" class="swin-transition">{{$blog->title}}</a></h3>
