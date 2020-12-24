@@ -304,7 +304,7 @@
                                                 <p></p>
                                             </div>
                                         </div>
-                                        <div class="blog-featured-img"><img src="{{Voyager::image( $blog->image )}}" alt="fooday" class="img img-responsive"></div>
+                                        <div class="blog-featured-img"><img src="{{Voyager::image( $blog->image,'medium' )}}" alt="fooday" class="img img-responsive"></div>
                                         <div class="blog-content">
                                             <div class="blog-date"><span class="day">{{$blog->created_at->format('d')}}</span><span class="month">{{$blog->created_at->format('F')}}</span><span class="year">{{$blog->created_at->format('y')}}</span></div>
                                             <h3 class="blog-title"><a href="{{route('blog.detail',$blog->slug)}}" class="swin-transition">{{$blog->title}}</a></h3>
