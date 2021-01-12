@@ -131,7 +131,9 @@
                                                                 <h5 class="title">{{$product->product_name}}</h5>
                                                                 <div class="des">{{$product->short_description}}</div>
                                                             </div>
-                                                            <div class="item-right"><span class="price woocommerce-Price-amount amount">{{$product->presentPrice()}}</span>VNĐ</div>
+                                                            <div class="item-right">
+                                                                <span class="price woocommerce-Price-amount amount">{{$product->presentPrice()}}<span class="price-symbol">VNĐ</span></span>
+                                                            </div>
                                                         </div>
                                                             @endforeach
                                                     </div>

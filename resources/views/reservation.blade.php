@@ -86,7 +86,7 @@
                                 <div class="swin-sc swin-sc-iconbox light">
                                     <div class="row">
                                         @foreach($feature_service as $feature_service)
-                                            <div class="col-md-3 col-sm-6 col-xs-12">
+                                            <div class="col-md-4 col-sm-6 col-xs-12">
                                                 <div class="item icon-box-02 wow fadeInUpShort">
                                                     <div class="wrapper-icon"><i class="{{$feature_service->icon}}"></i></div>
                                                     <h4 class="title">{{$feature_service->name}}</h4>
