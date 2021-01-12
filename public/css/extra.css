@@ -323,3 +323,7 @@ body[nav-color="light"] #fp-nav ul li .fp-tooltip {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.1); }
+
+.font-change {
+    font-family: 'SVN-Balladeer Light', sans-serif;
+}

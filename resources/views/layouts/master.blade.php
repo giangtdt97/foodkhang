@@ -26,7 +26,7 @@
     <!-- Style-->
     <link rel="stylesheet" type="text/css" href="{{asset('css/layout.css')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('css/elements.css')}}">
-    <link rel="stylesheet" type="text/css" href="{{asset('css/extra.css?v=20')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('css/extra.css?v=21')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('css/widget.css')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('css/phonecall.css')}}?v=16">
     <link id="colorpattern" rel="stylesheet" type="text/css" href="{{asset('css/color/colordefault.css?v=23')}}">
@@ -48,9 +48,6 @@
         @font-face {
             font-family: SVN-Balladeer Light;
             src: url('{{public_path('../fonts/SVN-Balladeer Light.tff')}}') format('tff');
-        }
-        .font-change {
-            font-family: 'SVN-Balladeer Light';
         }
     </style>
 </head>
