@@ -326,10 +326,6 @@ body[nav-color="light"] #fp-nav ul li .fp-tooltip {
 
 .font-change {
     font-family: 'SVN-Balladeer Light', sans-serif;
+    font-size: 42px;
 }
-@media screen and (max-width: 375px){
-    span.font-change {
-        font-family: 'SVN-Balladeer Light', sans-serif;
-        font-size: 30px;
-    }
-}
+
