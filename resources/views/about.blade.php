@@ -1,6 +1,24 @@
 @extends('layouts.master')
 @section('title', 'About')
 @section('content')
+    <style type="text/css">
+        .sidebar-box {
+            max-height: 120px;
+            position: relative;
+            overflow: hidden;
+        }
+        .sidebar-box .read-more {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            margin: 0; padding: 30px 0;
+
+            /* "transparent" only works here because == rgba(0,0,0,0) */
+            background-image: linear-gradient(to bottom, transparent, black);
+        }
+    </style>
     <div id="pagewrap" class="pagewrap">
         <div id="html-content" class="wrapper-content">
             <div class="page-container">
@@ -115,24 +133,7 @@
             </div>
         </div>
     </div>
-    <style type="text/css">
-        .sidebar-box {
-            max-height: 120px;
-            position: relative;
-            overflow: hidden;
-        }
-        .sidebar-box .read-more {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            text-align: center;
-            margin: 0; padding: 30px 0;
 
-            /* "transparent" only works here because == rgba(0,0,0,0) */
-            background-image: linear-gradient(to bottom, transparent, black);
-        }
-    </style>
 @endsection
 
 
