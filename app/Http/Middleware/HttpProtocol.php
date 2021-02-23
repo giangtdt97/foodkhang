@@ -9,7 +9,7 @@ class HttpProtocol {
 
     public function handle($request, Closure $next)
     {
-        if (!$request->secure() && App::environment() === 'production') {
+        if (!$request->secure() && App::environment() === 'staging') {
             return redirect()->secure($request->getRequestUri());
         }
 
