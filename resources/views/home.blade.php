@@ -50,15 +50,15 @@
                                         <div class="col-md-12">
                                             <div data-height="200" class="products nav-slider">
                                                 @foreach($products as $product)
-                                                <div class="item product-01">
-                                                    <div class="item-left"><a href="{{route('product.show',$product->slug)}}"><img src="{{Voyager::image( $product->image )}}" alt="" class="img img-responsive"></a>
-                                                        <div class="content-wrapper"><a class="title">{{$product->product_name}}</a>
-                                                            <div class="dot">.....................................................................</div>
-                                                            <div class="des">{{$product->short_description}}</div>
+                                                    <div class="item product-01">
+                                                        <div class="item-left"><a href="{{route('product.show',$product->slug)}}"><img src="{{Voyager::image( $product->image )}}" alt="" class="img img-responsive"></a>
+                                                            <div class="content-wrapper"><a class="title">{{$product->product_name}}</a>
+                                                                <div class="dot">.....................................................................</div>
+                                                                <div class="des">{{$product->short_description}}</div>
+                                                            </div>
                                                         </div>
+                                                        <div class="item-right"><span class="price woocommerce-Price-amount amount">{{$product->presentPrice()}}<span class="price-symbol">VNĐ</span></span></div>
                                                     </div>
-                                                    <div class="item-right"><span class="price woocommerce-Price-amount amount">{{$product->presentPrice()}}<span class="price-symbol">VNĐ</span></span></div>
-                                                </div>
                                                 @endforeach
                                             </div>
                                         </div>
@@ -77,19 +77,20 @@
                         <div class="swin-sc swin-sc-iconbox">
                             <div class="row">
                                 @foreach($feature_service as $feature_service)
-                                <div class="col-md-4 col-sm-6 col-xs-12">
-                                    <div class="item icon-box-02 wow fadeInUpShort">
-                                        <div class="wrapper-icon"><a href="{{route('menu')}}"><i class="{{$feature_service->icon}}"></i></a></div>
-                                        <a href="{{route('menu')}}"> <h4 class="title">{{$feature_service->name}}</h4></a>
-                                        <div class="description">{{$feature_service->description}}</div>
+                                    <div class="col-md-4 col-sm-6 col-xs-12">
+                                        <div class="item icon-box-02 wow fadeInUpShort">
+                                            <div class="wrapper-icon"><a href="{{route('menu')}}"><i class="{{$feature_service->icon}}"></i></a></div>
+                                            <a href="{{route('menu')}}"> <h4 class="title">{{$feature_service->name}}</h4></a>
+                                            <div class="description">{{$feature_service->description}}</div>
+                                        </div>
                                     </div>
-                                </div>
                                 @endforeach
                             </div>
                         </div>
                     </div>
                 </section>
-                    </div>
+            </div>
+            <hr>
                 <section class="product-sesction-01 padding-bottom-100 padding-top-100">
                     <div class="container">
                         <div class="row">
