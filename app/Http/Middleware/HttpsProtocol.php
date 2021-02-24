@@ -3,14 +3,16 @@
 namespace App\Http\Middleware;
 
 use Closure;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\App;
 
 class HttpsProtocol {
 
     public function handle($request, Closure $next)
     {
-        $var=env("ENABLE_REDIRECT_HTTPS",false);
-        if (!$request->secure() && $var ) {
+        if ($request->getScheme() !== 'https' &&
+            env("ENABLE_REDIRECT_HTTPS",false)
+        ) {
             return redirect()->secure($request->getRequestUri());
         }
 
