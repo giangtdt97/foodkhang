@@ -50,15 +50,16 @@
             src: url('{{public_path('..\fonts\SVN-BalladeerLight.tff')}}') format('tff');
         }
         @font-face {
-            font-family: SVN-BalladeerLight;
+            font-family: SVN-Balladeer;
             src: url('{{public_path('..\fonts\SVN-BalladeerLight.eot')}}');
-            src: url('{{public_path('..\fonts\SVN-BalladeerLight.eot?#iefix')}}') format('embedded-opentype'),
+            src: url('{{public_path('..\fonts\SVN-BalladeerLight.eot')}}') format('embedded-opentype'),
             url('{{public_path('..\fonts\SVN-BalladeerLight.svg#SVN-BalladeerLight')}}') format('svg'),
-            url('{{public_path('..\fonts\SVN-BalladeerLight.ttf')}}') format('tff'),
+            url('{{public_path('..\fonts\SVN-BalladeerLight.ttf')}}') format('truetype'),
             url('{{public_path('..\fonts\SVN-BalladeerLight.woff')}}') format('woff'),
             url('{{public_path('..\fonts\SVN-BalladeerLight.woff2')}}') format('woff2');
-
+            font-display: block;
         }
+
 
     </style>
 </head>
