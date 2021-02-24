@@ -328,4 +328,10 @@ body[nav-color="light"] #fp-nav ul li .fp-tooltip {
     font-family: 'SVN-Balladeer Light', sans-serif;
     font-size: 42px;
 }
+@media (min-width: 0) and (max-width: 576px){
+    .font-change {
+        font-family: 'Dancing Script', sans-serif;
+        font-size: 42px;
+    }
+}
 
