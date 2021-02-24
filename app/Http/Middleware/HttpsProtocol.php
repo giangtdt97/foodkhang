@@ -10,7 +10,7 @@ class HttpsProtocol {
 
     public function handle($request, Closure $next)
     {
-        if ($request->getScheme() !== 'https' &&
+        if ($_SERVER['HTTP_X_FORWARDED_PROTO'] !== 'https' &&
             env("ENABLE_REDIRECT_HTTPS",false)
         ) {
             return redirect()->secure($request->getRequestUri());
