@@ -9,7 +9,8 @@ class HttpsProtocol {
 
     public function handle($request, Closure $next)
     {
-        if (!$request->secure() && App::environment() === 'staging') {
+        $var=env("ENABLE_REDIRECT_HTTPS",false);
+        if (!$request->secure() && $var ) {
             return redirect()->secure($request->getRequestUri());
         }
 
