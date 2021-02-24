@@ -46,19 +46,19 @@
     <script src="{{asset('vendors/pageloading/sidebartransition/js/modernizr.custom.js')}}"></script>
     <style type="text/css">
         @font-face {
-            font-family: SVN-Balladeer Light;
+            font-family: SVN-Balladeer;
             src: url('{{public_path('..\fonts\SVN-BalladeerLight.tff')}}') format('tff');
         }
-        @font-face {
-            font-family: SVN-Balladeer;
-            src: url('{{public_path('..\fonts\SVN-BalladeerLight.eot')}}');
-            src: url('{{public_path('..\fonts\SVN-BalladeerLight.eot')}}') format('embedded-opentype'),
-            url('{{public_path('..\fonts\SVN-BalladeerLight.svg#SVN-BalladeerLight')}}') format('svg'),
-            url('{{public_path('..\fonts\SVN-BalladeerLight.ttf')}}') format('truetype'),
-            url('{{public_path('..\fonts\SVN-BalladeerLight.woff')}}') format('woff'),
-            url('{{public_path('..\fonts\SVN-BalladeerLight.woff2')}}') format('woff2');
-            font-display: block;
-        }
+        {{--@font-face {--}}
+        {{--    font-family: SVN-Balladeer;--}}
+        {{--    src: url('{{public_path('..\fonts\SVN-BalladeerLight.eot')}}');--}}
+        {{--    src: url('{{public_path('..\fonts\SVN-BalladeerLight.eot')}}') format('embedded-opentype'),--}}
+        {{--    url('{{public_path('..\fonts\SVN-BalladeerLight.svg#SVN-BalladeerLight')}}') format('svg'),--}}
+        {{--    url('{{public_path('..\fonts\SVN-BalladeerLight.ttf')}}') format('truetype'),--}}
+        {{--    url('{{public_path('..\fonts\SVN-BalladeerLight.woff')}}') format('woff'),--}}
+        {{--    url('{{public_path('..\fonts\SVN-BalladeerLight.woff2')}}') format('woff2');--}}
+        {{--    font-display: block;--}}
+        {{--}--}}
 
 
     </style>
