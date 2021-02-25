@@ -21,6 +21,24 @@
     <link rel="stylesheet" href="{{asset('vendors/animate.min.css')}}">
     <link rel="stylesheet" href="{{asset('vendors/bootstrap-datepicker/css/bootstrap-datepicker.min.css')}}">
     <link rel="stylesheet" href="{{asset('vendors/pageloading/css/component.min.css')}}">
+    <style type="text/css">
+        @font-face {
+            font-family: SVN-Balladeer Light;
+            src: url('{{public_path('..\fonts\SVN-Balladeer Light.tff')}}') format('tff');
+        }
+        {{--@font-face {--}}
+        {{--    font-family: SVN-Balladeer;--}}
+        {{--    src: url('{{public_path('..\fonts\SVN-BalladeerLight.eot')}}');--}}
+        {{--    src: url('{{public_path('..\fonts\SVN-BalladeerLight.eot')}}') format('embedded-opentype'),--}}
+        {{--    url('{{public_path('..\fonts\SVN-BalladeerLight.svg#SVN-BalladeerLight')}}') format('svg'),--}}
+        {{--    url('{{public_path('..\fonts\SVN-BalladeerLight.ttf')}}') format('truetype'),--}}
+        {{--    url('{{public_path('..\fonts\SVN-BalladeerLight.woff')}}') format('woff'),--}}
+        {{--    url('{{public_path('..\fonts\SVN-BalladeerLight.woff2')}}') format('woff2');--}}
+        {{--    font-display: block;--}}
+        {{--}--}}
+
+
+    </style>
     <!-- Font-icon-->
     <link rel="stylesheet" href="{{asset('fonts/font-icon/style.css')}}">
     <!-- Style-->
@@ -44,24 +62,7 @@
     <script src="{{asset('vendors/respond.min.js')}}"></script>
     <script src="{{asset('vendors/pageloading/js/snap.svg-min.js')}}"></script>
     <script src="{{asset('vendors/pageloading/sidebartransition/js/modernizr.custom.js')}}"></script>
-    <style type="text/css">
-        @font-face {
-            font-family: SVN-Balladeer;
-            src: url('{{public_path('..\fonts\SVN-BalladeerLight.tff')}}') format('tff');
-        }
-        {{--@font-face {--}}
-        {{--    font-family: SVN-Balladeer;--}}
-        {{--    src: url('{{public_path('..\fonts\SVN-BalladeerLight.eot')}}');--}}
-        {{--    src: url('{{public_path('..\fonts\SVN-BalladeerLight.eot')}}') format('embedded-opentype'),--}}
-        {{--    url('{{public_path('..\fonts\SVN-BalladeerLight.svg#SVN-BalladeerLight')}}') format('svg'),--}}
-        {{--    url('{{public_path('..\fonts\SVN-BalladeerLight.ttf')}}') format('truetype'),--}}
-        {{--    url('{{public_path('..\fonts\SVN-BalladeerLight.woff')}}') format('woff'),--}}
-        {{--    url('{{public_path('..\fonts\SVN-BalladeerLight.woff2')}}') format('woff2');--}}
-        {{--    font-display: block;--}}
-        {{--}--}}
 
-
-    </style>
 </head>
 <body>
 @include('shared._header')

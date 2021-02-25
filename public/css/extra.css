@@ -325,13 +325,13 @@ body[nav-color="light"] #fp-nav ul li .fp-tooltip {
     background-color: rgba(0, 0, 0, 0.1); }
 
 .font-change {
-    font-family: 'SVN-Balladeer';
+    font-family: 'SVN-Balladeer Light' ,sans-serif;
     font-size: 42px;
 }
-/*@media (min-width: 0) and (max-width: 576px){*/
-/*    .font-change {*/
-/*        font-family: 'Dancing Script', sans-serif;*/
-/*        font-size: 42px;*/
-/*    }*/
-/*}*/
+@media (min-width: 0) and (max-width: 576px){
+    .font-change {
+        font-family: 'Dancing Script', sans-serif;
+        font-size: 42px;
+    }
+}
 
