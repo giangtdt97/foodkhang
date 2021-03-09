@@ -42,7 +42,7 @@
                                     <div class="slides">
                                         @foreach($abouts as $about)
                                         <div class="timeline-item item swin-transition">
-                                            <div class="timeline-item-wrap"><span class="timeline-year swin-transition">{{$about->year}}</span></div><img src="{{Voyager::image( $about->image )}}" alt="fooday" class="img img-responsive">
+                                            <div class="timeline-item-wrap"><span class="timeline-year swin-transition">{{$about->year}}</span></div><img src="{{Voyager::image( $about->image )}}" alt="xoikhang" height="209px" width="209px" >
                                         </div>
                                         @endforeach
                                     </div>
