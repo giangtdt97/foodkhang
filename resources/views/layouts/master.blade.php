@@ -24,7 +24,12 @@
     <style type="text/css">
         @font-face {
             font-family: SVN-Balladeer Light;
-            src: url('{{public_path('..\fonts\SVN-Balladeer Light.tff')}}') format('tff');
+            src: url('{{public_path('..\fonts\SVN-Balladeer Light.eot')}}');
+            src: url('{{public_path('..\fonts\SVN-Balladeer Light.eot')}}') format('embedded-opentype'),
+            url('{{public_path('..\fonts\SVN-Balladeer Light.svg#SVN-Balladeer Light')}}') format('svg'),
+            url('{{public_path('..\fonts\SVN-Balladeer Light.ttf')}}') format('truetype'),
+            url('{{public_path('..\fonts\SVN-Balladeer Light.woff')}}') format('woff'),
+            url('{{public_path('..\fonts\SVN-Balladeer Light.woff2')}}') format('woff2');
         }
         {{--@font-face {--}}
         {{--    font-family: SVN-Balladeer;--}}
