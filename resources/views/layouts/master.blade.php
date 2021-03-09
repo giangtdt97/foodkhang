@@ -31,25 +31,13 @@
             url('{{public_path('..\fonts\SVN-Balladeer Light.woff')}}') format('woff'),
             url('{{public_path('..\fonts\SVN-Balladeer Light.woff2')}}') format('woff2');
         }
-        {{--@font-face {--}}
-        {{--    font-family: SVN-Balladeer;--}}
-        {{--    src: url('{{public_path('..\fonts\SVN-BalladeerLight.eot')}}');--}}
-        {{--    src: url('{{public_path('..\fonts\SVN-BalladeerLight.eot')}}') format('embedded-opentype'),--}}
-        {{--    url('{{public_path('..\fonts\SVN-BalladeerLight.svg#SVN-BalladeerLight')}}') format('svg'),--}}
-        {{--    url('{{public_path('..\fonts\SVN-BalladeerLight.ttf')}}') format('truetype'),--}}
-        {{--    url('{{public_path('..\fonts\SVN-BalladeerLight.woff')}}') format('woff'),--}}
-        {{--    url('{{public_path('..\fonts\SVN-BalladeerLight.woff2')}}') format('woff2');--}}
-        {{--    font-display: block;--}}
-        {{--}--}}
-
-
     </style>
     <!-- Font-icon-->
     <link rel="stylesheet" href="{{asset('fonts/font-icon/style.css')}}">
     <!-- Style-->
     <link rel="stylesheet" type="text/css" href="{{asset('css/layout.css')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('css/elements.css')}}">
-    <link rel="stylesheet" type="text/css" href="{{asset('css/extra.css?v=26')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('css/extra.css?v=27')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('css/widget.css')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('css/phonecall.css')}}?v=16">
     <link id="colorpattern" rel="stylesheet" type="text/css" href="{{asset('css/color/colordefault.css?v=24')}}">
