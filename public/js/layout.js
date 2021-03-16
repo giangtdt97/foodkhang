@@ -59,18 +59,6 @@ jQuery(function($) {
                 }
             });
         });
-        // Auto Play Video Background
-        $('.top-bg-video').each(function(){
-            var $video = $(this).find('video');
-            var $slide = $(this).find('.slides');
-            setTimeout(function(){
-                if ( $video[0] ) {
-                    $slide.addClass('playing');
-                    $video[0].play();
-                }
-            },3000);
-        });
-
         //one page
         $('.home-one-page #main-nav li a').bind('click', function(event){
             var $anchor = $(this);

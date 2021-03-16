@@ -37,25 +37,25 @@
                             <div class="swin-sc swin-sc-title style-2">
                                 <h3 class="title"><span>Câu chuyện Xôi Khang</span></h3>
                             </div>
-                            <div data-item="3" class="swin-sc swin-sc-timeline-2">
+                            <div data-item="1" class="swin-sc swin-sc-timeline-2">
                                 <div class="main-slider">
                                     <div class="slides">
                                         @foreach($abouts as $about)
-                                        <div class="timeline-item item swin-transition">
-                                            <div class="timeline-item-wrap">
-                                                <span class="timeline-year swin-transition">{{$about->year}}</span>
+                                            <div class="timeline-item item swin-transition">
+                                                <div class="timeline-item-wrap">
+                                                    <span class="timeline-year swin-transition">{{$about->year}}</span>
+                                                </div>
+                                                <img src="{{Voyager::image( $about->image )}}" alt="++{{$about->year}}++" height="209px" width="380px" >
                                             </div>
-                                            <img src="{{Voyager::image( $about->image )}}" alt="xoikhang" height="209px" width="380px" >
-                                        </div>
                                         @endforeach
                                     </div>
                                 </div>
                                 <div class="nav-slider">
                                     <div class="slides">
                                         @foreach($abouts as $about)
-                                        <div class="timeline-content-item">
-                                            {!! $about->context !!}
-                                        </div>
+                                            <div class="timeline-content-item">
+                                                {!! $about->context !!}
+                                            </div>
                                         @endforeach
                                     </div>
                                 </div>
@@ -110,21 +110,21 @@
                                     </div>
                                     <div class="row">
                                         @foreach($feature_products as $feature_product)
-                                        <div class="col-md-3 col-sm-6 col-xs-12">
-                                            <div data-wow-delay="1s" class="swin-sc sc-featured-box item wow fadeInUp"><img src="{{Voyager::image($feature_product->background_image)}}" alt="fooday" class="box-bg">
-                                                <div class="box-inner ">
-                                                    <h4 class="box-title">{{$feature_product->product_name}}</h4>
-                                                    <div class=" sidebar-box">
-                                                    <p class="box-content">{{$feature_product->description}}</p>
-                                                    <p class="read-more"><a href="javascript:void(0)" class="button">Xem Thêm</a></p>
-                                                    </div>
-                                                    <div class="btn-wrap text-center"><a href="{{route('menu')}}" class="btn swin-btn"><span>Đến Menu</span></a></div>
-                                                    <div class="showcase"><img src="{{Voyager::image($feature_product->image)}}" alt="" class="img-responsive img-showcase">
-                                                        <div class="title-showcase">{{$feature_product->product_name}}</div>
+                                            <div class="col-md-3 col-sm-6 col-xs-12">
+                                                <div data-wow-delay="1s" class="swin-sc sc-featured-box item wow fadeInUp"><img src="{{Voyager::image($feature_product->background_image)}}" alt="fooday" class="box-bg">
+                                                    <div class="box-inner ">
+                                                        <h4 class="box-title">{{$feature_product->product_name}}</h4>
+                                                        <div class=" sidebar-box">
+                                                            <p class="box-content">{{$feature_product->description}}</p>
+                                                            <p class="read-more"><a href="javascript:void(0)" class="button">Xem Thêm</a></p>
+                                                        </div>
+                                                        <div class="btn-wrap text-center"><a href="{{route('menu')}}" class="btn swin-btn"><span>Đến Menu</span></a></div>
+                                                        <div class="showcase"><img src="{{Voyager::image($feature_product->image)}}" alt="" class="img-responsive img-showcase">
+                                                            <div class="title-showcase">{{$feature_product->product_name}}</div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
                                         @endforeach
 
                                     </div>
