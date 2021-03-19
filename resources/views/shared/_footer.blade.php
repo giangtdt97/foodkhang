@@ -179,7 +179,7 @@
 
 <!-- Own script-->
 <script src="{{asset('js/layout.js')}}"></script>
-<script src="{{asset('js/elements.js')}}"></script>
+<script src="{{asset('js/elements.js?v=1')}}"></script>
 <script src="{{asset('js/widget.js')}}"></script>
 
 <script>
