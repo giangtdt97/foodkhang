@@ -49,7 +49,7 @@ jQuery(function($) {
 		$('.datepicker').datepicker();
 
 		//one page
-		
+
 	}
 
 	// SC Timeline
@@ -87,11 +87,12 @@ jQuery(function($) {
 			var $nav_slider = $(this).find('.nav-slider .slides');
 			$main_slider.slick({
 				animation: 'slide',
-			 	slidesToShow: item,
+			 	slidesToShow: 3,
 			 	slidesToScroll: 1,
 			 	arrows: true,
 			 	asNavFor: $nav_slider,
 			 	focusOnSelect: true,
+                centerMode: true,
 			 	responsive: [
 		         	{
 				       breakpoint: 480,
