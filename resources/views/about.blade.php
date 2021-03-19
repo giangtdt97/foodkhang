@@ -37,7 +37,7 @@
                             <div class="swin-sc swin-sc-title style-2">
                                 <h3 class="title"><span>Câu chuyện Xôi Khang</span></h3>
                             </div>
-                            <div data-item="1" class="swin-sc swin-sc-timeline-2">
+                            <div data-item="3" class="swin-sc swin-sc-timeline-2">
                                 <div class="main-slider">
                                     <div class="slides">
                                         @foreach($abouts as $about)
