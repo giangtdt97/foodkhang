@@ -18,6 +18,25 @@
             /* "transparent" only works here because == rgba(0,0,0,0) */
             background-image: linear-gradient(to bottom, transparent, black);
         }
+        .mobi-block{
+            display: none;
+        }
+        .web-block{
+            display: block;
+        }
+        @media (min-width: 0) and (max-width: 576px){
+            .mobi-block{
+                display: block;
+            }
+            .web-block{
+                display: none;
+            }
+            .img-res{
+                height:100px ;
+                width:190px;
+            }
+        }
+
     </style>
     <div id="pagewrap" class="pagewrap">
         <div id="html-content" class="wrapper-content">
@@ -37,7 +56,7 @@
                             <div class="swin-sc swin-sc-title style-2">
                                 <h3 class="title"><span>Câu chuyện Xôi Khang</span></h3>
                             </div>
-                            <div data-item="3" class="swin-sc swin-sc-timeline-2">
+                            <div data-item="3" class="swin-sc swin-sc-timeline-2 web-block">
                                 <div class="main-slider">
                                     <div class="slides">
                                         @foreach($abouts as $about)
@@ -66,10 +85,33 @@
                                             </div>
                                         @endforeach
                                             @foreach($abouts as $about)
-                                                <div class="timeline-content-item">
+                                                <div class="timeline-content-item mobi-block">
                                                     {!! $about->context !!}
                                                 </div>
                                             @endforeach
+                                    </div>
+                                </div>
+                            </div>
+                            <div data-item="4" class="swin-sc swin-sc-timeline-2 mobi-block">
+                                <div class="main-slider">
+                                    <div class="slides">
+                                        @foreach($abouts as $about)
+                                            <div class="timeline-item item swin-transition">
+                                                <div class="timeline-item-wrap">
+                                                    <span class="timeline-year swin-transition">{{$about->year}}</span>
+                                                </div>
+                                                <img src="{{Voyager::image( $about->image )}}" alt="++{{$about->year}}++" class="img-res">
+                                            </div>
+                                        @endforeach
+                                    </div>
+                                </div>
+                                <div class="nav-slider">
+                                    <div class="slides">
+                                        @foreach($abouts as $about)
+                                            <div class="timeline-content-item">
+                                                {!! $about->context !!}
+                                            </div>
+                                        @endforeach
                                     </div>
                                 </div>
                             </div>
