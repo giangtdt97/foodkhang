@@ -21,10 +21,8 @@
                                     <div class="item">
                                         <div class="item product-01">
                                             <div class="cat-image img-4-3"><a href="javascript:void(0)" >
-                                                <input type="checkbox" id="zoomCheck">
-                                                <label for="zoomCheck">
-                                                <img class="active-img" src="timthumb.php?src={{Voyager::image( $ultility->getThumbnail($ultility->image ,'medium'))}}&w=250&h=200" alt="" style="filter: none;">
-                                            </label>{{$ultility->name}}</a></div>
+                                                <img src="timthumb.php?src={{Voyager::image( $ultility->getThumbnail($ultility->image ,'medium'))}}&w=250&h=200" alt="" style="filter: none;">
+                                        {{$ultility->name}}</a></div>
                                         </div>
                                     </div>
                                 @endforeach
@@ -75,10 +73,7 @@
                                     @foreach($categories as $category)
                                     <div class="item">
                                         <div class="cat-image"><a href="javascript:void(0)"> 
-                                            <input type="checkbox" id="zoomCheck">
-                                            <label for="zoomCheck">
-                                            <img class="active-img" src="timthumb.php?src={{Voyager::image( $category->image )}}&w=250&h=200" alt="" style="filter: none;">
-                                        </label>
+                                            <img src="timthumb.php?src={{Voyager::image( $category->image )}}&w=250&h=200" alt="" style="filter: none;">
                                         {{$category->name}}</a></div>
                                     </div>
                                     @endforeach
