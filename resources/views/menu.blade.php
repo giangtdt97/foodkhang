@@ -20,7 +20,7 @@
                                 @foreach($ultilities as $ultility)
                                     <div class="item">
                                         <div class="item product-01">
-                                            <div class="cat-image img-4-3"><a href="javascript:void(0)" ><img src="timthumb.php?src={{Voyager::image( $ultility->getThumbnail($ultility->image ,'medium'))}}&w=300&h=200" alt="" >{{$ultility->name}}</a></div>
+                                            <div class="cat-image img-4-3"><a href="javascript:void(0)" ><img src="timthumb.php?src={{Voyager::image( $ultility->getThumbnail($ultility->image ,'medium'))}}&w=250&h=200" alt="" >{{$ultility->name}}</a></div>
                                         </div>
                                     </div>
                                 @endforeach
@@ -70,7 +70,7 @@
                                 <div data-slide-toshow="3" class="cat-wrapper-02 cat-images main-slider">
                                     @foreach($categories as $category)
                                     <div class="item">
-                                        <div class="cat-image"><a href="javascript:void(0)"><img src="timthumb.php?src={{Voyager::image( $category->image )}}&w=200&h=150" alt="" >{{$category->name}}</a></div>
+                                        <div class="cat-image"><a href="javascript:void(0)"><img src="timthumb.php?src={{Voyager::image( $category->image )}}&w=250&h=200" alt="" >{{$category->name}}</a></div>
                                     </div>
                                     @endforeach
                                 </div>
