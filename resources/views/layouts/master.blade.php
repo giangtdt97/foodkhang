@@ -37,7 +37,7 @@
     <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700,700i&display=swap" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Kalam&display=swap' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Cookie&display=swap' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Inter&display=swap' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans&display=swap' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Dancing+Script&display=swap' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Grenze&display=swap'  rel='stylesheet'>
     <link href='https://use.typekit.net/odj2frh.css' rel="stylesheet">
