@@ -20,8 +20,7 @@
                                 @foreach($ultilities as $ultility)
                                     <div class="item">
                                         <div class="item product-01">
-                                            <div class="cat-image img-4-3"><a href="javascript:void(0)" ><img src="timthumb.php?src={{Voyager::image( $ultility->getThumbnail($ultility->image ,'medium'))}}&w=200&h=150" alt="" >{{$ultility->name}}</a></div>
-{{--                                            --}}
+                                            <div class="cat-image img-4-3"><a href="javascript:void(0)" ><img src="timthumb.php?src={{Voyager::image( $ultility->getThumbnail($ultility->image ,'medium'))}}&w=300&h=200" alt="" >{{$ultility->name}}</a></div>
                                         </div>
                                     </div>
                                 @endforeach
@@ -34,10 +33,10 @@
                                         <div class="item-slick">
                                             <div class="row">
                                                 @foreach($ultility->services as  $service)
-                                                    <div class="col-md-2 col-sm-4 col-xs-12">
+                                                    <div class="col-md-3 col-sm-4 col-xs-12">
                                                         <div class="item product-01">
                                                             <div class="block-img"><a href="{{route('service.show',$service->slug)}}"><img src="timthumb.php?src={{Voyager::image( $service->image )}}&w=140&h=70" alt="" ></a></div>
-                                                            <h5 class="title">{{$service->name}}</h5>
+                                                            <h5 class=" truncate-overflow-one title">{{$service->name}}</h5>
                                                         </div>
                                                     </div>
                                                 @endforeach
@@ -68,7 +67,7 @@
                     <div class="swin-sc swin-sc-product products-01 style-03 woocommerce">
                        <div class="row">
                             <div class="col-md-12">
-                                <div data-slide-toshow="2" class="cat-wrapper-02 cat-images main-slider">
+                                <div data-slide-toshow="3" class="cat-wrapper-02 cat-images main-slider">
                                     @foreach($categories as $category)
                                     <div class="item">
                                         <div class="cat-image"><a href="javascript:void(0)"><img src="timthumb.php?src={{Voyager::image( $category->image )}}&w=200&h=150" alt="" >{{$category->name}}</a></div>
@@ -83,10 +82,10 @@
                                     <div class="item-slick">
                                         <div class="row">
                                             @foreach($category->products as  $product)
-                                                <div class="col-md-2 col-sm-4 col-xs-12">
+                                                <div class="col-md-3 col-sm-4 col-xs-12" style="padding: 0;">
                                                 <div class="item product-01">
                                                     <div class="block-img"><a href="{{route('product.show',$product->slug)}}"><img src="timthumb.php?src={{Voyager::image( $product->image )}}&w=140&h=70" alt="" ></a></div>
-                                                    <h5 class="title">{{$product->product_name}}</h5><span class="price woocommerce-Price-amount amount">{{$product->presentPrice()}}<span class="price-symbol">VNĐ</span></span>
+                                                    <h5 class="title truncate-overflow-one" style="white-space: nowrap">{{$product->product_name}}</h5><span class="price woocommerce-Price-amount amount" style="line-height: 1">{{$product->presentPrice()}}<span class="price-symbol">Đ</span></span>
                                                 </div>
                                             </div>
                                             @endforeach

@@ -53,7 +53,7 @@
                                                     <div class="item product-01">
                                                         <div class="item-left"><a href="{{route('product.show',$product->slug)}}"><img src="{{Voyager::image( $product->image )}}" alt="" class="img img-responsive"></a>
                                                             <div class="content-wrapper"><a class="title">{{$product->product_name}}</a>
-                                                                <div class="dot">.....................................................................</div>
+                                                                <div class="dot">........................</div>
                                                                 <div class="des">{{$product->short_description}}</div>
                                                             </div>
                                                         </div>
