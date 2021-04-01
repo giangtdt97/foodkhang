@@ -67,14 +67,14 @@
                                                 <img src="{{Voyager::image( $about->image )}}" alt="++{{$about->year}}++" height="209px" width="380px" >
                                             </div>
                                         @endforeach
-                                            @foreach($abouts as $about)
-                                                <div class="timeline-item item swin-transition">
-                                                    <div class="timeline-item-wrap">
-                                                        <span class="timeline-year swin-transition">{{$about->year}}</span>
-                                                    </div>
-                                                    <img src="{{Voyager::image( $about->image )}}" alt="++{{$about->year}}++" height="209px" width="380px" >
+                                        @foreach($abouts as $about)
+                                            <div class="timeline-item item swin-transition">
+                                                <div class="timeline-item-wrap">
+                                                    <span class="timeline-year swin-transition">{{$about->year}}</span>
                                                 </div>
-                                            @endforeach
+                                                <img src="{{Voyager::image( $about->image )}}" alt="++{{$about->year}}++" height="209px" width="380px" >
+                                            </div>
+                                        @endforeach
                                     </div>
                                 </div>
                                 <div class="nav-slider">
@@ -84,11 +84,11 @@
                                                 {!! $about->context !!}
                                             </div>
                                         @endforeach
-                                            @foreach($abouts as $about)
-                                                <div class="timeline-content-item mobi-block">
-                                                    {!! $about->context !!}
-                                                </div>
-                                            @endforeach
+                                        @foreach($abouts as $about)
+                                            <div class="timeline-content-item mobi-block">
+                                                {!! $about->context !!}
+                                            </div>
+                                        @endforeach
                                     </div>
                                 </div>
                             </div>
@@ -98,7 +98,7 @@
                                         @foreach($abouts as $about)
                                             <div class="timeline-item item swin-transition">
                                                 <div class="timeline-item-wrap">
-                                                    <span class="timeline-year swin-transition">{{$about->year}}</span>
+                                                    <span style="font-size: 24px;" class="timeline-year swin-transition">{{$about->year}}</span>
                                                 </div>
                                                 <img src="{{Voyager::image( $about->image )}}" alt="++{{$about->year}}++" class="img-res">
                                             </div>

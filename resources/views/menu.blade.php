@@ -20,9 +20,10 @@
                                 @foreach($ultilities as $ultility)
                                     <div class="item">
                                         <div class="item product-01">
-                                            <div class="cat-image img-4-3"><a href="javascript:void(0)" >
-                                                <img src="timthumb.php?src={{Voyager::image( $ultility->getThumbnail($ultility->image ,'medium'))}}&w=250&h=200" alt="" style="filter: none;">
-                                        {{$ultility->name}}</a></div>
+                                            <div class="cat-image img-4-3">
+                                                <a href="javascript:void(0)">
+                                                <img src="timthumb.php?src={{Voyager::image( $ultility->getThumbnail($ultility->image ,'medium'))}}&w=230&h=170" alt="" style="filter: none;padding-bottom: 20px;z-index: 2; -ms-transform: scale(1.1, 1.1); -webkit-transform: scale(1.1, 1.1); transform: scale(1.1, 1.1);">{{$ultility->name}}</a>
+                                            </div>
                                         </div>
                                     </div>
                                 @endforeach
@@ -37,7 +38,10 @@
                                                 @foreach($ultility->services as  $service)
                                                     <div class="col-md-3 col-sm-4 col-xs-12">
                                                         <div class="item product-01">
-                                                            <div class="block-img"><a href="{{route('service.show',$service->slug)}}"><img src="timthumb.php?src={{Voyager::image( $service->image )}}&w=200&h=130" alt="" ></a></div>
+                                                            <div class="block-img">
+                                                                <a href="{{route('service.show',$service->slug)}}"><img src="timthumb.php?src={{Voyager::image( $service->image )}}&w=200&h=130" alt=""/>
+                                                                </a>
+                                                            </div>
                                                             <h5 class="truncate-overflow-one title" style="font-size: 16px;font-weight: bold;">{{$service->name}}</h5>
                                                         </div>
                                                     </div>
@@ -72,8 +76,8 @@
                                 <div data-slide-toshow="3" class="cat-wrapper-02 cat-images main-slider">
                                     @foreach($categories as $category)
                                     <div class="item">
-                                        <div class="cat-image"><a href="javascript:void(0)"> 
-                                            <img src="timthumb.php?src={{Voyager::image( $category->image )}}&w=250&h=200" alt="" style="filter: none;">
+                                        <div class="cat-image"><a href="javascript:void(0)">
+                                            <img src="timthumb.php?src={{Voyager::image( $category->image )}}&w=250&h=200" alt="" style="filter: none;padding-bottom: 20px;z-index: 2; -ms-transform: scale(1.1, 1.1); -webkit-transform: scale(1.1, 1.1); transform: scale(1.1, 1.1);">
                                         {{$category->name}}</a></div>
                                     </div>
                                     @endforeach
