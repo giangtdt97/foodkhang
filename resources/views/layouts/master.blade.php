@@ -25,7 +25,7 @@
     <link rel="stylesheet" href="{{asset('fonts/font-icon/style.css')}}">
     <!-- Style-->
     <link rel="stylesheet" type="text/css" href="{{asset('css/layout.css')}}">
-    <link rel="stylesheet" type="text/css" href="{{asset('css/elements.css?v=3')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('css/elements.css?v=4')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('css/extra.css?v=28')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('css/widget.css')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('css/phonecall.css')}}?v=16">
