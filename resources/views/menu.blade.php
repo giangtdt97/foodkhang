@@ -22,7 +22,7 @@
                                         <div class="item product-01">
                                             <div class="cat-image img-4-3">
                                                 <a href="javascript:void(0)">
-                                                <img src="timthumb.php?src={{Voyager::image( $ultility->getThumbnail($ultility->image ,'medium'))}}&w=230&h=170" alt="" style="filter: none;padding-bottom: 20px;z-index: 2; -ms-transform: scale(1.1, 1.1); -webkit-transform: scale(1.1, 1.1); transform: scale(1.1, 1.1);">{{$ultility->name}}</a>
+                                                <img src="timthumb.php?src={{Voyager::image( $ultility->getThumbnail($ultility->image ,'medium'))}}&w=250&h=200" alt="" style="filter: none;padding-bottom: 20px;">{{$ultility->name}}</a>
                                             </div>
                                         </div>
                                     </div>
@@ -77,7 +77,7 @@
                                     @foreach($categories as $category)
                                     <div class="item">
                                         <div class="cat-image"><a href="javascript:void(0)">
-                                            <img src="timthumb.php?src={{Voyager::image( $category->image )}}&w=250&h=200" alt="" style="filter: none;padding-bottom: 20px;z-index: 2; -ms-transform: scale(1.1, 1.1); -webkit-transform: scale(1.1, 1.1); transform: scale(1.1, 1.1);">
+                                            <img src="timthumb.php?src={{Voyager::image( $category->image )}}&w=250&h=200" alt="" style="filter: none;padding-bottom: 20px;">
                                         {{$category->name}}</a></div>
                                     </div>
                                     @endforeach
