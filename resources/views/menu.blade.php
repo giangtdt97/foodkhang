@@ -35,8 +35,8 @@
                                                 @foreach($ultility->services as  $service)
                                                     <div class="col-md-3 col-sm-4 col-xs-12">
                                                         <div class="item product-01">
-                                                            <div class="block-img"><a href="{{route('service.show',$service->slug)}}"><img src="timthumb.php?src={{Voyager::image( $service->image )}}&w=140&h=70" alt="" ></a></div>
-                                                            <h5 class=" truncate-overflow-one title">{{$service->name}}</h5>
+                                                            <div class="block-img"><a href="{{route('service.show',$service->slug)}}"><img src="timthumb.php?src={{Voyager::image( $service->image )}}&w=200&h=130" alt="" ></a></div>
+                                                            <h5 class="truncate-overflow-one title">{{$service->name}}</h5>
                                                         </div>
                                                     </div>
                                                 @endforeach
@@ -84,8 +84,8 @@
                                             @foreach($category->products as  $product)
                                                 <div class="col-md-3 col-sm-4 col-xs-12" style="padding: 0;">
                                                 <div class="item product-01">
-                                                    <div class="block-img"><a href="{{route('product.show',$product->slug)}}"><img src="timthumb.php?src={{Voyager::image( $product->image )}}&w=140&h=70" alt="" ></a></div>
-                                                    <h5 class="title truncate-overflow-one" style="white-space: nowrap">{{$product->product_name}}</h5><span class="price woocommerce-Price-amount amount" style="line-height: 1">{{$product->presentPrice()}}<span class="price-symbol">Đ</span></span>
+                                                    <div class="block-img"><a href="{{route('product.show',$product->slug)}}"><img src="timthumb.php?src={{Voyager::image( $product->image )}}&w=200&h=130" alt="" ></a></div>
+                                                    <h5 class="title truncate-overflow-one">{{$product->product_name}}</h5><span class="price woocommerce-Price-amount amount" style="line-height: 1">{{$product->presentPrice()}}<span class="price-symbol">Đ</span></span>
                                                 </div>
                                             </div>
                                             @endforeach
