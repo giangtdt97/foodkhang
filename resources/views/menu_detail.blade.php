@@ -92,8 +92,8 @@
                         <div class="products nav-slider">
                             @foreach($mightAlsoLike as $product)
                             <div class="blog-item item swin-transition">
-                                <div class="block-img"><a href="javascript:void(0)"><img src="{{Voyager::image( $product->image )}}" alt="" height="350px" width="350px"></a>
-                                    <div class="block-circle price-wrapper"><span class="price woocommerce-Price-amount amount">{{$product->presentPrice()}}<span class="price-symbol">VNĐ</span></span></div>
+                                <div class="block-img"><a href="javascript:void(0)"><img src="timthumb.php?src={{Voyager::image( $product->image )}}&w=350&h=350" alt=""></a>
+                                    <div class="block-circle price-wrapper"><span class="price woocommerce-Price-amount amount">{{$product->presentPrice()}}<span class="price-symbol">Đ</span></span></div>
                                 </div>
                                 <div class="block-content">
                                     <h5 class="title truncate-overflow-one" style="white-space: nowrap"><a href="{{route('product.show',$product->slug)}}">{{$product->product_name}}</a></h5>
