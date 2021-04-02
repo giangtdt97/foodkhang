@@ -15,12 +15,41 @@
         .web-block{
             display: none;
         }
+        .swin-sc-product.products-01.style-02 .products .item-left .title {
+            display: table-cell;
+            font-size: 20px;
+            position: relative;
+        }
+        .swin-sc-product.products-01.style-02 .products .item-left .title:before {
+            content: '';
+            position: absolute;
+            width: 0;
+            border-bottom: 1px dotted #616f7d;
+            bottom: 6px;
+            left: 102%;
+        }
     }
     @media screen and (max-width: 768px){
         .swin-sc-product.products-01.style-02 .products .item-left {
             width: 80%;
         }
+        .swin-sc-product.products-01.style-02 .products .item-left .title {
+            display: table-cell;
+            font-size: 20px;
+            position: relative;
+        }
     }
+    @media screen and (max-width: 320px){
+        .swin-sc-product.products-01.style-02 .products .item-left {
+            width: 70%;
+        }
+        .swin-sc-product.products-01.style-02 .products .item-left .title {
+            display: table-cell;
+            font-size: 20px;
+            position: relative;
+        }
+    }
+
 </style>
     <div id="pagewrap" class="pagewrap">
         <div id="html-content" class="wrapper-content">
@@ -146,13 +175,13 @@
                                                 <div class="col-md-7 col-sm-12">
                                                     <div class="products">
                                                         @foreach($category->productsFeature as  $product)
-                                                        <div class="item product-01" style="padding-top: 10px;">
+                                                        <div class="item product-01" style="padding-top: 10px;margin-bottom: 0;">
                                                             <div class="item-left web-block">
                                                                 <h5 class="title">{{$product->product_name}}</h5>
                                                                 <div class="des">{{$product->short_description}}</div>
                                                             </div>
                                                             <div class="item-left mobi-block">
-                                                                <h5 class="title truncate-overflow-one">{{$product->product_name}}</h5>
+                                                                <h5 class="title" style="white-space: pre-line">{{$product->product_name}}</h5>
                                                                 <div class="des">{{$product->short_description}}</div>
                                                             </div>
                                                             <div class="item-right">
