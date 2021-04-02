@@ -1,7 +1,13 @@
 @extends('layouts.master')
 @section('title', 'Home')
 @section('content')
-
+<style>
+    @media screen and (max-width: 768px){
+        .swin-sc-product.products-01.style-02 .products .item-left {
+            width: 80%;
+        }
+    }
+</style>
     <div id="pagewrap" class="pagewrap">
         <div id="html-content" class="wrapper-content">
             <div class="page-container">
@@ -57,7 +63,7 @@
                                                                 <div class="des">{{$product->short_description}}</div>
                                                             </div>
                                                         </div>
-                                                        <div class="item-right"><span class="price woocommerce-Price-amount amount" style="line-height: 1;">{{$product->presentPrice()}}<span class="price-symbol">Đ</span></span></div>
+                                                        <div class="item-right"><span class="price woocommerce-Price-amount amount" style="line-height: 0.5;">{{$product->presentPrice()}}<span class="price-symbol">Đ</span></span></div>
                                                     </div>
                                                 @endforeach
                                             </div>
@@ -129,11 +135,11 @@
                                                             @foreach($category->productsFeature as  $product)
                                                         <div class="item product-01" style="padding-top: 10px;">
                                                             <div class="item-left">
-                                                                <h5 class="title">{{$product->product_name}}</h5>
+                                                                <h5 class="title truncate-overflow-one">{{$product->product_name}}</h5>
                                                                 <div class="des">{{$product->short_description}}</div>
                                                             </div>
                                                             <div class="item-right">
-                                                                <span class="price woocommerce-Price-amount amount" style="line-height: 0;">{{$product->presentPrice()}}<span class="price-symbol">Đ</span></span>
+                                                                <span class="price woocommerce-Price-amount amount" style="line-height: 0.5;">{{$product->presentPrice()}}<span class="price-symbol">Đ</span></span>
                                                             </div>
                                                         </div>
                                                             @endforeach
