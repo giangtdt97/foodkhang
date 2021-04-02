@@ -2,6 +2,20 @@
 @section('title', 'Home')
 @section('content')
 <style>
+    .mobi-block{
+        display:none;
+    }
+    .web-block{
+        display: block;
+    }
+    @media (min-width: 0) and (max-width: 576px){
+        .mobi-block{
+            display: block;
+        }
+        .web-block{
+            display: none;
+        }
+    }
     @media screen and (max-width: 768px){
         .swin-sc-product.products-01.style-02 .products .item-left {
             width: 80%;
@@ -131,10 +145,13 @@
 
                                                 <div class="col-md-7 col-sm-12">
                                                     <div class="products">
-
-                                                            @foreach($category->productsFeature as  $product)
+                                                        @foreach($category->productsFeature as  $product)
                                                         <div class="item product-01" style="padding-top: 10px;">
-                                                            <div class="item-left">
+                                                            <div class="item-left web-block">
+                                                                <h5 class="title">{{$product->product_name}}</h5>
+                                                                <div class="des">{{$product->short_description}}</div>
+                                                            </div>
+                                                            <div class="item-left mobi-block">
                                                                 <h5 class="title truncate-overflow-one">{{$product->product_name}}</h5>
                                                                 <div class="des">{{$product->short_description}}</div>
                                                             </div>
@@ -142,7 +159,7 @@
                                                                 <span class="price woocommerce-Price-amount amount" style="line-height: 0.5;">{{$product->presentPrice()}}<span class="price-symbol">Đ</span></span>
                                                             </div>
                                                         </div>
-                                                            @endforeach
+                                                        @endforeach
                                                     </div>
                                                 </div>
                                             </div>
