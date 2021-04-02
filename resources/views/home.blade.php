@@ -53,11 +53,11 @@
                                                     <div class="item product-01">
                                                         <div class="item-left"><a href="{{route('product.show',$product->slug)}}"><img src="{{Voyager::image( $product->image )}}" alt="" class="img img-responsive"></a>
                                                             <div class="content-wrapper"><a class="title">{{$product->product_name}}</a>
-                                                                <div class="dot">........................</div>
+{{--                                                                <div class="dot">.........................................................</div>--}}
                                                                 <div class="des">{{$product->short_description}}</div>
                                                             </div>
                                                         </div>
-                                                        <div class="item-right"><span class="price woocommerce-Price-amount amount">{{$product->presentPrice()}}<span class="price-symbol">VNĐ</span></span></div>
+                                                        <div class="item-right"><span class="price woocommerce-Price-amount amount" style="line-height: 1;">{{$product->presentPrice()}}<span class="price-symbol">Đ</span></span></div>
                                                     </div>
                                                 @endforeach
                                             </div>
@@ -127,13 +127,13 @@
                                                     <div class="products">
 
                                                             @foreach($category->productsFeature as  $product)
-                                                        <div class="item product-01">
+                                                        <div class="item product-01" style="padding-top: 10px;">
                                                             <div class="item-left">
                                                                 <h5 class="title">{{$product->product_name}}</h5>
                                                                 <div class="des">{{$product->short_description}}</div>
                                                             </div>
                                                             <div class="item-right">
-                                                                <span class="price woocommerce-Price-amount amount">{{$product->presentPrice()}}<span class="price-symbol">VNĐ</span></span>
+                                                                <span class="price woocommerce-Price-amount amount" style="line-height: 0;">{{$product->presentPrice()}}<span class="price-symbol">Đ</span></span>
                                                             </div>
                                                         </div>
                                                             @endforeach

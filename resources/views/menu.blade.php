@@ -1,6 +1,50 @@
 @extends('layouts.master')
 @section('title', 'Menu')
 @section('content')
+    <style>
+        @media (min-width: 1200px){
+            .swin-sc-product .cat-wrapper-02.main-slider .slick-current img {
+                transform: scale(1.4);
+                cursor: zoom-out;
+                padding-bottom: 24px;
+            }
+            .prev-slide{
+                left: 0;
+                top: 110px;
+            }
+            .next-slide{
+                right: 0;
+                top: 110px;
+            }
+        }
+        @media (min-width: 577px) and (max-width: 1199px){
+            .swin-sc-product .cat-wrapper-02.main-slider .slick-current img {
+                transform: scale(1.2);
+                cursor: zoom-out;
+                padding-bottom: 24px;
+            }
+        }
+        .active-img {
+            transition: transform 0.25s ease;
+            cursor: zoom-in;
+        }
+        .mobi-block{
+            display:none;
+        }
+        .web-block{
+            display: block;
+        }
+        @media (min-width: 0) and (max-width: 576px){
+            .swin-sc-product .cat-wrapper-02.main-slider .slick-current img{
+            }
+            .mobi-block{
+                display: block;
+            }
+            .web-block{
+                display: none;
+            }
+        }
+    </style>
     <div class="page-container">
         <div data-bottom-top="background-position: 50% 50px;" data-center="background-position: 50% 0px;" data-top-bottom="background-position: 50% -50px;" class="page-title page-menu">
             <div class="container">
@@ -15,14 +59,32 @@
             <div class="container">
                 <div class="swin-sc swin-sc-product products-01 style-03 woocommerce">
                     <div class="row">
-                        <div class="col-md-12">
+                        <div class="col-md-12 web-block">
                             <div data-slide-toshow="3" class="cat-wrapper-02 cat-images main-slider">
                                 @foreach($ultilities as $ultility)
                                     <div class="item">
                                         <div class="item product-01">
                                             <div class="cat-image img-4-3">
                                                 <a href="javascript:void(0)">
-                                                <img src="timthumb.php?src={{Voyager::image( $ultility->getThumbnail($ultility->image ,'medium'))}}&w=250&h=200" alt="" style="filter: none;padding-bottom: 20px;">{{$ultility->name}}</a>
+                                                <img class="active-img" src="timthumb.php?src={{Voyager::image( $ultility->getThumbnail($ultility->image ,'medium'))}}&w=250&h=200"
+                                                     alt="" style="filter: none;margin-bottom: 24px;">
+                                                    {{$ultility->name}}</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                @endforeach
+                            </div>
+                        </div>
+                        <div class="col-md-12 mobi-block">
+                            <div data-slide-toshow="3" class="cat-wrapper-02 cat-images main-slider">
+                                @foreach($ultilities as $ultility)
+                                    <div class="item">
+                                        <div class="item product-01">
+                                            <div class="cat-image img-4-3">
+                                                <a href="javascript:void(0)">
+                                                    <img src="timthumb.php?src={{Voyager::image( $ultility->getThumbnail($ultility->image ,'medium'))}}&w=250&h=200"
+                                                         alt="" style="filter: none;margin-bottom: 24px;">
+                                                    {{$ultility->name}}</a>
                                             </div>
                                         </div>
                                     </div>
@@ -72,17 +134,28 @@
                 <div class="container">
                     <div class="swin-sc swin-sc-product products-01 style-03 woocommerce">
                        <div class="row">
-                            <div class="col-md-12">
+                            <div class="col-md-12 web-block">
                                 <div data-slide-toshow="3" class="cat-wrapper-02 cat-images main-slider">
                                     @foreach($categories as $category)
                                     <div class="item">
                                         <div class="cat-image"><a href="javascript:void(0)">
-                                            <img src="timthumb.php?src={{Voyager::image( $category->image )}}&w=250&h=200" alt="" style="filter: none;padding-bottom: 20px;">
+                                            <img class="active-img" src="timthumb.php?src={{Voyager::image( $category->image )}}&w=250&h=200" alt="" style="filter: none;margin-bottom: 24px;">
                                         {{$category->name}}</a></div>
                                     </div>
                                     @endforeach
                                 </div>
                             </div>
+                           <div class="col-md-12 mobi-block">
+                               <div data-slide-toshow="3" class="cat-wrapper-02 cat-images main-slider">
+                                   @foreach($categories as $category)
+                                       <div class="item">
+                                           <div class="cat-image"><a href="javascript:void(0)">
+                                                   <img src="timthumb.php?src={{Voyager::image( $category->image )}}&w=250&h=200" alt="" style="filter: none;margin-bottom: 24px;">
+                                                   {{$category->name}}</a></div>
+                                       </div>
+                                   @endforeach
+                               </div>
+                           </div>
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="products nav-slider">
