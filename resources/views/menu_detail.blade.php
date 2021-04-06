@@ -1,7 +1,11 @@
 @extends('layouts.master')
 @section('title', 'Dish Detail')
 @section('content')
-
+    <style>
+        .slick-current img{
+            border: solid #96b125;
+        }
+    </style>
     <div class="page-container">
         <div data-bottom-top="background-position: 50% 50px;" data-center="background-position: 50% 0px;" data-top-bottom="background-position: 50% -50px;" class="page-title page-product">
             <div class="container">
@@ -15,7 +19,7 @@
         <div class="page-content-wrapper">
             <div class="container">
                 <section class="product-single padding-top-100 padding-bottom-100">
-                    <div class="row">
+                    <div class="row" style="margin-bottom: 24px;">
                         <div class="col-md-6">
                             <div class="product-image">
                                 <div class="product-featured-image">
@@ -23,7 +27,7 @@
                                         <div class="slides">
                                             @php $images = json_decode($product->images);@endphp
                                             @foreach($images as $multimage)
-                                            <div class="featured-image-item"><img data-enlargeable style="cursor: zoom-in" src="{{ Voyager::image($product->getThumbnail($multimage, 'medium')) }}"height="200" width="400" alt="fooday" class="img img-responsive"></div>
+                                            <div class="featured-image-item"><img data-enlargeable style="cursor: zoom-in" src="{{ Voyager::image($product->getThumbnail($multimage, 'medium')) }}"height="3" width="400" alt="fooday" class="img img-responsive"></div>
                                             @endforeach
                                         </div>
                                     </div>
