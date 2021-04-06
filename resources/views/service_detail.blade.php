@@ -38,7 +38,7 @@
                                         <ul class="slides list-inline">
                                             @php $images = json_decode($service->images);@endphp
                                             @foreach($images as $multimage)
-                                                <div class="featured-image-item"><img src="{{ Voyager::image($service->getThumbnail($multimage, 'small')) }}" alt="fooday" class="" height="100" width="139"></div>
+                                                <div class="featured-image-item"><img src="{{ Voyager::image($service->getThumbnail($multimage, 'small')) }}" alt="fooday" class="" height="100" width="100"></div>
                                             @endforeach
                                         </ul>
 
