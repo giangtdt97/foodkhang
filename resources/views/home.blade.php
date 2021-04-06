@@ -261,7 +261,7 @@
                                     </div>
                                     <div class="team-item swin-transition wow fadeInUp">
                                         <div class="team-img-wrap">
-                                            <div class="team-img"><img data-enlargeable style="cursor: zoom-in" src="{{Voyager::image($feature_images[8]->value)}}"  width="261" height="195" alt=""  ></div>
+                                            <div class="team-img"><img data-enlargeable style="cursor: zoom-in" src="{{Voyager::image($feature_images[8]->value)}}" alt=""  class="img img-responsive" ></div>
                                         </div>
                                         <p class="team-name">{{($feature_images[8]->title)}}</p>
                                         <hr>
