@@ -4,7 +4,7 @@
     <style>
         @media (min-width: 1200px){
             .swin-sc-product .cat-wrapper-02.main-slider .slick-current img {
-                transform: scale(1.6);
+                transform: scale(1.5);
                 cursor: zoom-out;
                 padding-bottom: 30px;
             }
@@ -25,7 +25,7 @@
             }
         }
         .active-img {
-            transition: transform 0.25s ease;
+            transition: transform 0.75s ease;
             cursor: zoom-in;
         }
         .mobi-block{
