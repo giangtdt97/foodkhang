@@ -2,7 +2,7 @@
 @section('title', 'Service Detail')
 @section('content')
     <style>
-        .swin-sc-product .cat-wrapper-02.main-slider .slick-current img {
+        .featured-image-item .slick-slide .slick-current .slick-center {
             border: solid 1px #96b125;
         }
     </style>
