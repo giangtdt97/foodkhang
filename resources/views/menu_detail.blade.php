@@ -2,6 +2,9 @@
 @section('title', 'Dish Detail')
 @section('content')
     <style>
+        img{
+            border-radius: 8px;
+        }
         .slick-current img{
             border: solid #96b125;
         }
