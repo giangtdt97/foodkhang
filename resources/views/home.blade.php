@@ -362,7 +362,7 @@
                                         </div>
                                         <div class="blog-featured-img"><img src="timthumb.php?src={{Voyager::image( $blog->image)}}&w=200&h=200&q=100" alt="fooday"></div>
                                         <div class="blog-content">
-                                            <div class="blog-date"><span class="day">{{$blog->created_at->format('d')}}</span><span class="month">{{$blog->created_at->format('F')}}</span><span class="year">{{$blog->created_at->format('y')}}</span></div>
+                                            <div class="blog-date"><span class="day" style="font-size: 25px">{{$blog->created_at->format('d')}}</span><span class="month" style="font-size: 15px">{{$blog->created_at->format('F')}}</span><span class="year">{{$blog->created_at->format('y')}}</span></div>
                                             <h3 class="blog-title"><a href="{{route('blog.detail',$blog->slug)}}" class="swin-transition">{{$blog->title}}</a></h3>
                                             <p class="blog-description">{{$blog->excerpt}}</p>
                                             <div class="blog-readmore"><a href="{{route('blog.detail',$blog->slug)}}" class="swin-transition">Read More <i class="fa fa-angle-double-right"></i></a></div>
