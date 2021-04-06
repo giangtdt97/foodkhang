@@ -2,7 +2,7 @@
 @section('title', 'Service Detail')
 @section('content')
     <style>
-        .featured-image-item .slick-slide .slick-current .slick-center div{
+        .featured-image-item .slick-slide .slick-current .slick-center img{
             border: solid 1px #96b125;
         }
     </style>
