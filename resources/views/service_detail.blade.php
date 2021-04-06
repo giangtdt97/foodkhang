@@ -1,14 +1,6 @@
 @extends('layouts.master')
 @section('title', 'Service Detail')
 @section('content')
-    <style>
-        .slick-current img {
-            transform: scale(1.5);
-            cursor: zoom-out;
-            border: solid #96b125;
-            padding-bottom: 30px;
-        }
-    </style>
     <div class="page-container">
         <div data-bottom-top="background-position: 50% 50px;" data-center="background-position: 50% 0px;" data-top-bottom="background-position: 50% -50px;" class="page-title page-product">
             <div class="container">
