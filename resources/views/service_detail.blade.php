@@ -31,7 +31,7 @@
                                         <div class="slides">
                                             @php $images = json_decode($service->images);@endphp
                                             @foreach($images as $multimage)
-                                                <div class="featured-image-item"><img data-enlargeable style="cursor: zoom-in" src="{{ Voyager::image($service->getThumbnail($multimage, 'medium')) }}" class="img img-responsive" alt="fooday"></div>
+                                                <div class="featured-image-item"><img data-enlargeable style="cursor: zoom-in;height: 350px" src="{{ Voyager::image($service->getThumbnail($multimage, 'medium')) }}" class="img img-responsive" alt="fooday"></div>
                                             @endforeach
                                         </div>
 
