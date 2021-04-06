@@ -4,9 +4,9 @@
     <style>
         @media (min-width: 1200px){
             .swin-sc-product .cat-wrapper-02.main-slider .slick-current img {
-                transform: scale(1.4);
+                transform: scale(1.6);
                 cursor: zoom-out;
-                padding-bottom: 24px;
+                padding-bottom: 30px;
             }
             .prev-slide{
                 left: 0;
