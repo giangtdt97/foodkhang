@@ -62,7 +62,7 @@
                                         @foreach($abouts as $about)
                                             <div class="timeline-item item swin-transition">
                                                 <div class="timeline-item-wrap">
-                                                    <span class="timeline-year swin-transition">{{$about->year}}</span>
+                                                    <span class="timeline-year swin-transition" style="font-size: 32px;">{{$about->year}}</span>
                                                 </div>
                                                 <img src="{{Voyager::image( $about->image )}}" alt="++{{$about->year}}++" height="209px" width="380px" >
                                             </div>
@@ -70,7 +70,7 @@
                                         @foreach($abouts as $about)
                                             <div class="timeline-item item swin-transition">
                                                 <div class="timeline-item-wrap">
-                                                    <span class="timeline-year swin-transition">{{$about->year}}</span>
+                                                    <span class="timeline-year swin-transition" style="font-size: 32px;">{{$about->year}}</span>
                                                 </div>
                                                 <img src="{{Voyager::image( $about->image )}}" alt="++{{$about->year}}++" height="209px" width="380px" >
                                             </div>
