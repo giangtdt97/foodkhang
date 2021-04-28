@@ -167,15 +167,15 @@
                                         @foreach($feature_products as $feature_product)
                                             <div class="col-md-3 col-sm-6 col-xs-12">
                                                 <div data-wow-delay="1s" class="swin-sc sc-featured-box item wow fadeInUp"><img src="{{Voyager::image($feature_product->background_image)}}" alt="fooday" class="box-bg">
-                                                    <div class="box-inner ">
-                                                        <h4 class="box-title">{{$feature_product->product_name}}</h4>
+                                                    <div class="box-inner" style="height: 450px;">
+                                                        <h4 class="box-title" style="font-size: 24px;">{{$feature_product->product_name}}</h4>
                                                         <div class=" sidebar-box">
                                                             <p class="box-content">{{$feature_product->description}}</p>
                                                             <p class="read-more"><a href="javascript:void(0)" class="button">Xem Thêm</a></p>
                                                         </div>
                                                         <div class="btn-wrap text-center"><a href="{{route('menu')}}" class="btn swin-btn"><span>Đến Menu</span></a></div>
                                                         <div class="showcase"><img src="{{Voyager::image($feature_product->image)}}" alt="" class="img-responsive img-showcase">
-                                                            <div class="title-showcase">{{$feature_product->product_name}}</div>
+                                                            <div class="title-showcase" style="font-size: 28px;">{{$feature_product->product_name}}</div>
                                                         </div>
                                                     </div>
                                                 </div>
