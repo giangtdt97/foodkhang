@@ -265,37 +265,37 @@
                                 <div class="swin-sc swin-sc-team-slider">
                                     <div class="team-item swin-transition wow fadeInLeft">
                                         <div class="team-img-wrap">
-                                            <div class="team-img"><img data-enlargeable style="cursor: zoom-in" src="{{Voyager::image($feature_images[7]->value)}}" alt="" class="img img-responsive" ></div>
+                                            <div class="team-img"><img data-enlargeable style="cursor: zoom-in" src="{{Voyager::image($feature_images[7]->value)}}" alt="" class="img" width="280px" height="320px" ></div>
                                         </div>
-                                        <p class="team-name">{{($feature_images[7]->title)}}</p>
+{{--                                        <p class="team-name">{{($feature_images[7]->title)}}</p>--}}
                                         <hr>
                                     </div>
                                     <div class="team-item swin-transition wow fadeInUp">
                                         <div class="team-img-wrap">
-                                            <div class="team-img"><img data-enlargeable style="cursor: zoom-in" src="{{Voyager::image($feature_images[10]->value)}}" alt=""  class="img img-responsive" ></div>
+                                            <div class="team-img"><img data-enlargeable style="cursor: zoom-in" src="{{Voyager::image($feature_images[10]->value)}}" alt=""  class="img" width="280px" height="320px" ></div>
                                         </div>
-                                        <p class="team-name">{{($feature_images[10]->title)}}</p>
+{{--                                        <p class="team-name">{{($feature_images[10]->title)}}</p>--}}
                                         <hr>
                                     </div>
                                     <div class="team-item swin-transition wow fadeInRight">
                                         <div class="team-img-wrap">
-                                            <div class="team-img"><img data-enlargeable style="cursor: zoom-in" src="{{Voyager::image($feature_images[9]->value)}}"  alt="" class="img img-responsive" ></div>
+                                            <div class="team-img"><img data-enlargeable style="cursor: zoom-in" src="{{Voyager::image($feature_images[9]->value)}}"  alt="" class="img" width="280px" height="320px" ></div>
                                         </div>
-                                        <p class="team-name">{{($feature_images[9]->title)}}</p>
+{{--                                        <p class="team-name">{{($feature_images[9]->title)}}</p>--}}
                                         <hr>
                                     </div>
                                     <div class="team-item swin-transition">
                                         <div class="team-img-wrap">
-                                            <div class="team-img"><img data-enlargeable style="cursor: zoom-in" src="{{Voyager::image($feature_images[8]->value)}}" alt="" class="img img-responsive"></div>
+                                            <div class="team-img"><img data-enlargeable style="cursor: zoom-in" src="{{Voyager::image($feature_images[8]->value)}}" alt="" class="img" width="280px" height="320px" ></div>
                                         </div>
-                                        <p class="team-name">{{($feature_images[8]->title)}}</p>
+{{--                                        <p class="team-name">{{($feature_images[8]->title)}}</p>--}}
                                         <hr>
                                     </div>
                                     <div class="team-item swin-transition">
                                         <div class="team-img-wrap">
-                                            <div class="team-img"><img data-enlargeable style="cursor: zoom-in" src="{{Voyager::image($feature_images[11]->value)}}" alt="" class="img img-responsive"></div>
+                                            <div class="team-img"><img data-enlargeable style="cursor: zoom-in" src="{{Voyager::image($feature_images[11]->value)}}" alt="" class="img" width="280px" height="320px"></div>
                                         </div>
-                                        <p class="team-name">{{($feature_images[11]->title)}}</p>
+{{--                                        <p class="team-name">{{($feature_images[11]->title)}}</p>--}}
                                         <hr>
                                     </div>
                                 </div>
