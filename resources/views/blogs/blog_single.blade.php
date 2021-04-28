@@ -46,7 +46,7 @@
                                                     <div class="blog-footer clearfix">
                                                         <div class="blog-share">
                                                             <ul class="socials list-unstyled list-inline">
-                                                                 <li><a href="https://www.facebook.com/sharer/sharer.php?u={{route('blog.detail')}}&display=popup"><i class="fa fa-facebook"></i></a></li>
+                                                                 <li><a href="https://www.facebook.com/sharer/sharer.php?u={{route('blog.detail',$blog->slug)}}&display=popup"><i class="fa fa-facebook"></i></a></li>
                                                             </ul>
                                                         </div>
                                                         <div class="blog-tags"><strong>Tags:</strong>
