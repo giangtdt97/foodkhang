@@ -166,7 +166,7 @@
                                                 <div class="col-md-3 col-sm-4 col-xs-12" style="padding: 0;">
                                                 <div class="item product-01">
                                                     <div class="block-img"><a href="{{route('product.show',$product->slug)}}"><img src="timthumb.php?src={{Voyager::image( $product->image )}}&w=200&h=130" alt=""></a></div>
-                                                    <h5 class="title truncate-overflow-one" style="font-size: 16px; font-weight: bold; font-family:open sans,cursive;">{{$product->product_name}}</h5><span class="price woocommerce-Price-amount amount" style="line-height: 1">{{$product->presentPrice()}}<span class="price-symbol">Đ</span></span>
+                                                    <h5 class="title truncate-overflow-one" style="font-size: 16px; font-weight: bold; font-family:open sans,cursive;margin-top: 5px;">{{$product->product_name}}</h5><span class="price woocommerce-Price-amount amount" style="line-height: 1">{{$product->presentPrice()}}<span class="price-symbol">Đ</span></span>
                                                 </div>
                                             </div>
                                             @endforeach

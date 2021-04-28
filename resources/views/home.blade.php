@@ -272,9 +272,9 @@
                                     </div>
                                     <div class="team-item swin-transition wow fadeInUp">
                                         <div class="team-img-wrap">
-                                            <div class="team-img"><img data-enlargeable style="cursor: zoom-in" src="{{Voyager::image($feature_images[8]->value)}}" alt=""  class="img img-responsive" ></div>
+                                            <div class="team-img"><img data-enlargeable style="cursor: zoom-in" src="{{Voyager::image($feature_images[10]->value)}}" alt=""  class="img img-responsive" ></div>
                                         </div>
-                                        <p class="team-name">{{($feature_images[8]->title)}}</p>
+                                        <p class="team-name">{{($feature_images[10]->title)}}</p>
                                         <hr>
                                     </div>
                                     <div class="team-item swin-transition wow fadeInRight">
@@ -289,6 +289,13 @@
                                             <div class="team-img"><img data-enlargeable style="cursor: zoom-in" src="{{Voyager::image($feature_images[8]->value)}}" alt="" class="img img-responsive"></div>
                                         </div>
                                         <p class="team-name">{{($feature_images[8]->title)}}</p>
+                                        <hr>
+                                    </div>
+                                    <div class="team-item swin-transition">
+                                        <div class="team-img-wrap">
+                                            <div class="team-img"><img data-enlargeable style="cursor: zoom-in" src="{{Voyager::image($feature_images[11]->value)}}" alt="" class="img img-responsive"></div>
+                                        </div>
+                                        <p class="team-name">{{($feature_images[11]->title)}}</p>
                                         <hr>
                                     </div>
                                 </div>
