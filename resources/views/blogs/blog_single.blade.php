@@ -28,7 +28,7 @@
                                                         <div class="blog-info clearfix">
                                                             <div class="blog-info-item blog-author">
                                                                 <p><span>Post By :</span><a href="#">Admin</a></p>
-                                                                <p></p>
+                                                                <p><span>Share Our Post:</span><a href="https://www.facebook.com/sharer/sharer.php?u={{route('blog.detail',$blog->slug)}}&display=popup"><i class="fa fa-facebook"></i></a></p>
                                                             </div>
                                                         </div>
                                                         <h3 class="blog-title"><a href="#" class="swin-transition">{{$blog->title}}</a></h3>
