@@ -8,6 +8,7 @@
         .slick-current img{
             border: solid #96b125;
         }
+
     </style>
     <div class="page-container">
         <div data-bottom-top="background-position: 50% 50px;" data-center="background-position: 50% 0px;" data-top-bottom="background-position: 50% -50px;" class="page-title page-product">

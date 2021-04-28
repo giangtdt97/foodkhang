@@ -104,7 +104,7 @@
                                                                 <a href="{{route('service.show',$service->slug)}}"><img src="timthumb.php?src={{Voyager::image( $service->image )}}&w=200&h=130" alt=""/>
                                                                 </a>
                                                             </div>
-                                                            <h5 class="truncate-overflow-one title" style="font-size: 16px;font-weight: bold;font-family:open sans,cursive;">{{$service->name}}</h5>
+                                                            <h5 class="truncate-overflow-one title" style="font-size: 16px;font-weight: bold;font-family:open sans,cursive;margin-top: 5px">{{$service->name}}</h5>
                                                         </div>
                                                     </div>
                                                 @endforeach

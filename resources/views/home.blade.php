@@ -72,11 +72,22 @@
                 <section class="about-us-session padding-top-100 padding-bottom-100">
                     <div class="container">
                         <div class="row">
-                            <div class="col-md-6 colsm-12"><img src="{{asset('images/pages/home.jpg')}}" alt="" class="img img-responsive wow zoomIn"></div>
+                            <div class="col-md-6 colsm-12">
+                                <div class="swin-widget widget-gallery carousel">
+                                <div class="widget-body widget-content clearfix">
+                                    <div class="main-slider">
+                                        <div class="item-slide"><img style="border-radius: 8px;" src="{{asset('images/pages/b.jpg')}}" alt="" class="img wow zoomIn" width="555px" height="383px"></div>
+                                        <div class="item-slide"><img style="border-radius: 8px;" src="{{asset('images/pages/c.jpg')}}" alt="" class="img wow zoomIn" width="555px" height="383px"></div>
+                                        <div class="item-slide"><img style="border-radius: 8px;" src="{{asset('images/pages/d.jpg')}}" alt="" class="img wow zoomIn" width="555px" height="383px"></div>
+                                        <div class="item-slide"><img style="border-radius: 8px;" src="{{asset('images/pages/a.jpg')}}" alt="" class="img wow zoomIn" width="555px" height="383px"></div>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
                             <div class="col-md-6 col-sm-12">
                                 <div class="swin-sc swin-sc-title style-4 margin-bottom-20 margin-top-50">
                                     <p class="top-title"><span>Giới Thiệu</span></p>
-                                    <h3 class="title">Câu Chuyện Khởi Nghiệp</h3>
+                                    <h3 class="title" style="white-space: nowrap;">Câu Chuyện Xôi Khang</h3>
                                 </div>
                                 <p class="des font-bold text-center">Niềm Đam Mê Bắt Đầu Từ Tinh Hoa Ẩm Thực Việt</p>
                                 <p class="des margin-bottom-20 text-center">Phần Giới Thiệu Chung.</p>
