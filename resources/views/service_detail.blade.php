@@ -1,5 +1,5 @@
 @extends('layouts.master')
-@section('title', 'Service Detail')
+@section('title', 'Chi Tiết Dịch Vụ')
 @section('content')
     <style>
         img{
@@ -56,11 +56,6 @@
                                 </div>
                                 <div class="product-price">
                                     <div class="price">{{$service->presentPrice()}}<span class="currency-symbol">Đ</span></div>
-                                </div>
-                                <div class="product-info">
-                                    <ul class="list-inline">
-                                        <li class="rating"><a href="javascript:void(0)"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i></a><span>4 Reviews</span></li>
-                                    </ul>
                                 </div>
                                 <div class="product-desc">
                                     <p>{{$service->short_description}}</p>

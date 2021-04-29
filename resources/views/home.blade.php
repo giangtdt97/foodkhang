@@ -1,5 +1,5 @@
 @extends('layouts.master')
-@section('title', 'Home')
+@section('title', 'Trang Chủ')
 @section('content')
 <style>
     .mobi-block{
@@ -267,35 +267,35 @@
                                         <div class="team-img-wrap">
                                             <div class="team-img"><img data-enlargeable style="cursor: zoom-in" src="{{Voyager::image($feature_images[7]->value)}}" alt="" class="img" width="280px" height="320px" ></div>
                                         </div>
-{{--                                        <p class="team-name">{{($feature_images[7]->title)}}</p>--}}
+                                        <p class="team-name">{{($feature_images[7]->title)}}</p>
                                         <hr>
                                     </div>
                                     <div class="team-item swin-transition wow fadeInUp">
                                         <div class="team-img-wrap">
                                             <div class="team-img"><img data-enlargeable style="cursor: zoom-in" src="{{Voyager::image($feature_images[10]->value)}}" alt=""  class="img" width="280px" height="320px" ></div>
                                         </div>
-{{--                                        <p class="team-name">{{($feature_images[10]->title)}}</p>--}}
+                                        <p class="team-name">{{($feature_images[10]->title)}}</p>
                                         <hr>
                                     </div>
                                     <div class="team-item swin-transition wow fadeInRight">
                                         <div class="team-img-wrap">
                                             <div class="team-img"><img data-enlargeable style="cursor: zoom-in" src="{{Voyager::image($feature_images[9]->value)}}"  alt="" class="img" width="280px" height="320px" ></div>
                                         </div>
-{{--                                        <p class="team-name">{{($feature_images[9]->title)}}</p>--}}
+                                        <p class="team-name">{{($feature_images[9]->title)}}</p>
                                         <hr>
                                     </div>
                                     <div class="team-item swin-transition">
                                         <div class="team-img-wrap">
                                             <div class="team-img"><img data-enlargeable style="cursor: zoom-in" src="{{Voyager::image($feature_images[8]->value)}}" alt="" class="img" width="280px" height="320px" ></div>
                                         </div>
-{{--                                        <p class="team-name">{{($feature_images[8]->title)}}</p>--}}
+                                        <p class="team-name">{{($feature_images[8]->title)}}</p>
                                         <hr>
                                     </div>
                                     <div class="team-item swin-transition">
                                         <div class="team-img-wrap">
                                             <div class="team-img"><img data-enlargeable style="cursor: zoom-in" src="{{Voyager::image($feature_images[11]->value)}}" alt="" class="img" width="280px" height="320px"></div>
                                         </div>
-{{--                                        <p class="team-name">{{($feature_images[11]->title)}}</p>--}}
+                                        <p class="team-name">{{($feature_images[11]->title)}}</p>
                                         <hr>
                                     </div>
                                 </div>
@@ -346,10 +346,10 @@
                                             <div data-width="150" class="nav-slider">
                                                 <ul class="slides list-inline">
 
-                                                    <li class="swin-transition"><a href="javascript:void(0)" class="testimonial-nav-item"><img src="{{asset('images/right-arrow.jpg')}}" alt="fooday" class="img img-responsive swin-transition"></a></li>
-                                                    <li class="swin-transition"><a href="javascript:void(0)" class="testimonial-nav-item"><img src="{{asset('images/right-arrow.jpg')}}" alt="fooday" class="img img-responsive swin-transition"></a></li>
-                                                    <li class="swin-transition"><a href="javascript:void(0)" class="testimonial-nav-item"><img src="{{asset('images/right-arrow.jpg')}}" alt="fooday" class="img img-responsive swin-transition"></a></li>
-                                                    <li class="swin-transition"><a href="javascript:void(0)" class="testimonial-nav-item"><img src="{{asset('images/right-arrow.jpg')}}" alt="fooday" class="img img-responsive swin-transition"></a></li>
+                                                    <li class="swin-transition"><a href="javascript:void(0)" class="testimonial-nav-item"><i class="fa fa-arrow-right" style="color: whitesmoke; font-size: 30px;"></i></a></li>
+                                                    <li class="swin-transition"><a href="javascript:void(0)" class="testimonial-nav-item"><i class="fa fa-arrow-right" style="color: whitesmoke; font-size: 30px;"></i></a></li>
+                                                    <li class="swin-transition"><a href="javascript:void(0)" class="testimonial-nav-item"><i class="fa fa-arrow-right" style="color: whitesmoke; font-size: 30px;"></i></a></li>
+                                                    <li class="swin-transition"><a href="javascript:void(0)" class="testimonial-nav-item"><i class="fa fa-arrow-right" style="color: whitesmoke; font-size: 30px;"></i></a></li>
                                                 </ul>
                                             </div>
                                         </div>

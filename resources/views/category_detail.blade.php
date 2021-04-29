@@ -1,5 +1,5 @@
 @extends('layouts.master')
-@section('title', 'Category Detail')
+@section('title', 'MÓN ĂN THEO DANH MỤC')
 @section('content')
     <div class="page-container">
         <div data-bottom-top="background-position: 50% 50px;" data-center="background-position: 50% 0px;" data-top-bottom="background-position: 50% -50px;" class="page-title page-menu">

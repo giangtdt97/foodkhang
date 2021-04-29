@@ -1,5 +1,5 @@
 @extends('layouts.master')
-@section('title', 'Dish Detail')
+@section('title', 'Chi Tiết Sản Phẩm')
 @section('content')
     <style>
         img{
@@ -39,7 +39,7 @@
                                         <ul class="slides list-inline">
                                             @php $images = json_decode($product->images);@endphp
                                             @foreach($images as $multimage)
-                                            <li class="swin-transition thumbnail-image-item"><a href="javascript:void(0)" class="testimonial-nav-item"><img src="{{ Voyager::image($product->getThumbnail($multimage, 'small')) }}"height="100" width="100" alt="fooday" class="img img-responsive swin-transition"></a></li>
+                                            <li class="swin-transition thumbnail-image-item"><a href="javascript:void(0)" class="testimonial-nav-item" style="padding: 0px;border: 0;"><img src="{{ Voyager::image($product->getThumbnail($multimage, 'small')) }}" height="90" width="120" alt="fooday" class=" swin-transition"></a></li>
                                             @endforeach
                                         </ul>
                                     </div>
@@ -53,11 +53,6 @@
                                 </div>
                                 <div class="product-price">
                                     <div class="price">{{$product->presentPrice()}}<span class="currency-symbol">VNĐ</span></div>
-                                </div>
-                                <div class="product-info">
-                                    <ul class="list-inline">
-                                        <li class="rating"><a href="javascript:void(0)"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i></a><span>4 Reviews</span></li>
-                                    </ul>
                                 </div>
                                 <div class="product-desc">
                                     <p>{{$product->short_description}}</p>
@@ -76,11 +71,11 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-12">
+                        <div class="col-md-8">
                             <div class="product-tab-content">
                                 <!-- Nav tabs-->
                                 <ul role="tablist" class="nav nav-tabs">
-                                    <li role="presentation" class="active"><a href="#product-desc-tab" aria-controls="product-desc-tab" role="tab" data-toggle="tab">DESCRIPTIONS</a></li>
+                                    <li role="presentation" class="active"><a href="#product-desc-tab" aria-controls="product-desc-tab" role="tab" data-toggle="tab">Mô Tả</a></li>
                                 </ul>
                                 <!-- Tab panes-->
                                 <div class="tab-content">
@@ -101,7 +96,7 @@
                         <div class="products nav-slider">
                             @foreach($mightAlsoLike as $product)
                             <div class="blog-item item swin-transition">
-                                <div class="block-img"><a href="javascript:void(0)"><img src="{{Voyager::image( $product->image )}}" alt="" height="350px" width="350px"></a>
+                                <div class="block-img"><a href="javascript:void(0)"><img src="{{Voyager::image( $product->image )}}" alt="" height="350px" width="350px" style="border: solid #96b125;"></a>
                                     <div class="block-circle price-wrapper"><span class="price woocommerce-Price-amount amount">{{$product->presentPrice()}}<span class="price-symbol">Đ</span></span></div>
                                 </div>
                                 <div class="block-content">

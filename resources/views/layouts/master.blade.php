@@ -39,6 +39,7 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans&display=swap' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Dancing+Script&display=swap' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Grenze&display=swap'  rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto&display=swap'  rel='stylesheet'>
     <link href='https://use.typekit.net/odj2frh.css' rel="stylesheet">
     <!-- Script Loading Page-->
     <script src="{{asset('vendors/html5shiv.js')}}"></script>

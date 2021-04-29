@@ -1,9 +1,10 @@
 @extends('layouts.master')
-@section('title', 'About')
+@section('title', 'Giới Thiệu')
 @section('content')
     <style type="text/css">
         .sidebar-box {
-            max-height: 120px;
+            max-height: 100%;
+            min-height: 150px;
             position: relative;
             overflow: hidden;
         }
@@ -18,11 +19,34 @@
             /* "transparent" only works here because == rgba(0,0,0,0) */
             background-image: linear-gradient(to bottom, transparent, black);
         }
+        .centered {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .bottom-right {
+            position: absolute;
+            bottom: 8px;
+            right: 16px;
+        }
         .mobi-block{
             display: none;
         }
         .web-block{
             display: block;
+        }
+        .read-more-show{
+            cursor:pointer;
+            color: #96b125;;
+        }
+        .read-more-hide{
+            cursor:pointer;
+            color: #96b125;;
+        }
+
+        .hide_content{
+            display: none;
         }
         @media (min-width: 0) and (max-width: 576px){
             .mobi-block{
@@ -34,6 +58,24 @@
             .img-res{
                 height:100px ;
                 width:190px;
+            }
+            .read-more-show{
+                cursor:pointer;
+                color: #96b125;;
+            }
+            .read-more-hide{
+                cursor:pointer;
+                color: #96b125;;
+            }
+
+            .hide_content{
+                display: none;
+            }
+            .centered {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
             }
         }
 
@@ -61,10 +103,11 @@
                                     <div class="slides">
                                         @foreach($abouts as $about)
                                             <div class="timeline-item item swin-transition">
-                                                <div class="timeline-item-wrap">
-                                                    <span class="timeline-year swin-transition" style="font-size: 32px;">{{$about->year}}</span>
-                                                </div>
+{{--                                                <div class="timeline-item-wrap">--}}
+{{--                                                    <span class="timeline-year swin-transition" style="font-size: 32px;">{{$about->year}}</span>--}}
+{{--                                                </div>--}}
                                                 <img src="{{Voyager::image( $about->image )}}" alt="++{{$about->year}}++" height="209px" width="380px" >
+                                                <div class="centered" style="font-size: 32px;color: white;">{{$about->year}}</div>
                                             </div>
                                         @endforeach
                                         @foreach($abouts as $about)
@@ -161,27 +204,43 @@
                                 <div class="col-md-12">
                                     <div class="swin-sc swin-sc-title">
                                         <p class="top-title"><span>Sản Phẩm Đặc Trưng</span></p>
-                                        <h3 class="title">Nhóm sản Phẩm chính</h3>
+                                        <h3 class="title" style="margin-top: 15px;">Nhóm sản Phẩm chính</h3>
                                     </div>
                                     <div class="row">
                                         @foreach($feature_products as $feature_product)
                                             <div class="col-md-3 col-sm-6 col-xs-12">
                                                 <div data-wow-delay="1s" class="swin-sc sc-featured-box item wow fadeInUp"><img src="{{Voyager::image($feature_product->background_image)}}" alt="fooday" class="box-bg">
-                                                    <div class="box-inner" style="height: 450px;">
+                                                    <div class="box-inner" >
                                                         <h4 class="box-title" style="font-size: 24px;">{{$feature_product->product_name}}</h4>
                                                         <div class=" sidebar-box">
-                                                            <p class="box-content">{{$feature_product->description}}</p>
-                                                            <p class="read-more"><a href="javascript:void(0)" class="button">Xem Thêm</a></p>
+                                                            @if(strlen($feature_product->description) >= 100)
+                                                                <p style="font-family: Roboto;">{{(substr($feature_product->description,0,100))}}
+                                                            <span class="read-more-show hide_content" style="white-space: nowrap">Xem Thêm <i class="fa fa-angle-down"></i></span>
+                                                            <span class="read-more-content">{{substr($feature_product->description,100,strlen($feature_product->description))}}
+                                                                <span class="read-more-hide hide_content" style="white-space: nowrap">Xem Ít Hơn <i class="fa fa-angle-up"></i></span>
+                                                            </span>
+                                                                </p>
+                                                            @else
+                                                            <p style="font-family: Roboto;">{{$feature_product->description}}</p>
+                                                            @endif
                                                         </div>
                                                         <div class="btn-wrap text-center"><a href="{{route('menu')}}" class="btn swin-btn"><span>Đến Menu</span></a></div>
                                                         <div class="showcase"><img src="{{Voyager::image($feature_product->image)}}" alt="" class="img-responsive img-showcase">
-                                                            <div class="title-showcase" style="font-size: 28px;">{{$feature_product->product_name}}</div>
+{{--                                                            <div class="title-showcase" style="font-size: 28px;">{{$feature_product->product_name}}</div>--}}
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="hotline-phone-ring-wrap bottom-right mobi-block">
+                                                    <div class="hotline-phone-ring" style="bottom: 0;">
+{{--                                                        <div class="hotline-phone-ring-circle"></div>--}}
+                                                        <div class="hotline-phone-ring-circle-fill"></div>
+                                                        <div class="hotline-phone-ring-img-circle">
+                                                            <i class="fa fa-bars" style="color: white"></i>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         @endforeach
-
                                     </div>
                                 </div>
                             </div>

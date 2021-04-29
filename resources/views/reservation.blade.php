@@ -1,5 +1,5 @@
 @extends('layouts.master')
-@section('title', 'Reservation')
+@section('title', 'Theo Dõi Đơn Hàng')
 @section('content')
     <div id="pagewrap" class="pagewrap">
         <div id="html-content" class="wrapper-content">
@@ -9,7 +9,7 @@
                         <div class="title-wrapper">
                             <div data-top="transform: translateY(0px);opacity:1;" data--20-top="transform: translateY(-5px);" data--50-top="transform: translateY(-15px);opacity:0.8;" data--120-top="transform: translateY(-30px);opacity:0;" data-anchor-target=".page-title" class="title">Theo Dõi Đơn Hàng</div>
                             <div data-top="opacity:1;" data--120-top="opacity:0;" data-anchor-target=".page-title" class="divider"><span class="line-before"></span><span class="dot"></span><span class="line-after"></span></div>
-                            <div data-top="transform: translateY(0px);opacity:1;" data--20-top="transform: translateY(5px);" data--50-top="transform: translateY(15px);opacity:0.8;" data--120-top="transform: translateY(30px);opacity:0;" data-anchor-target=".page-title" class="subtitle">Just a few click to make the reservation online for saving your time and money</div>
+                            <div data-top="transform: translateY(0px);opacity:1;" data--20-top="transform: translateY(5px);" data--50-top="transform: translateY(15px);opacity:0.8;" data--120-top="transform: translateY(30px);opacity:0;" data-anchor-target=".page-title" class="subtitle"></div>
                         </div>
                     </div>
                 </div>
