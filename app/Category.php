@@ -15,5 +15,8 @@ class Category extends Model
     public function productsFeature(){
         return $this->belongsToMany(Product::class)->published()->featured();
     }
+    public function productsSignature(){
+        return $this->belongsToMany(Product::class)->published()->signature();
+    }
 use Resizable;
 }

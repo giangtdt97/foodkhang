@@ -49,5 +49,8 @@ class Product extends Model
     public function scopeFeatured(Builder $sql){
         return $sql->where('featured','=',1);
     }
+    public function scopeSignature(Builder $sql){
+        return $sql->where('signature','=',1);
+    }
     use Resizable;
 }

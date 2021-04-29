@@ -27,7 +27,7 @@
                                                     <div class="blog-date"><span class="day">{{$blog->created_at->format('d')}}</span><span class="month">{{$blog->created_at->format('F')}}</span><span class="year">{{$blog->created_at->format('y')}}</span></div>
                                                     <div class="blog-info clearfix">
                                                         <div class="blog-info-item blog-author">
-                                                            <p><span>Post By :</span><a href="#">Admin</a></p>
+                                                            <p><span>Post By :</span><a href="#">{{$blog->author}}</a></p>
                                                             <p></p>
                                                         </div>
                                                     </div>

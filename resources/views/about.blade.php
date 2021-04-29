@@ -105,14 +105,14 @@
                                             <div class="timeline-item item swin-transition">
                                                 <div class="timeline-item-wrap"></div>
                                                 <img src="{{Voyager::image( $about->image )}}" alt="++{{$about->year}}++" height="209px" width="380px" >
-                                                <div class="centered" style="font-size: 32px;color: white;">{{$about->year}}</div>
+                                                <div class="centered" style="font-size: 32px;color: white; white-space: nowrap;">{{$about->year}}</div>
                                             </div>
                                         @endforeach
                                         @foreach($abouts as $about)
                                             <div class="timeline-item item swin-transition">
                                                 <div class="timeline-item-wrap"></div>
                                                 <img src="{{Voyager::image( $about->image )}}" alt="++{{$about->year}}++" height="209px" width="380px" >
-                                                <div class="centered" style="font-size: 32px;color: white;">{{$about->year}}</div>
+                                                <div class="centered" style="font-size: 32px;color: white;white-space: nowrap;">{{$about->year}}</div>
                                             </div>
                                         @endforeach
                                     </div>
@@ -139,7 +139,7 @@
                                             <div class="timeline-item item swin-transition">
                                                 <div class="timeline-item-wrap"></div>
                                                 <img src="{{Voyager::image( $about->image )}}" alt="++{{$about->year}}++" class="img-res">
-                                                <div class="centered" style="font-size: 14px;color: white;">{{$about->year}}</div>
+                                                <div class="centered" style="font-size: 14px;color: white;white-space: nowrap;">{{$about->year}}</div>
                                             </div>
                                         @endforeach
                                     </div>
