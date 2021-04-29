@@ -136,7 +136,7 @@
                                         @foreach($abouts as $about)
                                             <div class="timeline-item item swin-transition">
                                                 <img src="{{Voyager::image( $about->image )}}" alt="++{{$about->year}}++" class="img-res">
-                                                <div class="centered" style="font-size: 32px;color: white;">{{$about->year}}</div>
+                                                <div class="centered" style="font-size: 14px;color: white;">{{$about->year}}</div>
                                             </div>
                                         @endforeach
                                     </div>
