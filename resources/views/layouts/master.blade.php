@@ -24,13 +24,13 @@
     <!-- Font-icon-->
     <link rel="stylesheet" href="{{asset('fonts/font-icon/style.css')}}">
     <!-- Style-->
-    <link rel="stylesheet" type="text/css" href="{{asset('css/layout.css')}}">
-    <link rel="stylesheet" type="text/css" href="{{asset('css/elements.css?v=7')}}">
-    <link rel="stylesheet" type="text/css" href="{{asset('css/extra.css?v=28')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('css/layout.css?v=2')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('css/elements.css?v=8')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('css/extra.css?v=29')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('css/widget.css')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('css/phonecall.css')}}?v=16">
-    <link id="colorpattern" rel="stylesheet" type="text/css" href="{{asset('css/color/colordefault.css?v=26')}}">
-    <link rel="stylesheet" type="text/css" href="{{asset('css/responsive.css?v=21')}}">
+    <link id="colorpattern" rel="stylesheet" type="text/css" href="{{asset('css/color/colordefault.css?v=27')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('css/responsive.css?v=22')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('css/live-settings.css')}}">
     <!-- Google Font-->
     <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700,700i&display=swap" rel="stylesheet">
