@@ -132,7 +132,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="swin-sc swin-sc-timeline-2 mobi-block">
+                            <div data-item="3" class="swin-sc swin-sc-timeline-2 mobi-block">
                                 <div class="main-slider">
                                     <div class="slides">
                                         @foreach($abouts as $about)
