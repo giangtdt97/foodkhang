@@ -188,11 +188,19 @@
                                                         @foreach($category->productsSignature as  $product)
                                                         <div class="item product-01" style="padding-top: 10px;margin-bottom: 0;">
                                                             <div class="item-left web-block">
-                                                                <h5 class="title">{{$product->product_name}}</h5>
+                                                                <a href="{{route('product.show',$product->slug)}}">
+                                                                    <h5 class="title">
+                                                                        {{$product->product_name}}
+                                                                    </h5>
+                                                                </a>
                                                                 <div class="des">{{$product->short_description}}</div>
                                                             </div>
                                                             <div class="item-left mobi-block">
-                                                                <h5 class="title" style="white-space: pre-line">{{$product->product_name}}</h5>
+                                                                <a href="{{route('product.show',$product->slug)}}">
+                                                                    <h5 class="title">
+                                                                        {{$product->product_name}}
+                                                                    </h5>
+                                                                </a>
                                                                 <div class="des">{{$product->short_description}}</div>
                                                             </div>
                                                             <div class="item-right">
