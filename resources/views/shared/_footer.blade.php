@@ -180,7 +180,7 @@
 <!-- Own script-->
 <script src="{{asset('js/layout.js')}}"></script>
 <script>
-    if (screen && screen.width > 376) {
+    if (screen && screen.width > 500) {
         document.write('<script src="{{asset('js/elements.js?v=1')}}"><\/script>');
     }else{
         document.write('<script src="{{asset('js/elements-mobi.js?')}}"><\/script>');
