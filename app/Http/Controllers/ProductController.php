@@ -30,8 +30,9 @@ class ProductController extends Controller
     }
     public function showService($slug){
         $service= Service::where('slug', $slug)->first();
+        $mightAlsoLike = Product::mightAlsoLike()->get();
         return view(
-            'service_detail',compact('service')
+            'service_detail',compact('service','mightAlsoLike')
         );
     }
     public function showCategory($slug){

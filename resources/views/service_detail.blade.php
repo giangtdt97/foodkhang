@@ -85,37 +85,25 @@
                         </div>
                     </div>
                 </section>
-                <section class="product-sesction-03-1 padding-top-100 padding-bottom-100"><img src="{{Voyager::image($service->getThumbnail($service->image,'medium'))}}" height="500" alt="" class="img-decorate">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-6 col-md-4"></div>
-                            <div class="col-lg-6 col-md-8">
-                                <div class="swin-sc swin-sc-title  light">
+                <section class="product-related padding-bottom-100">
+                    <div class="swin-sc swin-sc-title style-2">
+                        <p class="title"><span>Bạn Có Thể Thích</span></p>
+                    </div>
+                    <div class="swin-sc swin-sc-product products-02 carousel-01 woocommerce">
 
-                                    <p class="top-title"><span> {{$service->name}}</span></p>
-
-                                </div>
-                                <div class="swin-sc swin-sc-product products-01 style-04 light swin-vetical-slider">
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            <div data-height="200" class="products nav-slider">
-                                                @foreach($service->products as  $product)
-                                                    <div class="item product-01">
-                                                        <div class="item-left"><a href="{{route('product.show',$product->slug)}}"><img src="{{Voyager::image( $product->image )}}" alt="" class="img img-responsive"></a>
-                                                            <div class="content-wrapper"><a href="{{route('product.show',$product->slug)}}" class="title">{{$product->product_name}}</a>
-                                                                <div class="dot">.....................................................................</div>
-                                                                <div class="des">{{$product->short_description}}</div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="item-right"></div>
-                                                    </div>
-                                                @endforeach
-                                            </div>
-                                        </div>
+                        <div class="products nav-slider">
+                            @foreach($mightAlsoLike as $product)
+                                <div class="blog-item item swin-transition">
+                                    <div class="block-img"><a href="javascript:void(0)"><img src="{{Voyager::image( $product->image )}}" alt="" height="280px" width="350px" style="border: solid #96b125;"></a>
+                                        <div class="block-circle price-wrapper"><span class="price woocommerce-Price-amount amount">{{$product->presentPrice()}}<span class="price-symbol">Đ</span></span></div>
+                                    </div>
+                                    <div class="block-content">
+                                        <h5 class="title truncate-overflow-one" style="white-space: nowrap"><a href="{{route('product.show',$product->slug)}}">{{$product->product_name}}</a></h5>
                                     </div>
                                 </div>
-                            </div>
+                            @endforeach
                         </div>
+
                     </div>
                 </section>
             </div>

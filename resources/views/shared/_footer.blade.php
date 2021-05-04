@@ -179,8 +179,15 @@
 
 <!-- Own script-->
 <script src="{{asset('js/layout.js')}}"></script>
-<script src="{{asset('js/elements.js?v=1')}}"></script>
-<script src="{{asset('js/widget.js')}}"></script>
+<script>
+    if (screen && screen.width > 376) {
+        document.write('<script src="{{asset('js/elements.js?v=1')}}"><\/script>');
+    }else{
+        document.write('<script src="{{asset('js/elements-mobi.js?')}}"><\/script>');
+    }
+</script>
+{{--<script src="{{asset('js/elements.js?v=1')}}"></script>--}}
+<script type="text/javascript" src="{{asset('js/widget.js')}}"></script>
 
 <script>
     $(document).ready(function(){

@@ -114,7 +114,7 @@
                                                         <div class="item-left"><a href="{{route('product.show',$product->slug)}}"><img src="{{Voyager::image( $product->image )}}" alt="" class="img img-responsive"></a>
                                                             <div class="content-wrapper"><a class="title">{{$product->product_name}}</a>
 {{--                                                                <div class="dot">.........................................................</div>--}}
-                                                                <div class="des">{{$product->short_description}}</div>
+{{--                                                                <div class="des">{{$product->short_description}}</div>--}}
                                                             </div>
                                                         </div>
                                                         <div class="item-right"><span class="price woocommerce-Price-amount amount" style="line-height: 0.5;">{{$product->presentPrice()}}<span class="price-symbol">Đ</span></span></div>
@@ -254,55 +254,55 @@
                     </div>
                 </section>
 
-{{--                <section class="team-section padding-top-100 padding-bottom-100">--}}
-{{--                    <div class="container">--}}
-{{--                        <div class="row">--}}
-{{--                            <div class="col-md-12">--}}
-{{--                                <div class="swin-sc swin-sc-title">--}}
-{{--                                    <p class="top-title"><span>GiỚi Thiệu</span></p>--}}
-{{--                                    <h3 class="title">Gia Đình Xôi Khang</h3>--}}
-{{--                                </div>--}}
-{{--                                <div class="swin-sc swin-sc-team-slider">--}}
-{{--                                    <div class="team-item swin-transition wow fadeInLeft">--}}
-{{--                                        <div class="team-img-wrap">--}}
-{{--                                            <div class="team-img"><img data-enlargeable style="cursor: zoom-in" src="{{Voyager::image($feature_images[7]->value)}}" alt="" class="img" width="280px" height="320px" ></div>--}}
-{{--                                        </div>--}}
-{{--                                        <p class="team-name">{{($feature_images[7]->title)}}</p>--}}
-{{--                                        <hr>--}}
-{{--                                    </div>--}}
-{{--                                    <div class="team-item swin-transition wow fadeInUp">--}}
-{{--                                        <div class="team-img-wrap">--}}
-{{--                                            <div class="team-img"><img data-enlargeable style="cursor: zoom-in" src="{{Voyager::image($feature_images[10]->value)}}" alt=""  class="img" width="280px" height="320px" ></div>--}}
-{{--                                        </div>--}}
-{{--                                        <p class="team-name">{{($feature_images[10]->title)}}</p>--}}
-{{--                                        <hr>--}}
-{{--                                    </div>--}}
-{{--                                    <div class="team-item swin-transition wow fadeInRight">--}}
-{{--                                        <div class="team-img-wrap">--}}
-{{--                                            <div class="team-img"><img data-enlargeable style="cursor: zoom-in" src="{{Voyager::image($feature_images[9]->value)}}"  alt="" class="img" width="280px" height="320px" ></div>--}}
-{{--                                        </div>--}}
-{{--                                        <p class="team-name">{{($feature_images[9]->title)}}</p>--}}
-{{--                                        <hr>--}}
-{{--                                    </div>--}}
-{{--                                    <div class="team-item swin-transition">--}}
-{{--                                        <div class="team-img-wrap">--}}
-{{--                                            <div class="team-img"><img data-enlargeable style="cursor: zoom-in" src="{{Voyager::image($feature_images[8]->value)}}" alt="" class="img" width="280px" height="320px" ></div>--}}
-{{--                                        </div>--}}
-{{--                                        <p class="team-name">{{($feature_images[8]->title)}}</p>--}}
-{{--                                        <hr>--}}
-{{--                                    </div>--}}
-{{--                                    <div class="team-item swin-transition">--}}
-{{--                                        <div class="team-img-wrap">--}}
-{{--                                            <div class="team-img"><img data-enlargeable style="cursor: zoom-in" src="{{Voyager::image($feature_images[11]->value)}}" alt="" class="img" width="280px" height="320px"></div>--}}
-{{--                                        </div>--}}
-{{--                                        <p class="team-name">{{($feature_images[11]->title)}}</p>--}}
-{{--                                        <hr>--}}
-{{--                                    </div>--}}
-{{--                                </div>--}}
-{{--                            </div>--}}
-{{--                        </div>--}}
-{{--                    </div>--}}
-{{--                </section>--}}
+                <section class="team-section padding-top-100 padding-bottom-100">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="swin-sc swin-sc-title">
+                                    <p class="top-title"><span>GiỚi Thiệu</span></p>
+                                    <h3 class="title">Gia Đình Xôi Khang</h3>
+                                </div>
+                                <div class="swin-sc swin-sc-team-slider">
+                                    <div class="team-item swin-transition wow fadeInLeft">
+                                        <div class="team-img-wrap">
+                                            <div class="team-img"><img data-enlargeable style="cursor: zoom-in" src="{{Voyager::image($feature_images[7]->value)}}" alt="" class="img" width="280px" height="320px" ></div>
+                                        </div>
+                                        <p class="team-name">{{($feature_images[7]->title)}}</p>
+                                        <hr>
+                                    </div>
+                                    <div class="team-item swin-transition wow fadeInUp">
+                                        <div class="team-img-wrap">
+                                            <div class="team-img"><img data-enlargeable style="cursor: zoom-in" src="{{Voyager::image($feature_images[10]->value)}}" alt=""  class="img" width="280px" height="320px" ></div>
+                                        </div>
+                                        <p class="team-name">{{($feature_images[10]->title)}}</p>
+                                        <hr>
+                                    </div>
+                                    <div class="team-item swin-transition wow fadeInRight">
+                                        <div class="team-img-wrap">
+                                            <div class="team-img"><img data-enlargeable style="cursor: zoom-in" src="{{Voyager::image($feature_images[9]->value)}}"  alt="" class="img" width="280px" height="320px" ></div>
+                                        </div>
+                                        <p class="team-name">{{($feature_images[9]->title)}}</p>
+                                        <hr>
+                                    </div>
+                                    <div class="team-item swin-transition">
+                                        <div class="team-img-wrap">
+                                            <div class="team-img"><img data-enlargeable style="cursor: zoom-in" src="{{Voyager::image($feature_images[8]->value)}}" alt="" class="img" width="280px" height="320px" ></div>
+                                        </div>
+                                        <p class="team-name">{{($feature_images[8]->title)}}</p>
+                                        <hr>
+                                    </div>
+                                    <div class="team-item swin-transition">
+                                        <div class="team-img-wrap">
+                                            <div class="team-img"><img data-enlargeable style="cursor: zoom-in" src="{{Voyager::image($feature_images[11]->value)}}" alt="" class="img" width="280px" height="320px"></div>
+                                        </div>
+                                        <p class="team-name">{{($feature_images[11]->title)}}</p>
+                                        <hr>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
 
                 <section data-bottom-top="background-position: 50% 50px;" data-center="background-position: 50% 0px;" data-top-bottom="background-position: 50% -150px;" class="testimonial-section-01 padding-top-100 padding-bottom-100">
                     <div class="container">
