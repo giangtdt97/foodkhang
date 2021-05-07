@@ -183,7 +183,7 @@
     if (screen && screen.width > 500) {
         document.write('<script src="{{asset('js/elements.js?v=1')}}"><\/script>');
     }else{
-        document.write('<script src="{{asset('js/elements-mobi.js?')}}"><\/script>');
+        document.write('<script src="{{asset('js/elements-mobi.js??v=2')}}"><\/script>');
     }
 </script>
 {{--<script src="{{asset('js/elements.js?v=1')}}"></script>--}}
