@@ -92,18 +92,12 @@ jQuery(function($) {
                 arrows: true,
                 asNavFor: $nav_slider,
                 focusOnSelect: true,
-                // centerMode: true,
+                centerMode: true,
                 responsive: [
                     {
                         breakpoint: 480,
                         settings: {
-                            slidesToShow: 2,
-                        }
-                    },
-                    {
-                        breakpoint: 769,
-                        settings: {
-                            slidesToShow: 5,
+                            slidesToShow: 1,
                         }
                     },
                 ]
