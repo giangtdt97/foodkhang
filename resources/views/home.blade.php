@@ -398,7 +398,7 @@
                                 @endforeach
                             </div>
                         </div>
-                        <div class="swin-btn-wrap center mtxxl"><a href="{{route('blog')}}" class="swin-btn center btn-transparent"> <span>Đến Trang Blog</span></a></div>
+                        <div class="swin-btn-wrap center mtxxl web-block"><a href="{{route('blog')}}" class="swin-btn center btn-transparent"> <span>Đến Trang Blog</span></a></div>
                     </div>
                 </section>
 @endsection
